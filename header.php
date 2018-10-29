@@ -14,6 +14,7 @@
 <html lang="en">
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <title><?php echo get_bloginfo( 'name' ); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php wp_head(); ?>
@@ -21,5 +22,6 @@
 <body>
     <div id="page">
         <header id="main-header">
-        Include custom header image here<br />
+        <h1 class-"main-title"><?php echo get_bloginfo( 'name' ); ?></h1>
+        <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
         Include main navigation here <br />
