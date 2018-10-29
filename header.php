@@ -21,4 +21,5 @@
         <header id="main-header">
         <h1 class-"main-title"><?php echo get_bloginfo( 'name' ); ?></h1>
         <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
-        Include main navigation here <br />
+        <nav id="main-navigation">
+            <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
