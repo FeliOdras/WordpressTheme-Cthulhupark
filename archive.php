@@ -17,6 +17,14 @@ get_header();
 					the_archive_description( '<div class="page-description">', '</div>' );
 				?>
             </header><!-- .page-header -->
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <h2 class="post-title"><a href="<?php the_permalink(); ?>
+" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
+            <!-- contents of the loop -->
+
+            <?php endwhile; endif; ?>
+
+            <?php posts_nav_link('|','Neuere Beiträge','Ältere Beiträge'); ?>
         </main><!-- #main -->
     </div> <!-- #primary -->
 
