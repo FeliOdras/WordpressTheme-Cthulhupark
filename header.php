@@ -19,7 +19,7 @@
 <body>
     <div id="page">
         <header id="main-header">
-            <h1 class-"main-title"><?php echo get_bloginfo( 'name' ); ?></h1>
+            <h1 class-"main-title"><a href="<?php echo site_url(); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
             <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
             <nav id="main-navigation">
                 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
