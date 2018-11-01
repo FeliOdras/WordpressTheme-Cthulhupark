@@ -13,7 +13,8 @@ get_header();
 <div id="primary" class="content-area">
 		<main id="main" class="site-main">
             <header class="page-header">
-
+                <h1><?php the_title(); ?></h1>
+            </header> <!-- .page-header-->
         </main><!-- #main -->
     </div> <!-- #primary -->
 
