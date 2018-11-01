@@ -26,4 +26,36 @@ add_filter( 'get_the_archive_title', function ($title) {
         } 
     return $title;
 });
+
+# Register sidebars
+
+function sidebar_left() {
+    register_sidebar(
+        array (
+            'name' => __( 'Sidebar left', 'cthulhupark' ),
+            'id' => 'sidebar-left',
+            'description' => __( 'Left sidebar', 'cthulhupark' ),
+            'before_widget' => '<div class="widget-content">',
+            'after_widget' => "</div>",
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        )
+    );
+}
+add_action( 'widgets_init', 'sidebar_left' );
+
+function sidebar_right() {
+    register_sidebar(
+        array (
+            'name' => __( 'Sidebar right', 'cthulhupark' ),
+            'id' => 'sidebar-right',
+            'description' => __( 'Left sidebar', 'cthulhupark' ),
+            'before_widget' => '<div class="widget-content">',
+            'after_widget' => "</div>",
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        )
+    );
+}
+add_action( 'widgets_init', 'sidebar_right' );
 ?>
