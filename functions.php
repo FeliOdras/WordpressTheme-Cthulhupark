@@ -29,7 +29,7 @@ add_filter( 'get_the_archive_title', function ($title) {
 
 # Register sidebars
 
-function sidebar_left() {
+/*function sidebar_left() {
     register_sidebar(
         array (
             'name' => __( 'Sidebar left', 'cthulhupark' ),
@@ -57,5 +57,5 @@ function sidebar_right() {
         )
     );
 }
-add_action( 'widgets_init', 'sidebar_right' );
+add_action( 'widgets_init', 'sidebar_right' );*/
 ?>
