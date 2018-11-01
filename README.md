@@ -8,7 +8,7 @@ This theme is licensed unter [GPL 2.0](http://www.gnu.org/licenses/gpl-2.0.html)
 
 - [x] Create Index-File
 - [x] Create Archive Template
-- [ ] Create Page Template
-- [ ] Create Single Post Template
+- [x] Create Page Template
+- [x] Create Single Post Template
 - [ ] Build and setup sidebars
 - [ ] Add styles
