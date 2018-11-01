@@ -23,3 +23,5 @@
         <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
         <nav id="main-navigation">
             <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+        </nav>
+        </header>
