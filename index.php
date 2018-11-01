@@ -11,6 +11,7 @@
  */
 
 get_header();
+get_sidebar(left);
 ?>
     <div id="primary" class="content-area">
 		<main id="main" class="site-main">

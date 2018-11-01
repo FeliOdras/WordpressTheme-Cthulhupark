@@ -11,6 +11,7 @@ get_header();
 ?>
     <div id="primary" class="content-area">
 		<main id="main" class="site-main">
+            <?php get_sidebar(left); ?>
             <header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
@@ -36,6 +37,7 @@ get_header();
                 </div><!-- .post-main -->
             <?php endwhile; endif; ?>
             <?php posts_nav_link('','<span class="prev">Neuere Beiträge</span>','<span class="next">Ältere Beiträge</span>'); ?>
+            <?php get_sidebar(right); ?>
         </main><!-- #main -->
     </div> <!-- #primary -->
 
