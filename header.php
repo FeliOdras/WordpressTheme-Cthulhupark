@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <div id="page">
         <header id="main-header">
             <h1 class-"main-title"><a href="<?php echo site_url(); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
