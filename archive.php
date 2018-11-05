@@ -21,7 +21,7 @@ get_header();
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <article class="post-main <?php if (is_category(abenteurertagebuch)) :?>dairy<?php elseif (is_category(traumwelten)) :?>dreamlands<?php endif;?>">
                     <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
-                    <div class="post-meta"
+                    <div class="post-meta">
                     <div class="featured-image">
                         <?php 
                         // check if the post has a Post Thumbnail assigned to it.
