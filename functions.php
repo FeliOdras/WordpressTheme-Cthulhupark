@@ -58,4 +58,8 @@ function sidebar_right() {
     );
 }
 add_action( 'widgets_init', 'sidebar_right' );
+
+#Make translation ready
+
+load_theme_textdomain( 'cthulhupark', templatepath.'/languages' );
 ?>
