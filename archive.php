@@ -34,7 +34,7 @@ get_header();
                     <div class="post-excerpt">
                         <?php the_excerpt () ?>
                     </div> <!-- .post-excerpt -->
-                    <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Weiterlesenz</a>
+                    <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Weiterlesen</a>
                 </div><!-- .post-main -->
             <?php endwhile; endif; ?>
             <?php posts_nav_link('','<span class="prev">Neuere Beiträge</span>','<span class="next">Ältere Beiträge</span>'); ?>
