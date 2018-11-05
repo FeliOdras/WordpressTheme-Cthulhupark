@@ -12,7 +12,7 @@ get_header();
 		<main id="main" class="site-main">
             <?php get_sidebar(left); ?>
                 <?php while ( have_posts() ) : the_post(); ?>
-                    <div class="main-post <?php if (in_category(traumwelten)) :?>dreamlands<?php elseif (in_category(abenteurertagebuch)) :?>dairy<?php endif;?>">
+                    <div class="main-post <?php if (in_category(traumwelten)) :?>dreamlands<?php elseif (in_category(abenteurertagebuch)) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
                         <h3><?php the_title(); ?></h3>
                         <?php the_content(); ?>
                         <div class="author">Von <?php the_author(); ?></div>
