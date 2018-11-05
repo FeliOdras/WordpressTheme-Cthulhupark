@@ -19,8 +19,9 @@ get_header();
 				?>
             </header><!-- .page-header -->
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <article class="post-main <?php if (is_category(abenteurertagebuch)) :?>dairy<?php elseif (is_category(traumwelten)) :?>dreamlands<?php endif;?>"
+                <article class="post-main <?php if (is_category(abenteurertagebuch)) :?>dairy<?php elseif (is_category(traumwelten)) :?>dreamlands<?php endif;?>">
                     <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
+                    <div class="post-meta"
                     <div class="featured-image">
                         <?php 
                         // check if the post has a Post Thumbnail assigned to it.
@@ -33,7 +34,7 @@ get_header();
                     <div class="post-excerpt">
                         <?php the_excerpt () ?>
                     </div> <!-- .post-excerpt -->
-                    <div class="more-link">Weiterlesen</div>
+                    <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Weiterlesenz</a>
                 </div><!-- .post-main -->
             <?php endwhile; endif; ?>
             <?php posts_nav_link('','<span class="prev">Neuere Beiträge</span>','<span class="next">Ältere Beiträge</span>'); ?>
