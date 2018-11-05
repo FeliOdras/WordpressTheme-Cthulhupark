@@ -20,8 +20,10 @@ get_header();
             </header><!-- .page-header -->
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <article class="post-main <?php if (in_category(traumwelten)) :?>dreamlands<?php elseif (in_category(abenteurertagebuch)) :?>dairy<?php endif;?>">
-                    <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
-                    <div class="post-meta">
+                    <header class="post-header">
+                        <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
+                        <div class="post-meta">Verfasst von <?php the_author_link(); ?>  am <?php the_time('l, j. F Y') ?></div>
+                    </header>
                     <div class="featured-image">
                         <?php 
                         // check if the post has a Post Thumbnail assigned to it.
@@ -34,7 +36,9 @@ get_header();
                     <div class="post-excerpt">
                         <?php the_excerpt () ?>
                     </div> <!-- .post-excerpt -->
-                    <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Weiterlesen</a>
+                    <footer class="post-footer">
+                        <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Weiterlesen</a>
+                    </footer>
                 </div><!-- .post-main -->
             <?php endwhile; endif; ?>
             <?php posts_nav_link('','<span class="prev">Neuere Beiträge</span>','<span class="next">Ältere Beiträge</span>'); ?>
