@@ -16,10 +16,10 @@ get_header();
                         <time class="date"><?php the_time('l, j. F Y') ?><time>
                         <h3><?php the_title(); ?></h3>
                         <?php the_content(); ?>
-                        <div class="author">Von <?php the_author_link(); ?></div>
+                        <div class="author"><?php _e('By', 'cthulhupark') ?> <?php the_author_link(); ?></div>
                     </div><!-- .main-post -->
                     <div class="post-navigation">
-                    <?php next_post_link('%link', '%title', TRUE); ?> ~ <?php edit_post_link('Bearbeiten', '', ''); ?> ~ <?php previous_post_link('%link', '%title', TRUE); ?>
+                    <?php next_post_link('%link', '%title', TRUE); ?> ~ <?php edit_post_link('Edit', '', ''); ?> ~ <?php previous_post_link('%link', '%title', TRUE); ?>
                     </div>
                     
                 <?php endwhile; // end of the loop. ?>
