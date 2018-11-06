@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wordpress Cthulhupark\n"
-"POT-Creation-Date: 2018-11-06 10:01+0100\n"
-"PO-Revision-Date: 2018-11-06 10:07+0100\n"
+"POT-Creation-Date: 2018-11-06 13:23+0100\n"
+"PO-Revision-Date: 2018-11-06 13:30+0100\n"
 "Last-Translator: \n"
 "Language-Team: HQ Cthulhupark\n"
 "Language: de\n"
@@ -20,7 +20,6 @@ msgid "Main Menu"
 msgstr "Hauptmenü"
 
 #: functions.php:35
-#, fuzzy
 msgid "Sidebar left"
 msgstr "Linke Seitenleiste"
 
@@ -35,9 +34,3 @@ msgstr "Rechte Seitenleiste"
 #: single.php:19
 msgid "By"
 msgstr "Von"
-
-#~ msgctxt "comments title"
-#~ msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
-#~ msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
-#~ msgstr[0] "%1$s Antwort auf &#8222;%2$s&#8220;"
-#~ msgstr[1] "%1$s Antworten auf &#8222;%2$s&#8220;"
