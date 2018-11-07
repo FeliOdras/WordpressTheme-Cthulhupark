@@ -12,7 +12,3 @@ This theme is licensed unter [GPL 2.0](http://www.gnu.org/licenses/gpl-2.0.html)
 - [x] Create Single Post Template
 - [ ] Build and setup sidebars
 - [ ] Add styles
-
-shakley was here :)
-
-puuuh
