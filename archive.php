@@ -41,7 +41,9 @@ get_header();
                     </footer>
                 </div><!-- .post-main -->
             <?php endwhile; endif; ?>
-            <?php posts_nav_link('','<span class="prev">Neuere Beiträge</span>','<span class="next">Ältere Beiträge</span>'); ?>
+            <nav class="post-navigation">
+                <?php posts_nav_link('','<span class="prev">Neuere Beiträge</span>','<span class="next">Ältere Beiträge</span>'); ?>
+            </nav>
             <?php get_sidebar(right); ?>
         </main><!-- #main -->
     </div> <!-- #primary -->

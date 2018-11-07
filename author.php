@@ -25,6 +25,9 @@ get_header();
             <?php endwhile; else: ?>
                 <p><?php _e('No posts by this author.'); ?></p>
             <?php endif; ?>
+            <nav class="post-navigation">
+                <?php posts_nav_link('','<span class="prev">Neuere Beiträge</span>','<span class="next">Ältere Beiträge</span>'); ?>
+            </nav>
             <!-- End Loop -->
         <?php get_sidebar(right); ?>
     </main><!-- #main -->
