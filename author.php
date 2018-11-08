@@ -11,10 +11,11 @@ get_header();
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
         <?php get_sidebar(left); ?>
-            <h1>This is the Author's page</h1>
+            
             <?php 
                 $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
             ?>
+            <h2>Beiträge von <?php echo $curauth->display_name; ?></h2>
             <!-- The Loop -->
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <li>
