@@ -13,9 +13,39 @@ Text Domain: cthulhupark
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
 @import 'reset.css';
+
+/* eagle-lake-regular - latin-ext */
+@font-face {
+    font-family: 'Eagle Lake';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/eagle-lake-v5-latin-ext-regular.eot'); /* IE9 Compat Modes */
+    src: local('Eagle Lake'), local('EagleLake-Regular'),
+         url('../fonts/eagle-lake-v5-latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/eagle-lake-v5-latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/eagle-lake-v5-latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/eagle-lake-v5-latin-ext-regular.svg#EagleLake') format('svg'); /* Legacy iOS */
+  }
+
+  /* cutive-regular - latin-ext */
+@font-face {
+    font-family: 'Cutive';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/cutive-v9-latin-ext-regular.eot'); /* IE9 Compat Modes */
+    src: local('Cutive'), local('Cutive-Regular'),
+         url('../fonts/cutive-v9-latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/cutive-v9-latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/cutive-v9-latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/cutive-v9-latin-ext-regular.svg#Cutive') format('svg'); /* Legacy iOS */
+  }
 
 body {
     background-color: #ddd;
 }
+
+#main-header {
+    position: relative;
+}
+
