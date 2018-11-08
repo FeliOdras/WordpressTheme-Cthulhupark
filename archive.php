@@ -39,7 +39,7 @@ get_header();
                     <footer class="post-footer">
                         <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Weiterlesen</a>
                     </footer>
-                </div><!-- .post-main -->
+                </article><!-- .post-main -->
             <?php endwhile; endif; ?>
             <nav class="post-navigation">
                 <?php posts_nav_link('','<span class="prev">Neuere Beiträge</span>','<span class="next">Ältere Beiträge</span>'); ?>
