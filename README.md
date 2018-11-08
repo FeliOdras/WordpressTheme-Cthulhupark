@@ -10,5 +10,6 @@ This theme is licensed unter [GPL 2.0](http://www.gnu.org/licenses/gpl-2.0.html)
 - [x] Create Archive Template
 - [x] Create Page Template
 - [x] Create Single Post Template
+- [x] Create Author Page Template
 - [ ] Build and setup sidebars
 - [ ] Add styles
