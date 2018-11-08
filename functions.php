@@ -1,5 +1,11 @@
 <?php 
 
+
+function cthulhupark_theme_styles() {
+    wp_enqueue_style( 'cthulhupark', get_template_directory_uri().'/style.css', array(), 1.0, 'screen' );
+}
+add_action( 'wp_enqueue_scripts', 'cthulhupark_theme_styles' );
+
 #Custom Header Image
 $args = array(
     'width'         => 1000,
