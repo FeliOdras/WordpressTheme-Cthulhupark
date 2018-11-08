@@ -90,6 +90,7 @@ body {
 
 #main-navigation li {
     display: inline-block;
+    position: relative;
 }
 
 #main-navigation li a {
@@ -116,3 +117,11 @@ body {
     background-image: linear-gradient(to bottom, #606060, #333333);
 }
 
+#main-navigation .sub-menu {
+    position:absolute;
+}
+
+#main-navigation .sub-menu li {
+    display:block;
+    width:auto;
+}
