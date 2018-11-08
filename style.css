@@ -14,19 +14,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 @import 'reset.css';
-
-/* eagle-lake-regular - latin-ext */
-@font-face {
-    font-family: 'Eagle Lake';
-    font-style: normal;
-    font-weight: 400;
-    src: url('fonts/eagle-lake-v5-latin-ext-regular.eot'); /* IE9 Compat Modes */
-    src: local('Eagle Lake'), local('EagleLake-Regular'),
-         url('fonts/eagle-lake-v5-latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/eagle-lake-v5-latin-ext-regular.woff') format('woff'), /* Modern Browsers */
-         url('fonts/eagle-lake-v5-latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/eagle-lake-v5-latin-ext-regular.svg#EagleLake') format('svg'); /* Legacy iOS */
-  }
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Ruthie');
 
   /* cutive-regular - latin-ext */
 @font-face {
@@ -39,7 +27,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
          url('fonts/cutive-v9-latin-ext-regular.woff') format('woff'), /* Modern Browsers */
          url('fonts/cutive-v9-latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('fonts/cutive-v9-latin-ext-regular.svg#Cutive') format('svg'); /* Legacy iOS */
-  }
+  }*/
 
 body {
     background-color: antiquewhite;
@@ -64,10 +52,10 @@ body {
 }
 
 .main-title {
-    font-family: 'Eagle Lake', cursive;
+    font-family: 'Fredericka the Great', serif;
     font-size:42px;
-    margin-bottom:20px;
-    border-bottom:1px groove #ddd;
+    margin-bottom:15px;
+    font-size: bold;
 }
 
 .main-title a {
@@ -77,6 +65,9 @@ body {
 
 .sub-title {
     color:#ddd;
+    font-family: 'Ruthie', cursive;
+    font-size:23px;
+    font-weight:bold;
 }
 
 #main-navigation {
@@ -103,6 +94,9 @@ body {
     border-right:1px solid #d1b898;*/
     margin-left:-3px;
     transition:all 0.8s;
+    font-family: 'Ruthie', cursive;
+    font-size:23px;
+    font-weight:bold;
 }
 
 #main-navigation li:first-child a {
@@ -116,6 +110,7 @@ body {
 #main-navigation li a:hover {
     background-image: linear-gradient(to bottom, #E5D59E, #94764e);
     color:#f9e6a4;
+    text-shadow: 0 0 10px #000;
 }
 
 #main-navigation .sub-menu {
