@@ -42,7 +42,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   }
 
 body {
-    background-color: #ddd;
+    background-color: antiquewhite;
     font-family:Cutive, monospace;
     font-size:14px;
 }
@@ -80,12 +80,11 @@ body {
 }
 
 #main-navigation {
-    background-image: linear-gradient(to bottom, #606060, #AAAAAA);
-    background-image: -webkit-linear-gradient(to bottom, #606060, #AAAAAA);
-    background-image: -moz-linear-gradient(to bottom, #606060, #AAAAAA);
-    background-image: -o-linear-gradient(to bottom, #606060, #AAAAAA);
+    background-image: linear-gradient(to bottom, #f9e6a4, #E5D59E);
+    background-image: -webkit-linear-gradient(to bottom, #f9e6a4, #E5D59E);
+    background-image: -moz-linear-gradient(to bottom, #f9e6a4, #E5D59E);
+    background-image: -o-linear-gradient(to bottom, #f9e6a4, #E5D59E);
     margin-top:-4px;
-    border-top:1px solid #aaa;
 }
 
 #main-navigation li {
@@ -95,14 +94,15 @@ body {
 
 #main-navigation li a {
     display:inline-block;
-    color:#fff;
+    color:#94764e;
     height:42px;
     line-height:42px;
     text-decoration:none;
     padding:0 15px;
-    border-left:1px solid #aaa;
-    border-right:1px solid #5E5E5E;
+    /*border-left:1px solid #fff;
+    border-right:1px solid #d1b898;*/
     margin-left:-3px;
+    transition:all 0.8s;
 }
 
 #main-navigation li:first-child a {
@@ -114,7 +114,8 @@ body {
 }
 
 #main-navigation li a:hover {
-    background-image: linear-gradient(to bottom, #606060, #333333);
+    background-image: linear-gradient(to bottom, #E5D59E, #94764e);
+    color:#f9e6a4;
 }
 
 #main-navigation .sub-menu {
