@@ -16,6 +16,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import 'reset.css';
 
-h1 a {
-    color:red;
+body {
+    background-color: #AAAAAA;
 }
