@@ -37,7 +37,6 @@ body {
 
 #main-header {
     position: relative;
-    border-bottom:1px solid #5E5E5E;
 }
 
 #main-header img {
@@ -59,12 +58,12 @@ body {
 }
 
 .main-title a {
-    color:#fff;
+    color:#f9e6a4;
     text-decoration:none;
 }
 
 .sub-title {
-    color:#ddd;
+    color:#f9e6a4;
     font-family: 'Ruthie', cursive;
     font-size:23px;
     font-weight:bold;
@@ -76,6 +75,11 @@ body {
     background-image: -moz-linear-gradient(to bottom, #f9e6a4, #E5D59E);
     background-image: -o-linear-gradient(to bottom, #f9e6a4, #E5D59E);
     margin-top:-4px;
+}
+
+#main-navigation ul {
+    max-width: 1280px;
+    margin:auto;
 }
 
 #main-navigation li {
