@@ -1,6 +1,4 @@
 <?php 
-
-
 function cthulhupark_theme_styles() {
     wp_enqueue_style( 'cthulhupark', get_template_directory_uri().'/style.css', array(), 1.0, 'screen' );
 }
@@ -22,8 +20,7 @@ function register_my_menu() {
 } 
 add_action( 'init', 'register_my_menu' );
 
-#Remove "Archive" and "Tag" from catrgory title 
-
+#Remove "Archive" and "Tag" from category title 
 add_filter( 'get_the_archive_title', function ($title) {
     if ( is_category() ) {
             $title = single_cat_title( '', false );
@@ -65,7 +62,9 @@ function sidebar_right() {
 }
 add_action( 'widgets_init', 'sidebar_right' );
 
-#Make translation ready
+#Add post thumbnail support
+add_theme_support( 'post-thumbnails' );
 
+#Make translation ready
 load_theme_textdomain( 'cthulhupark', '~/Documents/ari/projects/wordpress/hq.cthulhupark/wp-content/themes/cthulhupark' );
 ?>
