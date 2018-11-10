@@ -41,6 +41,8 @@ body {
 
 .site-main {
     display:flex;
+    justify-content: space-between;
+    align-self: stretch;
 }
 
 #main-header img {
@@ -150,4 +152,14 @@ body {
     background-color: #f9e6a4;
     color:#8E563F;
     text-shadow: none;
+}
+
+#sidebar-left, #sidebar-right {
+    width:20%;
+    padding:20px 15px;
+}
+
+.main-entry {
+    width:60%;
+    padding:20px 15px;
 }
