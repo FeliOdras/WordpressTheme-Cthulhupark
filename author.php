@@ -11,7 +11,7 @@ get_header();
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
         <?php get_sidebar(left); ?>
-            
+           <section class="main-entry"> 
             <?php 
                 $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
             ?>
@@ -46,6 +46,7 @@ get_header();
                 <?php posts_nav_link('','<span class="prev">Neuere Beiträge</span>','<span class="next">Ältere Beiträge</span>'); ?>
             </nav>
             <!-- End Loop -->
+            </section>
         <?php get_sidebar(right); ?>
     </main><!-- #main -->
 </div> <!-- #primary -->
