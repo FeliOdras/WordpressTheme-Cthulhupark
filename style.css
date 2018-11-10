@@ -117,11 +117,17 @@ body {
     text-shadow: 0 0 10px #000;
 }
 
-#main-navigation .sub-menu {
+#main-navigation li .sub-menu {
     position:absolute;
+    left:-9999px;
+}
+
+#main-navigation li:hover .sub-menu {
+    left:0;
 }
 
 #main-navigation .sub-menu li {
     display:block;
     width:auto;
 }
+
