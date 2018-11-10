@@ -39,6 +39,10 @@ body {
     position: relative;
 }
 
+.site-main {
+    display:flex;
+}
+
 #main-header img {
     width:100%;
 }
