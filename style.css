@@ -43,6 +43,10 @@ body {
     display:flex;
     justify-content: space-between;
     align-self: stretch;
+    background-image:url(images/mainBackground.png);
+    background-repeat: repeat;
+    background-color: #f9f0cc;
+    background-attachment: fixed;
 }
 
 #main-header img {
@@ -81,6 +85,7 @@ body {
     background-image: -moz-linear-gradient(to bottom, #E5D59E, #f9e6a4);
     background-image: -o-linear-gradient(to bottom, #E5D59E, #f9e6a4);
     margin-top:-4px;
+    box-shadow: 0 0 10px #999;
 }
 
 #main-navigation ul {
