@@ -13,9 +13,137 @@ Text Domain: cthulhupark
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
 @import 'reset.css';
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Ruthie');
+
+  /* cutive-regular - latin-ext */
+@font-face {
+    font-family: 'Cutive';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/cutive-v9-latin-ext-regular.eot'); /* IE9 Compat Modes */
+    src: local('Cutive'), local('Cutive-Regular'),
+         url('fonts/cutive-v9-latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/cutive-v9-latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/cutive-v9-latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/cutive-v9-latin-ext-regular.svg#Cutive') format('svg'); /* Legacy iOS */
+  }*/
 
 body {
-    background-color: #ddd;
+    background-color: antiquewhite;
+    font-family:Cutive, monospace;
+    font-size:14px;
+}
+
+#main-header {
+    position: relative;
+}
+
+#main-header img {
+    width:100%;
+}
+
+#blog-info {
+    position: absolute;
+    top:20px;
+    left:15px;
+    text-shadow:0 0 10px #000;
+}
+
+.main-title {
+    font-family: 'Fredericka the Great', serif;
+    font-size:42px;
+    margin-bottom:15px;
+    font-size: bold;
+}
+
+.main-title a {
+    color:#f9e6a4;
+    text-decoration:none;
+}
+
+.sub-title {
+    color:#f9e6a4;
+    font-family: 'Ruthie', cursive;
+    font-size:23px;
+    font-weight:bold;
+}
+
+#main-navigation {
+    background-image: linear-gradient(to bottom,  #E5D59E, #f9e6a4);
+    background-image: -webkit-linear-gradient(to bottom, #E5D59E, #f9e6a4);
+    background-image: -moz-linear-gradient(to bottom, #E5D59E, #f9e6a4);
+    background-image: -o-linear-gradient(to bottom, #E5D59E, #f9e6a4);
+    margin-top:-4px;
+}
+
+#main-navigation ul {
+    max-width: 1280px;
+    margin:auto;
+}
+
+#main-navigation li {
+    display: inline-block;
+    position: relative;
+}
+
+#main-navigation li a {
+    display:inline-block;
+    color:#8E563F;
+    height:42px;
+    line-height:42px;
+    text-decoration:none;
+    padding:0 15px;
+    /*border-left:1px solid #fff;
+    border-right:1px solid #d1b898;*/
+    margin-left:-3px;
+    transition:all 0.8s;
+    font-family: 'Ruthie', cursive;
+    font-size:26px;
+    font-weight:bold;
+}
+
+#main-navigation li:first-child a {
+    border-left:none;
+}
+
+#main-navigation li:last-child a {
+    border-right:none;
+}
+
+#main-navigation li a:hover {
+    background-color:#8E563F;
+    color:#f9e6a4;
+    text-shadow: 0 0 10px #000;
+}
+
+#main-navigation li .sub-menu {
+    position:absolute;
+    left:-9999px;
+}
+
+#main-navigation li:hover .sub-menu {
+    left:0;
+}
+
+#main-navigation .sub-menu li {
+    display:block;
+    width: 100%;
+}
+
+#main-navigation .sub-menu li a {
+    font-family: Cutive, monospace;
+    font-size: 12px;
+    background-color:#8E563F;
+    font-weight:normal;
+    color:#f9e6a4;
+    width: 100%;
+    height:27px;
+    line-height:27px;
+}
+
+#main-navigation .sub-menu li a:hover {
+    background-color: #f9e6a4;
+    color:#8E563F;
+    text-shadow: none;
 }
