@@ -1,4 +1,4 @@
-<div id="main-content">
+<div id="main-content" class="main-content">
     <?php
     if ( is_archive() ) || (is_category()) :
     <h2 class="blog-post-title">Sample blog post</h2>
