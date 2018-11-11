@@ -35,7 +35,7 @@ body {
     font-size:14px;
 }
 
-#main-header {
+.main-header {
     position: relative;
 }
 
@@ -49,11 +49,11 @@ body {
     background-attachment: fixed;
 }
 
-#main-header img {
+.main-header img {
     width:100%;
 }
 
-#blog-info {
+.blog-info {
     position: absolute;
     top:20px;
     left:15px;
@@ -79,7 +79,7 @@ body {
     font-weight:bold;
 }
 
-#main-navigation {
+.main-navigation {
     background-image: linear-gradient(to bottom,  #E5D59E, #f9e6a4);
     background-image: -webkit-linear-gradient(to bottom, #E5D59E, #f9e6a4);
     background-image: -moz-linear-gradient(to bottom, #E5D59E, #f9e6a4);
@@ -88,17 +88,17 @@ body {
     box-shadow: 0 0 10px #999;
 }
 
-#main-navigation ul {
+.main-navigation ul {
     max-width: 1280px;
     margin:auto;
 }
 
-#main-navigation li {
+.main-navigation li {
     display: inline-block;
     position: relative;
 }
 
-#main-navigation li a {
+.main-navigation li a {
     display:inline-block;
     color:#8E563F;
     height:42px;
@@ -114,35 +114,34 @@ body {
     font-weight:bold;
 }
 
-#main-navigation li:first-child a {
+.main-navigation li:first-child a {
     border-left:none;
 }
 
-#main-navigation li:last-child a {
+.main-navigation li:last-child a {
     border-right:none;
 }
 
-#main-navigation li a:hover {
+.main-navigation li a:hover {
     background-color:#8E563F;
     color:#f9e6a4;
     text-shadow: 0 0 10px #000;
 }
 
-#main-navigation li .sub-menu {
+.main-navigation li .sub-menu {
     position:absolute;
     left:-9999px;
 }
 
-#main-navigation li:hover .sub-menu {
+.main-navigation li:hover .sub-menu {
     left:0;
 }
-
-#main-navigation .sub-menu li {
+.main-navigation .sub-menu li {
     display:block;
     width: 100%;
 }
 
-#main-navigation .sub-menu li a {
+.main-navigation .sub-menu li a {
     font-family: Cutive, monospace;
     font-size: 12px;
     background-color:#8E563F;
@@ -153,13 +152,13 @@ body {
     line-height:27px;
 }
 
-#main-navigation .sub-menu li a:hover {
+.main-navigation .sub-menu li a:hover {
     background-color: #f9e6a4;
     color:#8E563F;
     text-shadow: none;
 }
 
-#sidebar-left, #sidebar-right {
+.sidebar-left, #sidebar-right {
     width:20%;
     padding:20px 15px;
 }
