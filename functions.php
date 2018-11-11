@@ -166,15 +166,17 @@ echo $args['before_title'] . $title . $args['after_title'];
  
 // The Loop
 while ( have_posts() ) : the_post();
-	echo '<li><a href="';
+	echo '<div class="entries"><li><a href="';
     the_permalink();
     echo'" title="';
     the_title(); 
     echo '" >';
     the_title();
-    echo ' </a><br /><span class="date">';
+    echo ' </a><br /><span class="author">';
+    the_author_meta( 'nickname' );
+    echo '</span><span class="date">';
     the_time('j. F Y');
-    echo '</li>';
+    echo '</li></div>';
 endwhile;
     echo '<nav class="post-navigation">';
     posts_nav_link('','<span class="prev">&laquo;__ </span>','<span class="next"> __&raquo;</span>');
