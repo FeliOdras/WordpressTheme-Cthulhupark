@@ -12,10 +12,12 @@ get_header();
 		<main id="main" class="site-main">
         <?php get_sidebar(left); ?>
         <section id="main-entry" class="main-entry">
-          <?php while ( have_posts() ) : the_post(); ?>
-                <h2><?php  the_title(); ?></h2>
-                <?php the_content(); ?>
-            <?php endwhile; // end of the loop. ?>
+            <article class="entry-content">
+                <?php while ( have_posts() ) : the_post(); ?>
+                    <h2 class="entry-title"><?php  the_title(); ?></h2>
+                    <?php the_content(); ?>
+                <?php endwhile; // end of the loop. ?>
+            </article>
         </section>
             <?php get_sidebar(right); ?>
         </main><!-- #main -->

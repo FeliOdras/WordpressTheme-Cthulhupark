@@ -203,7 +203,10 @@ body {
 
 .main-entry {
     width:60%;
+    max-width:600px;
+    margin:0 auto;
     padding:20px 15px;
+    background-color:rgba(255,255,255,0.5);
 }
 
 .widget-title {
@@ -214,4 +217,12 @@ body {
     color:#f9e6a4;
     font-weight:bold;
     padding:3px;
+}
+
+.entry-title {
+    font-family: 'Fredericka the Great', serif;
+    font-size:26px;
+    color:#8E563F;
+    text-shadow: 0 0 1px #8E563F;
+    margin-bottom:23px;
 }
