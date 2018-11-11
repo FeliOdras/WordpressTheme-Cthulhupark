@@ -172,9 +172,13 @@ while ( have_posts() ) : the_post();
     the_title(); 
     echo '" >';
     the_title();
-	echo ' </a></li>';
+    echo ' </a><br /><span class="date">';
+    the_time('j. F Y');
+    echo '</li>';
 endwhile;
-
+    echo '<nav class="post-navigation">';
+    posts_nav_link('','<span class="prev">&laquo;__ </span>','<span class="next"> __&raquo;</span>');
+    echo '</nav>';
 // Reset Query
 wp_reset_query();
 }
