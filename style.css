@@ -57,6 +57,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
          url('fonts/fredericka-the-great-v6-latin-regular.svg#FrederickatheGreat') format('svg'); /* Legacy iOS */
   }
 
+
 body {
     background-color: antiquewhite;
     font-family:'Traveling Typewriter', monospace;
@@ -203,10 +204,14 @@ body {
 
 .main-entry {
     width:60%;
-    max-width:600px;
+}
+
+.entry-content {
     margin:0 auto;
     padding:20px 15px;
     background-color:rgba(255,255,255,0.5);
+    max-width:600px;
+    margin-top:30px;
 }
 
 .widget-title {
