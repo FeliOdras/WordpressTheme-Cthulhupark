@@ -187,10 +187,18 @@ body {
     text-shadow: none;
 }
 
-.sidebar-left, .sidebar-right {
+.sidebar {
     width:20%;
     padding:20px 15px;
     min-width: 250px;
+}
+
+.sidebar-left {
+    border-right:1px dotted #8E563F;
+}
+
+.sidebar-right {
+    border-left:1px dotted #8E563F;
 }
 
 .main-entry {
