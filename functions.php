@@ -65,11 +65,11 @@ add_action( 'widgets_init', 'sidebar_right' );
 #Add post thumbnail support
 add_theme_support( 'post-thumbnails' );
 
-// Register and load author list widget
-function wpb_load_widget() {
+# Register and load author list widget
+function cpal_load_widget() {
     register_widget( 'cpal_widget' );
 }
-add_action( 'widgets_init', 'wpb_load_widget' );
+add_action( 'widgets_init', 'cpal_load_widget' );
  
 // Creating the widget 
 class cpal_widget extends WP_Widget {
@@ -108,7 +108,7 @@ if ( isset( $instance[ 'title' ] ) ) {
 $title = $instance[ 'title' ];
 }
 else {
-$title = __( 'Abenteurertagebücher', 'cthulhupark' );
+$title = __( 'Scriptoren', 'cthulhupark' );
 }
 // Widget admin form
 ?>
@@ -125,7 +125,84 @@ $instance = array();
 $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 return $instance;
 }
-} // Class wpb_widget ends here
+} // Class cpal_widget ends here
+
+# Register and load category list
+function cptbe_load_widget() {
+    register_widget( 'cptbe_widget' );
+}
+add_action( 'widgets_init', 'cptbe_load_widget' );
+ 
+// Creating the widget 
+class cptbe_widget extends WP_Widget {
+ 
+function __construct() {
+parent::__construct(
+ 
+// Base ID of your widget
+'cptbe_widget', 
+ 
+// Widget name will appear in UI
+__('Tagebucheinträge', 'cthulhupark'), 
+ 
+// Widget description
+array( 'description' => __( 'Tagebucheinträge', 'cthulhupark' ), ) 
+);
+}
+ 
+// Creating widget front-end
+ 
+public function widget( $args, $instance ) {
+$title = apply_filters( 'widget_title', $instance['title'] );
+ 
+// before and after widget arguments are defined by themes
+echo $args['before_widget'];
+if ( ! empty( $title ) )
+echo $args['before_title'] . $title . $args['after_title'];
+ 
+// This is where you run the code and display the output
+// The Query
+    query_posts(array('category_name' => 'abenteurertagebuch', 'posts_per_page' => 23 )); 
+ 
+// The Loop
+while ( have_posts() ) : the_post();
+	echo '<li><a href="';
+    the_permalink();
+    echo'" title="';
+    the_title(); 
+    echo '" >';
+    the_title();
+	echo ' </a></li>';
+endwhile;
+
+// Reset Query
+wp_reset_query();
+}
+         
+// Widget Backend 
+public function form( $instance ) {
+if ( isset( $instance[ 'title' ] ) ) {
+$title = $instance[ 'title' ];
+}
+else {
+$title = __( 'Tagebucheinträge', 'cthulhupark' );
+}
+// Widget admin form
+?>
+<p>
+<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+</p>
+<?php 
+}
+     
+// Updating widget replacing old instances with new
+public function update( $new_instance, $old_instance ) {
+$instance = array();
+$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+return $instance;
+}
+} // Class cpal_widget ends here
 
 #Make translation ready
 load_theme_textdomain( 'cthulhupark', '~/Documents/ari/projects/wordpress/hq.cthulhupark/wp-content/themes/cthulhupark' );
