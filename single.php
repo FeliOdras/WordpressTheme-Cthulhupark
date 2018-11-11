@@ -13,7 +13,7 @@ get_header();
             <?php get_sidebar(left); ?>
                 <?php while ( have_posts() ) : the_post(); ?>
                    <section id="main-entry" class="main-entry">
-                    <article class="main-post <?php if (in_category(traumwelten)) :?>dreamlands<?php elseif (in_category(abenteurertagebuch)) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
+                    <article class="entry-content <?php if (in_category(traumwelten)) :?>dreamlands<?php elseif (in_category(abenteurertagebuch)) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
                         <time class="date"><?php the_time('l, j. F Y') ?></time>
                         <h3><?php the_title(); ?></h3>
                         <?php the_content(); ?>
