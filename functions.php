@@ -108,7 +108,7 @@ if ( isset( $instance[ 'title' ] ) ) {
 $title = $instance[ 'title' ];
 }
 else {
-$title = __( 'New title', 'wpb_widget_domain' );
+$title = __( 'Abenteurertagebücher', 'cthulhupark' );
 }
 // Widget admin form
 ?>
