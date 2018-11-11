@@ -76,8 +76,8 @@ class cpal_widget extends WP_Widget {
     function __construct() {
         parent::__construct(
             'cpal_widget', // Widgets base ID
-            _e('Cthulhu Author List', 'cthulhupark'), // Widget name displayed in backend
-            array( 'description' => _e( 'Lists Posts by author', 'cthulhupark' ), ) // Widget description 
+            __('Cthulhu Author List', 'cthulhupark'), // Widget name displayed in backend
+            array( 'description' => __( 'Lists Posts by author', 'cthulhupark' ), ) // Widget description 
         );
     }
     // Creating widget front-end
@@ -96,12 +96,12 @@ class cpal_widget extends WP_Widget {
             $title = $instance[ 'title' ];
         }
         else {
-            $title = _e( 'Scriptoren', 'cthulhupark' );
+            $title = __( 'Scriptoren', 'cthulhupark' );
         }   
         // Widget admin form
         ?>
         <p>
-            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php __( 'Title:' ); ?></label> 
             <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
         </p>
     <?php 
@@ -127,9 +127,9 @@ class cptbe_widget extends WP_Widget {
             // Base ID of your widget
             'cptbe_widget', 
             // Widget name will appear in UI
-            _e('Tagebucheinträge', 'cthulhupark'), 
+            __('Tagebucheinträge', 'cthulhupark'), 
             // Widget description
-            array( 'description' => _e( 'Tagebucheinträge', 'cthulhupark' ), ) 
+            array( 'description' => __( 'Tagebucheinträge', 'cthulhupark' ), ) 
         );
     }
     // Creating widget front-end
@@ -152,11 +152,11 @@ class cptbe_widget extends WP_Widget {
                     <span class="date"><?php the_time('j. F Y') ?></span>
                 </li>
             </div>
-        <?php endwhile; ?>
-        <nav class="post-navigation">
-            <?php posts_nav_link('','<span class="prev">&laquo;__ </span>','<span class="next"> __&raquo;</span>') ?>
-        </nav>
-        <?php// Reset Query
+        <?php endwhile; 
+        echo '<nav class="post-navigation">';
+        posts_nav_link('','<span class="prev">&laquo;__ </span>','<span class="next"> __&raquo;</span>');
+        echo '</nav>';
+        // Reset Query
         wp_reset_query();
     }  
     # End of Widget output TBE     
@@ -166,12 +166,11 @@ class cptbe_widget extends WP_Widget {
             $title = $instance[ 'title' ];
         }
         else {
-            $title = _e( 'Tagebucheinträge', 'cthulhupark' );
+            $title = __( 'Tagebucheinträge', 'cthulhupark' );
         }
-        // Widget admin form
     ?>
     <p>
-        <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+        <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php __( 'Title:' ); ?></label> 
         <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
     </p>
     <?php 
@@ -194,8 +193,8 @@ class cplogin_widget extends WP_Widget {
     function __construct() {
         parent::__construct(
             'cplogin_widget', 
-            _e('Login', 'cthulhupark'), 
-            array( 'description' => _e( 'Login Form', 'cthulhupark' ), ) 
+            __('Login', 'cthulhupark'), 
+            array( 'description' => __( 'Login Form', 'cthulhupark' ), ) 
         );
     }
     // Creating widget front-end
@@ -211,7 +210,7 @@ class cplogin_widget extends WP_Widget {
         // In case of a login error.
         if ( isset( $_GET['login'] ) && $_GET['login'] == 'failed' ) : ?>
             <div class="login_error">
-                <p><?php _e( 'Fehler. Bitte versuche es noch einmal.', 'cthulhupark' ); ?></p>
+                <p><?php __( 'Fehler. Bitte versuche es noch einmal.', 'cthulhupark' ); ?></p>
             </div>
         <?php 
         endif;
@@ -219,12 +218,12 @@ class cplogin_widget extends WP_Widget {
         if ( is_user_logged_in() ) : ?>
             <div class="logout"> 
                 <?php 
-                    _e( 'Hallo', 'cthulhupark' ); 
+                    __( 'Hallo', 'cthulhupark' ); 
                     echo $user_login; 
                 ?>
             </div>
             <a id="wp-submit" href="<?php echo wp_logout_url(home_url()); ?>" title="Logout">
-                <?php _e( 'Logout', 'cthulhupark' ); ?>
+                <?php __( 'Logout', 'cthulhupark' ); ?>
             </a>
             <?php 
             // If user is not logged in.
@@ -261,7 +260,7 @@ class cplogin_widget extends WP_Widget {
         // Widget admin form
         ?>
     <p>
-        <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+        <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php __( 'Title:' ); ?></label> 
         <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
     </p>
     <?php 
