@@ -52,7 +52,7 @@ function sidebar_right() {
         array (
             'name' => __( 'Sidebar right', 'cthulhupark' ),
             'id' => 'sidebar-right',
-            'description' => __( 'Left sidebar', 'cthulhupark' ),
+            'description' => __( 'Right sidebar', 'cthulhupark' ),
             'before_widget' => '<div class="widget-content">',
             'after_widget' => "</div>",
             'before_title' => '<h3 class="widget-title">',
