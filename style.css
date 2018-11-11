@@ -186,7 +186,7 @@ body {
     text-shadow: none;
 }
 
-.sidebar-left, #sidebar-right {
+.sidebar-left, .sidebar-right {
     width:20%;
     padding:20px 15px;
 }
