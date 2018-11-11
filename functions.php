@@ -152,7 +152,7 @@ class cptbe_widget extends WP_Widget {
                     <span class="date"><?php the_time('j. F Y') ?></span>
                 </li>
             </div>
-        <?php endwhile; 
+        <?php endwhile;
         echo '<nav class="post-navigation">';
         posts_nav_link('','<span class="prev">&laquo;__ </span>','<span class="next"> __&raquo;</span>');
         echo '</nav>';

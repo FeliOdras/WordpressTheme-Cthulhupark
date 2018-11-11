@@ -61,6 +61,7 @@ body {
     background-color: antiquewhite;
     font-family:'Traveling Typewriter', monospace;
     font-size:14px;
+    line-height:150%;
 }
 
 .main-header {
@@ -186,7 +187,7 @@ body {
     text-shadow: none;
 }
 
-.sidebar-left, #sidebar-right {
+.sidebar-left, .sidebar-right {
     width:20%;
     padding:20px 15px;
 }
@@ -194,4 +195,14 @@ body {
 .main-entry {
     width:60%;
     padding:20px 15px;
+}
+
+.widget-title {
+    font-family: 'Fredericka the Great', serif;
+    font-size: 17px;
+    background-color:#8E563F;
+    text-align: center;
+    color:#f9e6a4;
+    font-weight:bold;
+    padding:3px;
 }
