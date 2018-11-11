@@ -218,12 +218,12 @@ class cplogin_widget extends WP_Widget {
         if ( is_user_logged_in() ) : ?>
             <div class="logout"> 
                 <?php 
-                    __( 'Hallo', 'cthulhupark' ); 
+                    _e( 'Hallo ', 'cthulhupark' ); 
                     echo $user_login; 
                 ?>
             </div>
             <a id="wp-submit" href="<?php echo wp_logout_url(home_url()); ?>" title="Logout">
-                <?php __( 'Logout', 'cthulhupark' ); ?>
+                <?php _e( 'Logout', 'cthulhupark' ); ?>
             </a>
             <?php 
             // If user is not logged in.
