@@ -73,255 +73,206 @@ add_action( 'widgets_init', 'cpal_load_widget' );
  
 // Creating the widget 
 class cpal_widget extends WP_Widget {
- 
-function __construct() {
-parent::__construct(
- 
-// Base ID of your widget
-'cpal_widget', 
- 
-// Widget name will appear in UI
-__('Cthulhu Author List', 'cthulhupark'), 
- 
-// Widget description
-array( 'description' => __( 'Lists Posts by author', 'cthulhupark' ), ) 
-);
-}
- 
-// Creating widget front-end
- 
-public function widget( $args, $instance ) {
-$title = apply_filters( 'widget_title', $instance['title'] );
- 
-// before and after widget arguments are defined by themes
-echo $args['before_widget'];
-if ( ! empty( $title ) )
-echo $args['before_title'] . $title . $args['after_title'];
- 
-// This is where you run the code and display the output
-wp_list_authors( 'show_fullname=1&optioncount=1&orderby=post_count&order=DESC&number=10&include=1,6,7,9,10,11,12,14,15&echo=true');
-}
-         
-// Widget Backend 
-public function form( $instance ) {
-if ( isset( $instance[ 'title' ] ) ) {
-$title = $instance[ 'title' ];
-}
-else {
-$title = __( 'Scriptoren', 'cthulhupark' );
-}
-// Widget admin form
-?>
-<p>
-<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
-<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-</p>
-<?php 
-}
-     
-// Updating widget replacing old instances with new
-public function update( $new_instance, $old_instance ) {
-$instance = array();
-$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-return $instance;
-}
+    function __construct() {
+        parent::__construct(
+            'cpal_widget', // Widgets base ID
+            _e('Cthulhu Author List', 'cthulhupark'), // Widget name displayed in backend
+            array( 'description' => _e( 'Lists Posts by author', 'cthulhupark' ), ) // Widget description 
+        );
+    }
+    // Creating widget front-end
+    public function widget( $args, $instance ) {
+        $title = apply_filters( 'widget_title', $instance['title'] );
+        // before and after widget arguments are defined by themes
+        echo $args['before_widget'];
+        if ( ! empty( $title ) )
+        echo $args['before_title'] . $title . $args['after_title'];
+        // This is where you run the code and display the output
+        wp_list_authors( 'show_fullname=1&optioncount=1&orderby=post_count&order=DESC&number=10&include=1,6,7,9,10,11,12,14,15&echo=true');
+    }        
+    // Widget Backend 
+    public function form( $instance ) {
+        if ( isset( $instance[ 'title' ] ) ) {
+            $title = $instance[ 'title' ];
+        }
+        else {
+            $title = _e( 'Scriptoren', 'cthulhupark' );
+        }   
+        // Widget admin form
+        ?>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+            <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+        </p>
+    <?php 
+    } 
+    // Updating widget replacing old instances with new
+    public function update( $new_instance, $old_instance ) {
+        $instance = array();
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+        return $instance;
+    }
 } // Class cpal_widget ends here
 
-# Register and load TBE
+# Register and load TBE Widget
 function cptbe_load_widget() {
     register_widget( 'cptbe_widget' );
 }
 add_action( 'widgets_init', 'cptbe_load_widget' );
- 
+
 // Creating the widget 
 class cptbe_widget extends WP_Widget {
- 
-function __construct() {
-parent::__construct(
- 
-// Base ID of your widget
-'cptbe_widget', 
- 
-// Widget name will appear in UI
-__('Tagebucheinträge', 'cthulhupark'), 
- 
-// Widget description
-array( 'description' => __( 'Tagebucheinträge', 'cthulhupark' ), ) 
-);
-}
- 
-// Creating widget front-end
- 
-public function widget( $args, $instance ) {
-$title = apply_filters( 'widget_title', $instance['title'] );
- 
-// before and after widget arguments are defined by themes
-echo $args['before_widget'];
-if ( ! empty( $title ) )
-echo $args['before_title'] . $title . $args['after_title'];
- 
-// This is where you run the code and display the output
-// The Query
-    query_posts(array('category_name' => 'abenteurertagebuch', 'posts_per_page' => 23 )); 
- 
-// The Loop
-while ( have_posts() ) : the_post();
-	echo '<div class="entries"><li><a href="';
-    the_permalink();
-    echo'" title="';
-    the_title(); 
-    echo '" >';
-    the_title();
-    echo ' </a><br /><span class="author">';
-    the_author_meta( 'nickname' );
-    echo '</span><span class="date">';
-    the_time('j. F Y');
-    echo '</li></div>';
-endwhile;
-    echo '<nav class="post-navigation">';
-    posts_nav_link('','<span class="prev">&laquo;__ </span>','<span class="next"> __&raquo;</span>');
-    echo '</nav>';
-// Reset Query
-wp_reset_query();
-}
-         
-// Widget Backend 
-public function form( $instance ) {
-if ( isset( $instance[ 'title' ] ) ) {
-$title = $instance[ 'title' ];
-}
-else {
-$title = __( 'Tagebucheinträge', 'cthulhupark' );
-}
-// Widget admin form
-?>
-<p>
-<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
-<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-</p>
-<?php 
-}
-     
-// Updating widget replacing old instances with new
-public function update( $new_instance, $old_instance ) {
-$instance = array();
-$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-return $instance;
-}
+    function __construct() {
+        parent::__construct(
+            // Base ID of your widget
+            'cptbe_widget', 
+            // Widget name will appear in UI
+            _e('Tagebucheinträge', 'cthulhupark'), 
+            // Widget description
+            array( 'description' => _e( 'Tagebucheinträge', 'cthulhupark' ), ) 
+        );
+    }
+    // Creating widget front-end
+    public function widget( $args, $instance ) {
+        $title = apply_filters( 'widget_title', $instance['title'] );
+        // before and after widget arguments are defined by themes
+        echo $args['before_widget'];
+        if ( ! empty( $title ) )
+        echo $args['before_title'] . $title . $args['after_title'];
+        # Output TBE
+        // The Query
+        query_posts(array('category_name' => 'abenteurertagebuch', 'posts_per_page' => 23 )); 
+        // The Loop
+        while ( have_posts() ) : the_post() ?>
+	        <div class="entries">
+                <li>
+                    <a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><?php the_title(); ?></a>
+                    <br />
+                    <span class="author"><?php the_author_meta( 'nickname' )?></span>
+                    <span class="date"><?php the_time('j. F Y') ?></span>
+                </li>
+            </div>
+        <?php endwhile; ?>
+        <nav class="post-navigation">
+            <?php posts_nav_link('','<span class="prev">&laquo;__ </span>','<span class="next"> __&raquo;</span>') ?>
+        </nav>
+        <?php// Reset Query
+        wp_reset_query();
+    }  
+    # End of Widget output TBE     
+    // Widget Backend 
+    public function form( $instance ) {
+        if ( isset( $instance[ 'title' ] ) ) {
+            $title = $instance[ 'title' ];
+        }
+        else {
+            $title = _e( 'Tagebucheinträge', 'cthulhupark' );
+        }
+        // Widget admin form
+    ?>
+    <p>
+        <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+        <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+    </p>
+    <?php 
+    }    
+    // Updating widget replacing old instances with new
+    public function update( $new_instance, $old_instance ) {
+        $instance = array();
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+        return $instance;
+    }
 } // Class cptbe_widget ends here
 
-# Register and load author list widget
+# Register and load Login Widget
 function cplogin_load_widget() {
     register_widget( 'cplogin_widget' );
 }
 add_action( 'widgets_init', 'cplogin_load_widget' );
- 
-// Creating the widget 
+ // Creating the widget 
 class cplogin_widget extends WP_Widget {
- 
-function __construct() {
-parent::__construct(
- 
-// Base ID of your widget
-'cplogin_widget', 
- 
-// Widget name will appear in UI
-__('Login', 'cthulhupark'), 
- 
-// Widget description
-array( 'description' => __( 'Login Form', 'cthulhupark' ), ) 
-);
-}
- 
-// Creating widget front-end
- 
-public function widget( $args, $instance ) {
-$title = apply_filters( 'widget_title', $instance['title'] );
- 
-// before and after widget arguments are defined by themes
-echo $args['before_widget'];
-if ( ! empty( $title ) )
-echo $args['before_title'] . $title . $args['after_title'];
- 
-// This is where you run the code and display the output (Login Form)
-global $user_login;
-// In case of a login error.
-if ( isset( $_GET['login'] ) && $_GET['login'] == 'failed' ) : ?>
-        <div class="aa_error">
-            <p><?php _e( 'Fehler. Bitte versuche es noch einmal.', 'AA' ); ?></p>
-        </div>
-<?php 
-    endif;
-// If user is already logged in.
-if ( is_user_logged_in() ) : ?>
-
-    <div class="aa_logout"> 
+    function __construct() {
+        parent::__construct(
+            'cplogin_widget', 
+            _e('Login', 'cthulhupark'), 
+            array( 'description' => _e( 'Login Form', 'cthulhupark' ), ) 
+        );
+    }
+    // Creating widget front-end
+    public function widget( $args, $instance ) {
+        $title = apply_filters( 'widget_title', $instance['title'] );
+        // before and after widget arguments are defined by themes
+        echo $args['before_widget'];
+        if ( ! empty( $title ) )
+        echo $args['before_title'] . $title . $args['after_title'];
+        
+        # Output Login Form
+        global $user_login;
+        // In case of a login error.
+        if ( isset( $_GET['login'] ) && $_GET['login'] == 'failed' ) : ?>
+            <div class="login_error">
+                <p><?php _e( 'Fehler. Bitte versuche es noch einmal.', 'cthulhupark' ); ?></p>
+            </div>
         <?php 
-            _e( 'Hallo', 'AA' ); 
-            echo $user_login; 
+        endif;
+        // If user is already logged in.
+        if ( is_user_logged_in() ) : ?>
+            <div class="logout"> 
+                <?php 
+                    _e( 'Hallo', 'cthulhupark' ); 
+                    echo $user_login; 
+                ?>
+            </div>
+            <a id="wp-submit" href="<?php echo wp_logout_url(home_url()); ?>" title="Logout">
+                <?php _e( 'Logout', 'cthulhupark' ); ?>
+            </a>
+            <?php 
+            // If user is not logged in.
+        else: 
+            // Login form arguments.
+            $args = array(
+                'echo'           => true,
+                'redirect'       => home_url(), 
+                'form_id'        => 'loginform',
+                'label_username' => __( 'Username' ),
+                'label_password' => __( 'Password' ),
+                'label_remember' => __( 'Remember Me' ),
+                'label_log_in'   => __( 'Log In' ),
+                'id_username'    => 'user_login',
+                'id_password'    => 'user_pass',
+                'id_remember'    => 'rememberme',
+                'id_submit'      => 'wp-submit',
+                'remember'       => true,
+                'value_username' => NULL,
+                'value_remember' => true
+                ); 
+            // Calling the login form.
+            wp_login_form( $args );
+        endif;
+    }
+    // Widget Backend 
+    public function form( $instance ) {
+        if ( isset( $instance[ 'title' ] ) ) {
+            $title = $instance[ 'title' ];
+        }
+        else {
+            $title = __( 'Parole', 'cthulhupark' );
+        }
+        // Widget admin form
         ?>
-        <br />
-        
-        <?php _e( 'Du bist bereits angemeldet.', 'AA' ); ?>
-
-    </div>
-
-    <a id="wp-submit" href="<?php echo wp_logout_url(home_url()); ?>" title="Logout">
-        <?php _e( 'Logout', 'AA' ); ?>
-    </a>
-
-<?php 
-    // If user is not logged in.
-    else: 
-    
-        // Login form arguments.
-        $args = array(
-            'echo'           => true,
-            'redirect'       => home_url(), 
-            'form_id'        => 'loginform',
-            'label_username' => __( 'Username' ),
-            'label_password' => __( 'Password' ),
-            'label_remember' => __( 'Remember Me' ),
-            'label_log_in'   => __( 'Log In' ),
-            'id_username'    => 'user_login',
-            'id_password'    => 'user_pass',
-            'id_remember'    => 'rememberme',
-            'id_submit'      => 'wp-submit',
-            'remember'       => true,
-            'value_username' => NULL,
-            'value_remember' => true
-        ); 
-        
-        // Calling the login form.
-        wp_login_form( $args );
-    endif;
-}
-         
-// Widget Backend 
-public function form( $instance ) {
-if ( isset( $instance[ 'title' ] ) ) {
-$title = $instance[ 'title' ];
-}
-else {
-$title = __( 'Parole', 'cthulhupark' );
-}
-// Widget admin form
-?>
-<p>
-<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
-<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-</p>
-<?php 
-}
-     
-// Updating widget replacing old instances with new
-public function update( $new_instance, $old_instance ) {
-$instance = array();
-$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-return $instance;
-}
-} // Class cpal_widget ends here
-
+    <p>
+        <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+        <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+    </p>
+    <?php 
+    }
+    // Updating widget replacing old instances with new
+    public function update( $new_instance, $old_instance ) {
+        $instance = array();
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+        return $instance;
+    }
+} // Class cplogin_widget ends here
 
 #Make translation ready
 load_theme_textdomain( 'cthulhupark', '~/Documents/ari/projects/wordpress/hq.cthulhupark/wp-content/themes/cthulhupark' );
