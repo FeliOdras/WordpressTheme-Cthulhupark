@@ -13,7 +13,9 @@ Text Domain: cthulhupark
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import 'reset.css';
+@import 'styles/reset.css';
+@import 'styles/layout.css';
+@import 'styles/typo.css';
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Ruthie');
 
   /* cutive-regular - latin-ext */
