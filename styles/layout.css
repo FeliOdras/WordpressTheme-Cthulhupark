@@ -124,6 +124,10 @@ Theme Name: Cthulhupark
     padding: 0 3px;
 }
 
+.sidebar-top input[type='submit']{
+    padding:4px;
+}
+
 .sidebar-top .widget_search {
     float:right;
 }

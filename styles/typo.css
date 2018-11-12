@@ -110,6 +110,10 @@ li.widget {
     line-height:11px;
 }
 
+.sidebar-top input[type='submit'] {
+    font-size:12px;
+}
+
 .sidebar-top .widget_cplogin_widget p.login-remember {
     display: none;
 }
