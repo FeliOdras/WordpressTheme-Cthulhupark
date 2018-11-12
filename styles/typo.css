@@ -125,3 +125,9 @@ li.widget {
 .sidebar-top .widget_cplogin_widget p.login-remember {
     display: none;
 }
+
+.widget_cptbe_widget .entries {
+    border:1px solid #fff;
+    padding:5px;
+    margin:4px 0;
+}
