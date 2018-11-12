@@ -31,6 +31,20 @@ add_filter( 'get_the_archive_title', function ($title) {
 });
 
 # Register sidebars
+function sidebar_top() {
+    register_sidebar(
+        array (
+            'name' => __( 'Sidebar top', 'cthulhupark' ),
+            'id' => 'sidebar-top',
+            'description' => __( 'Top sidebar', 'cthulhupark' ),
+            'before_widget' => '<div class="widget-content">',
+            'after_widget' => "</div>",
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        )
+    );
+}
+add_action( 'widgets_init', 'sidebar_top' );
 
 function sidebar_left() {
     register_sidebar(
