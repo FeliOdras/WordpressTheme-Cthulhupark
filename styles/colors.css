@@ -85,12 +85,14 @@ body {
     box-shadow: none;
 }
 
+a#wp-submit,
 .sidebar-top input[type='submit']{
     background-color:#8E563F;
     color:#f9e6a4;
     transition:all .8s;
 }
 
+a#wp-submit:hover,
 .sidebar-top input[type='submit']:hover {
     color:#8E563F;
     background-color:#f9e6a4;

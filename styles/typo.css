@@ -105,6 +105,10 @@ li.widget {
     list-style-type:none;
 }
 
+li.widget li{
+    line-height:170%;
+} 
+
 .sidebar-top input {
     font-size:11px;
     line-height:11px;

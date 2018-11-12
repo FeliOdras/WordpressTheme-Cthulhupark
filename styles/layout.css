@@ -129,6 +129,7 @@ li.widget {
     padding: 0 3px;
 }
 
+a#wp-submit,
 .sidebar-top input[type='submit']{
     padding:4px;
 }
@@ -147,4 +148,14 @@ li.widget {
 
 .widget li {
     line-height: 150%;
+}
+
+.sidebar-top .logout, 
+.sidebar-top a#wp-submit {
+    display:inline;
+    margin-top:12px;
+}
+
+.logged-in .widget_cplogin_widget {
+    padding-top:15px;
 }
