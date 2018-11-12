@@ -158,8 +158,10 @@ class cptbe_widget extends WP_Widget {
             <li class="entries">
                 <a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><?php the_title(); ?></a>
                 <br />
-                <span class="author"><?php the_author_meta( 'nickname' )?></span>
-                <span class="date"><?php the_time('j. F Y') ?></span>
+                <div class="tbe-entry-meta">
+                    <span class="author"><?php the_author_meta( 'nickname' )?></span>
+                    <span class="date"><?php the_time('j. F Y') ?></span>
+                </div>
             </li>
         <?php endwhile;
         echo '</ul><nav class="post-navigation">';
