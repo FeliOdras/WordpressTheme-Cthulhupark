@@ -22,13 +22,13 @@
             <div id="blog-info" class="blog-info">
                 <h1 class="main-title"><a href="<?php echo site_url(); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
                 <h2 class="sub-title"><?php bloginfo( 'description' ); ?></h2>
-                <aside id="sidebar-top" class="sidebar-top">
+            </div>
+            <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+            <aside id="sidebar-top" class="sidebar-top">
                 <?php if ( is_active_sidebar( 'sidebar-top' ) ) : 
                     dynamic_sidebar( 'sidebar-top' ); 
                 endif; ?>
             </aside>
-            </div>
-            <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
             <nav id="main-navigation" class="main-navigation">
                 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
             </nav>
