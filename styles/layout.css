@@ -90,6 +90,11 @@ Theme Name: Cthulhupark
 .widget-title {      
     text-align: center;
     padding:3px;
+    margin-bottom:15px;
+}
+
+li.widget {
+    margin-bottom:20px;
 }
 
 .entry-title {
@@ -138,4 +143,8 @@ Theme Name: Cthulhupark
 
 .content-area a:hover {
     border-style: solid;
+}
+
+.widget li {
+    line-height: 150%;
 }
