@@ -107,3 +107,7 @@ Theme Name: Cthulhupark
 .sidebar-top .widget-title{
     display:none;
 }
+
+.sidebar-top .widget-content {
+    display:inline;
+}

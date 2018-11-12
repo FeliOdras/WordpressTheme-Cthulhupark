@@ -36,9 +36,7 @@ function sidebar_top() {
         array (
             'name' => __( 'Sidebar top', 'cthulhupark' ),
             'id' => 'sidebar-top',
-            'description' => __( 'Top sidebar', 'cthulhupark' ),
-            'before_widget' => '<div class="widget-content">',
-            'after_widget' => "</div>",
+            'description' => __( 'Top sidebar', 'cthulhupark' ),            
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>',
         )
@@ -52,8 +50,6 @@ function sidebar_left() {
             'name' => __( 'Sidebar left', 'cthulhupark' ),
             'id' => 'sidebar-left',
             'description' => __( 'Left sidebar', 'cthulhupark' ),
-            'before_widget' => '<div class="widget-content">',
-            'after_widget' => "</div>",
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>',
         )
@@ -67,8 +63,6 @@ function sidebar_right() {
             'name' => __( 'Sidebar right', 'cthulhupark' ),
             'id' => 'sidebar-right',
             'description' => __( 'Right sidebar', 'cthulhupark' ),
-            'before_widget' => '<div class="widget-content">',
-            'after_widget' => "</div>",
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>',
         )
