@@ -72,3 +72,15 @@ body {
     color:#fff;
     background-color:rgba(53, 21, 9, 0.7);
 }
+
+.sidebar-top input {
+    background-color:rgba(53, 21, 9, 0.2);  
+    border:1px dotted #8E563F;
+    color:#f9e6a4;
+    font-family: 'Traveling Typewriter', monospace;
+}
+
+.sidebar-top input:focus {
+    border-style:solid;
+    box-shadow: none;
+}
