@@ -155,14 +155,12 @@ class cptbe_widget extends WP_Widget {
         echo '<ul>';
         // The Loop
         while ( have_posts() ) : the_post() ?>
-	        <div class="entries">
-                <li>
-                    <a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><?php the_title(); ?></a>
-                    <br />
-                    <span class="author"><?php the_author_meta( 'nickname' )?></span>
-                    <span class="date"><?php the_time('j. F Y') ?></span>
-                </li>
-            </div>
+            <li class="entries">
+                <a href="<?php the_permalink() ?>" title="<?php the_title() ?>" ><?php the_title(); ?></a>
+                <br />
+                <span class="author"><?php the_author_meta( 'nickname' )?></span>
+                <span class="date"><?php the_time('j. F Y') ?></span>
+            </li>
         <?php endwhile;
         echo '</ul><nav class="post-navigation">';
         posts_nav_link('','<span class="prev">&laquo;__ </span>','<span class="next"> __&raquo;</span>');
