@@ -96,7 +96,9 @@ class cpal_widget extends WP_Widget {
         if ( ! empty( $title ) )
         echo $args['before_title'] . $title . $args['after_title'];
         // This is where you run the code and display the output
+        echo '<ul>';
         wp_list_authors( 'show_fullname=1&optioncount=1&orderby=post_count&order=DESC&number=10&include=1,6,7,9,10,11,12,14,15&echo=true');
+        echo '</ul>';
     }        
     // Widget Backend 
     public function form( $instance ) {
@@ -149,7 +151,8 @@ class cptbe_widget extends WP_Widget {
         echo $args['before_title'] . $title . $args['after_title'];
         # Output TBE
         // The Query
-        query_posts(array('category_name' => 'abenteurertagebuch', 'posts_per_page' => 23 )); 
+        query_posts(array('category_name' => 'abenteurertagebuch', 'posts_per_page' => 23 ));
+        echo '<ul>';
         // The Loop
         while ( have_posts() ) : the_post() ?>
 	        <div class="entries">
@@ -161,7 +164,7 @@ class cptbe_widget extends WP_Widget {
                 </li>
             </div>
         <?php endwhile;
-        echo '<nav class="post-navigation">';
+        echo '</ul><nav class="post-navigation">';
         posts_nav_link('','<span class="prev">&laquo;__ </span>','<span class="next"> __&raquo;</span>');
         echo '</nav>';
         // Reset Query

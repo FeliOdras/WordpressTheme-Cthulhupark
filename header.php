@@ -25,9 +25,11 @@
             </div>
             <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
             <aside id="sidebar-top" class="sidebar-top">
-                <?php if ( is_active_sidebar( 'sidebar-top' ) ) : 
-                    dynamic_sidebar( 'sidebar-top' ); 
-                endif; ?>
+                <ul class="widget-area" id="widget-area-top">
+                    <?php if ( is_active_sidebar( 'sidebar-top' ) ) : 
+                        dynamic_sidebar( 'sidebar-top' ); 
+                    endif; ?>
+                </ul>
             </aside>
             <nav id="main-navigation" class="main-navigation">
                 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
