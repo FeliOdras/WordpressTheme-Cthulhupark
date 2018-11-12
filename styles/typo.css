@@ -42,3 +42,56 @@ Theme Name: Cthulhupark
          url('../fonts/fredericka-the-great-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/fredericka-the-great-v6-latin-regular.svg#FrederickatheGreat') format('svg'); /* Legacy iOS */
   }
+
+  body {
+    font-family:'Traveling Typewriter', monospace;
+    font-size:14px;
+    line-height:150%;
+  }
+
+  .main-title {
+    font-family: 'Fredericka the Great', serif;
+    font-size:42px;
+    margin-bottom:15px;
+    font-size: bold;
+}
+
+.main-title a {
+    text-decoration:none;
+}
+
+.sub-title {
+    font-family: 'Ruthie', cursive;
+    font-size:23px;
+    font-weight:bold;
+}
+
+.main-navigation {
+    box-shadow: 0 0 10px #999;
+}
+
+.main-navigation li a {
+    line-height:42px;
+    text-decoration:none;
+    font-family: 'Ruthie', cursive;
+    font-size:26px;
+    font-weight:bold;    
+}
+
+.main-navigation .sub-menu li a {
+    font-family: 'Traveling Typewriter', monospace;
+    font-size: 12px;
+    font-weight:normal;
+    line-height:27px;
+}
+
+.widget-title {
+    font-family: 'Fredericka the Great', serif;
+    font-size: 17px;  
+    font-weight:bold;
+}
+
+.entry-title {
+    font-family: 'Fredericka the Great', serif;
+    font-size:26px;
+}

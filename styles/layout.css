@@ -1,0 +1,97 @@
+/* Layput and positioning 
+Theme Name: Cthulhupark
+*/
+
+.main-header {
+    position: relative;
+}
+
+.site-main {
+    display:flex;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.main-header img {
+    width:100%;
+}
+
+.blog-info {
+    position: absolute;
+    top:20px;
+    left:15px;
+}
+
+.main-navigation {
+    margin-top:-4px;
+}
+
+.main-navigation ul {
+    max-width: 1280px;
+    margin:auto;
+}
+
+.main-navigation li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-navigation li a {
+    display:inline-block;
+    height:42px;
+    padding:0 15px;
+    margin-left:-3px;
+}
+
+.main-navigation li .sub-menu {
+    position:absolute;
+    left:-9999px;
+}
+
+.main-navigation li:hover .sub-menu {
+    left:0;
+}
+
+.main-navigation .sub-menu li {
+    display:block;
+    width: 100%;
+}
+
+.main-navigation .sub-menu li a {
+    width: 100%;
+    height:27px;
+}
+
+.sidebar {
+    width:20%;
+    padding:20px 15px;
+    min-width: 220px;
+}
+
+.sidebar-left {
+    border-right:1px dotted #8E563F;
+}
+
+.sidebar-right {
+    border-left:1px dotted #8E563F;
+}
+
+.main-entry {
+    width:60%;
+}
+
+.entry-content {
+    margin:0 auto;
+    padding:20px 15px;
+    max-width:600px;
+    margin-top:30px;
+}
+
+.widget-title {      
+    text-align: center;
+    padding:3px;
+}
+
+.entry-title {
+    margin-bottom:23px;
+}
