@@ -131,3 +131,11 @@ Theme Name: Cthulhupark
 .sidebar-top .widget_search {
     float:right;
 }
+
+.content-area a {
+    border-bottom:1px dotted #8E563F;
+}
+
+.content-area a:hover {
+    border-style: solid;
+}

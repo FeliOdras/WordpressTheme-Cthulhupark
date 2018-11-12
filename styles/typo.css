@@ -114,6 +114,10 @@ li.widget {
     font-size:12px;
 }
 
+.content-area a {
+    text-decoration:none;
+}
+
 .sidebar-top .widget_cplogin_widget p.login-remember {
     display: none;
 }
