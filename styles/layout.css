@@ -142,6 +142,10 @@ a#wp-submit,
     border-bottom:1px dotted #8E563F;
 }
 
+.content-area p {
+    margin-bottom:15px;
+}
+
 .content-area a:hover {
     border-style: solid;
 }

@@ -17,7 +17,7 @@ get_header();
                         <time class="date"><?php the_time('l, j. F Y') ?></time>
                         <h3><?php the_title(); ?></h3>
                         <?php the_content(); ?>
-                        <div class="author"><?php _e('By', 'cthulhupark') ?> <?php the_author_posts_link(); ?></div>
+                        <div class="author"><?php _e('Von', 'cthulhupark') ?> <?php the_author_posts_link(); ?></div>
 
                         <footer class="post-navigation">
                             <?php next_post_link('%link', '%title', TRUE); ?> ~ <?php edit_post_link('Edit', '', ''); ?> ~ <?php previous_post_link('%link', '%title', TRUE); ?>

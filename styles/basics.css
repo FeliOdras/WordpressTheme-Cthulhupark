@@ -1,0 +1,20 @@
+/* Basic and editor styles
+Theme Name: Cthulhupark
+*/
+
+.aligncenter {
+    margin:auto;
+    display: block;
+}
+
+.alignleft {
+    float:left;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+
+.alignright {
+    float:right;
+    margin-left:20px;
+    margin-bottom:20px;
+}
