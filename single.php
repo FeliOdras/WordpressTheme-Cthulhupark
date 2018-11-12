@@ -14,8 +14,10 @@ get_header();
                 <?php while ( have_posts() ) : the_post(); ?>
                    <section id="main-entry" class="main-entry">
                     <article class="entry-content <?php if (in_category(traumwelten)) :?>dreamlands<?php elseif (in_category(abenteurertagebuch)) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
-                        <time class="date"><?php the_time('l, j. F Y') ?></time>
-                        <h3><?php the_title(); ?></h3>
+                       
+                            <time class="date"><?php the_time('l, j. F Y') ?></time>
+                
+                        <h2 class="entry-title"><?php the_title(); ?></h2>
                         <?php the_content(); ?>
                         <div class="author"><?php _e('By', 'cthulhupark') ?> <?php the_author_posts_link(); ?></div>
 
