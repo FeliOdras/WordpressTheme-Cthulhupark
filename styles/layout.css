@@ -95,3 +95,7 @@ Theme Name: Cthulhupark
 .entry-title {
     margin-bottom:23px;
 }
+
+.sidebar-top .widget-title{
+    display:none;
+}
