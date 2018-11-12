@@ -146,10 +146,6 @@ a#wp-submit,
     border-style: solid;
 }
 
-.widget li {
-    line-height: 150%;
-}
-
 .sidebar-top .logout, 
 .sidebar-top a#wp-submit {
     display:inline;
@@ -158,4 +154,10 @@ a#wp-submit,
 
 .logged-in .widget_cplogin_widget {
     padding-top:15px;
+}
+
+.widget_cpal_widget a {
+    display: inline-block;
+    width:75%;
+    margin-right:10px;
 }
