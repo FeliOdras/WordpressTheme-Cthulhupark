@@ -7,7 +7,7 @@ body {
 }
 
 .site-main {
-    background-image:url(images/mainBackground.png);
+    background-image:url(../images/mainBackground.png);
     background-repeat: repeat;
     background-color: #f9f0cc;
     background-attachment: fixed;
