@@ -108,6 +108,22 @@ Theme Name: Cthulhupark
     display:none;
 }
 
-.sidebar-top .widget-content {
-    display:inline;
+.sidebar-top li.widget{
+    display:inline-block;
+}
+
+.sidebar-top .widget label {
+    display:block;
+}
+
+.sidebar-top .widget_cplogin_widget p{
+    display:inline-block;
+}
+
+.sidebar-top input {
+    padding: 0 3px;
+}
+
+.sidebar-top .widget_search {
+    float:right;
 }

@@ -97,9 +97,19 @@ Theme Name: Cthulhupark
 }
 
 .sidebar-top{
-    font-size:12px;
+    font-size:11px;
+    line-height:12px;
 }
 
 li.widget {
     list-style-type:none;
+}
+
+.sidebar-top input {
+    font-size:11px;
+    line-height:11px;
+}
+
+.sidebar-top .widget_cplogin_widget p.login-remember {
+    display: none;
 }
