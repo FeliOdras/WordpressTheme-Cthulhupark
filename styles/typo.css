@@ -126,8 +126,11 @@ li.widget {
     display: none;
 }
 
-.widget_cptbe_widget .entries {
-    border:1px solid #fff;
-    padding:5px;
-    margin:4px 0;
+.tbe-entry-meta {
+    font-size: 10px;
+    line-height:12px;
+}
+
+.tbe-entry-meta .author {
+    font-weight: bold;
 }

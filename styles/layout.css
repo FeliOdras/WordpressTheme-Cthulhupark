@@ -161,3 +161,30 @@ a#wp-submit,
     width:75%;
     margin-right:10px;
 }
+
+.widget_cptbe_widget .entries {
+    border:1px dotted #8E563F;
+    padding:5px;
+    margin:4px 0;
+}
+
+.widget_cptbe_widget .entries a {
+    display: block;
+    border:none;
+}
+
+.tbe-entry-meta {
+    padding:3px 5px; 
+    margin:7px -5px -5px -5px ;
+}
+
+.tbe-entry-meta .author {
+    border-right:1px dotted #8E563F;
+    padding-right:4px; 
+}
+
+.tbe-entry-meta .date {
+    float:right;
+    border-left:1px dotted #8E563F;
+    padding-left:4px;
+}

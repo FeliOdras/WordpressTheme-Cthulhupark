@@ -2,6 +2,9 @@
 Theme Name: Cthulhupark
 */
 
+* {
+    transition: all .8s;
+}
 body {
     background-color: antiquewhite;
 }
@@ -100,4 +103,22 @@ a#wp-submit:hover,
 
 .content-area a {
     color:#8E563F;
+}
+
+.tbe-entry-meta {
+    color:#8E563F;
+    background-color:rgba(255,255,255,0.3)
+}
+
+.entries:hover {
+    background-color:#8E563F;
+}
+
+.entries:hover * {
+    border-color:#f9e6a4;
+    color:#f9e6a4;
+}
+
+.entries:hover .tbe-entry-meta {
+    background-color:rgba(0,0,0,0.3)
 }
