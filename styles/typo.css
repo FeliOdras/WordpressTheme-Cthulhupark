@@ -99,3 +99,7 @@ Theme Name: Cthulhupark
 .sidebar-top{
     font-size:12px;
 }
+
+li.widget {
+    list-style-type:none;
+}
