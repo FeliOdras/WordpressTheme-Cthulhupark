@@ -140,3 +140,10 @@ li.widget {
     font-family: 'Fredericka the Great', serif;
     font-size:26px;
 }
+
+
+.archive .post-title a,
+.search .post-title a{
+    font-size:17px;
+    font-weight:bold;
+}
