@@ -4,6 +4,12 @@ function cthulhupark_theme_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'cthulhupark_theme_styles' );
 
+# Change Excerpt length
+function custom_excerpt_length( $length ) {
+	return 23;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 #Custom Header Image
 $args = array(
     'width'         => 1000,
