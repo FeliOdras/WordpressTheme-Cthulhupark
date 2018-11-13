@@ -122,3 +122,9 @@ a#wp-submit:hover,
 .entries:hover .tbe-entry-meta {
     background-color:rgba(0,0,0,0.3)
 }
+
+.archive .page-header h2,
+.search .page-header h2 {
+    color:#8E563F;
+    text-shadow: 0 0 1px #8E563F;
+}

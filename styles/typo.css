@@ -134,3 +134,9 @@ li.widget {
 .tbe-entry-meta .author {
     font-weight: bold;
 }
+
+.archive .page-header h2,
+.search .page-header h2 {
+    font-family: 'Fredericka the Great', serif;
+    font-size:26px;
+}

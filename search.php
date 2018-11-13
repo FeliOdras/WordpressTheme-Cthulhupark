@@ -14,10 +14,7 @@ get_header();
             <?php get_sidebar(left); ?>
             <section class="main-entry">
             <header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="page-description">', '</div>' );
-				?>
+                <h2 class="page-title"> <?php _e('Suche', 'cthulhupark') ?></h2>
             </header><!-- .page-header -->
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <article class="post-main <?php if (in_category(traumwelten)) :?>dreamlands<?php elseif (in_category(abenteurertagebuch)) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">

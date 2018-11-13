@@ -195,3 +195,20 @@ a#wp-submit,
     border-left:1px dotted #8E563F;
     padding-left:4px;
 }
+
+.archive .post-main,
+.search .post-main {
+    max-width:600px;
+    margin:auto;
+    padding: 20px 15px;
+}
+
+.archive .page-header,
+.search .page-header {
+    margin-top:30px;
+    max-width:600px;
+    margin:auto;
+    padding: 20px 15px 0 15px;
+}
+
+
