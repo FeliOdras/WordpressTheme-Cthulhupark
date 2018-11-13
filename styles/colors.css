@@ -128,3 +128,14 @@ a#wp-submit:hover,
     color:#8E563F;
     text-shadow: 0 0 1px #8E563F;
 }
+
+
+.archive .post-title a,
+.search .post-title a {
+    background-color:#8E563F;
+    color:#f9e6a4;
+
+}
+
+.三十郎 {
+}

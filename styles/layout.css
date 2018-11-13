@@ -211,4 +211,11 @@ a#wp-submit,
     padding: 20px 15px 0 15px;
 }
 
-
+.archive .post-title a,
+.search .post-title a{
+    padding:8px 10px 0 10px;
+    border:1px solid #8E563F;
+    display: block;
+    font-size:17px;
+    font-weight:bold;
+}
