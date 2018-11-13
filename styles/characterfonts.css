@@ -79,4 +79,28 @@
 
   .dairy, .dreamlands {
       font-family: 'Shadows Into Light', cursive;
+      font-size: 17px;
+      line-height:27px;
+  }
+
+  .LC {
+      font-family: 'Bad Script', cursive;
+  }
+
+  .MW {
+    font-family: 'Zai Calligraphy', cursive;
+}
+   
+  .HWJ {
+      font-family: Bilbo, cursive;
+      font-size:22px;
+  }
+
+  .RHW {
+      font-family: 'Just Me Again Down Here';
+      font-size:22px;
+  }
+
+  .三十郎 .SO　{
+      font-family: Sacramento, cursive;
   }
