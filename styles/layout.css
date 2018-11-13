@@ -216,6 +216,12 @@ a#wp-submit,
     padding:15px;
 }
 
+.archive-entry:after {
+    clear: both;
+    content:'';
+    display: table;
+}
+
 .archive .page-header,
 .search .page-header {
     margin-top:30px;
@@ -243,4 +249,10 @@ a#wp-submit,
 .archive .post-footer,
 .search .post-footer {
     clear:both;
+}
+
+.more-link {
+    padding:3px 5px;
+    border:1px dotted;
+    float:right;
 }
