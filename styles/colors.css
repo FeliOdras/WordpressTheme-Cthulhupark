@@ -138,3 +138,25 @@ a#wp-submit:hover,
 .post-header .post-meta {
     color:#999;
 }
+
+.dairy {
+    background-image: url(../images/Moleskin-light-line.png);
+    background-repeat:repeat-y;
+    color:#0B0B61;
+}
+
+.dreamlands {
+    background-image: url(../images/Moleskin-dark-line.png);
+    background-repeat:repeat-y;
+    color:#eee;
+}
+
+.dreamlands .more-link {
+    color:#fff;
+    border-bottom-color:#fff;
+}
+
+.dreamlands .post-title a {
+    color:#eee;
+    background-color: #666;
+}

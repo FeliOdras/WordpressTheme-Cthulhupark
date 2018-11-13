@@ -199,8 +199,7 @@ a#wp-submit,
 .archive .post-main,
 .search .post-main {
     max-width:600px;
-    margin:auto;
-    padding: 20px 15px;
+    margin:20px auto;
 }
 
 .post-header {
@@ -229,6 +228,7 @@ a#wp-submit,
 .search .post-title a{
     padding:8px 10px 0 10px;
     display: block;
+    border:none;
 }
 
 .archive-entry .featured-image {
