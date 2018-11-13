@@ -97,10 +97,12 @@
   }
 
   .RHW {
-      font-family: 'Just Me Again Down Here';
+      font-family: 'Just Me Again Down Here', cursive;
       font-size:22px;
   }
 
-  .三十郎, .SO　{
+  .三十郎 {
       font-family: Sacramento, cursive;
+      font-size:24px;
+      line-height:32px;
   }
