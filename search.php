@@ -14,7 +14,7 @@ get_header();
             <?php get_sidebar(left); ?>
             <section class="main-entry">
             <header class="page-header">
-                <h2 class="page-title"> <?php _e('Suche', 'cthulhupark') ?></h2>
+                <h1 class="page-title"> <?php _e('Suche', 'cthulhupark') ?></h1>
             </header><!-- .page-header -->
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <article class="post-main <?php if (in_category(traumwelten)) :?>dreamlands<?php elseif (in_category(abenteurertagebuch)) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
