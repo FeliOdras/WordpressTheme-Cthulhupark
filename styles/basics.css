@@ -18,3 +18,7 @@ Theme Name: Cthulhupark
     margin-left:20px;
     margin-bottom:20px;
 }
+
+img {
+    max-width:100%;
+}

@@ -230,3 +230,17 @@ a#wp-submit,
     padding:8px 10px 0 10px;
     display: block;
 }
+
+.archive-entry .featured-image {
+    width:15%;
+    max-width:200px;
+    height:auto;
+    margin-right:15px;
+    margin-bottom:10px;
+    float:left;
+}
+
+.archive .post-footer,
+.search .post-footer {
+    clear:both;
+}
