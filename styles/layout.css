@@ -203,6 +203,20 @@ a#wp-submit,
     padding: 20px 15px;
 }
 
+.post-header {
+    border:1px dotted #8E563F;
+    border-bottom-width:0;
+}
+.post-header .post-meta {
+    padding:3px 15px;
+}
+
+.archive-entry {
+    border:1px dotted #8E563F;
+    border-top-width:0;  
+    padding:15px;
+}
+
 .archive .page-header,
 .search .page-header {
     margin-top:30px;
@@ -214,6 +228,5 @@ a#wp-submit,
 .archive .post-title a,
 .search .post-title a{
     padding:8px 10px 0 10px;
-    border:1px solid #8E563F;
     display: block;
 }

@@ -147,3 +147,8 @@ li.widget {
     font-size:17px;
     font-weight:bold;
 }
+
+.post-header .post-meta {
+    font-size:12px;
+    text-align:right;
+}
