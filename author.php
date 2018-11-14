@@ -23,21 +23,24 @@ get_header();
                         <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
                         <?php the_time('j. F Y') ?>
                     </header>
-                    <div class="featured-image">
-                        <?php 
-                        // check if the post has a Post Thumbnail assigned to it.
-                        if ( has_post_thumbnail() ) {
-                            the_post_thumbnail();
-                        } else {?>
-                            <img src="<?php bloginfo('template_directory'); ?>/images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png" alt="<?php the_title(); ?>" />
-                        <?php } ?>
-                    </div><!-- .featured-image -->
-                    <div class="post-excerpt">
-                        <?php the_excerpt () ?>
-                    </div> <!-- .post-excerpt -->
-                    <footer class="post-footer">
-                        <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Weiterlesen</a>
-                    </footer>
+                    <div class="archive-entry">
+                        <div class="featured-image">
+                            <?php 
+                            // check if the post has a Post Thumbnail assigned to it.
+                            if ( has_post_thumbnail() ) {
+                                the_post_thumbnail();
+                            } else {?>
+                                <img src="<?php bloginfo('template_directory'); ?>/images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png" alt="<?php the_title(); ?>" />
+                            <?php } ?>
+                        </div><!-- .featured-image -->
+                        <div class="post-excerpt">
+                            <?php the_excerpt () ?>
+                        </div> <!-- .post-excerpt -->
+                        <footer class="post-footer">
+                            <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Weiterlesen</a>
+                        </footer>
+                    </div><!-- .archive-entry -->
+                   
                 </article><!-- .post-main -->
             <?php endwhile; else: ?>
                 <p><?php _e('No posts by this author.'); ?></p>
