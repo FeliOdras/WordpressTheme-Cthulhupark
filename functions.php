@@ -37,6 +37,7 @@ add_filter( 'get_the_archive_title', function ($title) {
 });
 
 # Register sidebars
+// Top sidebar
 function sidebar_top() {
     register_sidebar(
         array (
@@ -50,6 +51,7 @@ function sidebar_top() {
 }
 add_action( 'widgets_init', 'sidebar_top' );
 
+// Left Sidebar
 function sidebar_left() {
     register_sidebar(
         array (
@@ -63,6 +65,7 @@ function sidebar_left() {
 }
 add_action( 'widgets_init', 'sidebar_left' );
 
+// Right sidebar
 function sidebar_right() {
     register_sidebar(
         array (
@@ -75,6 +78,21 @@ function sidebar_right() {
     );
 }
 add_action( 'widgets_init', 'sidebar_right' );
+
+// Author sidebar
+function sidebar_author() {
+    register_sidebar(
+        array (
+            'name' => __( 'Sidebar author', 'cthulhupark' ),
+            'id' => 'sidebar-author',
+            'description' => __( 'Author sidebar', 'cthulhupark' ),
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        )
+    );
+}
+add_action( 'widgets_init', 'sidebar_author' );
+
 
 #Add post thumbnail support
 add_theme_support( 'post-thumbnails' );

@@ -16,7 +16,12 @@ get_header();
                 $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
             ?>
              <header class="page-header">
-                <h1 class="entry-title">Beiträge von <?php echo $curauth->display_name; ?></h1>
+                <h1 class="entry-title"><?php echo $curauth->display_name; ?></h1>
+                <div class="author-description">
+                <div class="author-avatar">
+                    <?php echo get_avatar( get_the_author_meta('user_email'), $size = '100'); ?>
+                </div>
+                <?php the_author_meta('description') ?></div>
             </header>
             <!-- The Loop -->
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
