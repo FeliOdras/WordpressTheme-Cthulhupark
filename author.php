@@ -21,7 +21,7 @@ get_header();
             <article class="post-main <?php if (in_category(traumwelten)) :?>dreamlands<?php elseif (in_category(abenteurertagebuch)) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
                     <header class="post-header">
                         <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
-                        <?php the_time('j. F Y') ?>
+                        <div class="post-meta"><?php the_time('j. F Y') ?></div>
                     </header>
                     <div class="archive-entry">
                         <div class="featured-image">
