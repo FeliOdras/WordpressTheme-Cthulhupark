@@ -135,6 +135,7 @@ a#wp-submit:hover,
     color:#f9e6a4;
 }
 
+.single .date,
 .post-header .post-meta {
     color:#999;
 }

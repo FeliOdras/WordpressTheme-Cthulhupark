@@ -148,8 +148,10 @@ li.widget {
     font-weight:bold;
 }
 
-.post-header .post-meta {
+.post-header .post-meta,
+.single .date {
     font-size:12px;
     text-align:right;
     font-family: 'Traveling Typewriter', monospace;
+    display: block;
 }

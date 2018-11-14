@@ -15,7 +15,9 @@ get_header();
             <?php 
                 $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
             ?>
-            <h2>Beiträge von <?php echo $curauth->display_name; ?></h2>
+             <header class="page-header">
+                <h1 class="entry-title">Beiträge von <?php echo $curauth->display_name; ?></h1>
+            </header>
             <!-- The Loop -->
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <article class="post-main <?php if (in_category(traumwelten)) :?>dreamlands<?php elseif (in_category(abenteurertagebuch)) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
