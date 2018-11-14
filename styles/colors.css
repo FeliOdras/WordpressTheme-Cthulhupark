@@ -171,3 +171,24 @@ a#wp-submit:hover,
     background:transparent;
     color:#8E563F;
 }
+
+.content-area .dreamlands .edit-link a {
+    color:#333; 
+    background-color:#eee;
+}
+
+.content-area .dreamlands .edit-link a:hover {
+    background-color:#333; 
+    color:#eee;
+}
+
+.content-area .dairy .edit-link a {
+    color:#f9e6a4;
+    background-color:#8E563F;
+    border:1px solid #8E563F;
+}
+
+.content-area .dairy .edit-link a:hover {
+    background-color:#f9e6a4;
+    color:#8E563F;
+}

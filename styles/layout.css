@@ -2,6 +2,12 @@
 Theme Name: Cthulhupark
 */
 
+#page {
+    max-width: 1280px;
+    margin:auto;
+    overflow: hidden;
+}
+
 .main-header {
     position: relative;
 }
@@ -88,6 +94,12 @@ Theme Name: Cthulhupark
     padding:20px 15px;
     max-width:600px;
     margin-top:30px;
+}
+
+.entry-content:after {
+    clear:both;
+    display: table;
+    content:'';
 }
 
 .widget-title {      
@@ -316,4 +328,20 @@ a#wp-submit,
 .sidebar-author li.widget:hover img,
 .sidebar-author li.widget:hover .widget-title {
     right:0;
+}
+
+.post-navigation{
+    max-width:600px;
+    margin:auto;
+    padding:10px 0;
+}
+
+.post-navigation .author {
+    margin-bottom:15px;
+}
+
+.edit-link a {
+    float: right;
+    display: inline-block;
+    padding:3px 5px;
 }

@@ -18,13 +18,14 @@ get_header();
                         <?php endif; ?>
                         <h2 class="entry-title"><?php the_title(); ?></h2>
                         <?php the_content(); ?>
-                        <div class="author"><?php _e('By', 'cthulhupark') ?> <?php the_author_posts_link(); ?></div>
-                        <?php if (in_category(traumwelten) || in_category(abenteurertagebuch)) :?>
-                            <footer class="post-navigation">
-                                <?php next_post_link('%link', '%title', TRUE); ?> ~ <?php edit_post_link('Edit', '', ''); ?> ~ <?php previous_post_link('%link', '%title', TRUE); ?>
-                            </footer>
-                        <?php endif; ?>
+                        <div class="edit-link"><?php edit_post_link('Bearbeiten', '', ''); ?></div>                        
                     </article><!-- .main-post -->
+                    <?php if (in_category(traumwelten) || in_category(abenteurertagebuch)) :?>
+                        <footer class="post-navigation">
+                            <div class="author"><?php _e('Von', 'cthulhupark') ?> <?php the_author_posts_link(); ?></div>
+                                <?php next_post_link('%link', '%title', TRUE); ?> ~ <?php previous_post_link('%link', '%title', TRUE); ?>
+                        </footer>
+                    <?php endif; ?>
                     </section>         
                 <?php endwhile; // end of the loop. ?>
             <?php 

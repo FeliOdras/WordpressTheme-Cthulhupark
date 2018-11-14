@@ -91,9 +91,20 @@ Theme Name: Cthulhupark
     font-weight:bold;
 }
 
-.entry-title {
+.entry-title,
+.dreamlands:not .entry-title,
+.dairy:not .entry-title {
     font-family: 'Fredericka the Great', serif;
+}
+
+.entry-title {
     font-size:26px;
+}
+
+.content-area .dreamlands a,
+.dreamlands .entry-title {
+    color:#fff;
+    border-color:#fff;
 }
 
 .sidebar-top{
@@ -173,4 +184,13 @@ li.widget {
 
 .widget_cptbe_widget .entries .trans {
     display: none;
+}
+
+.post-navigation {
+    text-align:center;
+}
+
+.edit-link a {
+    font-family: 'Traveling Typewriter', monospace;
+    font-size:13px;
 }
