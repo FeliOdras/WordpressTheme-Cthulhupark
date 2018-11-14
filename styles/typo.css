@@ -159,3 +159,10 @@ li.widget {
 .author-description {
     font-size: 12px;
 }
+
+.sidebar-author .widget-title {
+    font-family: 'Traveling Typewriter', monospace;
+    font-size: 9px;
+    font-weight:normal;
+    line-height:12px;
+}
