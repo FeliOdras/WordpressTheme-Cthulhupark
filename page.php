@@ -19,7 +19,10 @@ get_header();
                 <?php endwhile; // end of the loop. ?>
             </article>
         </section>
-            <?php get_sidebar(right); ?>
+            <?php 
+                get_sidebar(right); 
+                get_sidebar(author);
+            ?>
         </main><!-- #main -->
     </div> <!-- #primary -->
 

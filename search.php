@@ -45,7 +45,10 @@ get_header();
                     <?php posts_nav_link('','<span class="prev">Neuere Beiträge</span>','<span class="next">Ältere Beiträge</span>'); ?>
                 </nav>
             </section>
-            <?php get_sidebar(right); ?>
+            <?php 
+                get_sidebar(right); 
+                get_sidebar(author);
+            ?>
         </main><!-- #main -->
     </div> <!-- #primary -->
 

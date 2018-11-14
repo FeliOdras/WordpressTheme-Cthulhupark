@@ -57,7 +57,10 @@ get_header();
             </nav>
             <!-- End Loop -->
             </section>
-        <?php get_sidebar(right); ?>
+            <?php 
+                get_sidebar(right); 
+                get_sidebar(author);
+            ?>
     </main><!-- #main -->
 </div> <!-- #primary -->
 
