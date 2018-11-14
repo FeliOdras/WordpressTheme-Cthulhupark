@@ -189,9 +189,6 @@ class cptbe_widget extends WP_Widget {
                 </a>
             </li>
         <?php endwhile;
-        echo '</ul><nav class="post-navigation">';
-        posts_nav_link('','<span class="prev">&laquo;__ </span>','<span class="next"> __&raquo;</span>');
-        echo '</nav>';
         // Reset Query
         wp_reset_query();
     }  

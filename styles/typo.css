@@ -166,3 +166,11 @@ li.widget {
     font-weight:normal;
     line-height:12px;
 }
+
+.widget_cptbe_widget .entries {
+    font-size: 11px;
+}
+
+.widget_cptbe_widget .entries .trans {
+    display: none;
+}
