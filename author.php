@@ -19,7 +19,7 @@ get_header();
                 <h1 class="entry-title"><?php echo $curauth->display_name; ?></h1>
                 <div class="author-description">
                 <div class="author-avatar">
-                    <?php echo get_avatar( get_the_author_meta('user_email'), $size = '100'); ?>
+                    <?php echo get_avatar( get_the_author_meta('user_email'), $size = '80'); ?>
                 </div>
                 <?php the_author_meta('description') ?></div>
             </header>

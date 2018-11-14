@@ -155,3 +155,7 @@ li.widget {
     font-family: 'Traveling Typewriter', monospace;
     display: block;
 }
+
+.author-description {
+    font-size: 13px;
+}

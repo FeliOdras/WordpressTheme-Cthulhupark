@@ -256,3 +256,13 @@ a#wp-submit,
     border:1px dotted;
     float:right;
 }
+
+.author-description {
+    padding:15px;
+}
+
+.author-avatar {
+    float:left;
+    margin-right:15px;
+    margin-bottom:15px;
+}
