@@ -179,7 +179,8 @@ li.widget {
 }
 
 .widget_cptbe_widget .entries {
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .widget_cptbe_widget .entries .trans {
