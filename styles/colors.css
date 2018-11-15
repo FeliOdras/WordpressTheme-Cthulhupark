@@ -59,9 +59,10 @@ body {
     color:#f9e6a4;
     text-shadow: 0 0 10px #000;
 }
-
-.main-navigation .sub-menu li a {
+.main-navigation .sub-menu {
     background-color:#8E563F;
+}
+.main-navigation .sub-menu li a {
     color:#f9e6a4;
 }
 
