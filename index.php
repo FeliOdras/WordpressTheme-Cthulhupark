@@ -11,7 +11,7 @@
  */
 
 get_header();
-get_sidebar(left);
+get_sidebar('left');
 ?>
     <div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -29,7 +29,10 @@ get_sidebar(left);
             echo '<p>Hier gibt es leider nichts zu sehen</p>';
             endif;
         ?>
- 
+            <?php 
+                get_sidebar('right'); 
+                get_sidebar('author');
+            ?>
         </main><!-- #main -->
     </div> <!-- #primary -->
 

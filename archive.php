@@ -11,7 +11,7 @@ get_header();
 ?>
     <div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <?php get_sidebar(left); ?>
+            <?php get_sidebar('left'); ?>
             <section class="main-entry">
                 <header class="page-header">
                     <?php
@@ -20,7 +20,7 @@ get_header();
                     ?>
                 </header><!-- .page-header -->
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                        <article class="post-main <?php if (in_category(traumwelten)) :?>dreamlands<?php elseif (in_category(abenteurertagebuch)) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
+                        <article class="post-main <?php if (in_category('traumwelten')) :?>dreamlands<?php elseif (in_category('abenteurertagebuch')) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
                             <header class="post-header">
                                 <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
                                 <div class="post-meta">Verfasst von <?php the_author_link(); ?>  am <?php the_time('l, j. F Y') ?></div>
@@ -49,8 +49,8 @@ get_header();
                     </nav>
                 </section>
                 <?php 
-                    get_sidebar(right); 
-                    get_sidebar(author);
+                    get_sidebar('right'); 
+                    get_sidebar('author');
                 ?>
         </main><!-- #main -->
     </div> <!-- #primary -->

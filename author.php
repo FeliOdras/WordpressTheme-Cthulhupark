@@ -10,7 +10,7 @@ get_header();
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
-        <?php get_sidebar(left); ?>
+        <?php get_sidebar('left'); ?>
            <section class="main-entry"> 
             <?php 
                 $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
@@ -58,8 +58,8 @@ get_header();
             <!-- End Loop -->
             </section>
             <?php 
-                get_sidebar(right); 
-                get_sidebar(author);
+                get_sidebar('right'); 
+                get_sidebar('author');
             ?>
     </main><!-- #main -->
 </div> <!-- #primary -->

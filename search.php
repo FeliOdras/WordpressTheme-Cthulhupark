@@ -11,7 +11,7 @@ get_header();
 ?>
     <div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <?php get_sidebar(left); ?>
+            <?php get_sidebar('left'); ?>
             <section class="main-entry">
             <header class="page-header">
                 <h1 class="page-title"> <?php _e('Suche', 'cthulhupark') ?></h1>
@@ -46,8 +46,8 @@ get_header();
                 </nav>
             </section>
             <?php 
-                get_sidebar(right); 
-                get_sidebar(author);
+                get_sidebar('right'); 
+                get_sidebar('author');
             ?>
         </main><!-- #main -->
     </div> <!-- #primary -->
