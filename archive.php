@@ -48,7 +48,16 @@ get_header();
                                     </div> <!-- .post-excerpt -->
                                 </div><!-- .post-content -->
                                 <footer class="post-footer">
-                                    <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Weiterlesen</a>
+                                    <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                        <?php
+                                            if (in_category('abenteurertagebuch')) {
+                                                echo 'Weiterlesen';
+                                            }            
+                                            else {
+                                                echo 'Mehr';
+                                            }
+                                        ?>
+                                    </a>
                                 </footer>
                             </div><!-- .archive-entry -->
                         </article><!-- .post-main -->

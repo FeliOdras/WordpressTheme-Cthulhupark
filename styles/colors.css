@@ -132,7 +132,7 @@ a#wp-submit:hover,
 
 .archive .post-title a,
 .search .post-title a {
-    color:#8E563F;
+    color:#333;
 }
 
 .single .date,
@@ -140,9 +140,16 @@ a#wp-submit:hover,
     color:#999;
 }
 
+.archive-entry {
+    color:#333
+}
+
 .dairy {
     background-image: url(../images/Moleskin-light-line.png);
     background-repeat:repeat-y;
+}
+
+.dairy .archive-entry {
     color:#0B0B61;
 }
 
@@ -198,10 +205,6 @@ a#wp-submit:hover,
 .archive.category-abenteurertagebuch .post-title a {
     background-color:#8E563F;
     color:#f9e6a4;
-}
-.archive:not(category-abenteurertagebuch) .post-header,
-.archive:not(category-abenteurertagebuch) .archive-entry {
-    
 }
 
 @media screen and (min-width:1281px) {

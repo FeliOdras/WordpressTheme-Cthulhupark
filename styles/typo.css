@@ -152,11 +152,21 @@ li.widget {
     font-size:27px;
 }
 
-
 .archive .post-title a,
 .search .post-title a{
-    font-size:18px;
     font-weight:bold;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.archive .post-title a:hover,
+.search .post-title a:hover {
+    text-decoration: none;
+}
+
+.archive .more-link,
+.archive .post-excerpt {
+    font-size: 13px;
 }
 
 .post-header .post-meta,
@@ -194,4 +204,14 @@ li.widget {
 .edit-link a {
     font-family: 'Traveling Typewriter', monospace;
     font-size:14px;
+}
+
+.archive .dairy .post-title a {
+    font-size:18px;
+    text-decoration: none;
+}
+
+.archive .dairy .post-excerpt,
+.archive .dairy .more-link {
+    font-size:15px;
 }
