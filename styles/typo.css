@@ -45,7 +45,7 @@ Theme Name: Cthulhupark
 
   body {
     font-family:'Traveling Typewriter', monospace;
-    font-size:14px;
+    font-size:15px;
     line-height:150%;
   }
 
@@ -74,20 +74,20 @@ Theme Name: Cthulhupark
     line-height:42px;
     text-decoration:none;
     font-family: 'Ruthie', cursive;
-    font-size:26px;
+    font-size:27px;
     font-weight:bold;    
 }
 
 .main-navigation .sub-menu li a {
     font-family: 'Traveling Typewriter', monospace;
-    font-size: 12px;
+    font-size: 13px;
     font-weight:normal;
-    line-height:27px;
+    line-height:28px;
 }
 
 .widget-title {
     font-family: 'Fredericka the Great', serif;
-    font-size: 17px;  
+    font-size: 18px;  
     font-weight:bold;
 }
 
@@ -98,7 +98,7 @@ Theme Name: Cthulhupark
 }
 
 .entry-title {
-    font-size:26px;
+    font-size:27px;
 }
 
 .content-area .dreamlands a,
@@ -108,8 +108,8 @@ Theme Name: Cthulhupark
 }
 
 .sidebar-top{
-    font-size:11px;
-    line-height:12px;
+    font-size:12px;
+    line-height:13px;
 }
 
 li.widget {
@@ -121,12 +121,12 @@ li.widget {
 }
 
 .sidebar-top input {
-    font-size:11px;
-    line-height:11px;
+    font-size:12px;
+    line-height:12px;
 }
 
 .sidebar-top input[type='submit'] {
-    font-size:12px;
+    font-size:13px;
 }
 
 .content-area a {
@@ -138,8 +138,8 @@ li.widget {
 }
 
 .tbe-entry-meta {
-    font-size: 10px;
-    line-height:12px;
+    font-size: 11px;
+    line-height:13px;
 }
 
 .tbe-entry-meta .author {
@@ -149,37 +149,37 @@ li.widget {
 .archive .page-header h1,
 .search .page-header h1 {
     font-family: 'Fredericka the Great', serif;
-    font-size:26px;
+    font-size:27px;
 }
 
 
 .archive .post-title a,
 .search .post-title a{
-    font-size:17px;
+    font-size:18px;
     font-weight:bold;
 }
 
 .post-header .post-meta,
 .single .date {
-    font-size:12px;
+    font-size:13px;
     text-align:right;
     font-family: 'Traveling Typewriter', monospace;
     display: block;
 }
 
 .author-description {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .sidebar-author .widget-title {
     font-family: 'Traveling Typewriter', monospace;
-    font-size: 9px;
+    font-size: 10px;
     font-weight:normal;
-    line-height:12px;
+    line-height:13px;
 }
 
 .widget_cptbe_widget .entries {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .widget_cptbe_widget .entries .trans {
@@ -192,5 +192,5 @@ li.widget {
 
 .edit-link a {
     font-family: 'Traveling Typewriter', monospace;
-    font-size:13px;
+    font-size:14px;
 }
