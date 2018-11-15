@@ -195,6 +195,12 @@ a#wp-submit:hover,
     color:#8E563F;
 }
 
+
+.archive:not(category-abenteurertagebuch) .post-title a {
+    background:transparent;
+    color:#8E563F;
+}
+
 @media screen and (min-width:1281px) {
     body {
         background-image:url(../images/ctulhu-page-background.jpg);
