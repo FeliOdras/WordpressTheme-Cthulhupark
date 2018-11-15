@@ -59,9 +59,10 @@ body {
     color:#f9e6a4;
     text-shadow: 0 0 10px #000;
 }
-
-.main-navigation .sub-menu li a {
+.main-navigation .sub-menu {
     background-color:#8E563F;
+}
+.main-navigation .sub-menu li a {
     color:#f9e6a4;
 }
 
@@ -168,8 +169,9 @@ a#wp-submit:hover,
 }
 
 .sidebar-author .widget-title {
+    text-shadow:0 0 5px #fff;
     background:transparent;
-    color:#8E563F;
+    color:#333;
 }
 
 .content-area .dreamlands .edit-link a {
@@ -191,4 +193,12 @@ a#wp-submit:hover,
 .content-area .dairy .edit-link a:hover {
     background-color:#f9e6a4;
     color:#8E563F;
+}
+
+@media screen and (min-width:1281px) {
+    body {
+        background-image:url(../images/ctulhu-page-background.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
