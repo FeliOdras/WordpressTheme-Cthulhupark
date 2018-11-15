@@ -215,16 +215,15 @@ a#wp-submit,
     margin:20px auto;
 }
 
-.post-header {
-    border:1px dotted #8E563F;
-    border-bottom-width:0;
+.archive-entry {
+    display:flex;
 }
+
 .post-header .post-meta {
     padding:3px 15px;
 }
 
 .archive-entry {
-    border:1px dotted #8E563F;
     border-top-width:0;  
     padding:15px;
 }
@@ -261,6 +260,7 @@ a#wp-submit,
     margin-right:15px;
     margin-bottom:10px;
     float:left;
+    flex: 0 0 90px;
 }
 
 .archive .post-footer,
@@ -356,4 +356,18 @@ a#wp-submit,
     float: right;
     display: inline-block;
     padding:3px 5px;
+}
+
+.dairy .archive-entry {
+    display:block;
+}
+
+.dairy .post-header {
+    border: 1px dotted #8E563F;
+    border-bottom-width: 0;
+}
+
+.dairy .archive-entry {
+    border:1px dotted #8E563F;
+    border-top-width: 0;
 }
