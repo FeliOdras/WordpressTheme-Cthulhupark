@@ -37,14 +37,16 @@ get_header();
                                         <img src="<?php bloginfo('template_directory'); ?>/images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png" alt="<?php the_title(); ?>" />
                                     <?php } ?>
                                 </div><!-- .featured-image -->
-                                <?php if (!in_category('abenteurertagebuch')) :?>   
-                                    <header class="post-header">                                   
-                                        <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
-                                    </header>
-                                <?php endif; ?>
-                                <div class="post-excerpt">
-                                    <?php the_excerpt () ?>
-                                </div> <!-- .post-excerpt -->
+                                <div class="post-content">
+                                    <?php if (!in_category('abenteurertagebuch')) :?>   
+                                        <header class="post-header">                                   
+                                            <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
+                                        </header>
+                                    <?php endif; ?>
+                                    <div class="post-excerpt">
+                                        <?php the_excerpt () ?>
+                                    </div> <!-- .post-excerpt -->
+                                </div><!-- .post-content -->
                                 <footer class="post-footer">
                                     <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Weiterlesen</a>
                                 </footer>
