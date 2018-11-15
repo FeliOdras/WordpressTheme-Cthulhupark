@@ -249,6 +249,10 @@ a#wp-submit,
     border:none;
 }
 
+.featured-image img {
+    height:auto;
+}
+
 .archive-entry .featured-image {
     width:15%;
     max-width:200px;
