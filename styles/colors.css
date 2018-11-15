@@ -168,8 +168,9 @@ a#wp-submit:hover,
 }
 
 .sidebar-author .widget-title {
+    text-shadow:0 0 5px #fff;
     background:transparent;
-    color:#8E563F;
+    color:#333;
 }
 
 .content-area .dreamlands .edit-link a {
@@ -191,4 +192,12 @@ a#wp-submit:hover,
 .content-area .dairy .edit-link a:hover {
     background-color:#f9e6a4;
     color:#8E563F;
+}
+
+@media screen and (min-width:1281px) {
+    body {
+        background-image:url(../images/ctulhu-page-background.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
