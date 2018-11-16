@@ -18,6 +18,7 @@ get_header();
                         the_archive_title( '<h1 class="page-title">', '</h1>' );
                         the_archive_description( '<div class="page-description">', '</div>' );
                     ?>
+                        <?php echo get_category_parents( $cat, true, ' &raquo; ' ); ?>
                         <?php
                             if (is_category()) {
                             $this_category = get_category($cat);
