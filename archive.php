@@ -37,7 +37,13 @@ get_header();
                         </ul>                
                     <?php } ?>
                 </header><!-- .page-header -->
-                <?php if (!is_category('abenteurertagebuch')) { $posts = query_posts($query_string . '&orderby=title&order=asc'); } ?>
+                <?php if (is_category(array('abenteurertagebuch', 'traumwelten','mw-dream','lc-dream', 'rhw-dream', 'os-dream'))) { 
+                        $posts = query_posts($query_string . '&order=desc'); 
+                    } 
+                    else {
+                        $posts = query_posts($query_string . '&orderby=title&order=asc');
+                    }
+                ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <article class="post-main <?php if (in_category('traumwelten')) :?>dreamlands<?php elseif (in_category('abenteurertagebuch')) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
                             <?php if (in_category('abenteurertagebuch')) :?> 
