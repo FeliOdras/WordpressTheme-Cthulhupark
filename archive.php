@@ -14,36 +14,44 @@ get_header();
             <?php get_sidebar('left'); ?>
             <section class="main-entry">
                 <header class="page-header">
+                    <nav class="breadcrumb-cat">
+                        <?php echo get_category_parents( $cat, true, ' &raquo; ' ); ?>  
+                    </nav>
                     <?php
                         the_archive_title( '<h1 class="page-title">', '</h1>' );
                         the_archive_description( '<div class="page-description">', '</div>' );
                     ?>
-                        <?php echo get_category_parents( $cat, true, ' &raquo; ' ); ?>
+                    <div class="cat-children-list">
                         <?php
-                            if (is_category()) {
-                            $this_category = get_category($cat);
-                        }
-                        if($this_category->category_parent)
-                            $this_category = wp_list_categories('orderby=name&show_count=0
-                            &title_li=&hide_empty=0&use_desc_for_title=1&child_of='.$this_category->category_parent.
-                            '&echo=0'); 
-                        else
-                            $this_category = wp_list_categories('orderby=name&show_count=0
-                            &title_li=&use_desc_for_title=1&child_of='.$this_category->cat_ID.
-                            "&echo=0");
-                        if ($this_category) { ?>        
-                        <ul>
-                            <?php echo $this_category; ?>                        
-                        </ul>                
-                    <?php } ?>
+                            # list child categories
+                                if (is_category()) {
+                                $this_category = get_category($cat);
+                            }
+                            if($this_category->category_parent)
+                                $this_category = wp_list_categories('orderby=name&show_count=0
+                                &title_li=&hide_empty=0&use_desc_for_title=1&child_of='.$this_category->category_parent.
+                                '&echo=0'); 
+                            else
+                                $this_category = wp_list_categories('orderby=name&depth=0&show_count=0
+                                &title_li=&use_desc_for_title=1&child_of='.$this_category->cat_ID.
+                                "&echo=0");
+                            if ($this_category) { ?>        
+                            <ul class="cat-children">
+                                <?php echo $this_category; ?>                        
+                            </ul>                
+                        <?php } ?>
+                    </div> <!-- .cat-children-list -->
                 </header><!-- .page-header -->
-                <?php if (is_category(array('abenteurertagebuch', 'traumwelten','mw-dream','lc-dream', 'rhw-dream', 'os-dream'))) { 
-                        $posts = query_posts($query_string . '&order=desc'); 
-                    } 
-                    else {
-                        $posts = query_posts($query_string . '&orderby=title&order=asc');
-                    }
-                ?>
+                    <?php 
+                        # Define post order for dairy/dreamlands and others 
+                        if (is_category(array('abenteurertagebuch', 'traumwelten','mw-dream','lc-dream', 'rhw-dream', 'os-dream'))) { 
+                            $posts = query_posts($query_string . '&order=desc'); 
+                        } 
+                        else {
+                            $posts = query_posts($query_string . '&orderby=title&order=asc');
+                        }
+                    ?>
+                    <!-- The Loop -->
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <article class="post-main <?php if (in_category('traumwelten')) :?>dreamlands<?php elseif (in_category('abenteurertagebuch')) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
                             <?php if (in_category('abenteurertagebuch')) :?> 
@@ -87,6 +95,7 @@ get_header();
                             </div><!-- .archive-entry -->
                         </article><!-- .post-main -->
                     <?php endwhile; endif; ?>
+                    <!-- End the Loop -->
                     <nav class="post-navigation">
                         <?php posts_nav_link('','<span class="prev">Neuere Beiträge</span>','<span class="next">Ältere Beiträge</span>'); ?>
                     </nav>
