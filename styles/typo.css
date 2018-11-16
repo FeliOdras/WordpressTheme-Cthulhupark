@@ -213,5 +213,5 @@ li.widget {
 
 .archive .dairy .post-excerpt,
 .archive .dairy .more-link {
-    font-size:15px;
+    font-size:inherit;
 }
