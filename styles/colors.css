@@ -156,6 +156,9 @@ a#wp-submit:hover,
 .dreamlands {
     background-image: url(../images/Moleskin-dark-line.png);
     background-repeat:repeat-y;
+}
+
+.dreamlands .archive-entry {
     color:#eee;
 }
 
@@ -202,7 +205,17 @@ a#wp-submit:hover,
 }
 
  /*Category styles Abenteurertagebuch */
-.archive.category-abenteurertagebuch .post-title a {
+.archive .dairy .post-title a {
+    background-color:#8E563F;
+    color:#f9e6a4;
+}
+
+.dreamlands .more-link:hover {
+    color:#333; 
+    background-color:#eee;
+}
+
+.dairy .more-link:hover {
     background-color:#8E563F;
     color:#f9e6a4;
 }

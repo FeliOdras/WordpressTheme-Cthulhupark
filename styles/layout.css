@@ -374,18 +374,22 @@ a#wp-submit,
     padding:15px;
 }
 
-.archive .dairy.post-main {
+.archive .dairy.post-main,
+.archive .dreamlands.post-main {
     margin:20px auto;
 }
 
-.archive .dairy .post-title a {
+.archive .dairy .post-title a,
+.archive .dreamlands .post-title a {
     padding: 8px 10px 0 10px;
 }
 
+.dreamlands .more-link,
 .dairy .more-link {
     padding:3px 5px;
     border:1px dotted;
     float:right;
+    transition:all 1s;
 }
 
 .archive-entry .dairy .featured-image {

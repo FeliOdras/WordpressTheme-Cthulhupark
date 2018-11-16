@@ -206,11 +206,15 @@ li.widget {
     font-size:14px;
 }
 
+.archive .dreamlands .post-title a,
 .archive .dairy .post-title a {
     font-size:18px;
     text-decoration: none;
 }
 
+
+.archive .dreamlands .post-excerpt,
+.archive .dreamlands .more-link,
 .archive .dairy .post-excerpt,
 .archive .dairy .more-link {
     font-size:inherit;
