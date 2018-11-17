@@ -235,19 +235,16 @@ a#wp-submit:hover,
     height:auto;
 }
 
-.cat-children-list .children {
-    background-color:rgba(142,86,63,0.8);
-}
-
 .cat-children-list .children a {
-    color:#f9e6a4;
+    color:#8E563F;
 }
 
-.cat-children-list .children a:hover {
-    color:#8E563F;
+.cat-children-list a:hover {
     background-color:#f9e6a4;
-    
+}
 
+.breadcrumb-cat a:after {
+    color:#333;
 }
 
 @media screen and (min-width:1281px) {

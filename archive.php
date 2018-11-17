@@ -15,7 +15,7 @@ get_header();
             <section class="main-entry">
                 <header class="page-header">
                     <nav class="breadcrumb-cat">
-                        <?php echo get_category_parents( $cat, true, ' &raquo; ' ); ?>  
+                        <?php echo get_category_parents( $cat, true, '' ); ?>  
                     </nav>
                     <?php
                         the_archive_title( '<h1 class="page-title">', '</h1>' );
@@ -28,7 +28,7 @@ get_header();
                                 $this_category = get_category($cat);
                             }
                             if($this_category->category_parent)
-                                $this_category = wp_list_categories('orderby=name&title_li=&hide_empty=0&use_desc_for_title=1&child_of='.$this_category->category_parent.
+                                $this_category = wp_list_categories('orderby=name&depth=2&title_li=&hide_empty=0&use_desc_for_title=1&child_of='.$this_category->category_parent.
                                 '&echo=0'); 
                             else
                                 $this_category = wp_list_categories('orderby=name&depth=0&title_li=&use_desc_for_title=1&child_of='.$this_category->cat_ID.
