@@ -17,7 +17,9 @@ get_header();
                             <time class="date"><?php the_time('l, j. F Y') ?></time>
                         <?php endif; ?>
                         <h2 class="entry-title"><?php the_title(); ?></h2>
-                        <?php the_content(); ?>
+                        <div class="single-post-entry">
+                            <?php the_content(); ?>
+                        </div> <!-- single post entry -->
                         <div class="edit-link"><?php edit_post_link('Bearbeiten', '', ''); ?></div>                        
                     </article><!-- .main-post -->
                     <?php if (in_category('traumwelten') || in_category('abenteurertagebuch')) :?>

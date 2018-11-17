@@ -149,7 +149,8 @@ a#wp-submit:hover,
     background-repeat:repeat-y;
 }
 
-.dairy .archive-entry {
+.dairy .archive-entry,
+.dairy .single-post-entry {
     color:#0B0B61;
 }
 
@@ -158,8 +159,9 @@ a#wp-submit:hover,
     background-repeat:repeat-y;
 }
 
-.dreamlands .archive-entry {
-    color:#eee;
+.dreamlands .archive-entry,
+.dreamlands .single-post-entry {
+    color:#efefef;
 }
 
 .dreamlands .more-link {
