@@ -235,16 +235,15 @@ a#wp-submit:hover,
     height:auto;
 }
 
-.cat-children-list .children {
-    background-color:rgba(142,86,63,0.8);
+.cat-children-list .current-cat a {
+    color:#ccc;
 }
 
 .cat-children-list .children a {
-    color:#f9e6a4;
+    color:#8E563F;
 }
 
 .cat-children-list .children a:hover {
-    color:#8E563F;
     background-color:#f9e6a4;
     
 
