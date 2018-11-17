@@ -22,3 +22,11 @@ Theme Name: Cthulhupark
 img {
     max-width:100%;
 }
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
