@@ -266,6 +266,11 @@ a#wp-submit,
     flex: 0 0 90px;
 }
 
+.archive .post-content,
+.search .post-content {
+    flex-grow:1;
+}
+
 .archive .post-footer,
 .search .post-footer {
     clear:both;
