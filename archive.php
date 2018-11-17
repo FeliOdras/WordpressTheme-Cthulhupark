@@ -26,16 +26,17 @@ get_header();
                             # list child categories
                                 if (is_category()) {
                                 $this_category = get_category($cat);
+                                $children = get_category($catid);
                             }
-                            if($this_category->category_parent)
-                                $this_category = wp_list_categories('orderby=name&depth=2&title_li=&hide_empty=0&use_desc_for_title=1&child_of='.$this_category->category_parent.
+                            if($children->category_parent > 0)
+                                $children = wp_list_categories('orderby=name&depth=1&title_li=&hide_empty=0&use_desc_for_title=1&child_of='.$this_category->category_parent.
                                 '&echo=0'); 
                             else
-                                $this_category = wp_list_categories('orderby=name&depth=0&title_li=&use_desc_for_title=1&child_of='.$this_category->cat_ID.
+                                $children = wp_list_categories('orderby=name&depth=2&title_li=&use_desc_for_title=1&child_of='.$this_category->cat_ID.
                                 "&echo=0");
                             if ($this_category) { ?>        
                             <ul class="cat-children">
-                                <?php echo $this_category; ?>                        
+                                <?php echo $children; ?>                        
                             </ul>                
                         <?php } ?>
                     </div> <!-- .cat-children-list -->
