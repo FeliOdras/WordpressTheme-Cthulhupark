@@ -237,16 +237,16 @@ a#wp-submit:hover,
 
 .cat-children-list .current-cat a {
     color:#ccc;
+    display:none;    
 }
 
 .cat-children-list .children a {
     color:#8E563F;
+    display: block;
 }
 
-.cat-children-list .children a:hover {
+.cat-children-list a:hover {
     background-color:#f9e6a4;
-    
-
 }
 
 @media screen and (min-width:1281px) {
