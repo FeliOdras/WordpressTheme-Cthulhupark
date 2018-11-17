@@ -364,6 +364,7 @@ a#wp-submit,
     padding:3px 5px;
 }
 
+.dreamlands .archive-entry,
 .dairy .archive-entry {
     display:block;
 }
@@ -376,6 +377,10 @@ a#wp-submit,
 .dairy .archive-entry {
     border:1px dotted #8E563F;
     border-top-width: 0;
+}
+
+.dairy .archive-entry,
+.dreamlands .archive-entry {
     padding:15px;
 }
 
@@ -416,37 +421,40 @@ a#wp-submit,
     display:table;
 }
 
-.cat-children-list li{
+.cat-children-list li a{
     float:left;
-    padding:3px 10px;
-}
-.cat-children-list .current-cat a{
-    font-weight:bold;
 }
 
-.cat-children-list .current-cat li a{
-    font-weight: normal;
-} 
-
-.cat-children-list .children {
-   opacity:0;
-   position: absolute;
-   z-index: -1;
+.cat-children-list li .children a{
+    display:none;
 }
 
-.cat-children-list li:hover .children {
-    opacity:1;
-    z-index: 10;
+.cat-children-list li.current-cat a {
+    border:none;
+    margin:3px 14px 3px 0px;
 }
 
-.cat-children-list .children li{
-    float:none;
+.cat-children-list li.current-cat .children a {
+    display:inline-block;
 }
 
-.cat-children-list .children li a {
-    display:block;
+.cat-children-list li.current-cat a:after {
+    content: ' \00bb';
+}
+
+.cat-children-list li.current-cat li a {
+    border-bottom:1px dotted #8E563F;
+    margin: 3px 7px;
+}
+
+.cat-children-list li.current-cat li a:after {
+    content: '';
 }
 
 .cat-children-list .children .children {
     display: none;
+} 
+
+.breadcrumb-cat a:last-of-type {
+    display:none;
 }
