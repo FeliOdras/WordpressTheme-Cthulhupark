@@ -364,6 +364,7 @@ a#wp-submit,
     padding:3px 5px;
 }
 
+.dreamlands .archive-entry,
 .dairy .archive-entry {
     display:block;
 }
@@ -376,6 +377,10 @@ a#wp-submit,
 .dairy .archive-entry {
     border:1px dotted #8E563F;
     border-top-width: 0;
+}
+
+.dairy .archive-entry,
+.dreamlands .archive-entry {
     padding:15px;
 }
 
@@ -420,14 +425,17 @@ a#wp-submit,
     float:left;
 }
 
-.cat-children-list li a {
+.cat-children-list li .children a{
     display:none;
 }
 
 .cat-children-list li.current-cat a {
-    display:inline-block;
     border:none;
     margin:3px 14px 3px 0px;
+}
+
+.cat-children-list li.current-cat .children a {
+    display:inline-block;
 }
 
 .cat-children-list li.current-cat a:after {
@@ -446,3 +454,7 @@ a#wp-submit,
 .cat-children-list .children .children {
     display: none;
 } 
+
+.breadcrumb-cat a:last-of-type {
+    display:none;
+}
