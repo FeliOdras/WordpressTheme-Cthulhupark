@@ -400,3 +400,32 @@ a#wp-submit,
 .archive-entry .dairy .featured-image {
     margin-bottom:10px;
 }
+
+
+.breadcrumb-cat {
+    margin-bottom:10px;
+}
+
+.cat-children-list li{
+    float:left;
+    position: relative;
+}
+.cat-children-list .current-cat a{
+    font-weight:bold;
+}
+
+.cat-children-list .current-cat li a{
+    font-weight: normal;
+} 
+
+.cat-children-list .children {
+   opacity:0;
+}
+
+.cat-children-list li:hover .children {
+    opacity:1;
+}
+
+.cat-children-list .current-cat .children li{
+    float:none;
+}

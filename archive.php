@@ -28,12 +28,10 @@ get_header();
                                 $this_category = get_category($cat);
                             }
                             if($this_category->category_parent)
-                                $this_category = wp_list_categories('orderby=name&show_count=0
-                                &title_li=&hide_empty=0&use_desc_for_title=1&child_of='.$this_category->category_parent.
+                                $this_category = wp_list_categories('orderby=name&title_li=&hide_empty=0&use_desc_for_title=1&child_of='.$this_category->category_parent.
                                 '&echo=0'); 
                             else
-                                $this_category = wp_list_categories('orderby=name&depth=0&show_count=0
-                                &title_li=&use_desc_for_title=1&child_of='.$this_category->cat_ID.
+                                $this_category = wp_list_categories('orderby=name&depth=0&title_li=&use_desc_for_title=1&child_of='.$this_category->cat_ID.
                                 "&echo=0");
                             if ($this_category) { ?>        
                             <ul class="cat-children">
