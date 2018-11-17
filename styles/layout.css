@@ -425,17 +425,14 @@ a#wp-submit,
     float:left;
 }
 
-.cat-children-list li .children a{
+.cat-children-list li a {
     display:none;
 }
 
 .cat-children-list li.current-cat a {
+    display:inline-block;
     border:none;
     margin:3px 14px 3px 0px;
-}
-
-.cat-children-list li.current-cat .children a {
-    display:inline-block;
 }
 
 .cat-children-list li.current-cat a:after {
