@@ -426,12 +426,8 @@ a#wp-submit,
 }
 
 .cat-children-list li a {
-    display:none;
-}
-
-.cat-children-list li.current-cat a {
     display:inline-block;
-    border:none;
+    border-bottom:1px dotted #8E563F;
     margin:3px 14px 3px 0px;
 }
 
@@ -439,7 +435,7 @@ a#wp-submit,
     content: ' \00bb';
 }
 
-.cat-children-list li.current-cat li a {
+.cat-children-list li li a {
     border-bottom:1px dotted #8E563F;
     margin: 3px 7px;
 }
