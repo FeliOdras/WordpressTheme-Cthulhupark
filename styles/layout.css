@@ -1,4 +1,4 @@
-/* Layput and positioning 
+/* Layout and positioning 
 Theme Name: Cthulhupark
 */
 
@@ -410,6 +410,19 @@ a#wp-submit,
 .breadcrumb-cat {
     margin-bottom:10px;
 }
+
+.breadcrumb-cat a {
+    margin:3px 14px 3px 0;
+}
+
+.breadcrumb-cat a:after {
+    content:'\00bb';
+    position:relative;
+    right:-3px;
+    width:0;
+    display:inline-block;
+}
+
 .cat-children-list {
     margin: 25px 0;
     padding: 15px;
@@ -431,6 +444,12 @@ a#wp-submit,
     margin:3px 14px 3px 0px;
 }
 
+.cat-children-list li a {
+    display:inline-block;
+    border-bottom:1px dotted #8E563F;
+    margin:3px 14px 3px 0px;
+}
+
 .cat-children-list li.current-cat a:after {
     content: ' \00bb';
 }
@@ -444,9 +463,13 @@ a#wp-submit,
     content: '';
 }
 
-.cat-children-list .children .children {
+.cat-children-list .children a {
     display: none;
 } 
+
+.cat-children-list .current-cat .children a {
+    display:inline-block;
+}
 
 .breadcrumb-cat a:last-of-type {
     display:none;
