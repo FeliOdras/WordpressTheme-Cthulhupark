@@ -235,11 +235,22 @@ a#wp-submit:hover,
     height:auto;
 }
 
+<<<<<<< HEAD
+=======
+.cat-children-list .current-cat a {
+    color:#ccc;
+}
+
+>>>>>>> CatMenu
 .cat-children-list .children a {
     color:#8E563F;
 }
 
+<<<<<<< HEAD
 .cat-children-list a:hover {
+=======
+.cat-children-list .children a:hover {
+>>>>>>> CatMenu
     background-color:#f9e6a4;
 }
 
