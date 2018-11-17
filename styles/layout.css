@@ -427,10 +427,12 @@ a#wp-submit,
 .cat-children-list .children {
    opacity:0;
    position: absolute;
+   z-index: -1;
 }
 
 .cat-children-list li:hover .children {
     opacity:1;
+    z-index: 10;
 }
 
 .cat-children-list .children li{
