@@ -446,18 +446,14 @@ a#wp-submit,
 =======
 }
 
-.cat-children-list li .children a{
-    display:none;
-}
-
-.cat-children-list li.current-cat a {
-    border:none;
-    margin:3px 14px 3px 0px;
-}
-
-.cat-children-list li.current-cat .children a {
+.cat-children-list li a {
     display:inline-block;
+<<<<<<< HEAD
 >>>>>>> CatMenu
+=======
+    border-bottom:1px dotted #8E563F;
+    margin:3px 14px 3px 0px;
+>>>>>>> ac70bce35fa6350030433a8d0e9349e6182dd6e6
 }
 
 .cat-children-list li.current-cat a:after {
@@ -465,10 +461,14 @@ a#wp-submit,
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .cat-children-list li li a {
 =======
 .cat-children-list li.current-cat li a {
 >>>>>>> CatMenu
+=======
+.cat-children-list li li a {
+>>>>>>> ac70bce35fa6350030433a8d0e9349e6182dd6e6
     border-bottom:1px dotted #8E563F;
     margin: 3px 7px;
 }

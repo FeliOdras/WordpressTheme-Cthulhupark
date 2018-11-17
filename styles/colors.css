@@ -239,13 +239,16 @@ a#wp-submit:hover,
 =======
 .cat-children-list .current-cat a {
     color:#ccc;
+    display:none;    
 }
 
 >>>>>>> CatMenu
 .cat-children-list .children a {
     color:#8E563F;
+    display: block;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .cat-children-list a:hover {
 =======
@@ -256,6 +259,10 @@ a#wp-submit:hover,
 
 .breadcrumb-cat a:after {
     color:#333;
+=======
+.cat-children-list a:hover {
+    background-color:#f9e6a4;
+>>>>>>> ac70bce35fa6350030433a8d0e9349e6182dd6e6
 }
 
 @media screen and (min-width:1281px) {
