@@ -266,6 +266,11 @@ a#wp-submit,
     flex: 0 0 90px;
 }
 
+.archive .post-content,
+.search .post-content {
+    flex-grow:1;
+}
+
 .archive .post-footer,
 .search .post-footer {
     clear:both;
@@ -394,4 +399,48 @@ a#wp-submit,
 
 .archive-entry .dairy .featured-image {
     margin-bottom:10px;
+}
+
+
+.breadcrumb-cat {
+    margin-bottom:10px;
+}
+
+.cat-children-list:after {
+    content:'';
+    clear: both;
+    display:table;
+}
+
+.cat-children-list li{
+    float:left;
+    padding:5px;
+}
+.cat-children-list .current-cat a{
+    font-weight:bold;
+}
+
+.cat-children-list .current-cat li a{
+    font-weight: normal;
+} 
+
+.cat-children-list .children {
+   opacity:0;
+   position: absolute;
+}
+
+.cat-children-list li:hover .children {
+    opacity:1;
+}
+
+.cat-children-list .children li{
+    float:none;
+}
+
+.cat-children-list .children li a {
+    display:block;
+}
+
+.cat-children-list .children .children {
+    display: none;
 }
