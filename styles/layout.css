@@ -259,7 +259,7 @@ a#wp-submit,
 
 .archive-entry .featured-image {
     width:15%;
-    max-width:200px;
+    max-width:100px;
     height:auto;
     margin-right:15px;
     float:left;
