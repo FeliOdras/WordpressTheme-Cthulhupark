@@ -405,6 +405,10 @@ a#wp-submit,
 .breadcrumb-cat {
     margin-bottom:10px;
 }
+.cat-children-list {
+    margin: 25px 0;
+    padding: 15px;
+}
 
 .cat-children-list:after {
     content:'';
@@ -414,7 +418,7 @@ a#wp-submit,
 
 .cat-children-list li{
     float:left;
-    padding:5px;
+    padding:3px 10px;
 }
 .cat-children-list .current-cat a{
     font-weight:bold;
