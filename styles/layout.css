@@ -406,9 +406,15 @@ a#wp-submit,
     margin-bottom:10px;
 }
 
+.cat-children-list:after {
+    content:'';
+    clear: both;
+    display:table;
+}
+
 .cat-children-list li{
     float:left;
-    position: relative;
+    padding:5px;
 }
 .cat-children-list .current-cat a{
     font-weight:bold;
@@ -420,12 +426,17 @@ a#wp-submit,
 
 .cat-children-list .children {
    opacity:0;
+   position: absolute;
 }
 
 .cat-children-list li:hover .children {
     opacity:1;
 }
 
-.cat-children-list .current-cat .children li{
+.cat-children-list .children li{
     float:none;
+}
+
+.cat-children-list .children li a {
+    display:block;
 }

@@ -222,6 +222,21 @@ a#wp-submit:hover,
     color:#f9e6a4;
 }
 
+.cat-children-list .children {
+    background-color:rgba(142,86,63,0.8);
+}
+
+.cat-children-list .children a {
+    color:#f9e6a4;
+}
+
+.cat-children-list .children a:hover {
+    color:#8E563F;
+    background-color:#f9e6a4;
+    
+
+}
+
 @media screen and (min-width:1281px) {
     body {
         background-image:url(../images/ctulhu-page-background.jpg);
