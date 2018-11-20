@@ -235,34 +235,9 @@ a#wp-submit:hover,
     height:auto;
 }
 
-<<<<<<< HEAD
-=======
-.cat-children-list .current-cat a {
-    color:#ccc;
-    display:none;    
-}
-
->>>>>>> CatMenu
 .cat-children-list .children a {
     color:#8E563F;
     display: block;
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-.cat-children-list a:hover {
-=======
-.cat-children-list .children a:hover {
->>>>>>> CatMenu
-    background-color:#f9e6a4;
-}
-
-.breadcrumb-cat a:after {
-    color:#333;
-=======
-.cat-children-list a:hover {
-    background-color:#f9e6a4;
->>>>>>> ac70bce35fa6350030433a8d0e9349e6182dd6e6
 }
 
 @media screen and (min-width:1281px) {
@@ -270,5 +245,11 @@ a#wp-submit:hover,
         background-image:url(../images/ctulhu-page-background.jpg);
         background-size: cover;
         background-attachment: fixed;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .sidebar-top {
+        color:#f9e6a4;
     }
 }
