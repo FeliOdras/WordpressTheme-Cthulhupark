@@ -146,10 +146,13 @@ li.widget {
     font-weight: bold;
 }
 
-.archive .page-header h1,
-.search .page-header h1 {
+h1 {
     font-family: 'Fredericka the Great', serif;
     font-size:27px;
+}
+
+.dairy h1, .dreamlands h1 {
+    font-family: inherit;
 }
 
 h2 {

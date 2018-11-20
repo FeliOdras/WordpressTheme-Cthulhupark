@@ -485,6 +485,10 @@ h2 {
     margin:25px 0 20px 0;
 }
 
+.dairy h2, .dreamlands h2 {
+    margin-top:0;
+}
+
 h3 {
     margin:22px 0 18px 0;
 }
@@ -502,14 +506,32 @@ table.charSkills tbody {
 table.charSkills tbody tr {
     flex:0 0 170px;
     display: flex;
+    font-size:14px;
 }
 
 .charKampf, .charWaffen, .charSprachen, .charZauber {
     margin:10px 0;
     padding:10px;
-    border:1px dotted;
+    border-top:1px dotted;
+    border-bottom:1px dotted;
+    text-align: center;
+    font-size: 14px;
+}
+
+.charKampf td:first-of-type, .charWaffen td:first-of-type, .charSprachen td:first-of-type, .charZauber td:first-of-type{
+    text-align: left;
 }
 
 table.charSkills tbody tr td:first-of-type {
     flex:1 1 100px;
+}
+
+.entry-content li {
+    line-height: 18px;
+    padding-left:20px;
+    background-image:url(../images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png);
+    background-size:14px 14px;
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    margin-bottom:10px;
 }
