@@ -212,6 +212,10 @@ li.widget {
     text-decoration: none;
 }
 
+.categories a {
+    font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
+    font-size: 11px;
+}
 
 .archive .dreamlands .post-excerpt,
 .archive .dreamlands .more-link,
