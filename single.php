@@ -38,7 +38,7 @@ $taxonomy = 'category';
                                 if ( ! empty( $post_terms ) && ! is_wp_error( $post_terms ) && ! in_category('traumwelten') && ! in_category('abenteurertagebuch') ) {echo  $terms;};
                             ?>
                         </div>
-                        <h2 class="entry-title"><?php the_title(); ?></h2>
+                        <h1 class="entry-title"><?php the_title(); ?></h1>
                         <div class="single-post-entry">
                             <?php the_content(); ?>
                         </div> <!-- single post entry -->

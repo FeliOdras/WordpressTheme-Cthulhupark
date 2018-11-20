@@ -502,12 +502,20 @@ table.charSkills tbody {
 table.charSkills tbody tr {
     flex:0 0 170px;
     display: flex;
+    font-size:14px;
 }
 
 .charKampf, .charWaffen, .charSprachen, .charZauber {
     margin:10px 0;
     padding:10px;
-    border:1px dotted;
+    border-top:1px dotted;
+    border-bottom:1px dotted;
+    text-align: center;
+    font-size: 14px;
+}
+
+.charKampf td:first-of-type, .charWaffen td:first-of-type, .charSprachen td:first-of-type, .charZauber td:first-of-type{
+    text-align: left;
 }
 
 table.charSkills tbody tr td:first-of-type {
