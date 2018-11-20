@@ -471,6 +471,12 @@ a#wp-submit,
     display:inline-block;
 }
 
-.breadcrumb-cat a:last-of-type {
-    display:none;
+.categories {
+    margin-bottom:15px;
+}
+
+.categories a {
+    padding:1px 3px;
+    border:1px dotted #8E563F;
+    border-radius:3px;
 }
