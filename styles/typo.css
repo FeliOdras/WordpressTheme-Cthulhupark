@@ -223,3 +223,13 @@ li.widget {
 .archive .dairy .more-link {
     font-size:inherit;
 }
+
+.archive .page-description {
+    font-size: 12px;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.archive .page-description p {
+    flex:1 1 200px;
+}
