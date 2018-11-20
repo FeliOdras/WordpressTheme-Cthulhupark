@@ -75,7 +75,7 @@ Theme Name: Cthulhupark
 .sidebar {
     width:20%;
     padding:20px 15px;
-    min-width: 220px;
+    min-width: 150px;
 }
 
 .sidebar-left {
@@ -241,6 +241,10 @@ a#wp-submit,
     max-width:600px;
     margin:0 auto 15px;
     padding: 20px 15px 0 15px;
+}
+
+.page-description {
+    clear:both;
 }
 
 .page-description p {
@@ -534,4 +538,84 @@ table.charSkills tbody tr td:first-of-type {
     background-repeat: no-repeat;
     background-position: 0 2px;
     margin-bottom:10px;
+}
+
+@media screen and (max-width:840px) {
+    .site-main {
+        flex-wrap:wrap;
+    }
+
+    .sidebar {
+        width:50%;
+    }
+
+    .main-entry {
+        flex:0 0 100%;
+    }
+
+    #sidebar-author {
+        order:-2;
+    }
+
+    #sidebar-left {
+        order:1;
+    }
+
+    .charBasics tr {
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+    .charBasics td {
+        flex:0 0 50%;
+    }
+
+    .sidebar-author {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-author li.widget {
+        width:50px;
+    }
+
+
+    .sidebar-author {
+        flex-wrap: wrap;
+        flex:0 0 100%;
+        max-width: 600px;
+        margin:auto;
+        justify-content: space-around;
+        padding-top:0;
+    }
+
+    .sidebar-author li.widget {
+        height:auto;
+    }
+
+    .sidebar-author li.widget img  {
+        position: static;
+    }
+
+    .sidebar-author li.widget .widget-title {
+        display: none;
+    }
+
+    .sidebar-top {
+        position: static;
+    }
+
+    .sub-menu {
+        z-index: 50;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .sidebar {
+        width:100%;
+    }
+
+    .sub-title {
+        display: none;
+    }
 }
