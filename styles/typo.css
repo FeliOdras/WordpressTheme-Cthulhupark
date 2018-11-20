@@ -228,8 +228,9 @@ li.widget {
     font-size: 12px;
     display: flex;
     flex-wrap:wrap;
+    padding:20px 0;
 }
 
 .archive .page-description p {
-    flex:1 1 200px;
+    flex:1 1 175px;
 }
