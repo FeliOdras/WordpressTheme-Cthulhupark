@@ -480,3 +480,36 @@ a#wp-submit,
     border:1px dotted #8E563F;
     border-radius:3px;
 }
+
+h2 {
+    margin:25px 0 20px 0;
+}
+
+h3 {
+    margin:22px 0 18px 0;
+}
+
+h4 {
+    margin:20px 0 16px 0;
+}
+
+table.charSkills tbody {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+table.charSkills tbody tr {
+    flex:0 0 170px;
+    display: flex;
+}
+
+.charKampf, .charWaffen, .charSprachen, .charZauber {
+    margin:10px 0;
+    padding:10px;
+    border:1px dotted;
+}
+
+table.charSkills tbody tr td:first-of-type {
+    flex:1 1 100px;
+}

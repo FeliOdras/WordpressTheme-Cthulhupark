@@ -19,7 +19,6 @@ get_header();
                     </nav>
                     <?php
                         the_archive_title( '<h1 class="page-title">', '</h1>' );
-                        the_archive_description( '<div class="page-description">', '</div>' );
                     ?>
                     <div class="cat-children-list">
                         <?php
@@ -39,6 +38,7 @@ get_header();
                                 <?php echo $children; ?>                        
                             </ul>                
                         <?php } ?>
+                        <?php  the_archive_description( '<div class="page-description">', '</div>' ); ?>
                     </div> <!-- .cat-children-list -->
                 </header><!-- .page-header -->
                     <?php 
