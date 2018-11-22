@@ -144,6 +144,15 @@ a#wp-submit:hover,
     color:#333
 }
 
+.archive-entry:hover {
+    background-color:#faf3db;
+}
+
+.dairy .archive-entry:hover,
+.dreamlands .archive-entry:hover {
+    background-color:transparent;
+} 
+
 .dairy {
     background-image: url(../images/Moleskin-light-line.png);
     background-repeat:repeat-y;
@@ -220,6 +229,15 @@ a#wp-submit:hover,
 .dairy .more-link:hover {
     background-color:#8E563F;
     color:#f9e6a4;
+}
+
+.archive .dairy.post-main, .archive .dreamlands.post-main {
+    box-shadow: 5px 5px 10px #666;
+    transition: all 1s;
+}
+
+.archive .dairy.post-main:hover, .archive .dreamlands.post-main:hover {
+    transform:scale(1.05);
 }
 
 .cat-children-list {

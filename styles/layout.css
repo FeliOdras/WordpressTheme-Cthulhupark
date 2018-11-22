@@ -228,8 +228,14 @@ a#wp-submit,
 }
 
 .archive-entry {
-    border-top-width:0;  
+    border:2px solid #faf3db;
     padding:5px;
+    margin:15px 0;
+}
+
+.dreamlands .archive-entry,
+.dairy .archive-entry {
+    border:none;
 }
 
 .archive-entry:after {
@@ -273,6 +279,11 @@ a#wp-submit,
     flex: 0 0 60px;
 }
 
+.post-content h2 {
+    margin-top:0;
+    margin-bottom:15px;
+}
+
 .archive .post-content,
 .search .post-content {
     flex-grow:1;
@@ -282,6 +293,8 @@ a#wp-submit,
 .search .post-footer {
     clear:both;
     padding:0 5px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .post-excerpt p{
