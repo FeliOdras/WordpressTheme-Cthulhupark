@@ -20,6 +20,13 @@ get_header();
              <div class="archive-entry">
                  <header class="post-header">                                   
                     <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
+                    <div class="post-excerpt">
+                        <?php the_excerpt () ?>
+                    </div> <!-- .post-excerpt -->
+                    <footer class="search-meta">
+                        Kategorien: <?php echo get_the_category_list(); ?><br />
+                        <?php the_tags(); ?>
+                    </footer>
                 </header>
 			</div>	
 			<?php endwhile; ?>

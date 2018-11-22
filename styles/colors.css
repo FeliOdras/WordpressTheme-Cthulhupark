@@ -258,6 +258,10 @@ a#wp-submit:hover,
     display: block;
 }
 
+.search-meta {
+    background:rgba(255,255,255,0.5);
+}
+
 @media screen and (min-width:1281px) {
     body {
         background-image:url(../images/ctulhu-page-background.jpg);
