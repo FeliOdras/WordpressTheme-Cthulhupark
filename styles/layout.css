@@ -574,6 +574,10 @@ table.charSkills tbody tr td:first-of-type {
     border-top:1px solid #ddd;
 }
 
+.tag .cat-children-list {
+    display:none;
+}
+
 @media screen and (max-width:840px) {
     .site-main {
         flex-wrap:wrap;
