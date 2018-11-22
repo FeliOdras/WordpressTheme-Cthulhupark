@@ -181,9 +181,12 @@ h4 {
     text-decoration: none;
 }
 
-.archive .more-link,
 .archive .post-excerpt {
     font-size: 13px;
+}
+
+.archive .more-link {
+    font-weight:bold;
 }
 
 .post-header .post-meta,
@@ -227,6 +230,11 @@ h4 {
 .archive .dairy .post-title a {
     font-size:18px;
     text-decoration: none;
+}
+
+.archive .dairy .post-footer, .search .post-footer,
+.archive .dreamlands .post-footer, .search .post-footer {
+    display: inherit;
 }
 
 .categories a {
