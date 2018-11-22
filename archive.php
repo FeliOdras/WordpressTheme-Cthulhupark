@@ -78,6 +78,10 @@ get_header();
                                     <div class="post-excerpt">
                                         <?php the_excerpt () ?>
                                     </div> <!-- .post-excerpt -->
+                                    <hr />
+                                    <div class="categories">
+                                        <?php echo get_the_category_list(); ?>
+                                    </div>
                                 </div><!-- .post-content -->
                                 <footer class="post-footer">
                                     <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">

@@ -2,6 +2,10 @@
 Theme Name: Cthulhupark
 */
 
+hr {
+    border-bottom: 1px dotted #8E563F;
+}
+
 #page {
     max-width: 1280px;
     margin:auto;
@@ -483,6 +487,10 @@ a#wp-submit,
     padding:1px 3px;
     border:1px dotted #8E563F;
     border-radius:3px;
+}
+
+.categories li {
+    display: inline;
 }
 
 h2 {
