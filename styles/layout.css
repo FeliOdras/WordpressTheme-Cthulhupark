@@ -540,6 +540,14 @@ table.charSkills tbody tr td:first-of-type {
     margin-bottom:10px;
 }
 
+.category-abenteurertagebuch .cat-children-list .children, 
+.category-lebensform .cat-children-list .children, 
+.category-ort .cat-children-list .children, 
+.category-dokumente .cat-children-list .children,
+.category-fuhrpark .cat-children-list .children {
+    display: none;
+}
+
 @media screen and (max-width:840px) {
     .site-main {
         flex-wrap:wrap;
