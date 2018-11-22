@@ -54,7 +54,7 @@ get_header();
                     ?>
                     <!-- The Loop -->
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                        <article class="post-main <?php if (in_category('traumwelten')) :?>dreamlands<?php elseif (in_category('abenteurertagebuch')) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
+                       <article class="post-main <?php if (in_category('traumwelten')) :?>dreamlands<?php elseif (in_category('abenteurertagebuch')) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
                             <?php if (in_category('abenteurertagebuch')) :?> 
                                 <header class="post-header">                                   
                                     <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
