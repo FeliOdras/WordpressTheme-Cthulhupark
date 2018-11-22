@@ -2,7 +2,7 @@
 
 /*
  Template Name: Tags
- Template Post Type: post
+ Template Post Type: post, page
  */
 get_header();
 ?>
