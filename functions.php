@@ -36,6 +36,17 @@ add_filter( 'get_the_archive_title', function ($title) {
     return $title;
 });
 
+function wcs_exclude_category_search( $query ) {
+    if ( is_admin() || ! $query->is_main_query() )
+      return;
+  
+    if ( $query->is_search ) {
+      $query->set( 'cat', '-2, -11' );
+    }
+  
+  }
+  add_action( 'pre_get_posts', 'wcs_exclude_category_search', 1 );
+
 # Register sidebars
 // Top sidebar
 function sidebar_top() {
