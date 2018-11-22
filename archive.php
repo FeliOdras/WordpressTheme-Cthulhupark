@@ -14,9 +14,11 @@ get_header();
             <?php get_sidebar('left'); ?>
             <section class="main-entry">
                 <header class="page-header">
+                <?php if (is_category()): ?>
                     <nav class="breadcrumb-cat">
                         <?php echo get_category_parents( $cat, true, '' ); ?>  
                     </nav>
+                <?php endif;?>
                     <?php
                         the_archive_title( '<h1 class="page-title">', '</h1>' );
                     ?>
