@@ -14,7 +14,7 @@ get_header();
         <section id="main-entry" class="main-entry">
             <article class="entry-content">
                 <?php while ( have_posts() ) : the_post(); ?>
-                    <h2 class="entry-title"><?php  the_title(); ?></h2>
+                    <h1 class="entry-title"><?php  the_title(); ?></h1>
                     <?php the_content(); ?>
                 <?php endwhile; // end of the loop. ?>
             </article>
