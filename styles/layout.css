@@ -221,7 +221,6 @@ a#wp-submit,
 
 .archive-entry {
     display:flex;
-    align-items: flex-end;
 }
 
 .post-header .post-meta {

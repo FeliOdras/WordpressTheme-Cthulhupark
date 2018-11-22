@@ -78,9 +78,13 @@ get_header();
                                     <div class="post-excerpt">
                                         <?php the_excerpt () ?>
                                     </div> <!-- .post-excerpt -->
-                                    <hr />
+                                   
                                     <div class="categories">
-                                        <?php echo get_the_category_list(); ?>
+                                        <?php 
+                                        if (! in_category ('abenteurertagebuch')) {
+                                            echo '<hr />';
+                                            echo get_the_category_list(); 
+                                        }?>
                                     </div>
                                 </div><!-- .post-content -->
                                 <footer class="post-footer">
