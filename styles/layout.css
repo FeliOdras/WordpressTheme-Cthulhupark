@@ -578,6 +578,16 @@ table.charSkills tbody tr td:first-of-type {
     display:none;
 }
 
+.search-meta {
+    padding:10px;
+    margin:10px 0;
+    background:rgba(255,255,255,0.5)
+}
+
+.search-meta li, .search-meta ul {
+    display:inline;
+}
+
 @media screen and (max-width:840px) {
     .site-main {
         flex-wrap:wrap;

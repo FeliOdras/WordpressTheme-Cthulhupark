@@ -36,6 +36,7 @@ add_filter( 'get_the_archive_title', function ($title) {
     return $title;
 });
 
+#Exclude category dairy and dreamlands from search query
 function wcs_exclude_category_search( $query ) {
     if ( is_admin() || ! $query->is_main_query() )
       return;
