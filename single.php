@@ -42,7 +42,8 @@ $taxonomy = 'category';
                         <div class="single-post-entry">
                             <?php the_content(); ?>
                         </div> <!-- single post entry -->
-                        <div class="edit-link"><?php edit_post_link('Bearbeiten', '', ''); ?></div>                        
+                        <div class="edit-link"><?php edit_post_link('Bearbeiten', '', ''); ?></div>  
+                        <span class="tags"><?php the_tags('Schlagworte: ', ', ', ''); ?></span>                      
                     </article><!-- .main-post -->
                     <?php if (in_category('traumwelten') || in_category('abenteurertagebuch')) :?>
                         <footer class="post-navigation">
