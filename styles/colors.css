@@ -272,7 +272,7 @@ a#wp-submit:hover,
 
 @media screen and (max-width:840px) {
 
-    #nav:checked ~ .menu-hauptmenu-container,
+    #nav:checked ~ .menu-hauptmenue-container,
     #nav:checked ~ .menu-main-menu-container {
         background-color: rgba(53, 21, 9, 0.7);
     }
