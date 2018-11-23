@@ -271,7 +271,38 @@ a#wp-submit:hover,
 }
 
 @media screen and (max-width:840px) {
+
+    #nav:checked ~ .menu-main-menu-container {
+        background-color: rgba(53, 21, 9, 0.7);
+    }
     .sidebar-top {
         color:#f9e6a4;
+    }
+
+    .nav-open i {
+        background-color:#f9e6a4;
+        box-shadow:0 0 5px #666;
+    }
+
+    .main-navigation li a {
+        color:#f9e6a4;
+    }
+
+    .main-navigation .sub-menu {
+        background-color:rgba(53, 21, 9, 0.9);
+    }
+
+    .main-navigation .sub-menu li a {
+        color:#f9f0cc;
+    }
+
+    .sidebar-top input {
+        background-color:#f9e6a4;
+        color:#8E563F;
+    }
+
+    .sidebar-top label,
+    .sidebar-top input[type='text'] {
+        margin-bottom:5px;
     }
 }

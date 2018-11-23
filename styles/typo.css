@@ -43,15 +43,19 @@ Theme Name: Cthulhupark
          url('../fonts/fredericka-the-great-v6-latin-regular.svg#FrederickatheGreat') format('svg'); /* Legacy iOS */
   }
 
+html {
+    font-size: 15px;
+}
+
   body {
     font-family:'Traveling Typewriter', monospace;
-    font-size:15px;
+    font-size:1rem;
     line-height:150%;
   }
 
   .main-title {
     font-family: 'Fredericka the Great', serif;
-    font-size:42px;
+    font-size:2.8rem;
     margin-bottom:15px;
 }
 
@@ -61,7 +65,8 @@ Theme Name: Cthulhupark
 
 .sub-title {
     font-family: 'Ruthie', cursive;
-    font-size:23px;
+    font-size:1.7rem;
+    line-height:2.3rem;
     font-weight:bold;
 }
 
@@ -73,20 +78,20 @@ Theme Name: Cthulhupark
     line-height:42px;
     text-decoration:none;
     font-family: 'Ruthie', cursive;
-    font-size:27px;
+    font-size:1.8rem;
     font-weight:bold;    
 }
 
 .main-navigation .sub-menu li a {
     font-family: 'Traveling Typewriter', monospace;
-    font-size: 13px;
+    font-size: 0.9rem;
     font-weight:normal;
     line-height:17px;
 }
 
 .widget-title {
     font-family: 'Fredericka the Great', serif;
-    font-size: 18px;  
+    font-size: 1.2rem;  
     font-weight:bold;
 }
 
@@ -97,7 +102,7 @@ Theme Name: Cthulhupark
 }
 
 .entry-title {
-    font-size:27px;
+    font-size:1.9rem;
 }
 
 .content-area .dreamlands a,
@@ -107,8 +112,8 @@ Theme Name: Cthulhupark
 }
 
 .sidebar-top{
-    font-size:12px;
-    line-height:13px;
+    font-size:0.8rem;
+    line-height:0.85rem;
 }
 
 li.widget {
@@ -120,12 +125,12 @@ li.widget {
 }
 
 .sidebar-top input {
-    font-size:12px;
-    line-height:12px;
+    font-size:.8rem;
+    line-height:.8rem;
 }
 
 .sidebar-top input[type='submit'] {
-    font-size:13px;
+    font-size:.85rem;
 }
 
 .content-area a {
@@ -137,8 +142,8 @@ li.widget {
 }
 
 .tbe-entry-meta {
-    font-size: 11px;
-    line-height:13px;
+    font-size: .7rem;
+    line-height:.9rem;
 }
 
 .tbe-entry-meta .author {
@@ -147,7 +152,7 @@ li.widget {
 
 h1 {
     font-family: 'Fredericka the Great', serif;
-    font-size:27px;
+    font-size:1.8rem;
 }
 
 .dairy h1, .dreamlands h1 {
@@ -155,24 +160,24 @@ h1 {
 }
 
 h2 {
-    font-size:24px;
+    font-size:1.6rem;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.4rem;
     font-weight:bold;
 }
 
 h4 {
-    font-size:16px;
+    font-size:1.1rem;
     font-weight: bold;
 }
 
 .archive .post-title a,
 .search .post-title a{
     font-weight:bold;
-    font-size: 13px;
+    font-size: .9rem;
     text-decoration: underline;
 }
 
@@ -182,7 +187,7 @@ h4 {
 }
 
 .archive .post-excerpt {
-    font-size: 13px;
+    font-size: .9rem;
 }
 
 .archive .more-link {
@@ -191,25 +196,25 @@ h4 {
 
 .post-header .post-meta,
 .single .date {
-    font-size:13px;
+    font-size:.9rem;
     text-align:right;
     font-family: 'Traveling Typewriter', monospace;
     display: block;
 }
 
 .author-description {
-    font-size: 13px;
+    font-size: .9rem;
 }
 
 .sidebar-author .widget-title {
     font-family: 'Traveling Typewriter', monospace;
-    font-size: 10px;
+    font-size: .75rem;
     font-weight:normal;
-    line-height:13px;
+    line-height:.9rem;
 }
 
 .widget_cptbe_widget .entries {
-    font-size: 13px;
+    font-size: .9rem;
     font-weight: bold;
 }
 
@@ -223,12 +228,12 @@ h4 {
 
 .edit-link a {
     font-family: 'Traveling Typewriter', monospace;
-    font-size:14px;
+    font-size:.95rem;
 }
 
 .archive .dreamlands .post-title a,
 .archive .dairy .post-title a {
-    font-size:18px;
+    font-size:1.2rem;
     text-decoration: none;
 }
 
@@ -239,7 +244,7 @@ h4 {
 
 .categories a {
     font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
-    font-size: 11px;
+    font-size: .8rem;
 }
 
 .archive .dreamlands .post-excerpt,
@@ -250,23 +255,44 @@ h4 {
 }
 
 .archive .page-description {
-    font-size: 12px;
+    font-size: .8rem;
     padding:20px 0;
 }
 
 .tags {
-    font-size: 12px;
+    font-size: .8rem;
     opacity:0.7;
 }
 
 .search-meta {
-    font-size:12px;
+    font-size:.8rem;
     opacity:0.8;
+}
+
+@media screen and (max-width:840px) {
+    .main-navigation li a {
+        font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
+        font-size:1.1rem
+    }
+
+    .main-navigation .sub-menu li a {
+        font-size: 1rem;
+    }
+
+    .sidebar-top li.widget {
+        font-size: 1.1rem;
+        margin:15px 0;
+    }
+
+    .sidebar-top input[type='submit'],
+    .sidebar-top input {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width:540px) {
     .main-title {
-        font-size: 32px;
+        font-size: 2.1rem;
         font-weight:bold;
     }
 
