@@ -651,7 +651,11 @@ table.charSkills tbody tr td:first-of-type {
 
     #main-navigation {
         background-image:none;
-        position: static;;
+        position: static;
+    }
+
+    #main-header {
+        overflow:visible;
     }
 
     .main-navigation li  {
