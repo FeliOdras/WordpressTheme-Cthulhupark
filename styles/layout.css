@@ -14,6 +14,8 @@ hr {
 
 .main-header {
     position: relative;
+    height:65vh;
+    overflow: hidden;
 }
 
 .site-main {
@@ -23,7 +25,9 @@ hr {
 }
 
 .main-header img {
-    width:100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .blog-info {
@@ -588,7 +592,19 @@ table.charSkills tbody tr td:first-of-type {
     display:inline;
 }
 
+@media screen and (orientation:portrait) {
+    .main-header {
+        height:40vh;
+    }
+
+    .main-header img {
+        width:180%;
+        left:-40%;
+        max-width:9999px;
+    }
+}
 @media screen and (max-width:840px) {
+
     .site-main {
         flex-wrap:wrap;
     }
