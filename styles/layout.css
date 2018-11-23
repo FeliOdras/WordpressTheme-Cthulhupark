@@ -14,6 +14,9 @@ hr {
 
 .main-header {
     position: relative;
+}
+
+.main-header-wrapper {
     height:65vh;
     overflow: hidden;
 }
