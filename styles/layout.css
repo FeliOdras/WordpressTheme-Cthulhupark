@@ -598,16 +598,75 @@ table.charSkills tbody tr td:first-of-type {
 
 @media screen and (orientation:portrait) {
     .main-header {
-        height:40vh;
+        height:auto;
     }
 
     .main-header img {
         width:180%;
-        left:-40%;
+        margin-left:-40%;
         max-width:9999px;
+        position: static;
     }
 }
+
 @media screen and (max-width:840px) {
+    .main-navigation input[type='checkbox'] {
+        display: none;
+    }
+
+    .menu-main-menu-container {
+        position: absolute;
+        right:-100%;
+        top:0;
+        transition:all 1s;
+        z-index: 110;
+        width:100%;
+    }
+
+    .nav-open {
+        position: absolute;
+        right:5px;
+        top: 5px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        z-index: 120;
+        border-radius: 50%;
+        
+    }
+
+    .nav-open i {
+        width:30px;
+        height:3px;
+        margin:6px 1px;
+        display: block;
+    }
+    
+    #nav:checked ~ .menu-main-menu-container {
+        right:0;
+        transition: all 1s;
+     }
+
+    #main-navigation {
+        background-image:none;
+        position: static;;
+    }
+
+    .main-navigation li  {
+        display:block;
+    }
+
+    .main-navigation li .sub-menu {
+        position:static;
+        opacity:1;
+        padding-left:25px;
+        padding-bottom:20px;
+    }
+
+    .main-navigation li .sub-menu li a{
+        padding:12px 0;
+        height: auto;
+    }
 
     .site-main {
         flex-wrap:wrap;

@@ -32,6 +32,8 @@
                 </ul>
             </aside>
             <nav id="main-navigation" class="main-navigation">
+            <input type="checkbox" id="nav" class="hidden"/>
+            <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
                 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
             </nav>
         </header>
