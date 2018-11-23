@@ -278,6 +278,16 @@ h4 {
     .main-navigation .sub-menu li a {
         font-size: 1rem;
     }
+
+    .sidebar-top li.widget {
+        font-size: 1.1rem;
+        margin:15px 0;
+    }
+
+    .sidebar-top input[type='submit'],
+    .sidebar-top input {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width:540px) {

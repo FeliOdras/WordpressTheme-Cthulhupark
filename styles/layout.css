@@ -668,6 +668,10 @@ table.charSkills tbody tr td:first-of-type {
         height: auto;
     }
 
+    .sidebar-top {
+        bottom:0;
+    }
+
     .site-main {
         flex-wrap:wrap;
     }
@@ -736,5 +740,23 @@ table.charSkills tbody tr td:first-of-type {
 @media screen and (max-width:540px) {
     .sidebar {
         width:100%;
+    }
+
+    .sidebar-top li.widget {
+        display: block;
+    }
+
+    .sidebar-top .widget_cplogin_widget p {
+        display:block;
+        margin-bottom:6px;
+        text-align:center;
+    }
+
+    .sidebar-top .widget_cplogin_widget input {
+        width:95%; 
+    }
+
+    .sidebar-top li.widget_search {
+        display: none;
     }
 }
