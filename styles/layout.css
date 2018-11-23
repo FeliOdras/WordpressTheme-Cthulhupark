@@ -609,11 +609,11 @@ table.charSkills tbody tr td:first-of-type {
     }
 }
 
-@media screen and (max-width:840px) {
-    .main-navigation input[type='checkbox'] {
-        display: none;
-    }
+.main-navigation input[type='checkbox'] {
+    display: none;
+}
 
+@media screen and (max-width:840px) {
     .menu-hauptmenue-container,
     .menu-main-menu-container {
         position: absolute;
