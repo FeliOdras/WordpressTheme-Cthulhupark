@@ -614,6 +614,7 @@ table.charSkills tbody tr td:first-of-type {
         display: none;
     }
 
+    .menu-hauptmenue-container,
     .menu-main-menu-container {
         position: absolute;
         right:-100%;
@@ -642,7 +643,8 @@ table.charSkills tbody tr td:first-of-type {
         display: block;
     }
     
-    #nav:checked ~ .menu-main-menu-container {
+    #nav:checked ~ .menu-main-menu-container,
+    #nav:checked ~ .menu-hauptmenue-container {
         right:0;
         transition: all 1s;
      }
