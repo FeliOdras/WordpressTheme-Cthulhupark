@@ -154,8 +154,7 @@ a#wp-submit:hover,
 } 
 
 .dairy {
-    background-image: url(../images/Moleskin-light-line.png);
-    background-repeat:repeat-y;
+    background-color:#FEFCE8;
 }
 
 .dairy .archive-entry,
@@ -164,8 +163,7 @@ a#wp-submit:hover,
 }
 
 .dreamlands {
-    background-image: url(../images/Moleskin-dark-line.png);
-    background-repeat:repeat-y;
+    background-color:#2B2B2B;
 }
 
 .dreamlands .archive-entry,
