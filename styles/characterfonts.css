@@ -65,15 +65,14 @@
 
   /* WinterCalligraphy regular - latin-ext_latin - 三十郎*/
 @font-face {
-    font-family: 'WinterCalligraphy';
-    font-style: normal;
+    font-family: 'Hoffmann';
     font-weight: 400;
-    src: url('../fonts/WinterCalligraphy.eot'); /* IE9 Compat Modes */
-    src: local('Sacramento'), local('Sacramento-Regular'),
-         url('../fonts/WinterCalligraphy.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/WinterCalligraphy.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/WinterCalligraphy.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/WinterCalligraphy.svg#PWHandsript') format('svg'); /* Legacy iOS */
+    src: url('../fonts/hoffm__.eot'); /* IE9 Compat Modes */
+    src: local('Hoffmann'), local('Hoffmann-Regular'),
+         url('../fonts/hoffm___.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/hoffm___.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/hoffm___.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/hoffm___.svg#Hoffmann') format('svg'); /* Legacy iOS */
   }
 
 
@@ -102,7 +101,7 @@
   }
 
   .三十郎 {
-      font-family: WinterCalligraphy, cursive;
-      font-size:23px;
+      font-family: 'Hoffmann', cursive;
+      font-size:20px;
       line-height:33px;
   }
