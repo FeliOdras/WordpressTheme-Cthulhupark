@@ -40,10 +40,6 @@
          url('./fonts/fredericka-the-great-v6-latin-regular.svg#FrederickatheGreat') format('svg'); /* Legacy iOS */
   }
 
-  $mainFont: 'Traveling Typewriter', Courier, monospace;
-  $headlineFont: 'Fredericka the Great', serif;
-  $mainScriptFont: Ruthie, cursive;
-
   // Dairy font - basic
 
   /* shadows-into-light-regular - latin - general*/
@@ -59,8 +55,6 @@
          url('./fonts/shadows-into-light-v7-latin-regular.svg#ShadowsIntoLight') format('svg'); /* Legacy iOS */
 }
 
-$dairyFont:'Shadow Into Light', cursive;
-
 /* bad-script-regular - latin - LC*/
 @font-face {
     font-family: 'Bad Script';
@@ -73,8 +67,6 @@ $dairyFont:'Shadow Into Light', cursive;
          url('./fonts/bad-script-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('./fonts/bad-script-v6-latin-regular.svg#BadScript') format('svg'); /* Legacy iOS */
   }
-
-  $LCFont: 'Bad Script', cursive;
 
   /* Zai Calligraphy - latin - MW*/
 @font-face {
@@ -89,8 +81,6 @@ $dairyFont:'Shadow Into Light', cursive;
          url('./fonts/zaiCalligraphyScriptHandwritten.svg#BadScript') format('svg'); /* Legacy iOS */
   }
 
-  $MycroftFont: 'Zai Calligraphy', cursive;
-
   /* bilbo-regular - latin - HWJ */
   @font-face {
     font-family: 'Bilbo';
@@ -103,8 +93,6 @@ $dairyFont:'Shadow Into Light', cursive;
          url('./fonts/bilbo-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('./fonts/bilbo-v7-latin-regular.svg#Bilbo') format('svg'); /* Legacy iOS */
   }
-
-  $HenryFont: Bilbo, cursive;
 
    /* just-me-again-down-here-regular - latin - RHW */
 @font-face {
@@ -119,8 +107,6 @@ $dairyFont:'Shadow Into Light', cursive;
          url('./fonts/just-me-again-down-here-v9-latin-regular.svg#JustMeAgainDownHere') format('svg'); /* Legacy iOS */
   }
 
-  $RagnarFont: 'Just Me Again Down Here', cursive;
-
   /* Hoffmann Script regular - latin-ext_latin - 三十郎*/
 @font-face {
     font-family: 'Hoffmann';
@@ -132,6 +118,3 @@ $dairyFont:'Shadow Into Light', cursive;
          url('./fonts/hoffm___.ttf') format('truetype'), /* Safari, Android, iOS */
          url('./fonts/hoffm___.svg#Hoffmann') format('svg'); /* Legacy iOS */
   }
-
-  $SanjuroFont: Hoffmann, cursive;
-
