@@ -1,16 +1,6 @@
 /* Layout and positioning 
 Theme Name: Cthulhupark
 */
-.main-navigation li .sub-menu {
-  position: absolute;
-  left: -9999px;
-  opacity: 0;
-  transition: opacity 0.8s; }
-
-.main-navigation li:hover .sub-menu {
-  left: 0;
-  opacity: 1; }
-
 .main-navigation .sub-menu li {
   display: block;
   width: 100%; }

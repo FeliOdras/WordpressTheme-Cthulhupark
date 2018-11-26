@@ -40,6 +40,20 @@
             display: inline-block;
             position: relative;
 
+            .sub-menu {
+                position:absolute;
+                left:-9999px;
+                opacity: 0;
+                transition:opacity 0.8s
+            }
+
+            &:hover {
+                .sub-menu {
+                    left:0;
+                    opacity: 1;
+                }
+            }
+
             a {
                 display:inline-block;
                 height:42px;

@@ -226,6 +226,14 @@ hr {
     .main-navigation ul li {
       display: inline-block;
       position: relative; }
+      .main-navigation ul li .sub-menu {
+        position: absolute;
+        left: -9999px;
+        opacity: 0;
+        transition: opacity 0.8s; }
+      .main-navigation ul li:hover .sub-menu {
+        left: 0;
+        opacity: 1; }
       .main-navigation ul li a {
         display: inline-block;
         height: 42px;

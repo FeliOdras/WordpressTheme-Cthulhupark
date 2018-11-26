@@ -27,3 +27,9 @@
   $darkwhite: #eeeeee;
   $black: #000;
   $lightblack:#333;
+
+  // Media queries
+
+  $portrait: screen and (orientation:portrait);
+  $tablet: screen and (max-width:840px);
+  $phone: screen and (max-width:540px);
