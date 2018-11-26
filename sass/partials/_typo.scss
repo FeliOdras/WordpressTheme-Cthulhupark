@@ -1,0 +1,41 @@
+// Typography
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: $mainFont;
+    font-size:1rem;
+    line-height:150%;
+}
+
+.dairy, .dreamlands {
+    font-family: $dairyFont;
+    font-size: 18px;
+    line-height:28px;
+}
+
+.LC {
+    font-family: $LCFont;
+}
+
+.MW {
+  font-family: $MycroftFont;
+}
+ 
+.HWJ {
+    font-family: $HenryFont;
+    font-size:23px;
+}
+
+.RHW {
+    font-family: $RagnarFont;
+    font-size:23px;
+}
+
+.三十郎 {
+    font-family: $SanjuroFont;
+    font-size:20px;
+    line-height:33px;
+}

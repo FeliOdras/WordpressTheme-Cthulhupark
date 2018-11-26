@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Cthulhupark
 Theme URI: https://www.cthulhupark.de
@@ -13,9 +14,123 @@ Text Domain: cthulhupark
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import 'styles/reset.css';
-@import 'styles/basics.css';
-@import 'styles/layout.css';
-@import 'styles/typo.css';
-@import 'styles/colors.css';
-@import 'styles/characterfonts.css';
+/* Traveling Typewriter */
+@font-face {
+  font-family: 'Traveling Typewriter';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/travelingtypewriter.eot");
+  /* IE9 Compat Modes */
+  src: local("Traveling Typewriter"), local("Traveling-Typewriter-Regular"), url("./fonts/travelingtypewriter.woff2") format("woff2"), url("./fonts/travelingtypewriter.woff") format("woff"), url("./fonts/travelingtypewriter.ttf") format("truetype"), url("./fonts/travelingtypewriter.svg#TravelingTypewriter") format("svg");
+  /* Legacy iOS */ }
+
+/* ruthie-regular - latin-ext */
+@font-face {
+  font-family: 'Ruthie';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/ruthie-v8-latin-ext-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Ruthie"), local("Ruthie-Regular"), url("./fonts/ruthie-v8-latin-ext-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/ruthie-v8-latin-ext-regular.woff2") format("woff2"), url("./fonts/ruthie-v8-latin-ext-regular.woff") format("woff"), url("./fonts/ruthie-v8-latin-ext-regular.svg#Ruthie") format("svg");
+  /* Legacy iOS */ }
+
+/* fredericka-the-great-regular - latin */
+@font-face {
+  font-family: 'Fredericka the Great';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/fredericka-the-great-v6-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("./Fredericka the Great"), local("FrederickatheGreat"), url("./fonts/fredericka-the-great-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/fredericka-the-great-v6-latin-regular.woff2") format("woff2"), url("./fonts/fredericka-the-great-v6-latin-regular.woff") format("woff"), url("./fonts/fredericka-the-great-v6-latin-regular.ttf") format("truetype"), url("./fonts/fredericka-the-great-v6-latin-regular.svg#FrederickatheGreat") format("svg");
+  /* Legacy iOS */ }
+
+/* shadows-into-light-regular - latin - general*/
+@font-face {
+  font-family: 'Shadows Into Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/shadows-into-light-v7-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Shadows Into Light"), local("ShadowsIntoLight"), url("./fonts/shadows-into-light-v7-latin-regular.woff2") format("woff2"), url("./fonts/shadows-into-light-v7-latin-regular.woff") format("woff"), url("./fonts/shadows-into-light-v7-latin-regular.ttf") format("truetype"), url("./fonts/shadows-into-light-v7-latin-regular.svg#ShadowsIntoLight") format("svg");
+  /* Legacy iOS */ }
+
+/* bad-script-regular - latin - LC*/
+@font-face {
+  font-family: 'Bad Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/bad-script-v6-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Bad Script Regular"), local("BadScript-Regular"), url("./fonts/bad-script-v6-latin-regular.woff2") format("woff2"), url("./fonts/bad-script-v6-latin-regular.woff") format("woff"), url("./fonts/bad-script-v6-latin-regular.ttf") format("truetype"), url("./fonts/bad-script-v6-latin-regular.svg#BadScript") format("svg");
+  /* Legacy iOS */ }
+
+/* Zai Calligraphy - latin - MW*/
+@font-face {
+  font-family: 'Zai Calligraphy';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/zaiCalligraphyScriptHandwritten.eot");
+  /* IE9 Compat Modes */
+  src: local("zai Calligraphy Script Handwritten"), local("zaiCalligraphyScriptHandwritten-regular"), url("./fonts/zaiCalligraphyScriptHandwritten.woff2") format("woff2"), url("./fonts/zaiCalligraphyScriptHandwritten.woff") format("woff"), url("./fonts/zaiCalligraphyScriptHandwritten.ttf") format("truetype"), url("./fonts/zaiCalligraphyScriptHandwritten.svg#BadScript") format("svg");
+  /* Legacy iOS */ }
+
+/* bilbo-regular - latin - HWJ */
+@font-face {
+  font-family: 'Bilbo';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/bilbo-v7-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Bilbo Regular"), local("Bilbo-Regular"), url("./fonts/bilbo-v7-latin-regular.woff2") format("woff2"), url("./fonts/bilbo-v7-latin-regular.woff") format("woff"), url("./fonts/bilbo-v7-latin-regular.ttf") format("truetype"), url("./fonts/bilbo-v7-latin-regular.svg#Bilbo") format("svg");
+  /* Legacy iOS */ }
+
+/* just-me-again-down-here-regular - latin - RHW */
+@font-face {
+  font-family: 'Just Me Again Down Here';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/just-me-again-down-here-v9-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Just Me Again Down Here"), local("JustMeAgainDownHere"), url("./fonts/just-me-again-down-here-v9-latin-regular.woff2") format("woff2"), url("./fonts/just-me-again-down-here-v9-latin-regular.woff") format("woff"), url("./fonts/just-me-again-down-here-v9-latin-regular.ttf") format("truetype"), url("./fonts/just-me-again-down-here-v9-latin-regular.svg#JustMeAgainDownHere") format("svg");
+  /* Legacy iOS */ }
+
+/* Hoffmann Script regular - latin-ext_latin - 三十郎*/
+@font-face {
+  font-family: 'Hoffmann';
+  font-weight: 400;
+  src: url("./fonts/hoffm__.eot");
+  /* IE9 Compat Modes */
+  src: local("Hoffmann"), local("Hoffmann-Regular"), url("./fonts/hoffm___.woff2") format("woff2"), url("./fonts/hoffm___.woff") format("woff"), url("./fonts/hoffm___.ttf") format("truetype"), url("./fonts/hoffm___.svg#Hoffmann") format("svg");
+  /* Legacy iOS */ }
+
+html {
+  font-size: 15px; }
+
+body {
+  font-family: "Traveling Typewriter", Courier, monospace;
+  font-size: 1rem;
+  line-height: 150%; }
+
+.dairy, .dreamlands {
+  font-family: "Shadow Into Light", cursive;
+  font-size: 18px;
+  line-height: 28px; }
+
+.LC {
+  font-family: "Bad Script", cursive; }
+
+.MW {
+  font-family: "Zai Calligraphy", cursive; }
+
+.HWJ {
+  font-family: Bilbo, cursive;
+  font-size: 23px; }
+
+.RHW {
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: 23px; }
+
+.三十郎 {
+  font-family: Hoffmann, cursive;
+  font-size: 20px;
+  line-height: 33px; }
