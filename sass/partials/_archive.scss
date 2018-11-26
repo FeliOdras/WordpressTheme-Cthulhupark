@@ -1,0 +1,58 @@
+//Archive and Archive Lists
+.archive-entry {
+    display:flex;
+    border:2px solid #faf3db;
+    padding:5px;
+    margin:15px 0;
+
+    .featured-image {
+        width:15%;
+        max-width:200px;
+        height:auto;
+        margin-right:15px;
+        float:left;
+        flex: 0 0 60px;
+
+        img {
+            height:auto;
+        }
+    }
+}
+
+.archive, .search {
+
+    .page-header {
+        margin-top:30px;
+        max-width:600px;
+        margin:0 auto 15px;
+        padding: 20px 15px 0 15px;
+
+        .post-title {
+            a{
+                display: block;
+                border:none;
+            }
+        }
+    }
+
+    .post-main {
+        max-width:600px;
+        margin:0px auto;
+    }
+}
+
+.page-description {
+    clear:both;
+} 
+
+.post-header {
+    .post-meta {
+        padding:3px 15px;
+    }
+}
+
+.dreamlands, .dairy {
+    .archive-entry {
+        border:none;
+    }
+}

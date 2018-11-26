@@ -4,6 +4,20 @@
     align-self: stretch;
 }
 
+.content-area {
+     a {
+        border-bottom:1px dotted #8E563F;
+
+        &:hover {
+            border-style: solid;
+        }
+    }
+
+    p {
+        margin-bottom:15px;
+    }
+}
+
 .main-entry {
     width:60%;
 

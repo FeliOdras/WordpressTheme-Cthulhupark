@@ -1,4 +1,5 @@
-// Sidebars - Top, Left, Right
+// Sidebars and Widgets - Top, Left, Right
+// Theme: Cthulhupark
 
 .sidebar {
     width:20%;
@@ -32,6 +33,19 @@
             display:block;
         }
 
+        #wp-submit {
+            padding:4px;
+            display:inline;
+        }
+
+        input[type='submit']{
+            padding:4px;
+        }
+
+        .logout {
+            display:inline;
+        }
+
         .widget_cplogin_widget {
             p{
                 display:inline-block;
@@ -42,6 +56,16 @@
     input {
         padding: 0 3px;
     }
+
+    .widget_search {
+        float:right;
+    }
+
+    .logged-in {
+        .widget_cplogin_widget {
+            padding-top:15px;
+        }
+    }
 }
 
 li.widget {
@@ -51,6 +75,35 @@ li.widget {
         text-align: center;
         padding:3px;
         margin-bottom:15px;
+    }
+}
+
+.widget_cptbe_widget {
+    .entries {
+        border:1px dotted #8E563F;
+        padding:5px;
+        margin:4px 0;
+
+        a {
+            display: block;
+            border:none;
+        }
+
+        .tbe-entry-meta {
+            padding:3px 5px; 
+            margin:7px -5px -5px -5px ;
+
+            .author {
+                border-right:1px dotted #8E563F;
+                padding-right:4px; 
+            }
+
+            .date {
+                float:right;
+                border-left:1px dotted #8E563F;
+                padding-left:4px;
+            }
+        }
     }
 }
 
