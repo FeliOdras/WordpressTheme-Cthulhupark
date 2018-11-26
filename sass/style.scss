@@ -13,12 +13,15 @@ Text Domain: cthulhupark
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import 'styles/basics.css';
+* {
+    transition: all .8s;
+}
 @import 'styles/layout.css';
 @import 'styles/typo.css';
 @import 'styles/colors.css';
 
 
 @import 'partials/reset';
+@import 'partials/essential';
 @import 'partials/fonts';
 @import 'partials/typo'; 

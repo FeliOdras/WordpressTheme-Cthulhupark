@@ -14,10 +14,12 @@ Text Domain: cthulhupark
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import url(styles/basics.css);
 @import url(styles/layout.css);
 @import url(styles/typo.css);
 @import url(styles/colors.css);
+* {
+  transition: all .8s; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -69,6 +71,37 @@ table {
 hr {
   height: 0;
   border: none; }
+
+/* Basic and editor styles
+Theme Name: Cthulhupark
+*/
+.aligncenter {
+  margin: auto;
+  display: block; }
+
+.alignleft {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+.alignright {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+img {
+  max-width: 100%; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
 
 /* Traveling Typewriter */
 @font-face {
