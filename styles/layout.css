@@ -2,68 +2,6 @@
 Theme Name: Cthulhupark
 */
 
-hr {
-    border-bottom: 1px dotted #8E563F;
-}
-
-#page {
-    max-width: 1280px;
-    margin:auto;
-    overflow: hidden;
-}
-
-.main-header {
-    position: relative;
-}
-
-.main-header-wrapper {
-    height:65vh;
-    overflow: hidden;
-}
-
-.site-main {
-    display:flex;
-    justify-content: space-between;
-    align-self: stretch;
-}
-
-.main-header img {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
-.blog-info {
-    position: absolute;
-    top:20px;
-    left:15px;
-    z-index:90;
-}
-
-.main-navigation {
-    margin-top:-4px;
-    bottom:0;
-    position: absolute;
-    width:100%;
-}
-
-.main-navigation ul {
-    max-width: 1280px;
-    margin:auto;
-}
-
-.main-navigation li {
-    display: inline-block;
-    position: relative;
-}
-
-.main-navigation li a {
-    display:inline-block;
-    height:42px;
-    padding:0 15px;
-    margin-left:-3px;
-}
-
 .main-navigation li .sub-menu {
     position:absolute;
     left:-9999px;

@@ -21,7 +21,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import 'styles/colors.css';
 
 
+@import 'partials/fonts';
+@import 'partials/vars';
 @import 'partials/reset';
 @import 'partials/essential';
-@import 'partials/fonts';
+@import 'partials/header';
+@import 'partials/mainContent';
 @import 'partials/typo'; 
