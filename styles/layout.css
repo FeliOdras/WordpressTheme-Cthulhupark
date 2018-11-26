@@ -1,16 +1,6 @@
 /* Layout and positioning 
 Theme Name: Cthulhupark
 */
-.main-navigation .sub-menu li {
-    display:block;
-    width: 100%;
-}
-
-.main-navigation .sub-menu li a {
-    width: 100%;
-    min-height:27px;
-    height:auto;
-}
 
 .sidebar {
     width:20%;
@@ -515,22 +505,6 @@ table.charSkills tbody tr td:first-of-type {
     display:inline;
 }
 
-@media screen and (orientation:portrait) {
-    .main-header {
-        height:auto;
-    }
-
-    .main-header img {
-        width:180%;
-        margin-left:-40%;
-        max-width:9999px;
-        position: static;
-    }
-}
-
-.main-navigation input[type='checkbox'] {
-    display: none;
-}
 
 @media screen and (max-width:840px) {
     .menu-hauptmenue-container,

@@ -202,10 +202,19 @@ hr {
 
 .main-header {
   position: relative; }
+  @media (orientation: portrait) {
+    .main-header {
+      height: auto; } }
   .main-header img {
     width: 100%;
     position: absolute;
     bottom: 0; }
+    @media (orientation: portrait) {
+      .main-header img {
+        width: 180%;
+        margin-left: -40%;
+        max-width: 9999px;
+        position: static; } }
   .main-header .blog-info {
     position: absolute;
     top: 20px;
@@ -220,6 +229,8 @@ hr {
   bottom: 0;
   position: absolute;
   width: 100%; }
+  .main-navigation input[type='checkbox'] {
+    display: none; }
   .main-navigation ul {
     max-width: 1280px;
     margin: auto; }
@@ -231,6 +242,14 @@ hr {
         left: -9999px;
         opacity: 0;
         transition: opacity 0.8s; }
+        .main-navigation ul li .sub-menu li {
+          display: block;
+          width: 100%; }
+          .main-navigation ul li .sub-menu li a {
+            width: 100%;
+            min-height: 27px;
+            height: auto;
+            margin: 0px; }
       .main-navigation ul li:hover .sub-menu {
         left: 0;
         opacity: 1; }

@@ -7,11 +7,22 @@
 .main-header {
     position: relative;
 
+        @media #{$portrait} {
+            height:auto;
+        }
+
     img {
         width: 100%;
         position: absolute;
         bottom: 0;
-    }
+
+        @media #{$portrait} {
+            width:180%;
+            margin-left:-40%;
+            max-width:9999px;
+            position: static;
+            }
+        }
 
     .blog-info {
         position: absolute;
@@ -32,6 +43,10 @@
     position: absolute;
     width:100%;
 
+    input[type='checkbox'] {
+        display: none;
+    }
+
     ul {
         max-width: 1280px;
         margin:auto;
@@ -44,13 +59,27 @@
                 position:absolute;
                 left:-9999px;
                 opacity: 0;
-                transition:opacity 0.8s
+                transition:opacity 0.8s;
+
+                li {
+                    display:block;
+                    width: 100%;
+            
+                    a {
+                        width:100%;
+                        min-height:27px;
+                        height:auto;
+                        margin:0px;
+                    }
+                }
             }
 
             &:hover {
                 .sub-menu {
                     left:0;
                     opacity: 1;
+
+                    
                 }
             }
 
@@ -62,4 +91,9 @@
             }
         }
     }
+}
+
+.sub-menu {
+
+    
 }
