@@ -16,6 +16,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 * {
     transition: all .8s;
 }
+
 @import 'styles/layout.css';
 @import 'styles/typo.css';
 @import 'styles/colors.css';
@@ -28,4 +29,5 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import 'partials/header';
 @import 'partials/sidebar';
 @import 'partials/mainContent';
-@import 'partials/typo'; 
+@import 'partials/archive';
+@import 'partials/typo';

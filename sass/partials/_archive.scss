@@ -1,58 +1,71 @@
 //Archive and Archive Lists
 .archive-entry {
-    display:flex;
-    border:2px solid #faf3db;
-    padding:5px;
-    margin:15px 0;
+    display: flex;
+    border: 2px solid #faf3db;
+    padding: 5px;
+    margin: 15px 0;
 
     .featured-image {
-        width:15%;
-        max-width:200px;
-        height:auto;
-        margin-right:15px;
-        float:left;
+        width: 15%;
+        max-width: 200px;
+        height: auto;
+        margin-right: 15px;
+        float: left;
         flex: 0 0 60px;
 
         img {
-            height:auto;
+            height: auto;
         }
     }
 }
 
-.archive, .search {
+.archive,
+.search {
 
     .page-header {
-        margin-top:30px;
-        max-width:600px;
-        margin:0 auto 15px;
+        margin-top: 30px;
+        max-width: 600px;
+        margin: 0 auto 15px;
         padding: 20px 15px 0 15px;
 
         .post-title {
-            a{
+            a {
                 display: block;
-                border:none;
+                border: none;
             }
+        }
+
+        .post-content {
+            flex-grow: 1;
+        }
+
+        .post-footer {
+            clear: both;
+            padding: 0 5px;
+            display: flex;
+            align-items: flex-end;
         }
     }
 
     .post-main {
-        max-width:600px;
-        margin:0px auto;
+        max-width: 600px;
+        margin: 0px auto;
     }
 }
 
 .page-description {
-    clear:both;
-} 
+    clear: both;
+}
 
 .post-header {
     .post-meta {
-        padding:3px 15px;
+        padding: 3px 15px;
     }
 }
 
-.dreamlands, .dairy {
+.dreamlands,
+.dairy {
     .archive-entry {
-        border:none;
+        border: none;
     }
 }

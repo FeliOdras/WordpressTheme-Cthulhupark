@@ -282,10 +282,21 @@ hr {
       display: none; }
     .sidebar-top .widget label {
       display: block; }
+    .sidebar-top .widget #wp-submit {
+      padding: 4px;
+      display: inline; }
+    .sidebar-top .widget input[type='submit'] {
+      padding: 4px; }
+    .sidebar-top .widget .logout {
+      display: inline; }
     .sidebar-top .widget .widget_cplogin_widget p {
       display: inline-block; }
   .sidebar-top input {
     padding: 0 3px; }
+  .sidebar-top .widget_search {
+    float: right; }
+  .sidebar-top .logged-in .widget_cplogin_widget {
+    padding-top: 15px; }
 
 li.widget {
   margin-bottom: 20px; }
@@ -294,10 +305,36 @@ li.widget {
     padding: 3px;
     margin-bottom: 15px; }
 
+.widget_cptbe_widget .entries {
+  border: 1px dotted #8E563F;
+  padding: 5px;
+  margin: 4px 0; }
+  .widget_cptbe_widget .entries a {
+    display: block;
+    border: none; }
+  .widget_cptbe_widget .entries .tbe-entry-meta {
+    padding: 3px 5px;
+    margin: 7px -5px -5px -5px; }
+    .widget_cptbe_widget .entries .tbe-entry-meta .author {
+      border-right: 1px dotted #8E563F;
+      padding-right: 4px; }
+    .widget_cptbe_widget .entries .tbe-entry-meta .date {
+      float: right;
+      border-left: 1px dotted #8E563F;
+      padding-left: 4px; }
+
 .site-main {
   display: flex;
   justify-content: space-between;
   align-self: stretch; }
+
+.content-area a {
+  border-bottom: 1px dotted #8E563F; }
+  .content-area a:hover {
+    border-style: solid; }
+
+.content-area p {
+  margin-bottom: 15px; }
 
 .main-entry {
   width: 60%; }
@@ -308,6 +345,60 @@ li.widget {
     padding: 20px 15px;
     max-width: 600px;
     margin-top: 30px; }
+
+.post-content h2 {
+  margin-top: 0;
+  margin-bottom: 15px; }
+
+.archive-entry {
+  display: flex;
+  border: 2px solid #faf3db;
+  padding: 5px;
+  margin: 15px 0; }
+  .archive-entry .featured-image {
+    width: 15%;
+    max-width: 200px;
+    height: auto;
+    margin-right: 15px;
+    float: left;
+    flex: 0 0 60px; }
+    .archive-entry .featured-image img {
+      height: auto; }
+
+.archive .page-header,
+.search .page-header {
+  margin-top: 30px;
+  max-width: 600px;
+  margin: 0 auto 15px;
+  padding: 20px 15px 0 15px; }
+  .archive .page-header .post-title a,
+  .search .page-header .post-title a {
+    display: block;
+    border: none; }
+  .archive .page-header .post-content,
+  .search .page-header .post-content {
+    flex-grow: 1; }
+  .archive .page-header .post-footer,
+  .search .page-header .post-footer {
+    clear: both;
+    padding: 0 5px;
+    display: flex;
+    align-items: flex-end; }
+
+.archive .post-main,
+.search .post-main {
+  max-width: 600px;
+  margin: 0px auto; }
+
+.page-description {
+  clear: both; }
+
+.post-header .post-meta {
+  padding: 3px 15px; }
+
+.dreamlands .archive-entry,
+.dairy .archive-entry {
+  border: none; }
 
 html {
   font-size: 15px; }

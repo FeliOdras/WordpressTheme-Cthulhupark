@@ -1,12 +1,12 @@
 .site-main {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-self: stretch;
 }
 
 .content-area {
-     a {
-        border-bottom:1px dotted #8E563F;
+    a {
+        border-bottom: 1px dotted #8E563F;
 
         &:hover {
             border-style: solid;
@@ -14,21 +14,29 @@
     }
 
     p {
-        margin-bottom:15px;
+        margin-bottom: 15px;
     }
 }
 
 .main-entry {
-    width:60%;
+    width: 60%;
 
     .entry-title {
-        margin-bottom:23px;
+        margin-bottom: 23px;
     }
 
     .entry-content {
-        margin:0 auto;
-        padding:20px 15px;
-        max-width:600px;
-        margin-top:30px;
+        margin: 0 auto;
+        padding: 20px 15px;
+        max-width: 600px;
+        margin-top: 30px;
+    }
+}
+
+
+.post-content {
+    h2 {
+        margin-top: 0;
+        margin-bottom: 15px;
     }
 }
