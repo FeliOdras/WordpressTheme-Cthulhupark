@@ -2,73 +2,35 @@
 Theme Name: Cthulhupark
 */
 
-.post-content h2 {
-    margin-top:0;
-    margin-bottom:15px;
-}
-
-.archive .post-content,
-.search .post-content {
-    flex-grow:1;
-}
-
-.archive .post-footer,
-.search .post-footer {
-    clear:both;
-    padding:0 5px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.post-excerpt p{
-    margin-bottom:0;
-}
-
-.author-description {
-    padding:15px;
-}
-
-.author-avatar {
-    float:left;
-    margin-right:15px;
-    margin-bottom:15px;
-}
-
-.author-description:after {
-    clear:both;
-    display: table;
-    content:'';
-}
-
 .sidebar-author {
-    flex:0 0 45px;
-    padding-top:20px;
+    flex: 0 0 45px;
+    padding-top: 20px;
 }
 
 .sidebar-author img {
-    width:45px;
-    margin:auto;
+    width: 45px;
+    margin: auto;
 }
 
 .sidebar-author a,
 .sidebar-author a:hover {
-    border:none;
+    border: none;
 }
 
 .sidebar-author li.widget {
-    padding:0;
-    margin:0 0 6px 0;
+    padding: 0;
+    margin: 0 0 6px 0;
     text-align: center;
-    border-radius:3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
     position: relative;
-    height:50px;
+    height: 50px;
 }
 
 .sidebar-author .widget-title {
-    margin:0;
-    padding:0 1px 3px 1px;
-    width:50px;
-    bottom:-13px;
+    margin: 0;
+    padding: 0 1px 3px 1px;
+    width: 50px;
+    bottom: -13px;
     z-index: 999;
     visibility: hidden;
 }
@@ -80,47 +42,47 @@ Theme Name: Cthulhupark
 .sidebar-author li.widget img,
 .sidebar-author li.widget .widget-title {
     position: absolute;
-    right:-10px;
+    right: -10px;
 }
 
 .sidebar-author li.widget img {
-    bottom:0;
+    bottom: 0;
 }
 
 .sidebar-author li.widget:hover img,
 .sidebar-author li.widget:hover .widget-title {
-    right:0;
+    right: 0;
 }
 
-.post-navigation{
-    max-width:600px;
-    margin:auto;
-    padding:10px 0;
+.post-navigation {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px 0;
 }
 
 .post-navigation .author {
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
 .edit-link a {
     float: right;
-    padding:3px 5px;
+    padding: 3px 5px;
 }
 
 .dreamlands .archive-entry,
 .dairy .archive-entry {
-    display:block;
+    display: block;
 }
 
 
 .dairy .archive-entry,
 .dreamlands .archive-entry {
-    padding:15px;
+    padding: 15px;
 }
 
 .archive .dairy.post-main,
 .archive .dreamlands.post-main {
-    margin:20px auto;
+    margin: 20px auto;
 }
 
 .archive .dairy .post-title a,
@@ -130,31 +92,31 @@ Theme Name: Cthulhupark
 
 .dreamlands .more-link,
 .dairy .more-link {
-    padding:3px 5px;
-    border:1px dotted;
-    float:right;
-    transition:all 1s;
+    padding: 3px 5px;
+    border: 1px dotted;
+    float: right;
+    transition: all 1s;
 }
 
 .archive-entry .dairy .featured-image {
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 
 .breadcrumb-cat {
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .breadcrumb-cat a {
-    margin:3px 14px 3px 0;
+    margin: 3px 14px 3px 0;
 }
 
 .breadcrumb-cat a:after {
-    content:'\00bb';
-    position:relative;
-    right:-3px;
-    width:0;
-    display:inline-block;
+    content: '\00bb';
+    position: relative;
+    right: -3px;
+    width: 0;
+    display: inline-block;
 }
 
 .cat-children-list {
@@ -163,25 +125,25 @@ Theme Name: Cthulhupark
 }
 
 .cat-children-list:after {
-    content:'';
+    content: '';
     clear: both;
-    display:table;
-}
-
-.cat-children-list li a{
-    float:left;
+    display: table;
 }
 
 .cat-children-list li a {
-    display:inline-block;
-    border-bottom:1px dotted #8E563F;
-    margin:3px 14px 3px 0px;
+    float: left;
 }
 
 .cat-children-list li a {
-    display:inline-block;
-    border-bottom:1px dotted #8E563F;
-    margin:3px 14px 3px 0px;
+    display: inline-block;
+    border-bottom: 1px dotted #8E563F;
+    margin: 3px 14px 3px 0px;
+}
+
+.cat-children-list li a {
+    display: inline-block;
+    border-bottom: 1px dotted #8E563F;
+    margin: 3px 14px 3px 0px;
 }
 
 .cat-children-list li.current-cat a:after {
@@ -189,7 +151,7 @@ Theme Name: Cthulhupark
 }
 
 .cat-children-list li li a {
-    border-bottom:1px dotted #8E563F;
+    border-bottom: 1px dotted #8E563F;
     margin: 3px 7px;
 }
 
@@ -199,20 +161,20 @@ Theme Name: Cthulhupark
 
 .cat-children-list .children a {
     display: none;
-} 
+}
 
 .cat-children-list .current-cat .children a {
-    display:inline-block;
+    display: inline-block;
 }
 
 .categories {
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
 .categories a {
-    padding:1px 3px;
-    border:1px dotted #8E563F;
-    border-radius:3px;
+    padding: 1px 3px;
+    border: 1px dotted #8E563F;
+    border-radius: 3px;
 }
 
 .categories li {
@@ -220,181 +182,190 @@ Theme Name: Cthulhupark
 }
 
 h2 {
-    margin:25px 0 20px 0;
+    margin: 25px 0 20px 0;
 }
 
-.dairy h2, .dreamlands h2 {
-    margin-top:0;
+.dairy h2,
+.dreamlands h2 {
+    margin-top: 0;
 }
 
 h3 {
-    margin:22px 0 18px 0;
+    margin: 22px 0 18px 0;
 }
 
 h4 {
-    margin:20px 0 16px 0;
+    margin: 20px 0 16px 0;
 }
 
 table.charSkills tbody {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 table.charSkills tbody tr {
-    flex:0 0 170px;
+    flex: 0 0 170px;
     display: flex;
-    font-size:14px;
+    font-size: 14px;
 }
 
-.charKampf, .charWaffen, .charSprachen, .charZauber {
-    margin:10px 0;
-    padding:10px;
-    border-top:1px dotted;
-    border-bottom:1px dotted;
+.charKampf,
+.charWaffen,
+.charSprachen,
+.charZauber {
+    margin: 10px 0;
+    padding: 10px;
+    border-top: 1px dotted;
+    border-bottom: 1px dotted;
     text-align: center;
     font-size: 14px;
 }
 
-.charKampf td:first-of-type, .charWaffen td:first-of-type, .charSprachen td:first-of-type, .charZauber td:first-of-type{
+.charKampf td:first-of-type,
+.charWaffen td:first-of-type,
+.charSprachen td:first-of-type,
+.charZauber td:first-of-type {
     text-align: left;
 }
 
 table.charSkills tbody tr td:first-of-type {
-    flex:1 1 100px;
+    flex: 1 1 100px;
 }
 
 .entry-content li {
     line-height: 18px;
-    padding-left:20px;
-    background-image:url(../images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png);
-    background-size:14px 14px;
+    padding-left: 20px;
+    background-image: url(../images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png);
+    background-size: 14px 14px;
     background-repeat: no-repeat;
     background-position: 0 2px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
-.category-abenteurertagebuch .cat-children-list .children, 
-.category-lebensform .cat-children-list .children, 
-.category-ort .cat-children-list .children, 
+.category-abenteurertagebuch .cat-children-list .children,
+.category-lebensform .cat-children-list .children,
+.category-ort .cat-children-list .children,
 .category-dokumente .cat-children-list .children,
 .category-fuhrpark .cat-children-list .children {
     display: none;
 }
 
 .tags {
-    margin-top:10px;
-    padding-top:10px;
-    border-top:1px solid #ddd;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
 }
 
 .tag .cat-children-list {
-    display:none;
+    display: none;
 }
 
 .search-meta {
-    padding:10px;
-    margin:10px 0;
-    background:rgba(255,255,255,0.5);
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.5);
 }
 
-.search-meta li, .search-meta ul {
-    display:inline;
+.search-meta li,
+.search-meta ul {
+    display: inline;
 }
 
 
 @media screen and (max-width:840px) {
+
     .menu-hauptmenue-container,
     .menu-main-menu-container {
         position: absolute;
-        right:-100%;
-        top:0;
-        transition:all 1s;
+        right: -100%;
+        top: 0;
+        transition: all 1s;
         z-index: 110;
-        width:100%;
+        width: 100%;
     }
 
     .nav-open {
         position: absolute;
-        right:5px;
+        right: 5px;
         top: 5px;
         width: 32px;
         height: 32px;
         cursor: pointer;
         z-index: 120;
         border-radius: 50%;
-        
+
     }
 
     .nav-open i {
-        width:30px;
-        height:3px;
-        margin:6px 1px;
+        width: 30px;
+        height: 3px;
+        margin: 6px 1px;
         display: block;
     }
-    
-    #nav:checked ~ .menu-main-menu-container,
-    #nav:checked ~ .menu-hauptmenue-container {
-        right:0;
+
+    #nav:checked~.menu-main-menu-container,
+    #nav:checked~.menu-hauptmenue-container {
+        right: 0;
         transition: all 1s;
-     }
+    }
 
     #main-navigation {
-        background-image:none;
+        background-image: none;
         position: static;
     }
 
     #main-header {
-        overflow:visible;
+        overflow: visible;
     }
 
-    .main-navigation li  {
-        display:block;
+    .main-navigation li {
+        display: block;
     }
 
     .main-navigation li .sub-menu {
-        position:static;
-        opacity:1;
-        padding-left:25px;
-        padding-bottom:20px;
+        position: static;
+        opacity: 1;
+        padding-left: 25px;
+        padding-bottom: 20px;
     }
 
-    .main-navigation li .sub-menu li a{
-        padding:12px 0;
+    .main-navigation li .sub-menu li a {
+        padding: 12px 0;
         height: auto;
     }
 
     .sidebar-top {
-        bottom:0;
+        bottom: 0;
     }
 
     .site-main {
-        flex-wrap:wrap;
+        flex-wrap: wrap;
     }
 
     .sidebar {
-        width:50%;
+        width: 50%;
     }
 
     .main-entry {
-        flex:0 0 100%;
+        flex: 0 0 100%;
     }
 
     #sidebar-author {
-        order:-2;
+        order: -2;
     }
 
     #sidebar-left {
-        order:1;
+        order: 1;
     }
 
     .charBasics tr {
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
     }
 
     .charBasics td {
-        flex:0 0 50%;
+        flex: 0 0 50%;
     }
 
     .sidebar-author {
@@ -403,24 +374,24 @@ table.charSkills tbody tr td:first-of-type {
     }
 
     .sidebar-author li.widget {
-        width:50px;
+        width: 50px;
     }
 
 
     .sidebar-author {
         flex-wrap: wrap;
-        flex:0 0 100%;
+        flex: 0 0 100%;
         max-width: 600px;
-        margin:auto;
+        margin: auto;
         justify-content: space-around;
-        padding-top:0;
+        padding-top: 0;
     }
 
     .sidebar-author li.widget {
-        height:auto;
+        height: auto;
     }
 
-    .sidebar-author li.widget img  {
+    .sidebar-author li.widget img {
         position: static;
     }
 
@@ -435,7 +406,7 @@ table.charSkills tbody tr td:first-of-type {
 
 @media screen and (max-width:540px) {
     .sidebar {
-        width:100%;
+        width: 100%;
     }
 
     .sidebar-top li.widget {
@@ -443,13 +414,13 @@ table.charSkills tbody tr td:first-of-type {
     }
 
     .sidebar-top .widget_cplogin_widget p {
-        display:block;
-        margin-bottom:6px;
-        text-align:center;
+        display: block;
+        margin-bottom: 6px;
+        text-align: center;
     }
 
     .sidebar-top .widget_cplogin_widget input {
-        width:95%; 
+        width: 95%;
     }
 
     .sidebar-top li.widget_search {

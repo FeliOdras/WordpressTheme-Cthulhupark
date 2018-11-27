@@ -40,3 +40,21 @@
         margin-bottom: 15px;
     }
 }
+
+.page-header {
+    .author-description {
+        padding: 15px;
+
+        &:after {
+            clear: both;
+            display: table;
+            content: '';
+        }
+    }
+
+    .author-avatar {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}

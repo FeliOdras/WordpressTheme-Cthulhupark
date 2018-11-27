@@ -1,4 +1,11 @@
 //Archive and Archive Lists
+.dreamlands,
+.dairy {
+    .archive-entry {
+        border: none;
+    }
+}
+
 .archive-entry {
     display: flex;
     border: 2px solid #faf3db;
@@ -63,9 +70,8 @@
     }
 }
 
-.dreamlands,
-.dairy {
-    .archive-entry {
-        border: none;
+.post-excerpt {
+    p {
+        margin-bottom: 0;
     }
 }

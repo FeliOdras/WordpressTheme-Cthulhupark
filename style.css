@@ -350,6 +350,22 @@ li.widget {
   margin-top: 0;
   margin-bottom: 15px; }
 
+.page-header .author-description {
+  padding: 15px; }
+  .page-header .author-description:after {
+    clear: both;
+    display: table;
+    content: ''; }
+
+.page-header .author-avatar {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px; }
+
+.dreamlands .archive-entry,
+.dairy .archive-entry {
+  border: none; }
+
 .archive-entry {
   display: flex;
   border: 2px solid #faf3db;
@@ -396,9 +412,8 @@ li.widget {
 .post-header .post-meta {
   padding: 3px 15px; }
 
-.dreamlands .archive-entry,
-.dairy .archive-entry {
-  border: none; }
+.post-excerpt p {
+  margin-bottom: 0; }
 
 html {
   font-size: 15px; }
