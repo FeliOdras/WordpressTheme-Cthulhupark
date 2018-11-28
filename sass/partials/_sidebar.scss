@@ -5,6 +5,10 @@
     width: 20%;
     padding: 20px 15px;
     min-width: 150px;
+
+    @media #{$tablet} {
+        width: 50%;
+    }
 }
 
 .sidebar-left {
@@ -65,6 +69,10 @@
         .widget_cplogin_widget {
             padding-top: 15px;
         }
+    }
+
+    @media #{$tablet} {
+        bottom: 0;
     }
 }
 

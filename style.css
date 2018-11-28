@@ -206,6 +206,9 @@ hr {
   @media (orientation: portrait) {
     .main-header {
       height: auto; } }
+  @media (max-width: 540px) {
+    .main-header {
+      overflow: visible; } }
   .main-header img {
     width: 100%;
     position: absolute;
@@ -259,11 +262,52 @@ hr {
         height: 42px;
         padding: 0 15px;
         margin-left: -3px; }
+  @media (max-width: 840px) {
+    .main-navigation {
+      position: static; }
+      .main-navigation li {
+        display: block; }
+        .main-navigation li .sub-menu {
+          position: static;
+          opacity: 1;
+          padding-left: 25px;
+          padding-bottom: 20px; }
+          .main-navigation li .sub-menu li a {
+            padding: 12px 0;
+            height: auto; }
+      .main-navigation .menu-hauptmenue-container,
+      .main-navigation .menu-main-menu-container {
+        position: absolute;
+        right: -100%;
+        top: 0;
+        transition: all 1s;
+        z-index: 110;
+        width: 100%; }
+      .main-navigation .nav-open {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        z-index: 120;
+        border-radius: 50%; }
+        .main-navigation .nav-open i {
+          width: 30px;
+          height: 3px;
+          margin: 6px 1px;
+          display: block; } }
+  .main-navigation #nav:checked.menu-main-menu-container {
+    right: 0;
+    transition: all 1s; }
 
 .sidebar {
   width: 20%;
   padding: 20px 15px;
   min-width: 150px; }
+  @media (max-width: 840px) {
+    .sidebar {
+      width: 50%; } }
 
 .sidebar-left {
   border-right: 1px dotted #8E563F; }
@@ -298,6 +342,9 @@ hr {
     float: right; }
   .sidebar-top .logged-in .widget_cplogin_widget {
     padding-top: 15px; }
+  @media (max-width: 840px) {
+    .sidebar-top {
+      bottom: 0; } }
 
 li.widget {
   margin-bottom: 20px; }
@@ -365,6 +412,9 @@ li.widget {
   display: flex;
   justify-content: space-between;
   align-self: stretch; }
+  @media (max-width: 840px) {
+    .site-main {
+      flex-wrap: wrap; } }
 
 .content-area a {
   border-bottom: 1px dotted #8E563F; }
@@ -376,6 +426,9 @@ li.widget {
 
 .main-entry {
   width: 60%; }
+  @media (max-width: 840px) {
+    .main-entry {
+      flex: 0 0 100%; } }
   .main-entry .entry-title {
     margin-bottom: 23px; }
   .main-entry .entry-content {

@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-self: stretch;
+
+    @media #{$tablet} {
+        flex-wrap: wrap;
+    }
 }
 
 .content-area {
@@ -23,6 +27,10 @@
 
 .main-entry {
     width: 60%;
+
+    @media #{$tablet} {
+        flex: 0 0 100%;
+    }
 
     .entry-title {
         margin-bottom: 23px;
