@@ -3,12 +3,17 @@
     font-family: 'Shadows Into Light';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/shadows-into-light-v7-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/shadows-into-light-v7-latin-regular.eot');
+    /* IE9 Compat Modes */
     src: local('Shadows Into Light'), local('ShadowsIntoLight'),
-         url('../fonts/shadows-into-light-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/shadows-into-light-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/shadows-into-light-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/shadows-into-light-v7-latin-regular.svg#ShadowsIntoLight') format('svg'); /* Legacy iOS */
+        url('../fonts/shadows-into-light-v7-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/shadows-into-light-v7-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/shadows-into-light-v7-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/shadows-into-light-v7-latin-regular.svg#ShadowsIntoLight') format('svg');
+    /* Legacy iOS */
 }
 
 /* bad-script-regular - latin - LC*/
@@ -16,92 +21,115 @@
     font-family: 'Bad Script';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/bad-script-v6-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bad-script-v6-latin-regular.eot');
+    /* IE9 Compat Modes */
     src: local('Bad Script Regular'), local('BadScript-Regular'),
-         url('../fonts/bad-script-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/bad-script-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/bad-script-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/bad-script-v6-latin-regular.svg#BadScript') format('svg'); /* Legacy iOS */
-  }
+        url('../fonts/bad-script-v6-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/bad-script-v6-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/bad-script-v6-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/bad-script-v6-latin-regular.svg#BadScript') format('svg');
+    /* Legacy iOS */
+}
 
-  /* bad-script-regular - latin - MW*/
+/* bad-script-regular - latin - MW*/
 @font-face {
     font-family: 'Zai Calligraphy';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/zaiCalligraphyScriptHandwritten.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/zaiCalligraphyScriptHandwritten.eot');
+    /* IE9 Compat Modes */
     src: local('zai Calligraphy Script Handwritten'), local('zaiCalligraphyScriptHandwritten-regular'),
-         url('../fonts/zaiCalligraphyScriptHandwritten.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/zaiCalligraphyScriptHandwritten.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/zaiCalligraphyScriptHandwritten.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/zaiCalligraphyScriptHandwritten.svg#BadScript') format('svg'); /* Legacy iOS */
-  }
+        url('../fonts/zaiCalligraphyScriptHandwritten.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/zaiCalligraphyScriptHandwritten.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/zaiCalligraphyScriptHandwritten.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/zaiCalligraphyScriptHandwritten.svg#BadScript') format('svg');
+    /* Legacy iOS */
+}
 
 /* bilbo-regular - latin - HWJ */
 @font-face {
     font-family: 'Bilbo';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/bilbo-v7-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bilbo-v7-latin-regular.eot');
+    /* IE9 Compat Modes */
     src: local('Bilbo Regular'), local('Bilbo-Regular'),
-         url('../fonts/bilbo-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/bilbo-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/bilbo-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/bilbo-v7-latin-regular.svg#Bilbo') format('svg'); /* Legacy iOS */
-  }
+        url('../fonts/bilbo-v7-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/bilbo-v7-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/bilbo-v7-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/bilbo-v7-latin-regular.svg#Bilbo') format('svg');
+    /* Legacy iOS */
+}
 
-  /* just-me-again-down-here-regular - latin - RHW */
+/* just-me-again-down-here-regular - latin - RHW */
 @font-face {
     font-family: 'Just Me Again Down Here';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/just-me-again-down-here-v9-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/just-me-again-down-here-v9-latin-regular.eot');
+    /* IE9 Compat Modes */
     src: local('Just Me Again Down Here'), local('JustMeAgainDownHere'),
-         url('../fonts/just-me-again-down-here-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/just-me-again-down-here-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/just-me-again-down-here-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/just-me-again-down-here-v9-latin-regular.svg#JustMeAgainDownHere') format('svg'); /* Legacy iOS */
-  }
+        url('../fonts/just-me-again-down-here-v9-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/just-me-again-down-here-v9-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/just-me-again-down-here-v9-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/just-me-again-down-here-v9-latin-regular.svg#JustMeAgainDownHere') format('svg');
+    /* Legacy iOS */
+}
 
-  /* WinterCalligraphy regular - latin-ext_latin - 三十郎*/
+/* Meddon regular - latin-ext_latin - 三十郎*/
 @font-face {
-    font-family: 'Hoffmann';
-    font-weight: 400;
-    src: url('../fonts/hoffm__.eot'); /* IE9 Compat Modes */
-    src: local('Hoffmann'), local('Hoffmann-Regular'),
-         url('../fonts/hoffm___.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/hoffm___.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/hoffm___.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/hoffm___.svg#Hoffmann') format('svg'); /* Legacy iOS */
-  }
+    font-family: 'meddonregular';
+    src: url('../fonts/meddon.eot');
+    src: url('../fonts/meddon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/meddon.woff2') format('woff2'),
+        url('../fonts/meddon.woff') format('woff'),
+        url('../fonts/meddon.ttf') format('truetype'),
+        url('../fonts/meddon.svg#meddonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
-  .dairy, .dreamlands {
-      font-family: 'Shadows Into Light', cursive;
-      font-size: 18px;
-      line-height:28px;
-  }
+.dairy,
+.dreamlands {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 18px;
+    line-height: 28px;
+}
 
-  .LC {
-      font-family: 'Bad Script', cursive;
-  }
+.LC {
+    font-family: 'Bad Script', cursive;
+}
 
-  .MW {
+.MW {
     font-family: 'Zai Calligraphy', cursive;
 }
-   
-  .HWJ {
-      font-family: Bilbo, cursive;
-      font-size:23px;
-  }
 
-  .RHW {
-      font-family: 'Just Me Again Down Here', cursive;
-      font-size:23px;
-  }
+.HWJ {
+    font-family: Bilbo, cursive;
+    font-size: 23px;
+}
 
-  .三十郎 {
-      font-family: 'Hoffmann', cursive;
-      font-size:20px;
-      line-height:33px;
-  }
+.RHW {
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 23px;
+}
+
+.三十郎 {
+    font-family: 'Hoffmann', cursive;
+    font-size: 20px;
+    line-height: 33px;
+}
