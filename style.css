@@ -15,7 +15,6 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 @import url(styles/typo.css);
-@import url(styles/colors.css);
 * {
   transition: all .8s; }
 
@@ -238,7 +237,8 @@ hr {
     z-index: 90;
     text-shadow: 0 0 10px #000; }
     .main-header .blog-info .main-title a {
-      color: #f9e6a4; }
+      color: #f9e6a4;
+      text-decoration: none; }
     .main-header .blog-info .sub-title {
       color: #f9e6a4; }
   .main-header .main-header-wrapper {
@@ -253,7 +253,8 @@ hr {
   background: -webkit-linear-gradient(bottom, #E5D59E, #f9e6a4);
   background: -moz-linear-gradient(bottom, #E5D59E, #f9e6a4);
   background: -o-linear-gradient(bottom, #E5D59E, #f9e6a4);
-  background: linear-gradient(bottom, #E5D59E, #f9e6a4); }
+  background: linear-gradient(bottom, #E5D59E, #f9e6a4);
+  box-shadow: 0 0 10px #999; }
   .main-navigation input[type='checkbox'] {
     display: none; }
   .main-navigation ul {
@@ -263,7 +264,15 @@ hr {
       display: inline-block;
       position: relative; }
       .main-navigation ul li a {
-        color: #8E563F; }
+        color: #8E563F;
+        line-height: 42px;
+        text-decoration: none;
+        font-family: 'Ruthie', cursive;
+        font-size: 1.8rem;
+        font-weight: bold; }
+        .main-navigation ul li a:hover {
+          color: #f9e6a4;
+          background-color: #8E563F; }
         @media (max-width: 840px) {
           .main-navigation ul li a {
             color: #f9e6a4; } }
@@ -287,7 +296,11 @@ hr {
             transition: all 0.8s;
             color: #f9e6a4;
             text-shadow: 0 0 10px #000;
-            background-color: #8E563F; }
+            background-color: #8E563F;
+            font-family: 'Traveling Typewriter', monospace;
+            font-size: 0.9rem;
+            font-weight: normal;
+            line-height: 17px; }
             @media (max-width: 840px) {
               .main-navigation ul li .sub-menu li a {
                 color: #f9f0cc; } }
@@ -442,7 +455,10 @@ li.widget {
     padding: 3px;
     margin-bottom: 15px;
     background-color: #8E563F;
-    color: #f9e6a4; }
+    color: #f9e6a4;
+    font-family: 'Fredericka the Great', serif;
+    font-size: 1.2rem;
+    font-weight: bold; }
 
 .widget_cptbe_widget .entries {
   border: 1px dotted #8E563F;
@@ -551,27 +567,31 @@ li.widget {
 
 .main-entry {
   width: 60%; }
-  @media (max-width: 840px) {
-    .main-entry {
-      flex: 0 0 100%; } }
-  .main-entry .entry-title {
-    margin-bottom: 23px;
-    color: #8E563F;
-    text-shadow: 0 0 1px #8E563F; }
-  .main-entry .entry-content {
-    margin: 0 auto;
-    padding: 20px 15px;
-    max-width: 600px;
-    margin-top: 30px;
-    background-color: rgba(255, 255, 255, 0.5); }
-    .main-entry .entry-content li {
-      line-height: 18px;
-      padding-left: 20px;
-      background-image: url(../images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png);
-      background-size: 14px 14px;
-      background-repeat: no-repeat;
-      background-position: 0 2px;
-      margin-bottom: 10px; }
+
+@media (max-width: 840px) {
+  flex: 0 0 100%; }
+
+.entry-title {
+  margin-bottom: 23px;
+  color: #8E563F;
+  text-shadow: 0 0 1px #8E563F;
+  font-family: "Fredericka the Great", serif;
+  font-size: 1.9rem; }
+
+.entry-content {
+  margin: 0 auto;
+  padding: 20px 15px;
+  max-width: 600px;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.5); }
+  .entry-content li {
+    line-height: 18px;
+    padding-left: 20px;
+    background-image: url(../images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png);
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    margin-bottom: 10px; }
 
 .post-content h2 {
   margin-top: 0;
@@ -762,6 +782,8 @@ table.charBasics tr {
     background-color: #8E563F; }
     .dairy .post-title a {
       color: #f9e6a4; }
+    .dairy .post-title .entry-title {
+      font-family: inherit; }
   .dairy .more-link:hover {
     background-color: #8E563F;
     color: #f9e6a4; }
@@ -772,6 +794,10 @@ table.charBasics tr {
     .dairy .edit-link a:hover {
       background-color: #f9e6a4;
       color: #8E563F; }
+
+.dreamlands a {
+  color: #fff;
+  border-color: #fff; }
 
 .dreamlands.entry-content {
   background-color: #2B2B2B; }
@@ -818,7 +844,9 @@ table.charBasics tr {
   .dreamlands .post-title a,
   .dairy .post-title a {
     display: block;
-    border: none; }
+    border: none;
+    font-size: 1.2rem;
+    text-decoration: none; }
 
 .dreamlands.post-main,
 .dairy.post-main {
@@ -865,6 +893,17 @@ body {
   font-family: "Traveling Typewriter", Courier, monospace;
   font-size: 1rem;
   line-height: 150%; }
+
+.main-title {
+  font-family: "Fredericka the Great", serif;
+  font-size: 2.8rem;
+  margin-bottom: 15px; }
+
+.sub-title {
+  font-family: 'Ruthie', cursive;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  font-weight: bold; }
 
 h2 {
   margin: 25px 0 20px 0; }

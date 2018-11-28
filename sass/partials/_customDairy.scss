@@ -17,6 +17,10 @@
         a {
             color: $mainBackgroundColor;
         }
+
+        .entry-title {
+            font-family: inherit;
+        }
     }
 
     .more-link {
@@ -43,6 +47,11 @@
 }
 
 .dreamlands {
+
+    a {
+        color: #fff;
+        border-color: #fff;
+    }
 
     &.entry-content {
         background-color: $dreamlandsBGColor;
@@ -114,6 +123,8 @@
         a {
             display: block;
             border: none;
+            font-size: 1.2rem;
+            text-decoration: none;
         }
     }
 

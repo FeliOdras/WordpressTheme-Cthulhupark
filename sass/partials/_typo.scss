@@ -11,6 +11,19 @@ body {
     line-height: 150%;
 }
 
+.main-title {
+    font-family: $headlineFont;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.sub-title {
+    font-family: 'Ruthie', cursive;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    font-weight: bold;
+}
+
 
 h2 {
     margin: 25px 0 20px 0;

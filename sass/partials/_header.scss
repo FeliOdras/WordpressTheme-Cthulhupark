@@ -42,6 +42,7 @@
 
             a {
                 color: $mainBackgroundColor;
+                text-decoration: none;
             }
         }
 
@@ -62,6 +63,7 @@
     position: absolute;
     width: 100%;
     @include gradient(bottom, $navBGGradient);
+    box-shadow: 0 0 10px #999;
 
     input[type='checkbox'] {
         display: none;
@@ -77,6 +79,16 @@
 
             a {
                 color: $mainAccentColor;
+                line-height: 42px;
+                text-decoration: none;
+                font-family: 'Ruthie', cursive;
+                font-size: 1.8rem;
+                font-weight: bold;
+
+                &:hover {
+                    color: $mainBackgroundColor;
+                    background-color: $mainAccentColor;
+                }
 
                 @media #{$tablet} {
                     color: $mainBackgroundColor;
@@ -107,6 +119,10 @@
                         color: $mainBackgroundColor;
                         text-shadow: 0 0 10px $black;
                         background-color: $mainAccentColor;
+                        font-family: 'Traveling Typewriter', monospace;
+                        font-size: 0.9rem;
+                        font-weight: normal;
+                        line-height: 17px;
 
                         @media #{$tablet} {
                             color: #f9f0cc;

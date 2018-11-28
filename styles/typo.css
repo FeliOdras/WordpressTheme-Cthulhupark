@@ -2,122 +2,20 @@
 Theme Name: Cthulhupark
 */
 
-/* Traveling Typewriter */
-@font-face {
-    font-family: 'Traveling Typewriter';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/travelingtypewriter.eot'); /* IE9 Compat Modes */
-    src: local('Traveling Typewriter'), local('Traveling-Typewriter-Regular'),
-         url('../fonts/travelingtypewriter.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/travelingtypewriter.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/travelingtypewriter.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/travelingtypewriter.svg#TravelingTypewriter') format('svg'); /* Legacy iOS */
-  }
-
-  /* ruthie-regular - latin-ext */
-@font-face {
-    font-family: 'Ruthie';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/ruthie-v8-latin-ext-regular.eot'); /* IE9 Compat Modes */
-    src: local('Ruthie'), local('Ruthie-Regular'),
-         url('../fonts/ruthie-v8-latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/ruthie-v8-latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/ruthie-v8-latin-ext-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/ruthie-v8-latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/ruthie-v8-latin-ext-regular.svg#Ruthie') format('svg'); /* Legacy iOS */
-  }
-
-  /* fredericka-the-great-regular - latin */
-@font-face {
-    font-family: 'Fredericka the Great';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/fredericka-the-great-v6-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local('../Fredericka the Great'), local('FrederickatheGreat'),
-         url('../fonts/fredericka-the-great-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/fredericka-the-great-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/fredericka-the-great-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/fredericka-the-great-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/fredericka-the-great-v6-latin-regular.svg#FrederickatheGreat') format('svg'); /* Legacy iOS */
-  }
-
-html {
-    font-size: 15px;
-}
-
-  body {
-    font-family:'Traveling Typewriter', monospace;
-    font-size:1rem;
-    line-height:150%;
-  }
-
-  .main-title {
-    font-family: 'Fredericka the Great', serif;
-    font-size:2.8rem;
-    margin-bottom:15px;
-}
-
-.main-title a {
-    text-decoration:none;
-}
-
-.sub-title {
-    font-family: 'Ruthie', cursive;
-    font-size:1.7rem;
-    line-height:2.3rem;
-    font-weight:bold;
-}
-
-.main-navigation {
-    box-shadow: 0 0 10px #999;
-}
-
-.main-navigation li a {
-    line-height:42px;
-    text-decoration:none;
-    font-family: 'Ruthie', cursive;
-    font-size:1.8rem;
-    font-weight:bold;    
-}
-
-.main-navigation .sub-menu li a {
-    font-family: 'Traveling Typewriter', monospace;
-    font-size: 0.9rem;
-    font-weight:normal;
-    line-height:17px;
-}
-
-.widget-title {
-    font-family: 'Fredericka the Great', serif;
-    font-size: 1.2rem;  
-    font-weight:bold;
-}
-
-.entry-title,
-.dreamlands:not .entry-title,
-.dairy:not .entry-title {
-    font-family: 'Fredericka the Great', serif;
-}
-
-.entry-title {
-    font-size:1.9rem;
-}
 
 .content-area .dreamlands a,
 .dreamlands .entry-title {
-    color:#fff;
-    border-color:#fff;
+    color: #fff;
+    border-color: #fff;
 }
 
-.sidebar-top{
-    font-size:0.8rem;
-    line-height:0.85rem;
+.sidebar-top {
+    font-size: 0.8rem;
+    line-height: 0.85rem;
 }
 
 li.widget {
-    list-style-type:none;
+    list-style-type: none;
 }
 
 .widget li {
@@ -125,16 +23,16 @@ li.widget {
 }
 
 .sidebar-top input {
-    font-size:.8rem;
-    line-height:.8rem;
+    font-size: .8rem;
+    line-height: .8rem;
 }
 
 .sidebar-top input[type='submit'] {
-    font-size:.85rem;
+    font-size: .85rem;
 }
 
 .content-area a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .sidebar-top .widget_cplogin_widget p.login-remember {
@@ -143,7 +41,7 @@ li.widget {
 
 .tbe-entry-meta {
     font-size: .7rem;
-    line-height:.9rem;
+    line-height: .9rem;
 }
 
 .tbe-entry-meta .author {
@@ -152,31 +50,32 @@ li.widget {
 
 h1 {
     font-family: 'Fredericka the Great', serif;
-    font-size:1.8rem;
+    font-size: 1.8rem;
 }
 
-.dairy h1, .dreamlands h1 {
+.dairy h1,
+.dreamlands h1 {
     font-family: inherit;
 }
 
 h2 {
-    font-size:1.6rem;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
 h3 {
     font-size: 1.4rem;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 h4 {
-    font-size:1.1rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
 .archive .post-title a,
-.search .post-title a{
-    font-weight:bold;
+.search .post-title a {
+    font-weight: bold;
     font-size: .9rem;
     text-decoration: underline;
 }
@@ -191,13 +90,13 @@ h4 {
 }
 
 .archive .more-link {
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .post-header .post-meta,
 .single .date {
-    font-size:.9rem;
-    text-align:right;
+    font-size: .9rem;
+    text-align: right;
     font-family: 'Traveling Typewriter', monospace;
     display: block;
 }
@@ -209,8 +108,8 @@ h4 {
 .sidebar-author .widget-title {
     font-family: 'Traveling Typewriter', monospace;
     font-size: .75rem;
-    font-weight:normal;
-    line-height:.9rem;
+    font-weight: normal;
+    line-height: .9rem;
 }
 
 .widget_cptbe_widget .entries {
@@ -223,22 +122,19 @@ h4 {
 }
 
 .post-navigation {
-    text-align:center;
+    text-align: center;
 }
 
 .edit-link a {
     font-family: 'Traveling Typewriter', monospace;
-    font-size:.95rem;
+    font-size: .95rem;
 }
 
-.archive .dreamlands .post-title a,
-.archive .dairy .post-title a {
-    font-size:1.2rem;
-    text-decoration: none;
-}
 
-.archive .dairy .post-footer, .search .post-footer,
-.archive .dreamlands .post-footer, .search .post-footer {
+.archive .dairy .post-footer,
+.search .post-footer,
+.archive .dreamlands .post-footer,
+.search .post-footer {
     display: inherit;
 }
 
@@ -251,28 +147,28 @@ h4 {
 .archive .dreamlands .more-link,
 .archive .dairy .post-excerpt,
 .archive .dairy .more-link {
-    font-size:inherit;
+    font-size: inherit;
 }
 
 .archive .page-description {
     font-size: .8rem;
-    padding:20px 0;
+    padding: 20px 0;
 }
 
 .tags {
     font-size: .8rem;
-    opacity:0.7;
+    opacity: 0.7;
 }
 
 .search-meta {
-    font-size:.8rem;
-    opacity:0.8;
+    font-size: .8rem;
+    opacity: 0.8;
 }
 
 @media screen and (max-width:840px) {
     .main-navigation li a {
         font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
-        font-size:1.1rem
+        font-size: 1.1rem
     }
 
     .main-navigation .sub-menu li a {
@@ -281,7 +177,7 @@ h4 {
 
     .sidebar-top li.widget {
         font-size: 1.1rem;
-        margin:15px 0;
+        margin: 15px 0;
     }
 
     .sidebar-top input[type='submit'],
@@ -293,10 +189,10 @@ h4 {
 @media screen and (max-width:540px) {
     .main-title {
         font-size: 2.1rem;
-        font-weight:bold;
+        font-weight: bold;
     }
 
     .sidebar-top .widget_search {
-        float:none;
+        float: none;
     }
 }

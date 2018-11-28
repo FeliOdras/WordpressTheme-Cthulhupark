@@ -32,36 +32,37 @@
 
 .main-entry {
     width: 60%;
-
-    @media #{$tablet} {
-        flex: 0 0 100%;
-    }
-
-    .entry-title {
-        margin-bottom: 23px;
-        color: $mainAccentColor;
-        text-shadow: 0 0 1px $mainAccentColor;
-    }
-
-    .entry-content {
-        margin: 0 auto;
-        padding: 20px 15px;
-        max-width: 600px;
-        margin-top: 30px;
-        background-color: rgba(255, 255, 255, 0.5);
-
-        li {
-            line-height: 18px;
-            padding-left: 20px;
-            background-image: url(../images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png);
-            background-size: 14px 14px;
-            background-repeat: no-repeat;
-            background-position: 0 2px;
-            margin-bottom: 10px;
-        }
-    }
 }
 
+@media #{$tablet} {
+    flex: 0 0 100%;
+}
+
+.entry-title {
+    margin-bottom: 23px;
+    color: $mainAccentColor;
+    text-shadow: 0 0 1px $mainAccentColor;
+    font-family: $headlineFont;
+    font-size: 1.9rem;
+}
+
+.entry-content {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 600px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    li {
+        line-height: 18px;
+        padding-left: 20px;
+        background-image: url(../images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png);
+        background-size: 14px 14px;
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+        margin-bottom: 10px;
+    }
+}
 
 .post-content {
     h2 {
