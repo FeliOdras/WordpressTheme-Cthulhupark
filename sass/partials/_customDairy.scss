@@ -5,5 +5,26 @@
 .dairy {
     .archive-entry {
         border: none;
+        display: block;
+        padding: 15px;
+    }
+
+    &.post-main {
+        padding: 8px 10px 0 10px;
+    }
+
+    .more-link {
+        padding: 3px 5px;
+        border: 1px dotted;
+        float: right;
+        transition: all 1s;
+    }
+
+    .featured-image {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-top: 0;
     }
 }
