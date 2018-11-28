@@ -13,6 +13,10 @@
 
 .sidebar-left {
     border-right: 1px dotted #8E563F;
+
+    @media #{$tablet} {
+        order: 1;
+    }
 }
 
 .sidebar-right {
@@ -147,6 +151,19 @@ li.widget {
         position: relative;
         height: 50px;
 
+        @media #{$tablet} {
+            width: 50px;
+            height: auto;
+
+            img {
+                position: static;
+            }
+
+            .widget-title {
+                display: none;
+            }
+        }
+
         .widget-title {
             margin: 0;
             padding: 0 1px 3px 1px;
@@ -168,8 +185,17 @@ li.widget {
                 right: 0;
             }
         }
+    }
 
-
+    @media #{$tablet} {
+        order: -2;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+        max-width: 600px;
+        margin: auto;
+        justify-content: space-around;
+        padding-top: 0;
     }
 
 }

@@ -100,19 +100,23 @@
     @media #{$tablet} {
         position: static;
 
-        li {
-            display: block;
+        ul {
 
-            .sub-menu {
-                position: static;
-                opacity: 1;
-                padding-left: 25px;
-                padding-bottom: 20px;
+            li {
+                display: block;
 
-                li {
-                    a {
-                        padding: 12px 0;
-                        height: auto;
+                .sub-menu {
+                    position: static;
+                    opacity: 1;
+                    padding-left: 25px;
+                    padding-bottom: 20px;
+                    z-index: 50;
+
+                    li {
+                        a {
+                            padding: 12px 0;
+                            height: auto;
+                        }
                     }
                 }
             }
@@ -150,7 +154,7 @@
 
     #nav {
         &:checked {
-            &.menu-main-menu-container {
+            &~.menu-main-menu-container {
                 right: 0;
                 transition: all 1s;
             }

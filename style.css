@@ -265,14 +265,15 @@ hr {
   @media (max-width: 840px) {
     .main-navigation {
       position: static; }
-      .main-navigation li {
+      .main-navigation ul li {
         display: block; }
-        .main-navigation li .sub-menu {
+        .main-navigation ul li .sub-menu {
           position: static;
           opacity: 1;
           padding-left: 25px;
-          padding-bottom: 20px; }
-          .main-navigation li .sub-menu li a {
+          padding-bottom: 20px;
+          z-index: 50; }
+          .main-navigation ul li .sub-menu li a {
             padding: 12px 0;
             height: auto; }
       .main-navigation .menu-hauptmenue-container,
@@ -297,7 +298,7 @@ hr {
           height: 3px;
           margin: 6px 1px;
           display: block; } }
-  .main-navigation #nav:checked.menu-main-menu-container {
+  .main-navigation #nav:checked ~ .menu-main-menu-container {
     right: 0;
     transition: all 1s; }
 
@@ -311,6 +312,9 @@ hr {
 
 .sidebar-left {
   border-right: 1px dotted #8E563F; }
+  @media (max-width: 840px) {
+    .sidebar-left {
+      order: 1; } }
 
 .sidebar-right {
   border-left: 1px dotted #8E563F; }
@@ -393,6 +397,14 @@ li.widget {
     border-radius: 3px 0 0 3px;
     position: relative;
     height: 50px; }
+    @media (max-width: 840px) {
+      .sidebar-author .widget {
+        width: 50px;
+        height: auto; }
+        .sidebar-author .widget img {
+          position: static; }
+        .sidebar-author .widget .widget-title {
+          display: none; } }
     .sidebar-author .widget .widget-title {
       margin: 0;
       padding: 0 1px 3px 1px;
@@ -407,6 +419,16 @@ li.widget {
       right: 0; }
     .sidebar-author .widget:hover img {
       right: 0; }
+  @media (max-width: 840px) {
+    .sidebar-author {
+      order: -2;
+      display: flex;
+      flex-wrap: wrap;
+      flex: 0 0 100%;
+      max-width: 600px;
+      margin: auto;
+      justify-content: space-around;
+      padding-top: 0; } }
 
 .site-main {
   display: flex;
@@ -600,6 +622,12 @@ table.charKampf, table.charWaffen, table.charSprachen, table.charZauber {
   font-size: 14px; }
   table.charKampf td:first-of-type, table.charWaffen td:first-of-type, table.charSprachen td:first-of-type, table.charZauber td:first-of-type {
     text-align: left; }
+
+table.charBasics tr {
+  display: flex;
+  flex-wrap: wrap; }
+  table.charBasics tr td {
+    flex: 0 0 50%; }
 
 .dreamlands .archive-entry,
 .dairy .archive-entry {

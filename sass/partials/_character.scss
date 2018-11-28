@@ -39,4 +39,13 @@ table {
             }
         }
     }
+
+    &.charBasics tr {
+        display: flex;
+        flex-wrap: wrap;
+
+        td {
+            flex: 0 0 50%;
+        }
+    }
 }

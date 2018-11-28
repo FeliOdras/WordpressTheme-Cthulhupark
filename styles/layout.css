@@ -1,63 +1,6 @@
 /* Layout and positioning 
 Theme Name: Cthulhupark
 */
-
-@media screen and (max-width:840px) {
-    .main-entry {}
-
-    #sidebar-author {
-        order: -2;
-    }
-
-    #sidebar-left {
-        order: 1;
-    }
-
-    .charBasics tr {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .charBasics td {
-        flex: 0 0 50%;
-    }
-
-    .sidebar-author {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .sidebar-author li.widget {
-        width: 50px;
-    }
-
-
-    .sidebar-author {
-        flex-wrap: wrap;
-        flex: 0 0 100%;
-        max-width: 600px;
-        margin: auto;
-        justify-content: space-around;
-        padding-top: 0;
-    }
-
-    .sidebar-author li.widget {
-        height: auto;
-    }
-
-    .sidebar-author li.widget img {
-        position: static;
-    }
-
-    .sidebar-author li.widget .widget-title {
-        display: none;
-    }
-
-    .sub-menu {
-        z-index: 50;
-    }
-}
-
 @media screen and (max-width:540px) {
     .sidebar {
         width: 100%;
