@@ -59,6 +59,19 @@
     }
 }
 
+.category-abenteurertagebuch,
+.category-lebensform,
+.category-ort,
+.category-dokumente,
+.category-fuhrpark {
+
+    .cat-children-list {
+        .children {
+            display: none;
+        }
+    }
+}
+
 .categories {
     margin-bottom: 15px;
 
@@ -140,5 +153,11 @@
 .post-excerpt {
     p {
         margin-bottom: 0;
+    }
+}
+
+.tag {
+    .cat-children-list {
+        display: none;
     }
 }

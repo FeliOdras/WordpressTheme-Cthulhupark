@@ -33,6 +33,16 @@
         padding: 20px 15px;
         max-width: 600px;
         margin-top: 30px;
+
+        li {
+            line-height: 18px;
+            padding-left: 20px;
+            background-image: url(../images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+            background-position: 0 2px;
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -72,4 +82,10 @@ h3 {
 
 h4 {
     margin: 20px 0 16px 0;
+}
+
+.tags {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
 }

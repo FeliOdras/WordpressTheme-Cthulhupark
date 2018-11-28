@@ -313,6 +313,8 @@ li.widget {
   .widget_cptbe_widget .entries a {
     display: block;
     border: none; }
+    .widget_cptbe_widget .entries a:hover {
+      border: none; }
   .widget_cptbe_widget .entries .tbe-entry-meta {
     padding: 3px 5px;
     margin: 7px -5px -5px -5px; }
@@ -381,6 +383,14 @@ li.widget {
     padding: 20px 15px;
     max-width: 600px;
     margin-top: 30px; }
+    .main-entry .entry-content li {
+      line-height: 18px;
+      padding-left: 20px;
+      background-image: url(../images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png);
+      background-size: 14px 14px;
+      background-repeat: no-repeat;
+      background-position: 0 2px;
+      margin-bottom: 10px; }
 
 .post-content h2 {
   margin-top: 0;
@@ -406,6 +416,11 @@ h3 {
 
 h4 {
   margin: 20px 0 16px 0; }
+
+.tags {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd; }
 
 .post-navigation {
   max-width: 600px;
@@ -443,6 +458,13 @@ h4 {
     display: none; }
   .cat-children-list .children .current-cat .children a {
     display: inline-block; }
+
+.category-abenteurertagebuch .cat-children-list .children,
+.category-lebensform .cat-children-list .children,
+.category-ort .cat-children-list .children,
+.category-dokumente .cat-children-list .children,
+.category-fuhrpark .cat-children-list .children {
+  display: none; }
 
 .categories {
   margin-bottom: 15px; }
@@ -502,6 +524,9 @@ h4 {
 .post-excerpt p {
   margin-bottom: 0; }
 
+.tag .cat-children-list {
+  display: none; }
+
 table.charSkills tbody {
   display: flex;
   flex-wrap: wrap;
@@ -522,6 +547,31 @@ table.charKampf, table.charWaffen, table.charSprachen, table.charZauber {
   font-size: 14px; }
   table.charKampf td:first-of-type, table.charWaffen td:first-of-type, table.charSprachen td:first-of-type, table.charZauber td:first-of-type {
     text-align: left; }
+
+.dreamlands .archive-entry,
+.dairy .archive-entry {
+  border: none;
+  display: block;
+  padding: 15px; }
+
+.dreamlands.post-main,
+.dairy.post-main {
+  padding: 8px 10px 0 10px; }
+
+.dreamlands .more-link,
+.dairy .more-link {
+  padding: 3px 5px;
+  border: 1px dotted;
+  float: right;
+  transition: all 1s; }
+
+.dreamlands .featured-image,
+.dairy .featured-image {
+  margin-bottom: 10px; }
+
+.dreamlands h2,
+.dairy h2 {
+  margin-top: 0; }
 
 html {
   font-size: 15px; }

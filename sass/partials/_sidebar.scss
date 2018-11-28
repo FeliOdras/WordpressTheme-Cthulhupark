@@ -87,6 +87,10 @@ li.widget {
         a {
             display: block;
             border: none;
+
+            &:hover {
+                border: none;
+            }
         }
 
         .tbe-entry-meta {
