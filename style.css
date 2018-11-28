@@ -19,6 +19,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 * {
   transition: all .8s; }
 
+/* Basic Document Fonts
+ _fonts.scss */
 /* Traveling Typewriter */
 @font-face {
   font-family: 'Traveling Typewriter';
@@ -107,6 +109,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
   font-weight: normal;
   font-style: normal; }
 
+/*Fonts
+   _fonts.scss*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -202,6 +206,8 @@ strong {
 hr {
   border-bottom: 1px dotted #8E563F; }
 
+/*Header and Main Navigation
+ _header.scss*/
 #page {
   max-width: 1280px;
   margin: auto;
@@ -256,12 +262,20 @@ hr {
     .main-navigation ul li {
       display: inline-block;
       position: relative; }
+      .main-navigation ul li a {
+        color: #8E563F; }
+        @media (max-width: 840px) {
+          .main-navigation ul li a {
+            color: #f9e6a4; } }
       .main-navigation ul li .sub-menu {
         position: absolute;
         left: -9999px;
         opacity: 0;
         transition: opacity 0.8s;
         background-color: #8E563F; }
+        @media (max-width: 840px) {
+          .main-navigation ul li .sub-menu {
+            background-color: rgba(53, 21, 9, 0.9); } }
         .main-navigation ul li .sub-menu li {
           display: block;
           width: 100%; }
@@ -274,6 +288,9 @@ hr {
             color: #f9e6a4;
             text-shadow: 0 0 10px #000;
             background-color: #8E563F; }
+            @media (max-width: 840px) {
+              .main-navigation ul li .sub-menu li a {
+                color: #f9f0cc; } }
             .main-navigation ul li .sub-menu li a:hover {
               background-color: #f9e6a4;
               color: #8E563F;
@@ -321,11 +338,17 @@ hr {
           width: 30px;
           height: 3px;
           margin: 6px 1px;
-          display: block; } }
+          display: block;
+          background-color: #f9e6a4;
+          box-shadow: 0 0 5px #666; } }
   .main-navigation #nav:checked ~ .menu-main-menu-container {
     right: 0;
-    transition: all 1s; }
+    transition: all 1s;
+    background-color: rgba(53, 21, 9, 0.7); }
 
+/* Sidebars and Widgets - Top, Left, Right
+_sidebar.scss
+Theme: Cthulhupark */
 .sidebar {
   width: 20%;
   padding: 20px 15px;
@@ -354,6 +377,8 @@ hr {
   padding: 5px;
   color: #f9e6a4;
   background-color: rgba(53, 21, 9, 0.7); }
+  .sidebar-top a {
+    color: #f9e6a4; }
   .sidebar-top .widget {
     display: inline-block; }
     @media (max-width: 540px) {
@@ -362,7 +387,8 @@ hr {
     .sidebar-top .widget .widget-title {
       display: none; }
     .sidebar-top .widget label {
-      display: block; }
+      display: block;
+      margin-bottom: 5px; }
     .sidebar-top .widget #wp-submit {
       padding: 4px;
       display: inline; }
@@ -382,6 +408,8 @@ hr {
         .sidebar-top .widget input[type='submit']:hover {
           color: #8E563F;
           background-color: #f9e6a4; }
+      .sidebar-top .widget input[type='text'] {
+        margin-bottom: 5px; }
     .sidebar-top .widget .logout {
       display: inline; }
     .sidebar-top .widget .widget_cplogin_widget p {
@@ -498,6 +526,8 @@ li.widget {
       justify-content: space-around;
       padding-top: 0; } }
 
+/* Styles for main content
+ _mainContent.scss */
 .site-main {
   display: flex;
   justify-content: space-between;
@@ -567,6 +597,8 @@ li.widget {
 .single .date {
   color: #999; }
 
+/* Footer Styles
+ _footer.scss */
 .post-navigation {
   max-width: 600px;
   margin: auto;
@@ -574,6 +606,8 @@ li.widget {
   .post-navigation .author {
     margin-bottom: 15px; }
 
+/*Archive and Archive Lists
+ _archive.scss */
 .breadcrumb-cat {
   margin-bottom: 10px; }
   .breadcrumb-cat a {
@@ -687,6 +721,8 @@ li.widget {
 .tag .cat-children-list {
   display: none; }
 
+/* Special Styles for character sheets
+ _characters.scss */
 table.charSkills tbody {
   display: flex;
   flex-wrap: wrap;
@@ -714,34 +750,75 @@ table.charBasics tr {
   table.charBasics tr td {
     flex: 0 0 50%; }
 
+/*Special styles for dairy and dreamlands entries
+ _customDairy.scss */
 .dairy {
   background-color: #FEFCE8; }
   .dairy .archive-entry {
     color: #0B0B61; }
   .dairy .single-post-entry {
     color: #0B0B61; }
-  .dairy .post-title a {
-    background-color: #8E563F;
-    color: #f9e6a4; }
+  .dairy .post-title {
+    background-color: #8E563F; }
+    .dairy .post-title a {
+      color: #f9e6a4; }
   .dairy .more-link:hover {
     background-color: #8E563F;
     color: #f9e6a4; }
+  .dairy .edit-link a {
+    color: #f9e6a4;
+    background-color: #8E563F;
+    border: 1px solid #8E563F; }
+    .dairy .edit-link a:hover {
+      background-color: #f9e6a4;
+      color: #8E563F; }
 
-.dreamlands {
+.dreamlands.entry-content {
   background-color: #2B2B2B; }
-  .dreamlands .archive-entry {
-    color: #efefef; }
-  .dreamlands .single-post-entry {
-    color: #efefef; }
-  .dreamlands .more-link {
-    color: #ffffff;
-    border-bottom-color: #ffffff; }
-    .dreamlands .more-link:hover {
-      color: #333;
-      background-color: #eeeeee; }
+
+.dreamlands.post-main {
+  background-color: #2B2B2B; }
+
+.dreamlands .entry-title {
+  color: #efefef; }
+  .dreamlands .entry-title .trans {
+    font-size: .65em; }
+    .dreamlands .entry-title .trans:after {
+      content: '';
+      display: block; }
+
+.dreamlands .archive-entry {
+  color: #efefef; }
+
+.dreamlands .single-post-entry {
+  color: #efefef; }
+
+.dreamlands .more-link {
+  color: #ffffff;
+  border-bottom-color: #ffffff; }
+  .dreamlands .more-link:hover {
+    color: #333;
+    background-color: #eeeeee; }
+
+.dreamlands .post-title {
+  background-color: #666; }
   .dreamlands .post-title a {
-    color: #eeeeee;
-    background-color: #666; }
+    color: #eeeeee; }
+
+.dreamlands .edit-link a {
+  color: #333;
+  background-color: #eeeeee; }
+  .dreamlands .edit-link a:hover {
+    background-color: #333;
+    color: #eeeeee; }
+
+.dreamlands .post-title,
+.dairy .post-title {
+  padding: 8px 10px; }
+  .dreamlands .post-title a,
+  .dairy .post-title a {
+    display: block;
+    border: none; }
 
 .dreamlands.post-main,
 .dairy.post-main {
@@ -760,10 +837,6 @@ table.charBasics tr {
   .dairy .archive-entry:hover {
     background-color: transparent; }
 
-.dreamlands.post-main,
-.dairy.post-main {
-  padding: 8px 10px 0 10px; }
-
 .dreamlands .more-link,
 .dairy .more-link {
   padding: 3px 5px;
@@ -779,22 +852,12 @@ table.charBasics tr {
 .dairy h2 {
   margin-top: 0; }
 
-.dreamlands .edit-link a {
-  color: #333;
-  background-color: #eeeeee; }
-  .dreamlands .edit-link a:hover {
-    background-color: #333;
-    color: #eeeeee; }
+.dreamlands .edit-link,
+.dairy .edit-link {
+  display: inline-block; }
 
-.dairy .edit-link a {
-  color: #f9e6a4;
-  background-color: #8E563F;
-  border: 1px solid #8E563F; }
-
-.dairy .edit-link:hover {
-  background-color: #f9e6a4;
-  color: #8E563F; }
-
+/* Typography 
+ _typo.scss */
 html {
   font-size: 15px; }
 
@@ -839,6 +902,6 @@ h4 {
   .三十郎 .post-title {
     font-size: 15px; }
     .三十郎 .post-title a {
-      font-size: 15px; }
+      font-size: 12px; }
   .三十郎 .entry-title {
     font-size: 15px; }

@@ -1,5 +1,5 @@
-//Special styles for dairy and dreamlands entries
-// _customDairy.scss
+/*Special styles for dairy and dreamlands entries
+ _customDairy.scss */
 .dairy {
     background-color: $dairyBGColor;
 
@@ -12,8 +12,9 @@
     }
 
     .post-title {
+        background-color: $mainAccentColor;
+
         a {
-            background-color: $mainAccentColor;
             color: $mainBackgroundColor;
         }
     }
@@ -24,10 +25,45 @@
             color: $mainBackgroundColor;
         }
     }
+
+    .edit-link {
+        a {
+            color: $mainBackgroundColor;
+            background-color: $mainAccentColor;
+            border: 1px solid $mainAccentColor;
+
+            &:hover {
+                background-color: $mainBackgroundColor;
+                color: $mainAccentColor;
+            }
+        }
+
+
+    }
 }
 
 .dreamlands {
-    background-color: $dreamlandsBGColor;
+
+    &.entry-content {
+        background-color: $dreamlandsBGColor;
+    }
+
+    &.post-main {
+        background-color: $dreamlandsBGColor;
+    }
+
+    .entry-title {
+        color: $dreamlandsFontColor;
+
+        .trans {
+            font-size: .65em;
+
+            &:after {
+                content: '';
+                display: block;
+            }
+        }
+    }
 
     .archive-entry {
         color: $dreamlandsFontColor;
@@ -48,9 +84,22 @@
     }
 
     .post-title {
+        background-color: $dreamlandsAccentColor;
+
         a {
             color: $darkwhite;
-            background-color: $dreamlandsAccentColor;
+        }
+    }
+
+    .edit-link {
+        a {
+            color: $lightblack;
+            background-color: $darkwhite;
+
+            &:hover {
+                background-color: $lightblack;
+                color: $darkwhite;
+            }
         }
     }
 }
@@ -58,6 +107,15 @@
 
 .dreamlands,
 .dairy {
+
+    .post-title {
+        padding: 8px 10px;
+
+        a {
+            display: block;
+            border: none;
+        }
+    }
 
     &.post-main {
         box-shadow: 5px 5px 10px $dreamlandsAccentColor;
@@ -78,10 +136,6 @@
         }
     }
 
-    &.post-main {
-        padding: 8px 10px 0 10px;
-    }
-
     .more-link {
         padding: 3px 5px;
         border: 1px dotted;
@@ -96,33 +150,8 @@
     h2 {
         margin-top: 0;
     }
-}
 
-.dreamlands {
     .edit-link {
-        a {
-            color: $lightblack;
-            background-color: $darkwhite;
-
-            &:hover {
-                background-color: $lightblack;
-                color: $darkwhite;
-            }
-        }
-    }
-}
-
-.dairy {
-    .edit-link {
-        a {
-            color: #f9e6a4;
-            background-color: $mainAccentColor;
-            border: 1px solid $mainAccentColor;
-        }
-
-        &:hover {
-            background-color: #f9e6a4;
-            color: $mainAccentColor;
-        }
+        display: inline-block;
     }
 }

@@ -1,5 +1,6 @@
-// Sidebars and Widgets - Top, Left, Right
-// Theme: Cthulhupark
+/* Sidebars and Widgets - Top, Left, Right
+_sidebar.scss
+Theme: Cthulhupark */
 
 .sidebar {
     width: 20%;
@@ -36,6 +37,10 @@
     color: $mainBackgroundColor;
     background-color: $sidebarTopBGColor;
 
+    a {
+        color: $mainBackgroundColor;
+    }
+
     .widget {
         display: inline-block;
 
@@ -49,6 +54,7 @@
 
         label {
             display: block;
+            margin-bottom: 5px;
         }
 
         #wp-submit {
@@ -77,6 +83,10 @@
                     color: $mainAccentColor;
                     background-color: $mainBackgroundColor;
                 }
+            }
+
+            &[type='text'] {
+                margin-bottom: 5px;
             }
         }
 

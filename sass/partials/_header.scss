@@ -1,5 +1,5 @@
-//Header and Main Navigation
-// _header.scss
+/*Header and Main Navigation
+ _header.scss*/
 
 #page {
     max-width: 1280px;
@@ -75,12 +75,24 @@
             display: inline-block;
             position: relative;
 
+            a {
+                color: $mainAccentColor;
+
+                @media #{$tablet} {
+                    color: $mainBackgroundColor;
+                }
+            }
+
             .sub-menu {
                 position: absolute;
                 left: -9999px;
                 opacity: 0;
                 transition: opacity 0.8s;
                 background-color: $mainAccentColor;
+
+                @media #{$tablet} {
+                    background-color: rgba(53, 21, 9, 0.9);
+                }
 
                 li {
                     display: block;
@@ -95,6 +107,10 @@
                         color: $mainBackgroundColor;
                         text-shadow: 0 0 10px $black;
                         background-color: $mainAccentColor;
+
+                        @media #{$tablet} {
+                            color: #f9f0cc;
+                        }
 
                         &:hover {
                             background-color: $mainBackgroundColor;
@@ -171,6 +187,8 @@
                 height: 3px;
                 margin: 6px 1px;
                 display: block;
+                background-color: #f9e6a4;
+                box-shadow: 0 0 5px $dreamlandsAccentColor;
             }
 
         }
@@ -181,6 +199,7 @@
             &~.menu-main-menu-container {
                 right: 0;
                 transition: all 1s;
+                background-color: rgba(53, 21, 9, 0.7);
             }
         }
     }
