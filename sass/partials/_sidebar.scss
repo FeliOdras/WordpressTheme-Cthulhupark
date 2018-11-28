@@ -114,6 +114,9 @@ li.widget {
     img {
         width: 45px;
         margin: auto;
+        position: absolute;
+        right: -10px;
+        bottom: 0;
     }
 
     a {
@@ -139,11 +142,18 @@ li.widget {
             bottom: -13px;
             z-index: 999;
             visibility: hidden;
+            position: absolute;
+            right: -10px;
         }
 
         &:hover {
             .widget-title {
                 visibility: visible;
+                right: 0;
+            }
+
+            img {
+                right: 0;
             }
         }
 

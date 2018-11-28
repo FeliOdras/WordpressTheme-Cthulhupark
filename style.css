@@ -329,7 +329,10 @@ li.widget {
   padding-top: 20px; }
   .sidebar-author img {
     width: 45px;
-    margin: auto; }
+    margin: auto;
+    position: absolute;
+    right: -10px;
+    bottom: 0; }
   .sidebar-author a {
     border: none; }
     .sidebar-author a:hover {
@@ -347,9 +350,14 @@ li.widget {
       width: 50px;
       bottom: -13px;
       z-index: 999;
-      visibility: hidden; }
+      visibility: hidden;
+      position: absolute;
+      right: -10px; }
     .sidebar-author .widget:hover .widget-title {
-      visibility: visible; }
+      visibility: visible;
+      right: 0; }
+    .sidebar-author .widget:hover img {
+      right: 0; }
 
 .site-main {
   display: flex;
