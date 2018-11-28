@@ -28,7 +28,7 @@
   $sidebarTopBGColor: rgba(53, 21, 9, 0.7);
   $whiteTrans50:rgba(255, 255, 255, 0.5);
 
-
+  $bodyBGColor:antiquewhite;
   $dairyBGColor:#FEFCE8;
   $dairyFontColor:#0B0B61;
   $dreamlandsBGColor:#2B2B2B;
@@ -39,8 +39,22 @@
   $black: #000;
   $lightblack:#333;
 
+  // Gradients 
+
+  $navBGGradient:#E5D59E,
+  #f9e6a4;
+
   // Media queries
 
   $portrait: screen and (orientation:portrait);
   $tablet: screen and (max-width:840px);
   $phone: screen and (max-width:540px);
+
+  //Mixins
+
+  @mixin gradient($direction, $list) {
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);
+  }

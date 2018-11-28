@@ -14,7 +14,6 @@ Text Domain: cthulhupark
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import url(styles/layout.css);
 @import url(styles/typo.css);
 @import url(styles/colors.css);
 * {
@@ -165,6 +164,9 @@ hr {
 Theme Name: Cthulhupark
 _essentials.scss
 */
+body {
+  background-color: antiquewhite; }
+
 .aligncenter {
   margin: auto;
   display: block; }
@@ -223,7 +225,12 @@ hr {
     position: absolute;
     top: 20px;
     left: 15px;
-    z-index: 90; }
+    z-index: 90;
+    text-shadow: 0 0 10px #000; }
+    .main-header .blog-info .main-title a {
+      color: #f9e6a4; }
+    .main-header .blog-info .sub-title {
+      color: #f9e6a4; }
   .main-header .main-header-wrapper {
     height: 65vh;
     overflow: hidden; }
@@ -232,7 +239,11 @@ hr {
   margin-top: -4px;
   bottom: 0;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  background: -webkit-linear-gradient(bottom, #E5D59E, #f9e6a4);
+  background: -moz-linear-gradient(bottom, #E5D59E, #f9e6a4);
+  background: -o-linear-gradient(bottom, #E5D59E, #f9e6a4);
+  background: linear-gradient(bottom, #E5D59E, #f9e6a4); }
   .main-navigation input[type='checkbox'] {
     display: none; }
   .main-navigation ul {
@@ -245,7 +256,8 @@ hr {
         position: absolute;
         left: -9999px;
         opacity: 0;
-        transition: opacity 0.8s; }
+        transition: opacity 0.8s;
+        background-color: #8E563F; }
         .main-navigation ul li .sub-menu li {
           display: block;
           width: 100%; }
@@ -253,7 +265,15 @@ hr {
             width: 100%;
             min-height: 27px;
             height: auto;
-            margin: 0px; }
+            margin: 0px;
+            transition: all 0.8s;
+            color: #f9e6a4;
+            text-shadow: 0 0 10px #000;
+            background-color: #8E563F; }
+            .main-navigation ul li .sub-menu li a:hover {
+              background-color: #f9e6a4;
+              color: #8E563F;
+              text-shadow: none; }
       .main-navigation ul li:hover .sub-menu {
         left: 0;
         opacity: 1; }
@@ -327,7 +347,9 @@ hr {
   bottom: 42px;
   left: 0;
   width: 100%;
-  padding: 5px; }
+  padding: 5px;
+  color: #f9e6a4;
+  background-color: rgba(53, 21, 9, 0.7); }
   .sidebar-top .widget {
     display: inline-block; }
     @media (max-width: 540px) {
@@ -340,8 +362,22 @@ hr {
     .sidebar-top .widget #wp-submit {
       padding: 4px;
       display: inline; }
-    .sidebar-top .widget input[type='submit'] {
-      padding: 4px; }
+    .sidebar-top .widget input {
+      border: 1px dotted #8E563F;
+      color: #8E563F;
+      font-family: 'Traveling Typewriter', monospace;
+      background-color: #f9e6a4; }
+      .sidebar-top .widget input:focus {
+        border-style: solid;
+        box-shadow: none; }
+      .sidebar-top .widget input[type='submit'] {
+        padding: 4px;
+        background-color: #8E563F;
+        color: #f9e6a4;
+        transition: all .8s; }
+        .sidebar-top .widget input[type='submit']:hover {
+          color: #8E563F;
+          background-color: #f9e6a4; }
     .sidebar-top .widget .logout {
       display: inline; }
     .sidebar-top .widget .widget_cplogin_widget p {
@@ -372,7 +408,9 @@ li.widget {
   li.widget .widget-title {
     text-align: center;
     padding: 3px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    background-color: #8E563F;
+    color: #f9e6a4; }
 
 .widget_cptbe_widget .entries {
   border: 1px dotted #8E563F;
@@ -450,13 +488,18 @@ li.widget {
 .site-main {
   display: flex;
   justify-content: space-between;
-  align-self: stretch; }
+  align-self: stretch;
+  background-image: url(../images/mainBackground.png);
+  background-repeat: repeat;
+  background-color: #f9f0cc;
+  background-attachment: fixed; }
   @media (max-width: 840px) {
     .site-main {
       flex-wrap: wrap; } }
 
 .content-area a {
-  border-bottom: 1px dotted #8E563F; }
+  border-bottom: 1px dotted #8E563F;
+  color: #8E563F; }
   .content-area a:hover {
     border-style: solid; }
 
@@ -469,12 +512,15 @@ li.widget {
     .main-entry {
       flex: 0 0 100%; } }
   .main-entry .entry-title {
-    margin-bottom: 23px; }
+    margin-bottom: 23px;
+    color: #8E563F;
+    text-shadow: 0 0 1px #8E563F; }
   .main-entry .entry-content {
     margin: 0 auto;
     padding: 20px 15px;
     max-width: 600px;
-    margin-top: 30px; }
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.5); }
     .main-entry .entry-content li {
       line-height: 18px;
       padding-left: 20px;
@@ -499,15 +545,6 @@ li.widget {
   float: left;
   margin-right: 15px;
   margin-bottom: 15px; }
-
-h2 {
-  margin: 25px 0 20px 0; }
-
-h3 {
-  margin: 22px 0 18px 0; }
-
-h4 {
-  margin: 20px 0 16px 0; }
 
 .tags {
   margin-top: 10px;
@@ -678,6 +715,15 @@ body {
   font-family: "Traveling Typewriter", Courier, monospace;
   font-size: 1rem;
   line-height: 150%; }
+
+h2 {
+  margin: 25px 0 20px 0; }
+
+h3 {
+  margin: 22px 0 18px 0; }
+
+h4 {
+  margin: 20px 0 16px 0; }
 
 .dairy,
 .dreamlands {

@@ -16,7 +16,7 @@
 }
 
 .sidebar-left {
-    border-right: 1px dotted #8E563F;
+    border-right: 1px dotted $mainAccentColor;
 
     @media #{$tablet} {
         order: 1;
@@ -24,7 +24,7 @@
 }
 
 .sidebar-right {
-    border-left: 1px dotted #8E563F;
+    border-left: 1px dotted $mainAccentColor;
 }
 
 .sidebar-top {
@@ -33,6 +33,8 @@
     left: 0;
     width: 100%;
     padding: 5px;
+    color: $mainBackgroundColor;
+    background-color: $sidebarTopBGColor;
 
     .widget {
         display: inline-block;
@@ -54,9 +56,31 @@
             display: inline;
         }
 
-        input[type='submit'] {
-            padding: 4px;
+        input {
+            border: 1px dotted $mainAccentColor;
+            color: $mainAccentColor;
+            font-family: 'Traveling Typewriter', monospace;
+            background-color: $mainBackgroundColor;
+
+            &:focus {
+                border-style: solid;
+                box-shadow: none;
+            }
+
+            &[type='submit'] {
+                padding: 4px;
+                background-color: $mainAccentColor;
+                color: $mainBackgroundColor;
+                transition: all .8s;
+
+                &:hover {
+                    color: $mainAccentColor;
+                    background-color: $mainBackgroundColor;
+                }
+            }
         }
+
+
 
         .logout {
             display: inline;
@@ -110,12 +134,14 @@ li.widget {
         text-align: center;
         padding: 3px;
         margin-bottom: 15px;
+        background-color: $mainAccentColor;
+        color: $mainBackgroundColor;
     }
 }
 
 .widget_cptbe_widget {
     .entries {
-        border: 1px dotted #8E563F;
+        border: 1px dotted $mainAccentColor;
         padding: 5px;
         margin: 4px 0;
 
@@ -133,13 +159,13 @@ li.widget {
             margin: 7px -5px -5px -5px;
 
             .author {
-                border-right: 1px dotted #8E563F;
+                border-right: 1px dotted $mainAccentColor;
                 padding-right: 4px;
             }
 
             .date {
                 float: right;
-                border-left: 1px dotted #8E563F;
+                border-left: 1px dotted $mainAccentColor;
                 padding-left: 4px;
             }
         }

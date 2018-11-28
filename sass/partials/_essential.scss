@@ -3,6 +3,10 @@ Theme Name: Cthulhupark
 _essentials.scss
 */
 
+body {
+    background-color: $bodyBGColor;
+}
+
 .aligncenter {
     margin: auto;
     display: block;
@@ -39,5 +43,5 @@ strong {
 }
 
 hr {
-    border-bottom: 1px dotted #8E563F;
+    border-bottom: 1px dotted $mainAccentColor;
 }

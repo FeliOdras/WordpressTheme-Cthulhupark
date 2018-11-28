@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-self: stretch;
+    background-image: url(../images/mainBackground.png);
+    background-repeat: repeat;
+    background-color: #f9f0cc;
+    background-attachment: fixed;
 
     @media #{$tablet} {
         flex-wrap: wrap;
@@ -13,7 +17,8 @@
 
 .content-area {
     a {
-        border-bottom: 1px dotted #8E563F;
+        border-bottom: 1px dotted $mainAccentColor;
+        color: $mainAccentColor;
 
         &:hover {
             border-style: solid;
@@ -34,6 +39,8 @@
 
     .entry-title {
         margin-bottom: 23px;
+        color: $mainAccentColor;
+        text-shadow: 0 0 1px $mainAccentColor;
     }
 
     .entry-content {
@@ -41,6 +48,7 @@
         padding: 20px 15px;
         max-width: 600px;
         margin-top: 30px;
+        background-color: rgba(255, 255, 255, 0.5);
 
         li {
             line-height: 18px;
@@ -80,17 +88,6 @@
     }
 }
 
-h2 {
-    margin: 25px 0 20px 0;
-}
-
-h3 {
-    margin: 22px 0 18px 0;
-}
-
-h4 {
-    margin: 20px 0 16px 0;
-}
 
 .tags {
     margin-top: 10px;

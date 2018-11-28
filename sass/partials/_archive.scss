@@ -31,7 +31,7 @@
         a {
             float: left;
             display: inline-block;
-            border-bottom: 1px dotted #8E563F;
+            border-bottom: 1px dotted $mainAccentColor;
             margin: 3px 14px 3px 0px;
         }
 
@@ -81,7 +81,7 @@
 
     a {
         padding: 1px 3px;
-        border: 1px dotted #8E563F;
+        border: 1px dotted $mainAccentColor;
         border-radius: 3px;
     }
 }

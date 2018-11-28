@@ -36,6 +36,18 @@
         top: 20px;
         left: 15px;
         z-index: 90;
+        text-shadow: 0 0 10px #000;
+
+        .main-title {
+
+            a {
+                color: $mainBackgroundColor;
+            }
+        }
+
+        .sub-title {
+            color: $mainBackgroundColor;
+        }
     }
 
     .main-header-wrapper {
@@ -49,6 +61,7 @@
     bottom: 0;
     position: absolute;
     width: 100%;
+    @include gradient(bottom, $navBGGradient);
 
     input[type='checkbox'] {
         display: none;
@@ -67,6 +80,7 @@
                 left: -9999px;
                 opacity: 0;
                 transition: opacity 0.8s;
+                background-color: $mainAccentColor;
 
                 li {
                     display: block;
@@ -77,6 +91,16 @@
                         min-height: 27px;
                         height: auto;
                         margin: 0px;
+                        transition: all 0.8s;
+                        color: $mainBackgroundColor;
+                        text-shadow: 0 0 10px $black;
+                        background-color: $mainAccentColor;
+
+                        &:hover {
+                            background-color: $mainBackgroundColor;
+                            color: $mainAccentColor;
+                            text-shadow: none;
+                        }
                     }
                 }
             }
