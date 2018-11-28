@@ -1,21 +1,32 @@
   //Fonts
-  
-  $mainFont: 'Traveling Typewriter', Courier, monospace;
-  $headlineFont: 'Fredericka the Great', serif;
-  $mainScriptFont: Ruthie, cursive;
-  $dairyFont:'Shadow Into Light', cursive;
-  $LCFont: 'Bad Script', cursive;
-  $MycroftFont: 'Zai Calligraphy', cursive;
-  $HenryFont: Bilbo, cursive;
-  $RagnarFont: 'Just Me Again Down Here', cursive;
-  $SanjuroFont: Hoffmann, cursive;
+  // _fonts.scss
+
+  $mainFont: 'Traveling Typewriter',
+  Courier,
+  monospace;
+  $headlineFont: 'Fredericka the Great',
+  serif;
+  $mainScriptFont: Ruthie,
+  cursive;
+  $dairyFont:'Shadow Into Light',
+  cursive;
+  $LCFont: 'Bad Script',
+  cursive;
+  $MycroftFont: 'Zai Calligraphy',
+  cursive;
+  $HenryFont: Bilbo,
+  cursive;
+  $RagnarFont: 'Just Me Again Down Here',
+  cursive;
+  $SanjuroFont: Hoffmann,
+  cursive;
 
   //Colors
   $mainBackgroundColor:#f9e6a4;
   $mainAccentColor:#8E563F;
   $entryMetaColor:#999;
   $sidebarTopBGColor: rgba(53, 21, 9, 0.7);
-  $whiteTrans50:rgba(255,255,255,0.5);
+  $whiteTrans50:rgba(255, 255, 255, 0.5);
 
 
   $dairyBGColor:#FEFCE8;

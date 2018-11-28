@@ -163,6 +163,7 @@ hr {
 
 /* Basic and editor styles
 Theme Name: Cthulhupark
+_essentials.scss
 */
 .aligncenter {
   margin: auto;
@@ -323,6 +324,33 @@ li.widget {
       border-left: 1px dotted #8E563F;
       padding-left: 4px; }
 
+.sidebar-author {
+  flex: 0 0 45px;
+  padding-top: 20px; }
+  .sidebar-author img {
+    width: 45px;
+    margin: auto; }
+  .sidebar-author a {
+    border: none; }
+    .sidebar-author a:hover {
+      border: none; }
+  .sidebar-author .widget {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-align: center;
+    border-radius: 3px 0 0 3px;
+    position: relative;
+    height: 50px; }
+    .sidebar-author .widget .widget-title {
+      margin: 0;
+      padding: 0 1px 3px 1px;
+      width: 50px;
+      bottom: -13px;
+      z-index: 999;
+      visibility: hidden; }
+    .sidebar-author .widget:hover .widget-title {
+      visibility: visible; }
+
 .site-main {
   display: flex;
   justify-content: space-between;
@@ -361,10 +389,6 @@ li.widget {
   float: left;
   margin-right: 15px;
   margin-bottom: 15px; }
-
-.dreamlands .archive-entry,
-.dairy .archive-entry {
-  border: none; }
 
 .archive-entry {
   display: flex;
@@ -423,7 +447,8 @@ body {
   font-size: 1rem;
   line-height: 150%; }
 
-.dairy, .dreamlands {
+.dairy,
+.dreamlands {
   font-family: "Shadow Into Light", cursive;
   font-size: 18px;
   line-height: 28px; }

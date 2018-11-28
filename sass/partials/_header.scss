@@ -1,17 +1,18 @@
 //Header and Main Navigation
+// _header.scss
 
 #page {
     max-width: 1280px;
-    margin:auto;
+    margin: auto;
     overflow: hidden;
 }
 
 .main-header {
     position: relative;
 
-        @media #{$portrait} {
-            height:auto;
-        }
+    @media #{$portrait} {
+        height: auto;
+    }
 
     img {
         width: 100%;
@@ -19,31 +20,31 @@
         bottom: 0;
 
         @media #{$portrait} {
-            width:180%;
-            margin-left:-40%;
-            max-width:9999px;
+            width: 180%;
+            margin-left: -40%;
+            max-width: 9999px;
             position: static;
-            }
         }
+    }
 
     .blog-info {
         position: absolute;
-        top:20px;
-        left:15px;
-        z-index:90;
+        top: 20px;
+        left: 15px;
+        z-index: 90;
     }
 
     .main-header-wrapper {
-        height:65vh;
+        height: 65vh;
         overflow: hidden;
     }
 }
 
 .main-navigation {
-    margin-top:-4px;
-    bottom:0;
+    margin-top: -4px;
+    bottom: 0;
     position: absolute;
-    width:100%;
+    width: 100%;
 
     input[type='checkbox'] {
         display: none;
@@ -51,51 +52,48 @@
 
     ul {
         max-width: 1280px;
-        margin:auto;
+        margin: auto;
 
         li {
             display: inline-block;
             position: relative;
 
             .sub-menu {
-                position:absolute;
-                left:-9999px;
+                position: absolute;
+                left: -9999px;
                 opacity: 0;
-                transition:opacity 0.8s;
+                transition: opacity 0.8s;
 
                 li {
-                    display:block;
+                    display: block;
                     width: 100%;
-            
+
                     a {
-                        width:100%;
-                        min-height:27px;
-                        height:auto;
-                        margin:0px;
+                        width: 100%;
+                        min-height: 27px;
+                        height: auto;
+                        margin: 0px;
                     }
                 }
             }
 
             &:hover {
                 .sub-menu {
-                    left:0;
+                    left: 0;
                     opacity: 1;
 
-                    
+
                 }
             }
 
             a {
-                display:inline-block;
-                height:42px;
-                padding:0 15px;
-                margin-left:-3px;
+                display: inline-block;
+                height: 42px;
+                padding: 0 15px;
+                margin-left: -3px;
             }
         }
     }
 }
 
-.sub-menu {
-
-    
-}
+.sub-menu {}

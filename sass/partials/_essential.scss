@@ -1,32 +1,33 @@
 /* Basic and editor styles
 Theme Name: Cthulhupark
+_essentials.scss
 */
 
 .aligncenter {
-    margin:auto;
+    margin: auto;
     display: block;
 }
 
 .alignleft {
-    float:left;
-    margin-right:20px;
-    margin-bottom:20px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .alignright {
-    float:right;
-    margin-left:20px;
-    margin-bottom:20px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .clearfix:after {
-    content:'';
-    display:table;
-    clear:both;
+    content: '';
+    display: table;
+    clear: both;
 }
 
 img {
-    max-width:100%;
+    max-width: 100%;
 }
 
 em {

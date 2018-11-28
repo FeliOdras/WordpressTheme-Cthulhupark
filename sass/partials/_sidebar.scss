@@ -2,110 +2,152 @@
 // Theme: Cthulhupark
 
 .sidebar {
-    width:20%;
-    padding:20px 15px;
+    width: 20%;
+    padding: 20px 15px;
     min-width: 150px;
 }
 
 .sidebar-left {
-    border-right:1px dotted #8E563F;
+    border-right: 1px dotted #8E563F;
 }
 
 .sidebar-right {
-    border-left:1px dotted #8E563F;
+    border-left: 1px dotted #8E563F;
 }
 
 .sidebar-top {
     position: absolute;
-    bottom:42px;
-    left:0;
-    width:100%;
-    padding:5px;
+    bottom: 42px;
+    left: 0;
+    width: 100%;
+    padding: 5px;
 
-    .widget{
-        display:inline-block;
+    .widget {
+        display: inline-block;
 
-        .widget-title{
-            display:none;
+        .widget-title {
+            display: none;
         }
 
         label {
-            display:block;
+            display: block;
         }
 
         #wp-submit {
-            padding:4px;
-            display:inline;
+            padding: 4px;
+            display: inline;
         }
 
-        input[type='submit']{
-            padding:4px;
+        input[type='submit'] {
+            padding: 4px;
         }
 
         .logout {
-            display:inline;
+            display: inline;
         }
 
         .widget_cplogin_widget {
-            p{
-                display:inline-block;
+            p {
+                display: inline-block;
             }
         }
-    }  
-    
+    }
+
     input {
         padding: 0 3px;
     }
 
     .widget_search {
-        float:right;
+        float: right;
     }
 
     .logged-in {
         .widget_cplogin_widget {
-            padding-top:15px;
+            padding-top: 15px;
         }
     }
 }
 
 li.widget {
-    margin-bottom:20px;
+    margin-bottom: 20px;
 
-    .widget-title {      
+    .widget-title {
         text-align: center;
-        padding:3px;
-        margin-bottom:15px;
+        padding: 3px;
+        margin-bottom: 15px;
     }
 }
 
 .widget_cptbe_widget {
     .entries {
-        border:1px dotted #8E563F;
-        padding:5px;
-        margin:4px 0;
+        border: 1px dotted #8E563F;
+        padding: 5px;
+        margin: 4px 0;
 
         a {
             display: block;
-            border:none;
+            border: none;
         }
 
         .tbe-entry-meta {
-            padding:3px 5px; 
-            margin:7px -5px -5px -5px ;
+            padding: 3px 5px;
+            margin: 7px -5px -5px -5px;
 
             .author {
-                border-right:1px dotted #8E563F;
-                padding-right:4px; 
+                border-right: 1px dotted #8E563F;
+                padding-right: 4px;
             }
 
             .date {
-                float:right;
-                border-left:1px dotted #8E563F;
-                padding-left:4px;
+                float: right;
+                border-left: 1px dotted #8E563F;
+                padding-left: 4px;
             }
         }
     }
 }
 
+.sidebar-author {
+    flex: 0 0 45px;
+    padding-top: 20px;
+
+    img {
+        width: 45px;
+        margin: auto;
+    }
+
+    a {
+        border: none;
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    .widget {
+        padding: 0;
+        margin: 0 0 6px 0;
+        text-align: center;
+        border-radius: 3px 0 0 3px;
+        position: relative;
+        height: 50px;
+
+        .widget-title {
+            margin: 0;
+            padding: 0 1px 3px 1px;
+            width: 50px;
+            bottom: -13px;
+            z-index: 999;
+            visibility: hidden;
+        }
+
+        &:hover {
+            .widget-title {
+                visibility: visible;
+            }
+        }
 
 
+    }
+
+}

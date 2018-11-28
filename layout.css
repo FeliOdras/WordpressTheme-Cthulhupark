@@ -1,38 +1,7 @@
 /* Layout and positioning 
 Theme Name: Cthulhupark
 */
-.sidebar-author {
-  flex: 0 0 45px;
-  padding-top: 20px; }
-
-.sidebar-author img {
-  width: 45px;
-  margin: auto; }
-
-.sidebar-author a,
-.sidebar-author a:hover {
-  border: none; }
-
-.sidebar-author li.widget {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-align: center;
-  border-radius: 3px 0 0 3px;
-  position: relative;
-  height: 50px; }
-
-.sidebar-author .widget-title {
-  margin: 0;
-  padding: 0 1px 3px 1px;
-  width: 50px;
-  bottom: -13px;
-  z-index: 999;
-  visibility: hidden; }
-
-.sidebar-author li.widget:hover .widget-title {
-  visibility: visible; }
-
-.sidebar-author li.widget img,
+.sidebar-author li .sidebar-author .sidebar-author li.widget:hover .sidebar-author li.widget img,
 .sidebar-author li.widget .widget-title {
   position: absolute;
   right: -10px; }
