@@ -502,6 +502,27 @@ h4 {
 .post-excerpt p {
   margin-bottom: 0; }
 
+table.charSkills tbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  table.charSkills tbody tr {
+    flex: 0 0 170px;
+    display: flex;
+    font-size: 14px; }
+    table.charSkills tbody tr td:first-of-type {
+      flex: 1 1 100px; }
+
+table.charKampf, table.charWaffen, table.charSprachen, table.charZauber {
+  margin: 10px 0;
+  padding: 10px;
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
+  text-align: center;
+  font-size: 14px; }
+  table.charKampf td:first-of-type, table.charWaffen td:first-of-type, table.charSprachen td:first-of-type, table.charZauber td:first-of-type {
+    text-align: left; }
+
 html {
   font-size: 15px; }
 

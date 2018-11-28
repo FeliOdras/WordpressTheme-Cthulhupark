@@ -1,0 +1,42 @@
+// Special Styles for character sheets
+// _characters.scss
+
+table {
+    &.charSkills {
+        tbody {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            tr {
+                flex: 0 0 170px;
+                display: flex;
+                font-size: 14px;
+
+                td {
+                    &:first-of-type {
+                        flex: 1 1 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.charKampf,
+    &.charWaffen,
+    &.charSprachen,
+    &.charZauber {
+        margin: 10px 0;
+        padding: 10px;
+        border-top: 1px dotted;
+        border-bottom: 1px dotted;
+        text-align: center;
+        font-size: 14px;
+
+        td {
+            &:first-of-type {
+                text-align: left;
+            }
+        }
+    }
+}
