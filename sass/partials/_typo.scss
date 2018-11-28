@@ -51,6 +51,14 @@ h4 {
 
 .三十郎 {
     font-family: $SanjuroFont;
-    font-size: 20px;
+    font-size: 10px;
     line-height: 33px;
+
+    .post-title {
+        font-size: 15px;
+    }
+
+    .entry-title {
+        font-size: 15px;
+    }
 }

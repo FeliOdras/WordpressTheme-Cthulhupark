@@ -79,7 +79,7 @@
 
 /* bad-script-regular - latin - LC*/
 @font-face {
-     font-family: 'Bad Script';
+     font-family: 'LC';
      font-style: normal;
      font-weight: 400;
      src: url('./fonts/bad-script-v6-latin-regular.eot');
@@ -97,7 +97,7 @@
 
 /* Zai Calligraphy - latin - MW*/
 @font-face {
-     font-family: 'Zai Calligraphy';
+     font-family: 'Mycroft';
      font-style: normal;
      font-weight: 400;
      src: url('./fonts/zaiCalligraphyScriptHandwritten.eot');
@@ -115,7 +115,7 @@
 
 /* bilbo-regular - latin - HWJ */
 @font-face {
-     font-family: 'Bilbo';
+     font-family: 'Henry';
      font-style: normal;
      font-weight: 400;
      src: url('./fonts/bilbo-v7-latin-regular.eot');
@@ -133,7 +133,7 @@
 
 /* just-me-again-down-here-regular - latin - RHW */
 @font-face {
-     font-family: 'Just Me Again Down Here';
+     font-family: 'Ragnar';
      font-style: normal;
      font-weight: 400;
      src: url('./fonts/just-me-again-down-here-v9-latin-regular.eot');
@@ -151,13 +151,13 @@
 
 /* Meddon regular - latin-ext_latin - 三十郎*/
 @font-face {
-     font-family: 'Meddon';
-     src: url('../fonts/meddon.eot');
-     src: url('../fonts/meddon.eot?#iefix') format('embedded-opentype'),
-          url('../fonts/meddon.woff2') format('woff2'),
-          url('../fonts/meddon.woff') format('woff'),
-          url('../fonts/meddon.ttf') format('truetype'),
-          url('../fonts/meddon.svg#meddonregular') format('svg');
+     font-family: 'Sanjuro';
+     src: url('./fonts/daniel-regular.eot');
+     src: url('./fonts/daniel-regular.eot?#iefix') format('embedded-opentype'),
+          url('./fonts/daniel-regular.woff2') format('woff2'),
+          url('./fonts/daniel-regular.woff') format('woff'),
+          url('./fonts/daniel-regular.ttf') format('truetype'),
+          url('./fonts/daniel-regular.svg#danielregular') format('svg');
      font-weight: normal;
      font-style: normal;
 
