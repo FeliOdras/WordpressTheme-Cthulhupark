@@ -1,12 +1,81 @@
 //Special styles for dairy and dreamlands entries
 // _customDairy.scss
+.dairy {
+    background-color: $dairyBGColor;
+
+    .archive-entry {
+        color: $dairyFontColor;
+    }
+
+    .single-post-entry {
+        color: $dairyFontColor;
+    }
+
+    .post-title {
+        a {
+            background-color: $mainAccentColor;
+            color: $mainBackgroundColor;
+        }
+    }
+
+    .more-link {
+        &:hover {
+            background-color: $mainAccentColor;
+            color: $mainBackgroundColor;
+        }
+    }
+}
+
+.dreamlands {
+    background-color: $dreamlandsBGColor;
+
+    .archive-entry {
+        color: $dreamlandsFontColor;
+    }
+
+    .single-post-entry {
+        color: $dreamlandsFontColor;
+    }
+
+    .more-link {
+        color: $white;
+        border-bottom-color: $white;
+
+        &:hover {
+            color: $lightblack;
+            background-color: $darkwhite;
+        }
+    }
+
+    .post-title {
+        a {
+            color: $darkwhite;
+            background-color: $dreamlandsAccentColor;
+        }
+    }
+}
+
 
 .dreamlands,
 .dairy {
+
+    &.post-main {
+        box-shadow: 5px 5px 10px $dreamlandsAccentColor;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
     .archive-entry {
         border: none;
         display: block;
         padding: 15px;
+
+        &:hover {
+            background-color: transparent;
+        }
     }
 
     &.post-main {
@@ -26,5 +95,34 @@
 
     h2 {
         margin-top: 0;
+    }
+}
+
+.dreamlands {
+    .edit-link {
+        a {
+            color: $lightblack;
+            background-color: $darkwhite;
+
+            &:hover {
+                background-color: $lightblack;
+                color: $darkwhite;
+            }
+        }
+    }
+}
+
+.dairy {
+    .edit-link {
+        a {
+            color: #f9e6a4;
+            background-color: $mainAccentColor;
+            border: 1px solid $mainAccentColor;
+        }
+
+        &:hover {
+            background-color: #f9e6a4;
+            color: $mainAccentColor;
+        }
     }
 }

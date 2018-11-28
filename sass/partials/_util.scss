@@ -6,3 +6,27 @@
         padding: 3px 5px;
     }
 }
+
+.author-description {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: $dreamlandsAccentColor;
+}
+
+.main-entry {
+
+    img {
+        height: 0px;
+
+        &.public {
+            height: auto;
+        }
+    }
+}
+
+.logged-in {
+    .main-entry {
+        img {
+            height: auto;
+        }
+    }
+}

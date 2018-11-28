@@ -6,7 +6,7 @@
   monospace;
   $headlineFont: 'Fredericka the Great',
   serif;
-  $mainScriptFont: Ruthie,
+  $mainScriptFont: 'Ruthie',
   cursive;
   $dairyFont:'Shadow Into Light',
   cursive;
@@ -47,6 +47,7 @@
   // Media queries
 
   $portrait: screen and (orientation:portrait);
+  $xlscreen: screen and (min-width:1281px);
   $tablet: screen and (max-width:840px);
   $phone: screen and (max-width:540px);
 

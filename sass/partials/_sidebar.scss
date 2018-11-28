@@ -144,19 +144,33 @@ li.widget {
         border: 1px dotted $mainAccentColor;
         padding: 5px;
         margin: 4px 0;
+        color: $mainAccentColor;
+
+        &:hover {
+            background-color: $mainAccentColor;
+
+            .tbe-entry-meta {
+                background-color: darken($mainAccentColor, 10%);
+            }
+        }
 
         a {
             display: block;
             border: none;
+            color: $mainAccentColor;
 
             &:hover {
                 border: none;
+                color: $mainBackgroundColor;
             }
         }
 
         .tbe-entry-meta {
             padding: 3px 5px;
             margin: 7px -5px -5px -5px;
+            color: $mainAccentColor;
+            background-color: lighten($mainBackgroundColor, 13%);
+
 
             .author {
                 border-right: 1px dotted $mainAccentColor;

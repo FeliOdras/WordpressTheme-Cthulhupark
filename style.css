@@ -165,6 +165,11 @@ _essentials.scss
 */
 body {
   background-color: antiquewhite; }
+  @media xlscreen {
+    body {
+      background-image: url(../images/ctulhu-page-background.jpg);
+      background-size: cover;
+      background-attachment: fixed; } }
 
 .aligncenter {
   margin: auto;
@@ -414,15 +419,24 @@ li.widget {
 .widget_cptbe_widget .entries {
   border: 1px dotted #8E563F;
   padding: 5px;
-  margin: 4px 0; }
+  margin: 4px 0;
+  color: #8E563F; }
+  .widget_cptbe_widget .entries:hover {
+    background-color: #8E563F; }
+    .widget_cptbe_widget .entries:hover .tbe-entry-meta {
+      background-color: #6b412f; }
   .widget_cptbe_widget .entries a {
     display: block;
-    border: none; }
+    border: none;
+    color: #8E563F; }
     .widget_cptbe_widget .entries a:hover {
-      border: none; }
+      border: none;
+      color: #f9e6a4; }
   .widget_cptbe_widget .entries .tbe-entry-meta {
     padding: 3px 5px;
-    margin: 7px -5px -5px -5px; }
+    margin: 7px -5px -5px -5px;
+    color: #8E563F;
+    background-color: #fdf7e2; }
     .widget_cptbe_widget .entries .tbe-entry-meta .author {
       border-right: 1px dotted #8E563F;
       padding-right: 4px; }
@@ -550,6 +564,9 @@ li.widget {
   padding-top: 10px;
   border-top: 1px solid #ddd; }
 
+.single .date {
+  color: #999; }
+
 .post-navigation {
   max-width: 600px;
   margin: auto;
@@ -587,12 +604,18 @@ li.widget {
   .cat-children-list .children .current-cat .children a {
     display: inline-block; }
 
-.category-abenteurertagebuch .cat-children-list .children,
-.category-lebensform .cat-children-list .children,
-.category-ort .cat-children-list .children,
-.category-dokumente .cat-children-list .children,
-.category-fuhrpark .cat-children-list .children {
-  display: none; }
+.category-abenteurertagebuch .cat-children-list,
+.category-lebensform .cat-children-list,
+.category-ort .cat-children-list,
+.category-dokumente .cat-children-list,
+.category-fuhrpark .cat-children-list {
+  background-color: rgba(255, 255, 255, 0.5); }
+  .category-abenteurertagebuch .cat-children-list .children,
+  .category-lebensform .cat-children-list .children,
+  .category-ort .cat-children-list .children,
+  .category-dokumente .cat-children-list .children,
+  .category-fuhrpark .cat-children-list .children {
+    display: none; }
 
 .categories {
   margin-bottom: 15px; }
@@ -607,7 +630,10 @@ li.widget {
   display: flex;
   border: 2px solid #faf3db;
   padding: 5px;
-  margin: 15px 0; }
+  margin: 15px 0;
+  color: #333; }
+  .archive-entry:hover {
+    background-color: #faf3db; }
   .archive-entry .featured-image {
     width: 15%;
     max-width: 200px;
@@ -624,10 +650,15 @@ li.widget {
   max-width: 600px;
   margin: 0 auto 15px;
   padding: 20px 15px 0 15px; }
+  .archive .page-header h1,
+  .search .page-header h1 {
+    color: #8E563F;
+    text-shadow: 0 0 1px #8E563F; }
   .archive .page-header .post-title a,
   .search .page-header .post-title a {
     display: block;
-    border: none; }
+    border: none;
+    color: #333; }
   .archive .page-header .post-content,
   .search .page-header .post-content {
     flex-grow: 1; }
@@ -647,7 +678,8 @@ li.widget {
   clear: both; }
 
 .post-header .post-meta {
-  padding: 3px 15px; }
+  padding: 3px 15px;
+  color: #999; }
 
 .post-excerpt p {
   margin-bottom: 0; }
@@ -682,11 +714,51 @@ table.charBasics tr {
   table.charBasics tr td {
     flex: 0 0 50%; }
 
+.dairy {
+  background-color: #FEFCE8; }
+  .dairy .archive-entry {
+    color: #0B0B61; }
+  .dairy .single-post-entry {
+    color: #0B0B61; }
+  .dairy .post-title a {
+    background-color: #8E563F;
+    color: #f9e6a4; }
+  .dairy .more-link:hover {
+    background-color: #8E563F;
+    color: #f9e6a4; }
+
+.dreamlands {
+  background-color: #2B2B2B; }
+  .dreamlands .archive-entry {
+    color: #efefef; }
+  .dreamlands .single-post-entry {
+    color: #efefef; }
+  .dreamlands .more-link {
+    color: #ffffff;
+    border-bottom-color: #ffffff; }
+    .dreamlands .more-link:hover {
+      color: #333;
+      background-color: #eeeeee; }
+  .dreamlands .post-title a {
+    color: #eeeeee;
+    background-color: #666; }
+
+.dreamlands.post-main,
+.dairy.post-main {
+  box-shadow: 5px 5px 10px #666;
+  transition: all 1s; }
+  .dreamlands.post-main:hover,
+  .dairy.post-main:hover {
+    transform: scale(1.02); }
+
 .dreamlands .archive-entry,
 .dairy .archive-entry {
   border: none;
   display: block;
   padding: 15px; }
+  .dreamlands .archive-entry:hover,
+  .dairy .archive-entry:hover {
+    background-color: transparent; }
 
 .dreamlands.post-main,
 .dairy.post-main {
@@ -706,6 +778,22 @@ table.charBasics tr {
 .dreamlands h2,
 .dairy h2 {
   margin-top: 0; }
+
+.dreamlands .edit-link a {
+  color: #333;
+  background-color: #eeeeee; }
+  .dreamlands .edit-link a:hover {
+    background-color: #333;
+    color: #eeeeee; }
+
+.dairy .edit-link a {
+  color: #f9e6a4;
+  background-color: #8E563F;
+  border: 1px solid #8E563F; }
+
+.dairy .edit-link:hover {
+  background-color: #f9e6a4;
+  color: #8E563F; }
 
 html {
   font-size: 15px; }
@@ -750,5 +838,7 @@ h4 {
   line-height: 33px; }
   .三十郎 .post-title {
     font-size: 15px; }
+    .三十郎 .post-title a {
+      font-size: 15px; }
   .三十郎 .entry-title {
     font-size: 15px; }
