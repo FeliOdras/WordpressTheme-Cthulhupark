@@ -16,6 +16,7 @@ body {
 a {
     border-bottom: 1px dotted $mainAccentColor;
     color: $mainAccentColor;
+    text-decoration: none;
 
     &:hover {
         border-style: solid;

@@ -36,6 +36,8 @@ Theme: Cthulhupark */
     padding: 5px;
     color: $mainBackgroundColor;
     background-color: $sidebarTopBGColor;
+    font-size: 0.8rem;
+    line-height: 0.85rem;
 
     a {
         color: $mainBackgroundColor;
@@ -43,6 +45,11 @@ Theme: Cthulhupark */
 
     .widget {
         display: inline-block;
+        list-style-type: none;
+
+        li {
+            line-height: 150%;
+        }
 
         @media #{$phone} {
             display: block;
@@ -67,6 +74,8 @@ Theme: Cthulhupark */
             color: $mainAccentColor;
             font-family: 'Traveling Typewriter', monospace;
             background-color: $mainBackgroundColor;
+            font-size: .8rem;
+            line-height: .8rem;
 
             &:focus {
                 border-style: solid;
@@ -78,6 +87,7 @@ Theme: Cthulhupark */
                 background-color: $mainAccentColor;
                 color: $mainBackgroundColor;
                 transition: all .8s;
+                font-size: .85rem;
 
                 &:hover {
                     color: $mainAccentColor;
@@ -139,6 +149,11 @@ Theme: Cthulhupark */
 
 li.widget {
     margin-bottom: 20px;
+    list-style-type: none;
+
+    li {
+        line-height: 150%;
+    }
 
     .widget-title {
         text-align: center;
@@ -226,6 +241,11 @@ li.widget {
         border-radius: 3px 0 0 3px;
         position: relative;
         height: 50px;
+        list-style-type: none;
+
+        li {
+            line-height: 150%;
+        }
 
         a {
             background: transparent;

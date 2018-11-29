@@ -176,7 +176,8 @@ body {
 
 a {
   border-bottom: 1px dotted #8E563F;
-  color: #8E563F; }
+  color: #8E563F;
+  text-decoration: none; }
   a:hover {
     border-style: solid; }
 
@@ -395,11 +396,16 @@ Theme: Cthulhupark */
   width: 100%;
   padding: 5px;
   color: #f9e6a4;
-  background-color: rgba(53, 21, 9, 0.7); }
+  background-color: rgba(53, 21, 9, 0.7);
+  font-size: 0.8rem;
+  line-height: 0.85rem; }
   .sidebar-top a {
     color: #f9e6a4; }
   .sidebar-top .widget {
-    display: inline-block; }
+    display: inline-block;
+    list-style-type: none; }
+    .sidebar-top .widget li {
+      line-height: 150%; }
     @media (max-width: 540px) {
       .sidebar-top .widget {
         display: block; } }
@@ -415,7 +421,9 @@ Theme: Cthulhupark */
       border: 1px dotted #8E563F;
       color: #8E563F;
       font-family: 'Traveling Typewriter', monospace;
-      background-color: #f9e6a4; }
+      background-color: #f9e6a4;
+      font-size: .8rem;
+      line-height: .8rem; }
       .sidebar-top .widget input:focus {
         border-style: solid;
         box-shadow: none; }
@@ -423,7 +431,8 @@ Theme: Cthulhupark */
         padding: 4px;
         background-color: #8E563F;
         color: #f9e6a4;
-        transition: all .8s; }
+        transition: all .8s;
+        font-size: .85rem; }
         .sidebar-top .widget input[type='submit']:hover {
           color: #8E563F;
           background-color: #f9e6a4; }
@@ -455,7 +464,10 @@ Theme: Cthulhupark */
       bottom: 0; } }
 
 li.widget {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  list-style-type: none; }
+  li.widget li {
+    line-height: 150%; }
   li.widget .widget-title {
     text-align: center;
     padding: 3px;
@@ -514,7 +526,10 @@ li.widget {
     text-align: center;
     border-radius: 3px 0 0 3px;
     position: relative;
-    height: 50px; }
+    height: 50px;
+    list-style-type: none; }
+    .sidebar-author .widget li {
+      line-height: 150%; }
     .sidebar-author .widget a {
       background: transparent; }
     @media (max-width: 840px) {
@@ -802,8 +817,8 @@ table.charBasics tr {
       color: #8E563F; }
 
 .dreamlands a {
-  color: #fff;
-  border-color: #fff; }
+  color: #ffffff;
+  border-color: #ffffff; }
 
 .dreamlands.entry-content {
   background-color: #2B2B2B; }

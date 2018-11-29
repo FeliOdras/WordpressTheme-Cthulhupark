@@ -3,41 +3,15 @@ Theme Name: Cthulhupark
 */
 
 
-.content-area .dreamlands a,
-.dreamlands .entry-title {
-    color: #fff;
-    border-color: #fff;
-}
+.widget li {}
 
-.sidebar-top {
-    font-size: 0.8rem;
-    line-height: 0.85rem;
-}
+.sidebar-top input {}
 
-li.widget {
-    list-style-type: none;
-}
+.sidebar-top input[type='submit'] {}
 
-.widget li {
-    line-height: 150%;
-}
+.content-area a {}
 
-.sidebar-top input {
-    font-size: .8rem;
-    line-height: .8rem;
-}
-
-.sidebar-top input[type='submit'] {
-    font-size: .85rem;
-}
-
-.content-area a {
-    text-decoration: none;
-}
-
-.sidebar-top .widget_cplogin_widget p.login-remember {
-    display: none;
-}
+.sidebar-top .widget_cplogin_widget p.login-remember {}
 
 .tbe-entry-meta {
     font-size: .7rem;

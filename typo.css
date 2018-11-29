@@ -1,34 +1,6 @@
 /* Typography 
 Theme Name: Cthulhupark
 */
-.content-area .dreamlands a,
-.dreamlands .entry-title {
-  color: #fff;
-  border-color: #fff; }
-
-.sidebar-top {
-  font-size: 0.8rem;
-  line-height: 0.85rem; }
-
-li.widget {
-  list-style-type: none; }
-
-.widget li {
-  line-height: 150%; }
-
-.sidebar-top input {
-  font-size: .8rem;
-  line-height: .8rem; }
-
-.sidebar-top input[type='submit'] {
-  font-size: .85rem; }
-
-.content-area a {
-  text-decoration: none; }
-
-.sidebar-top .widget_cplogin_widget p.login-remember {
-  display: none; }
-
 .tbe-entry-meta {
   font-size: .7rem;
   line-height: .9rem; }
