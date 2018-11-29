@@ -14,7 +14,6 @@ Text Domain: cthulhupark
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import url(styles/typo.css);
 * {
   transition: all .8s; }
 
@@ -110,6 +109,71 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /*Fonts
    _fonts.scss*/
+/* Typography 
+ _typo.scss */
+html {
+  font-size: 15px; }
+
+body {
+  font-family: "Traveling Typewriter", Courier, monospace;
+  font-size: 1rem;
+  line-height: 150%; }
+
+.main-title {
+  font-family: "Fredericka the Great", serif;
+  font-size: 2.8rem;
+  margin-bottom: 15px; }
+
+.sub-title {
+  font-family: 'Ruthie', cursive;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  font-weight: bold; }
+
+h1 {
+  font-family: "Fredericka the Great", serif;
+  font-size: 1.8rem; }
+
+h2 {
+  margin: 25px 0 20px 0;
+  font-weight: bold;
+  font-size: 1.6rem; }
+
+h3 {
+  margin: 22px 0 18px 0;
+  font-size: 1.4rem;
+  font-weight: bold; }
+
+h4 {
+  margin: 20px 0 16px 0;
+  font-size: 1.1rem;
+  font-weight: bold; }
+
+.dairy,
+.dreamlands {
+  font-family: "Shadow Into Light", cursive;
+  font-size: 18px;
+  line-height: 28px; }
+
+.LC {
+  font-family: "LC", cursive; }
+
+.MW {
+  font-family: "Mycroft", cursive; }
+
+.HWJ {
+  font-family: "Henry", cursive;
+  font-size: 23px; }
+
+.RHW {
+  font-family: "Ragnar", cursive;
+  font-size: 23px; }
+
+.三十郎 {
+  font-family: "Sanjuro", cursive;
+  line-height: 33px;
+  letter-spacing: 2px; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -864,8 +928,8 @@ table.charBasics tr {
     background-color: #8E563F; }
     .dairy .post-title a {
       color: #f9e6a4; }
-    .dairy .post-title .entry-title {
-      font-family: inherit; }
+  .dairy .entry-title {
+    font-family: inherit; }
   .dairy .more-link:hover {
     background-color: #8E563F;
     color: #f9e6a4; }
@@ -977,68 +1041,3 @@ table.charBasics tr {
 .dreamlands .post-excerpt,
 .dairy .post-excerpt {
   font-size: inherit; }
-
-/* Typography 
- _typo.scss */
-html {
-  font-size: 15px; }
-
-body {
-  font-family: "Traveling Typewriter", Courier, monospace;
-  font-size: 1rem;
-  line-height: 150%; }
-
-.main-title {
-  font-family: "Fredericka the Great", serif;
-  font-size: 2.8rem;
-  margin-bottom: 15px; }
-
-.sub-title {
-  font-family: 'Ruthie', cursive;
-  font-size: 1.7rem;
-  line-height: 2.3rem;
-  font-weight: bold; }
-
-h1 {
-  font-family: "Fredericka the Great", serif;
-  font-size: 1.8rem; }
-
-h2 {
-  margin: 25px 0 20px 0;
-  font-weight: bold;
-  font-size: 1.6rem; }
-
-h3 {
-  margin: 22px 0 18px 0;
-  font-size: 1.4rem;
-  font-weight: bold; }
-
-h4 {
-  margin: 20px 0 16px 0;
-  font-size: 1.1rem;
-  font-weight: bold; }
-
-.dairy,
-.dreamlands {
-  font-family: "Shadow Into Light", cursive;
-  font-size: 18px;
-  line-height: 28px; }
-
-.LC {
-  font-family: "LC", cursive; }
-
-.MW {
-  font-family: "Mycroft", cursive; }
-
-.HWJ {
-  font-family: "Henry", cursive;
-  font-size: 23px; }
-
-.RHW {
-  font-family: "Ragnar", cursive;
-  font-size: 23px; }
-
-.三十郎 {
-  font-family: "Sanjuro", cursive;
-  line-height: 33px;
-  letter-spacing: 2px; }
