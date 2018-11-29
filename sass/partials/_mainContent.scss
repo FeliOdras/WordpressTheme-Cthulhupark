@@ -16,14 +16,6 @@
 }
 
 .content-area {
-    a {
-        border-bottom: 1px dotted $mainAccentColor;
-        color: $mainAccentColor;
-
-        &:hover {
-            border-style: solid;
-        }
-    }
 
     p {
         margin-bottom: 15px;
