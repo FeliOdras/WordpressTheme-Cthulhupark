@@ -44,6 +44,11 @@
                 color: $mainBackgroundColor;
                 text-decoration: none;
             }
+
+            @media #{$phone} {
+                font-size: 2.1rem;
+                font-weight: bold;
+            }
         }
 
         .sub-title {
@@ -85,6 +90,7 @@
                 font-size: 1.8rem;
                 font-weight: bold;
 
+
                 &:hover {
                     color: $mainBackgroundColor;
                     background-color: $mainAccentColor;
@@ -92,6 +98,8 @@
 
                 @media #{$tablet} {
                     color: $mainBackgroundColor;
+                    font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
+                    font-size: 1.1rem
                 }
             }
 

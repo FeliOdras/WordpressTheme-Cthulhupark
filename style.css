@@ -246,6 +246,10 @@ hr {
     .main-header .blog-info .main-title a {
       color: #f9e6a4;
       text-decoration: none; }
+    @media (max-width: 540px) {
+      .main-header .blog-info .main-title {
+        font-size: 2.1rem;
+        font-weight: bold; } }
     .main-header .blog-info .sub-title {
       color: #f9e6a4; }
   .main-header .main-header-wrapper {
@@ -282,7 +286,9 @@ hr {
           background-color: #8E563F; }
         @media (max-width: 840px) {
           .main-navigation ul li a {
-            color: #f9e6a4; } }
+            color: #f9e6a4;
+            font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
+            font-size: 1.1rem; } }
       .main-navigation ul li .sub-menu {
         position: absolute;
         left: -9999px;
@@ -404,6 +410,10 @@ Theme: Cthulhupark */
   .sidebar-top .widget {
     display: inline-block;
     list-style-type: none; }
+    @media (max-width: 840px) {
+      .sidebar-top .widget {
+        font-size: 1.1rem;
+        margin: 15px 0; } }
     .sidebar-top .widget li {
       line-height: 150%; }
     @media (max-width: 540px) {
@@ -424,6 +434,9 @@ Theme: Cthulhupark */
       background-color: #f9e6a4;
       font-size: .8rem;
       line-height: .8rem; }
+      @media (max-width: 840px) {
+        .sidebar-top .widget input {
+          font-size: 1rem; } }
       .sidebar-top .widget input:focus {
         border-style: solid;
         box-shadow: none; }
@@ -433,6 +446,9 @@ Theme: Cthulhupark */
         color: #f9e6a4;
         transition: all .8s;
         font-size: .85rem; }
+        @media (max-width: 840px) {
+          .sidebar-top .widget input[type='submit'] {
+            font-size: 1rem; } }
         .sidebar-top .widget input[type='submit']:hover {
           color: #8E563F;
           background-color: #f9e6a4; }
@@ -482,18 +498,25 @@ li.widget {
   border: 1px dotted #8E563F;
   padding: 5px;
   margin: 4px 0;
-  color: #8E563F; }
+  color: #8E563F;
+  font-size: .9rem;
+  font-weight: bold; }
+  .widget_cptbe_widget .entries .trans {
+    display: none; }
   .widget_cptbe_widget .entries:hover {
     background-color: #8E563F; }
     .widget_cptbe_widget .entries:hover .tbe-entry-meta {
-      background-color: #6b412f; }
+      background-color: #6b412f;
+      font-size: .7rem;
+      line-height: .9rem;
+      color: #f9e6a4; }
+    .widget_cptbe_widget .entries:hover a {
+      border: none;
+      color: #f9e6a4; }
   .widget_cptbe_widget .entries a {
     display: block;
     border: none;
     color: #8E563F; }
-    .widget_cptbe_widget .entries a:hover {
-      border: none;
-      color: #f9e6a4; }
   .widget_cptbe_widget .entries .tbe-entry-meta {
     padding: 3px 5px;
     margin: 7px -5px -5px -5px;
@@ -501,7 +524,8 @@ li.widget {
     background-color: #fdf7e2; }
     .widget_cptbe_widget .entries .tbe-entry-meta .author {
       border-right: 1px dotted #8E563F;
-      padding-right: 4px; }
+      padding-right: 4px;
+      font-weight: bold; }
     .widget_cptbe_widget .entries .tbe-entry-meta .date {
       float: right;
       border-left: 1px dotted #8E563F;
@@ -552,7 +576,9 @@ li.widget {
       font-family: "Traveling Typewriter", Courier, monospace;
       color: #999;
       background: transparent;
-      font-size: .8rem; }
+      font-size: .75rem;
+      line-height: .9rem;
+      font-weight: normal; }
     .sidebar-author .widget:hover .widget-title {
       visibility: visible;
       right: 0; }
@@ -619,7 +645,9 @@ li.widget {
   margin-bottom: 15px; }
 
 .page-header .author-description {
-  padding: 15px; }
+  padding: 15px;
+  font-size: .9rem;
+  background-color: #fefaec; }
   .page-header .author-description:after {
     clear: both;
     display: table;
@@ -636,7 +664,14 @@ li.widget {
   border-top: 1px solid #ddd; }
 
 .single .date {
-  color: #999; }
+  color: #999;
+  font-size: .9rem;
+  text-align: right;
+  font-family: 'Traveling Typewriter', monospace;
+  display: block; }
+
+.post-navigation {
+  text-align: center; }
 
 /* Footer Styles
  _footer.scss */
@@ -699,16 +734,18 @@ li.widget {
   .categories a {
     padding: 1px 3px;
     border: 1px dotted #8E563F;
-    border-radius: 3px; }
+    border-radius: 3px;
+    font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
+    font-size: .8rem; }
 
 .archive-entry {
   display: flex;
-  border: 2px solid #faf3db;
+  border: 2px solid #ffffff;
   padding: 5px;
   margin: 15px 0;
   color: #333; }
   .archive-entry:hover {
-    background-color: #faf3db; }
+    background-color: #fefaec; }
   .archive-entry .featured-image {
     width: 15%;
     max-width: 200px;
@@ -718,6 +755,16 @@ li.widget {
     flex: 0 0 60px; }
     .archive-entry .featured-image img {
       height: auto; }
+
+.post-header .post-title a {
+  display: block;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  font-size: .9rem;
+  text-decoration: underline; }
+  .post-header .post-title a:hover {
+    text-decoration: none; }
 
 .archive .page-header,
 .search .page-header {
@@ -729,20 +776,17 @@ li.widget {
   .search .page-header h1 {
     color: #8E563F;
     text-shadow: 0 0 1px #8E563F; }
-  .archive .page-header .post-title a,
-  .search .page-header .post-title a {
-    display: block;
-    border: none;
-    color: #333; }
-  .archive .page-header .post-content,
-  .search .page-header .post-content {
-    flex-grow: 1; }
-  .archive .page-header .post-footer,
-  .search .page-header .post-footer {
-    clear: both;
-    padding: 0 5px;
-    display: flex;
-    align-items: flex-end; }
+
+.archive .post-content,
+.search .post-content {
+  flex-grow: 1; }
+
+.archive .post-footer,
+.search .post-footer {
+  clear: both;
+  padding: 0 5px;
+  display: flex;
+  align-items: flex-end; }
 
 .archive .post-main,
 .search .post-main {
@@ -750,17 +794,34 @@ li.widget {
   margin: 0px auto; }
 
 .page-description {
-  clear: both; }
+  clear: both;
+  font-size: .8rem;
+  padding: 20px 0; }
 
 .post-header .post-meta {
   padding: 3px 15px;
-  color: #999; }
+  color: #999;
+  font-size: .9rem;
+  text-align: right;
+  font-family: 'Traveling Typewriter', monospace;
+  display: block; }
 
-.post-excerpt p {
-  margin-bottom: 0; }
+.post-header .post-footer {
+  display: inherit; }
 
-.tag .cat-children-list {
-  display: none; }
+.post-excerpt {
+  font-size: .9rem; }
+  .post-excerpt p {
+    margin-bottom: 0; }
+
+.more-link {
+  font-weight: bold; }
+
+.tag {
+  font-size: .8rem;
+  opacity: 0.7; }
+  .tag .cat-children-list {
+    display: none; }
 
 /* Special Styles for character sheets
  _characters.scss */
@@ -819,6 +880,9 @@ table.charBasics tr {
 .dreamlands a {
   color: #ffffff;
   border-color: #ffffff; }
+
+.dreamlands h1 {
+  font-family: inherit; }
 
 .dreamlands.entry-content {
   background-color: #2B2B2B; }
@@ -891,7 +955,8 @@ table.charBasics tr {
   padding: 3px 5px;
   border: 1px dotted;
   float: right;
-  transition: all 1s; }
+  transition: all 1s;
+  font-size: inherit; }
 
 .dreamlands .featured-image,
 .dairy .featured-image {
@@ -904,6 +969,14 @@ table.charBasics tr {
 .dreamlands .edit-link,
 .dairy .edit-link {
   display: inline-block; }
+
+.dreamlands .post-footer,
+.dairy .post-footer {
+  display: inherit; }
+
+.dreamlands .post-excerpt,
+.dairy .post-excerpt {
+  font-size: inherit; }
 
 /* Typography 
  _typo.scss */
@@ -926,14 +999,24 @@ body {
   line-height: 2.3rem;
   font-weight: bold; }
 
+h1 {
+  font-family: "Fredericka the Great", serif;
+  font-size: 1.8rem; }
+
 h2 {
-  margin: 25px 0 20px 0; }
+  margin: 25px 0 20px 0;
+  font-weight: bold;
+  font-size: 1.6rem; }
 
 h3 {
-  margin: 22px 0 18px 0; }
+  margin: 22px 0 18px 0;
+  font-size: 1.4rem;
+  font-weight: bold; }
 
 h4 {
-  margin: 20px 0 16px 0; }
+  margin: 20px 0 16px 0;
+  font-size: 1.1rem;
+  font-weight: bold; }
 
 .dairy,
 .dreamlands {

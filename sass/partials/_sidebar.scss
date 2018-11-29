@@ -47,6 +47,11 @@ Theme: Cthulhupark */
         display: inline-block;
         list-style-type: none;
 
+        @media #{$tablet} {
+            font-size: 1.1rem;
+            margin: 15px 0;
+        }
+
         li {
             line-height: 150%;
         }
@@ -77,6 +82,10 @@ Theme: Cthulhupark */
             font-size: .8rem;
             line-height: .8rem;
 
+            @media #{$tablet} {
+                font-size: 1rem;
+            }
+
             &:focus {
                 border-style: solid;
                 box-shadow: none;
@@ -88,6 +97,10 @@ Theme: Cthulhupark */
                 color: $mainBackgroundColor;
                 transition: all .8s;
                 font-size: .85rem;
+
+                @media #{$tablet} {
+                    font-size: 1rem;
+                }
 
                 &:hover {
                     color: $mainAccentColor;
@@ -173,12 +186,26 @@ li.widget {
         padding: 5px;
         margin: 4px 0;
         color: $mainAccentColor;
+        font-size: .9rem;
+        font-weight: bold;
+
+        .trans {
+            display: none;
+        }
 
         &:hover {
             background-color: $mainAccentColor;
 
             .tbe-entry-meta {
                 background-color: darken($mainAccentColor, 10%);
+                font-size: .7rem;
+                line-height: .9rem;
+                color: $mainBackgroundColor;
+            }
+
+            a {
+                border: none;
+                color: $mainBackgroundColor;
             }
         }
 
@@ -186,11 +213,6 @@ li.widget {
             display: block;
             border: none;
             color: $mainAccentColor;
-
-            &:hover {
-                border: none;
-                color: $mainBackgroundColor;
-            }
         }
 
         .tbe-entry-meta {
@@ -203,6 +225,7 @@ li.widget {
             .author {
                 border-right: 1px dotted $mainAccentColor;
                 padding-right: 4px;
+                font-weight: bold;
             }
 
             .date {
@@ -276,7 +299,9 @@ li.widget {
             font-family: $mainFont;
             color: $entryMetaColor;
             background: transparent;
-            font-size: .8rem;
+            font-size: .75rem;
+            line-height: .9rem;
+            font-weight: normal;
         }
 
         &:hover {

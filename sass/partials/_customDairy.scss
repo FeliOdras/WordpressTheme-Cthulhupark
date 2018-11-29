@@ -53,6 +53,10 @@
         border-color: $white;
     }
 
+    h1 {
+        font-family: inherit;
+    }
+
     &.entry-content {
         background-color: $dreamlandsBGColor;
     }
@@ -152,6 +156,7 @@
         border: 1px dotted;
         float: right;
         transition: all 1s;
+        font-size: inherit;
     }
 
     .featured-image {
@@ -164,5 +169,13 @@
 
     .edit-link {
         display: inline-block;
+    }
+
+    .post-footer {
+        display: inherit;
+    }
+
+    .post-excerpt {
+        font-size: inherit;
     }
 }

@@ -24,17 +24,27 @@ body {
     font-weight: bold;
 }
 
+h1 {
+    font-family: $headlineFont;
+    font-size: 1.8rem;
+}
 
 h2 {
     margin: 25px 0 20px 0;
+    font-weight: bold;
+    font-size: 1.6rem;
 }
 
 h3 {
     margin: 22px 0 18px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 h4 {
     margin: 20px 0 16px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .dairy,

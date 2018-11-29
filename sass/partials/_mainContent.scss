@@ -66,6 +66,8 @@
 .page-header {
     .author-description {
         padding: 15px;
+        font-size: .9rem;
+        background-color: lighten($mainBackgroundColor, 15%);
 
         &:after {
             clear: both;
@@ -91,5 +93,13 @@
 .single {
     .date {
         color: $entryMetaColor;
+        font-size: .9rem;
+        text-align: right;
+        font-family: 'Traveling Typewriter', monospace;
+        display: block;
     }
+}
+
+.post-navigation {
+    text-align: center;
 }
