@@ -24,10 +24,10 @@
 
 .main-entry {
     width: 60%;
-}
 
-@media #{$tablet} {
-    flex: 0 0 100%;
+    @media #{$tablet} {
+        flex: 0 0 100%;
+    }
 }
 
 .entry-title {

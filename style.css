@@ -614,9 +614,9 @@ li.widget {
 
 .main-entry {
   width: 60%; }
-
-@media (max-width: 840px) {
-  flex: 0 0 100%; }
+  @media (max-width: 840px) {
+    .main-entry {
+      flex: 0 0 100%; } }
 
 .entry-title {
   margin-bottom: 23px;
