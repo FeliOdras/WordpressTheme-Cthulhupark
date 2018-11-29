@@ -61,7 +61,7 @@ get_header();
                                     <div class="post-meta">Verfasst von <?php the_author_link(); ?>  am <?php the_time('l, j. F Y') ?></div>
                                 </header>
                             <?php endif;?>  
-                            <div class="archive-entry">
+                            <div class="archive-entry clearfix">
                                 <div class="featured-image">
                                     <?php 
                                     // check if the post has a Post Thumbnail assigned to it.

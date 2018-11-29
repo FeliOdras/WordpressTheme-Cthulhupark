@@ -1,0 +1,181 @@
+/*Special styles for dairy and dreamlands entries
+ _customDairy.scss */
+.dairy {
+    background-color: $dairyBGColor;
+
+    .archive-entry {
+        color: $dairyFontColor;
+    }
+
+    .single-post-entry {
+        color: $dairyFontColor;
+    }
+
+    .post-title {
+        background-color: $mainAccentColor;
+
+        a {
+            color: $mainBackgroundColor;
+        }
+
+        .entry-title {
+            font-family: inherit;
+        }
+    }
+
+    .more-link {
+        &:hover {
+            background-color: $mainAccentColor;
+            color: $mainBackgroundColor;
+        }
+    }
+
+    .edit-link {
+        a {
+            color: $mainBackgroundColor;
+            background-color: $mainAccentColor;
+            border: 1px solid $mainAccentColor;
+
+            &:hover {
+                background-color: $mainBackgroundColor;
+                color: $mainAccentColor;
+            }
+        }
+
+
+    }
+}
+
+.dreamlands {
+
+    a {
+        color: $white;
+        border-color: $white;
+    }
+
+    h1 {
+        font-family: inherit;
+    }
+
+    &.entry-content {
+        background-color: $dreamlandsBGColor;
+    }
+
+    &.post-main {
+        background-color: $dreamlandsBGColor;
+    }
+
+    .entry-title {
+        color: $dreamlandsFontColor;
+
+        .trans {
+            font-size: .65em;
+
+            &:after {
+                content: '';
+                display: block;
+            }
+        }
+    }
+
+    .archive-entry {
+        color: $dreamlandsFontColor;
+    }
+
+    .single-post-entry {
+        color: $dreamlandsFontColor;
+    }
+
+    .more-link {
+        color: $white;
+        border-bottom-color: $white;
+
+        &:hover {
+            color: $lightblack;
+            background-color: $darkwhite;
+        }
+    }
+
+    .post-title {
+        background-color: $dreamlandsAccentColor;
+
+        a {
+            color: $darkwhite;
+        }
+    }
+
+    .edit-link {
+        a {
+            color: $lightblack;
+            background-color: $darkwhite;
+
+            &:hover {
+                background-color: $lightblack;
+                color: $darkwhite;
+            }
+        }
+    }
+}
+
+
+.dreamlands,
+.dairy {
+
+    .post-title {
+        padding: 8px 10px;
+
+        a {
+            display: block;
+            border: none;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+    }
+
+    &.post-main {
+        box-shadow: 5px 5px 10px $dreamlandsAccentColor;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    .archive-entry {
+        border: none;
+        display: block;
+        padding: 15px;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    .more-link {
+        padding: 3px 5px;
+        border: 1px dotted;
+        float: right;
+        transition: all 1s;
+        font-size: inherit;
+    }
+
+    .featured-image {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .edit-link {
+        display: inline-block;
+    }
+
+    .post-footer {
+        display: inherit;
+    }
+
+    .post-excerpt {
+        font-size: inherit;
+    }
+}

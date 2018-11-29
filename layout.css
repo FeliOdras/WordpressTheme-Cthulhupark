@@ -1,0 +1,6 @@
+/* Layout and positioning 
+Theme Name: Cthulhupark
+*/
+@media screen and (max-width: 540px) {
+  .sidebar-top li.widget_search {
+    display: none; } }

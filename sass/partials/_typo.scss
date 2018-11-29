@@ -1,0 +1,78 @@
+/* Typography 
+ _typo.scss */
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: $mainFont;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.main-title {
+    font-family: $headlineFont;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.sub-title {
+    font-family: 'Ruthie', cursive;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: $headlineFont;
+    font-size: 1.8rem;
+}
+
+h2 {
+    margin: 25px 0 20px 0;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+h3 {
+    margin: 22px 0 18px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+h4 {
+    margin: 20px 0 16px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.dairy,
+.dreamlands {
+    font-family: $dairyFont;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.LC {
+    font-family: $LCFont;
+}
+
+.MW {
+    font-family: $MycroftFont;
+}
+
+.HWJ {
+    font-family: $HenryFont;
+    font-size: 23px;
+}
+
+.RHW {
+    font-family: $RagnarFont;
+    font-size: 23px;
+}
+
+.三十郎 {
+    font-family: $SanjuroFont;
+    line-height: 33px;
+}

@@ -1,0 +1,61 @@
+  /*Fonts
+   _fonts.scss*/
+
+  $mainFont: 'Traveling Typewriter',
+  Courier,
+  monospace;
+  $headlineFont: 'Fredericka the Great',
+  serif;
+  $mainScriptFont: 'Ruthie',
+  cursive;
+  $dairyFont:'Shadow Into Light',
+  cursive;
+  $LCFont: 'LC',
+  cursive;
+  $MycroftFont: 'Mycroft',
+  cursive;
+  $HenryFont: 'Henry',
+  cursive;
+  $RagnarFont: 'Ragnar',
+  cursive;
+  $SanjuroFont: 'Sanjuro',
+  cursive;
+
+  //Colors
+  $mainBackgroundColor:#f9e6a4;
+  $mainAccentColor:#8E563F;
+  $entryMetaColor:#999;
+  $sidebarTopBGColor: rgba(53, 21, 9, 0.7);
+  $whiteTrans50:rgba(255, 255, 255, 0.5);
+
+  $bodyBGColor:antiquewhite;
+  $dairyBGColor:#FEFCE8;
+  $dairyFontColor:#0B0B61;
+  $dreamlandsBGColor:#2B2B2B;
+  $dreamlandsFontColor:#efefef;
+  $dreamlandsAccentColor:#666;
+  $white: #ffffff;
+  $darkwhite: #eeeeee;
+  $black: #000;
+  $lightblack:#333;
+
+  // Gradients 
+
+  $navBGGradient:#E5D59E,
+  #f9e6a4;
+
+  // Media queries
+
+  $portrait: screen and (orientation:portrait);
+  $xlscreen: screen and (min-width:1281px);
+  $tablet: screen and (max-width:840px);
+  $phone: screen and (max-width:540px);
+
+  //Mixins
+
+  @mixin gradient($direction, $list) {
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);
+  }

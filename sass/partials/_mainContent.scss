@@ -1,0 +1,105 @@
+/* Styles for main content
+ _mainContent.scss */
+
+.site-main {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    background-image: url(../images/mainBackground.png);
+    background-repeat: repeat;
+    background-color: #f9f0cc;
+    background-attachment: fixed;
+
+    @media #{$tablet} {
+        flex-wrap: wrap;
+    }
+}
+
+.content-area {
+
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+.main-entry {
+    width: 60%;
+}
+
+@media #{$tablet} {
+    flex: 0 0 100%;
+}
+
+.entry-title {
+    margin-bottom: 23px;
+    color: $mainAccentColor;
+    text-shadow: 0 0 1px $mainAccentColor;
+    font-family: $headlineFont;
+    font-size: 1.9rem;
+}
+
+.entry-content {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 600px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    li {
+        line-height: 18px;
+        padding-left: 20px;
+        background-image: url(../images/Aelteres_Zeichen_Upgrade_Eye_of_light_and_darkness.png);
+        background-size: 14px 14px;
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+        margin-bottom: 10px;
+    }
+}
+
+.post-content {
+    h2 {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+}
+
+.page-header {
+    .author-description {
+        padding: 15px;
+        font-size: .9rem;
+        background-color: lighten($mainBackgroundColor, 15%);
+
+        &:after {
+            clear: both;
+            display: table;
+            content: '';
+        }
+    }
+
+    .author-avatar {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+
+.tags {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.single {
+    .date {
+        color: $entryMetaColor;
+        font-size: .9rem;
+        text-align: right;
+        font-family: 'Traveling Typewriter', monospace;
+        display: block;
+    }
+}
+
+.post-navigation {
+    text-align: center;
+}
