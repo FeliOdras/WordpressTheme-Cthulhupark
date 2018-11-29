@@ -1,0 +1,209 @@
+/*Archive and Archive Lists
+ _archive.scss */
+.breadcrumb-cat {
+    margin-bottom: 10px;
+
+    a {
+        margin: 3px 14px 3px 0;
+
+        &:after {
+            content: '\00bb';
+            position: relative;
+            right: -3px;
+            width: 0;
+            display: inline-block;
+        }
+    }
+}
+
+.cat-children-list {
+    margin: 25px 0;
+    padding: 15px;
+
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+    li {
+
+        a {
+            float: left;
+            display: inline-block;
+            border-bottom: 1px dotted $mainAccentColor;
+            margin: 3px 14px 3px 0px;
+        }
+
+        &.current-cat {
+            a {
+                &:after {
+                    content: ' \00bb';
+                }
+            }
+        }
+    }
+
+    .children {
+        a {
+            display: none;
+        }
+
+        .current-cat {
+            .children {
+                a {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.category-abenteurertagebuch,
+.category-lebensform,
+.category-ort,
+.category-dokumente,
+.category-fuhrpark {
+
+    .cat-children-list {
+        background-color: rgba(255, 255, 255, 0.5);
+
+        .children {
+            display: none;
+        }
+    }
+}
+
+.categories {
+    margin-bottom: 15px;
+
+    li {
+        display: inline;
+    }
+
+    a {
+        padding: 1px 3px;
+        border: 1px dotted $mainAccentColor;
+        border-radius: 3px;
+        font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
+        font-size: .8rem;
+    }
+}
+
+.archive-entry {
+    display: flex;
+    border: 2px solid $white;
+    padding: 5px;
+    margin: 15px 0;
+    color: $lightblack;
+
+    &:hover {
+        background-color: lighten($mainBackgroundColor, 15%);
+    }
+
+    .featured-image {
+        width: 15%;
+        max-width: 200px;
+        height: auto;
+        margin-right: 15px;
+        float: left;
+        flex: 0 0 60px;
+
+        img {
+            height: auto;
+        }
+    }
+}
+
+.post-header {
+    .post-title {
+        a {
+            display: block;
+            border: none;
+            color: $lightblack;
+            font-weight: bold;
+            font-size: .9rem;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.archive,
+.search {
+
+    .page-header {
+        margin-top: 30px;
+        max-width: 600px;
+        margin: 0 auto 15px;
+        padding: 20px 15px 0 15px;
+
+        h1 {
+            color: $mainAccentColor;
+            text-shadow: 0 0 1px $mainAccentColor;
+        }
+    }
+
+
+
+    .post-content {
+        flex-grow: 1;
+    }
+
+    .post-footer {
+        clear: both;
+        padding: 0 5px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .post-main {
+        max-width: 600px;
+        margin: 0px auto;
+    }
+}
+
+.page-description {
+    clear: both;
+    font-size: .8rem;
+    padding: 20px 0;
+}
+
+.post-header {
+    .post-meta {
+        padding: 3px 15px;
+        color: $entryMetaColor;
+        font-size: .9rem;
+        text-align: right;
+        font-family: 'Traveling Typewriter', monospace;
+        display: block;
+    }
+
+    .post-footer {
+        display: inherit;
+    }
+}
+
+.post-excerpt {
+    font-size: .9rem;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.more-link {
+    font-weight: bold;
+}
+
+.tag {
+    font-size: .8rem;
+    opacity: 0.7;
+
+    .cat-children-list {
+        display: none;
+    }
+}

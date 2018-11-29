@@ -1,0 +1,63 @@
+/* Basic and editor styles
+Theme Name: Cthulhupark
+_essentials.scss
+*/
+
+body {
+    background-color: $bodyBGColor;
+
+    @media #{xlscreen} {
+        background-image: url(../images/ctulhu-page-background.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+a {
+    border-bottom: 1px dotted $mainAccentColor;
+    color: $mainAccentColor;
+    text-decoration: none;
+
+    &:hover {
+        border-style: solid;
+    }
+}
+
+.aligncenter {
+    margin: auto;
+    display: block;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+hr {
+    border-bottom: 1px dotted $mainAccentColor;
+}

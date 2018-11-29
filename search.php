@@ -20,7 +20,7 @@ get_header();
                 <?php
 			    // Start the Loop.
                 while ( have_posts() ) : the_post() ?>
-                    <div class="archive-entry">
+                    <div class="archive-entry clearfix">
                         <header class="post-header">                                   
                             <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
                         </header>

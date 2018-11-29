@@ -1,0 +1,33 @@
+/*
+Theme Name: Cthulhupark
+Theme URI: https://www.cthulhupark.de
+Author: Felinea ras Odras (odras)
+Author URI: http://me.odras.de/
+Description: This theme is developed for the fantasy role playing game blogging site cthulhupark.de. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: vitage, cthulhu, lovecraft, sidebar
+Text Domain: cthulhupark
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+* {
+    transition: all .8s;
+}
+
+@import 'styles/typo.css';
+
+@import 'partials/fonts';
+@import 'partials/vars';
+@import 'partials/reset';
+@import 'partials/essential';
+@import 'partials/header';
+@import 'partials/sidebar';
+@import 'partials/mainContent';
+@import 'partials/footer';
+@import 'partials/archive';
+@import 'partials/character';
+@import 'partials/customDairy';
+@import 'partials/typo';

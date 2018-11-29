@@ -1,0 +1,330 @@
+/* Sidebars and Widgets - Top, Left, Right
+_sidebar.scss
+Theme: Cthulhupark */
+
+.sidebar {
+    width: 20%;
+    padding: 20px 15px;
+    min-width: 150px;
+
+    @media #{$tablet} {
+        width: 50%;
+    }
+
+    @media #{$phone} {
+        width: 100%;
+    }
+}
+
+.sidebar-left {
+    border-right: 1px dotted $mainAccentColor;
+
+    @media #{$tablet} {
+        order: 1;
+    }
+}
+
+.sidebar-right {
+    border-left: 1px dotted $mainAccentColor;
+}
+
+.sidebar-top {
+    position: absolute;
+    bottom: 42px;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    color: $mainBackgroundColor;
+    background-color: $sidebarTopBGColor;
+    font-size: 0.8rem;
+    line-height: 0.85rem;
+
+    a {
+        color: $mainBackgroundColor;
+    }
+
+    .widget {
+        display: inline-block;
+        list-style-type: none;
+
+        @media #{$tablet} {
+            font-size: 1.1rem;
+            margin: 15px 0;
+        }
+
+        li {
+            line-height: 150%;
+        }
+
+        @media #{$phone} {
+            display: block;
+        }
+
+        .widget-title {
+            display: none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #wp-submit {
+            padding: 4px;
+            display: inline;
+        }
+
+        input {
+            border: 1px dotted $mainAccentColor;
+            color: $mainAccentColor;
+            font-family: 'Traveling Typewriter', monospace;
+            background-color: $mainBackgroundColor;
+            font-size: .8rem;
+            line-height: .8rem;
+
+            @media #{$tablet} {
+                font-size: 1rem;
+            }
+
+            &:focus {
+                border-style: solid;
+                box-shadow: none;
+            }
+
+            &[type='submit'] {
+                padding: 4px;
+                background-color: $mainAccentColor;
+                color: $mainBackgroundColor;
+                transition: all .8s;
+                font-size: .85rem;
+
+                @media #{$tablet} {
+                    font-size: 1rem;
+                }
+
+                &:hover {
+                    color: $mainAccentColor;
+                    background-color: $mainBackgroundColor;
+                }
+            }
+
+            &[type='text'] {
+                margin-bottom: 5px;
+            }
+        }
+
+
+
+        .logout {
+            display: inline;
+        }
+
+        .widget_cplogin_widget {
+            p {
+                display: inline-block;
+
+                @media #{$phone} {
+                    display: block;
+                    margin-bottom: 6px;
+                    text-align: center;
+                }
+
+                input {
+                    width: 95%;
+                }
+            }
+        }
+    }
+
+    input {
+        padding: 0 3px;
+    }
+
+    .widget_search {
+        float: right;
+
+        @media #{$phone} {
+            float: none;
+            margin-top: 10px;
+        }
+    }
+
+    .logged-in {
+        .widget_cplogin_widget {
+            padding-top: 15px;
+        }
+    }
+
+    @media #{$tablet} {
+        bottom: 0;
+    }
+}
+
+li.widget {
+    margin-bottom: 20px;
+    list-style-type: none;
+
+    li {
+        line-height: 150%;
+    }
+
+    .widget-title {
+        text-align: center;
+        padding: 3px;
+        margin-bottom: 15px;
+        background-color: $mainAccentColor;
+        color: $mainBackgroundColor;
+        font-family: 'Fredericka the Great', serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+.widget_cptbe_widget {
+    .entries {
+        border: 1px dotted $mainAccentColor;
+        padding: 5px;
+        margin: 4px 0;
+        color: $mainAccentColor;
+        font-size: .9rem;
+        font-weight: bold;
+
+        .trans {
+            display: none;
+        }
+
+        &:hover {
+            background-color: $mainAccentColor;
+
+            .tbe-entry-meta {
+                background-color: darken($mainAccentColor, 10%);
+                font-size: .7rem;
+                line-height: .9rem;
+                color: $mainBackgroundColor;
+            }
+
+            a {
+                border: none;
+                color: $mainBackgroundColor;
+            }
+        }
+
+        a {
+            display: block;
+            border: none;
+            color: $mainAccentColor;
+        }
+
+        .tbe-entry-meta {
+            padding: 3px 5px;
+            margin: 7px -5px -5px -5px;
+            color: $mainAccentColor;
+            background-color: lighten($mainBackgroundColor, 13%);
+
+
+            .author {
+                border-right: 1px dotted $mainAccentColor;
+                padding-right: 4px;
+                font-weight: bold;
+            }
+
+            .date {
+                float: right;
+                border-left: 1px dotted $mainAccentColor;
+                padding-left: 4px;
+            }
+        }
+    }
+}
+
+.sidebar-author {
+    flex: 0 0 45px;
+    padding-top: 20px;
+
+    img {
+        width: 45px;
+        margin: auto;
+        position: absolute;
+        right: -10px;
+        bottom: 0;
+    }
+
+    a {
+        border: none;
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    .widget {
+        padding: 0;
+        margin: 0 0 6px 0;
+        text-align: center;
+        border-radius: 3px 0 0 3px;
+        position: relative;
+        height: 50px;
+        list-style-type: none;
+
+        li {
+            line-height: 150%;
+        }
+
+        a {
+            background: transparent;
+        }
+
+        @media #{$tablet} {
+            width: 50px;
+            height: auto;
+
+            img {
+                position: static;
+            }
+
+            .widget-title {
+                display: none;
+            }
+        }
+
+        .widget-title {
+            margin: 0;
+            padding: 0 1px 3px 1px;
+            width: 50px;
+            bottom: -13px;
+            z-index: 999;
+            visibility: hidden;
+            position: absolute;
+            right: -10px;
+            font-family: $mainFont;
+            color: $entryMetaColor;
+            background: transparent;
+            font-size: .75rem;
+            line-height: .9rem;
+            font-weight: normal;
+        }
+
+        &:hover {
+            .widget-title {
+                visibility: visible;
+                right: 0;
+            }
+
+            img {
+                right: 0;
+            }
+        }
+    }
+
+    @media #{$tablet} {
+        order: -2;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+        max-width: 600px;
+        margin: auto;
+        justify-content: space-around;
+        padding-top: 0;
+    }
+
+}

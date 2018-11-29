@@ -1,0 +1,230 @@
+/*Header and Main Navigation
+ _header.scss*/
+
+#page {
+    max-width: 1280px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main-header {
+    position: relative;
+
+    @media #{$portrait} {
+        height: auto;
+    }
+
+    @media #{$phone} {
+        overflow: visible;
+    }
+
+    img {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+
+        @media #{$portrait} {
+            width: 180%;
+            margin-left: -40%;
+            max-width: 9999px;
+            position: static;
+        }
+    }
+
+    .blog-info {
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        z-index: 90;
+        text-shadow: 0 0 10px #000;
+
+        .main-title {
+
+            a {
+                color: $mainBackgroundColor;
+                text-decoration: none;
+            }
+
+            @media #{$phone} {
+                font-size: 2.1rem;
+                font-weight: bold;
+            }
+        }
+
+        .sub-title {
+            color: $mainBackgroundColor;
+        }
+    }
+
+    .main-header-wrapper {
+        height: 65vh;
+        overflow: hidden;
+    }
+}
+
+.main-navigation {
+    margin-top: -4px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    @include gradient(bottom, $navBGGradient);
+    box-shadow: 0 0 10px #999;
+
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    ul {
+        max-width: 1280px;
+        margin: auto;
+
+        li {
+            display: inline-block;
+            position: relative;
+
+            a {
+                color: $mainAccentColor;
+                line-height: 42px;
+                text-decoration: none;
+                font-family: 'Ruthie', cursive;
+                font-size: 1.8rem;
+                font-weight: bold;
+
+
+                &:hover {
+                    color: $mainBackgroundColor;
+                    background-color: $mainAccentColor;
+                }
+
+                @media #{$tablet} {
+                    color: $mainBackgroundColor;
+                    font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
+                    font-size: 1.1rem
+                }
+            }
+
+            .sub-menu {
+                position: absolute;
+                left: -9999px;
+                opacity: 0;
+                transition: opacity 0.8s;
+                background-color: $mainAccentColor;
+
+                @media #{$tablet} {
+                    background-color: rgba(53, 21, 9, 0.9);
+                }
+
+                li {
+                    display: block;
+                    width: 100%;
+
+                    a {
+                        width: 100%;
+                        min-height: 27px;
+                        height: auto;
+                        margin: 0px;
+                        transition: all 0.8s;
+                        color: $mainBackgroundColor;
+                        text-shadow: 0 0 10px $black;
+                        background-color: $mainAccentColor;
+                        font-family: 'Traveling Typewriter', monospace;
+                        font-size: 0.9rem;
+                        font-weight: normal;
+                        line-height: 17px;
+
+                        @media #{$tablet} {
+                            color: #f9f0cc;
+                        }
+
+                        &:hover {
+                            background-color: $mainBackgroundColor;
+                            color: $mainAccentColor;
+                            text-shadow: none;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .sub-menu {
+                    left: 0;
+                    opacity: 1;
+                }
+            }
+
+            a {
+                display: inline-block;
+                height: 42px;
+                padding: 0 15px;
+                margin-left: -3px;
+            }
+        }
+    }
+
+    @media #{$tablet} {
+        position: static;
+
+        ul {
+
+            li {
+                display: block;
+
+                .sub-menu {
+                    position: static;
+                    opacity: 1;
+                    padding-left: 25px;
+                    padding-bottom: 20px;
+                    z-index: 50;
+
+                    li {
+                        a {
+                            padding: 12px 0;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .menu-hauptmenue-container,
+        .menu-main-menu-container {
+            position: absolute;
+            right: -100%;
+            top: 0;
+            transition: all 1s;
+            z-index: 110;
+            width: 100%;
+        }
+
+        .nav-open {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            z-index: 120;
+            border-radius: 50%;
+
+            i {
+                width: 30px;
+                height: 3px;
+                margin: 6px 1px;
+                display: block;
+                background-color: #f9e6a4;
+                box-shadow: 0 0 5px $dreamlandsAccentColor;
+            }
+
+        }
+    }
+
+    #nav {
+        &:checked {
+            &~.menu-main-menu-container {
+                right: 0;
+                transition: all 1s;
+                background-color: rgba(53, 21, 9, 0.7);
+            }
+        }
+    }
+}
