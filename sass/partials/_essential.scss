@@ -6,8 +6,8 @@ _essentials.scss
 body {
     background-color: $bodyBGColor;
 
-    @media #{xlscreen} {
-        background-image: url(../images/ctulhu-page-background.jpg);
+    @media #{$xlscreen} {
+        background-image: url(images/ctulhu-page-background.jpg);
         background-size: cover;
         background-attachment: fixed;
     }

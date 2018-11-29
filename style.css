@@ -168,9 +168,9 @@ _essentials.scss
 */
 body {
   background-color: antiquewhite; }
-  @media xlscreen {
+  @media (min-width: 1281px) {
     body {
-      background-image: url(../images/ctulhu-page-background.jpg);
+      background-image: url(images/ctulhu-page-background.jpg);
       background-size: cover;
       background-attachment: fixed; } }
 
