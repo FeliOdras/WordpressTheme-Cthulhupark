@@ -103,8 +103,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Meddon regular - latin-ext_latin - 三十郎*/
 @font-face {
   font-family: 'Sanjuro';
-  src: url("./fonts/hoffm___.eot");
-  src: url("./fonts/hoffm___.eot?#iefix") format("embedded-opentype"), url("./fonts/hoffm___.woff2") format("woff2"), url("./fonts/hoffm___.woff") format("woff"), url("./fonts/hoffm___.ttf") format("truetype"), url("./fonts/hoffm___.svg#danielregular") format("svg");
+  src: url("./fonts/paulmaul.eot");
+  src: url("./fonts/paulmaul.eot?#iefix") format("embedded-opentype"), url("./fonts/paulmaul.woff2") format("woff2"), url("./fonts/paulmaul.woff") format("woff"), url("./fonts/paulmaul.ttf") format("truetype"), url("./fonts/paulmaul.svg#danielregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
