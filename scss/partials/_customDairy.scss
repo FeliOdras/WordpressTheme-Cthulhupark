@@ -117,9 +117,12 @@
     }
 }
 
-
 .dreamlands,
 .dairy {
+
+    .featured-image {
+        display: none;
+    }
 
     .post-title {
         padding: 8px 10px;
