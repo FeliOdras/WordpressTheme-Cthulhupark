@@ -2,13 +2,21 @@
  _typo.scss */
 
 html {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 body {
     font-family: $mainFont;
     font-size: 1rem;
     line-height: 150%;
+}
+
+
+
+#page {
+    font-family: $mainFont;
+    line-height: 150%;
+    font-size: .9rem;
 }
 
 .main-title {

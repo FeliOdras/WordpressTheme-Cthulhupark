@@ -112,12 +112,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Typography 
  _typo.scss */
 html {
-  font-size: 15px; }
+  font-size: 16px; }
 
 body {
   font-family: "Traveling Typewriter", Courier, monospace;
   font-size: 1rem;
   line-height: 150%; }
+
+#page {
+  font-family: "Traveling Typewriter", Courier, monospace;
+  line-height: 150%;
+  font-size: .9rem; }
 
 .main-title {
   font-family: "Fredericka the Great", serif;
@@ -317,7 +322,7 @@ hr {
     .main-header .blog-info .sub-title {
       color: #f9e6a4; }
   .main-header .main-header-wrapper {
-    height: 65vh;
+    height: 35vh;
     overflow: hidden; }
 
 .main-navigation {
@@ -344,7 +349,8 @@ hr {
         text-decoration: none;
         font-family: 'Ruthie', cursive;
         font-size: 1.8rem;
-        font-weight: bold; }
+        font-weight: bold;
+        border: none; }
         .main-navigation ul li a:hover {
           color: #f9e6a4;
           background-color: #8E563F; }
@@ -986,6 +992,10 @@ table.charBasics tr {
   .dreamlands .edit-link a:hover {
     background-color: #333;
     color: #eeeeee; }
+
+.dreamlands .featured-image,
+.dairy .featured-image {
+  display: none; }
 
 .dreamlands .post-title,
 .dairy .post-title {
