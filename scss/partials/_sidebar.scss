@@ -199,8 +199,8 @@ li.widget {
             .tbe-entry-meta {
                 background-color: darken($mainAccentColor, 10%);
                 font-size: .7rem;
-                line-height: .9rem;
                 color: $mainBackgroundColor;
+                margin: 7px -5px -5px -5px;
             }
 
             a {
@@ -219,6 +219,7 @@ li.widget {
             padding: 3px 5px;
             margin: 7px -5px -5px -5px;
             color: $mainAccentColor;
+            font-size: .7rem;
             background-color: lighten($mainBackgroundColor, 13%);
 
 
