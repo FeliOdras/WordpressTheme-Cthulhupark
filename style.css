@@ -833,6 +833,10 @@ li.widget {
 .post-navigation {
   text-align: center; }
 
+.author .archive-entry {
+  padding: 15px;
+  margin: 15px 0; }
+
 /* Footer Styles
  _footer.scss */
 .post-navigation {
