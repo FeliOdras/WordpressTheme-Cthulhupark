@@ -9,6 +9,7 @@
     background-repeat: repeat;
     background-color: #f9f0cc;
     background-attachment: fixed;
+    position: relative;
 
     @media #{$tablet} {
         flex-wrap: wrap;

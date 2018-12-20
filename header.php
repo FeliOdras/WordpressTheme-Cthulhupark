@@ -25,13 +25,6 @@
                     <h2 class="sub-title"><?php bloginfo( 'description' ); ?></h2>
                 </div>
                 <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
-                <aside id="sidebar-top" class="sidebar-top">
-                    <ul class="widget-area" id="widget-area-top">
-                        <?php if ( is_active_sidebar( 'sidebar-top' ) ) : 
-                            dynamic_sidebar( 'sidebar-top' ); 
-                        endif; ?>
-                    </ul>
-                </aside>
             </div>
             <nav id="main-navigation" class="main-navigation">
             <input type="checkbox" id="nav" class="hidden"/>

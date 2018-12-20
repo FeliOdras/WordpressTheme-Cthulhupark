@@ -48,8 +48,8 @@
 
   $portrait: screen and (orientation:portrait);
   $xlscreen: screen and (min-width:1281px);
-  $tablet: screen and (max-width:840px);
-  $phone: screen and (max-width:540px);
+  $tablet: screen and (max-width:1024px);
+  $phone: screen and (max-width:612px);
 
   //Mixins
 

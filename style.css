@@ -17,6 +17,140 @@ Use it to make something cool, have fun, and share what you've learned with othe
 * {
   transition: all .4s; }
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  line-height: 160%; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  height: 0;
+  border: none; }
+
 /* Basic Document Fonts
  _fonts.scss */
 /* Traveling Typewriter */
@@ -27,16 +161,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   src: url("./fonts/travelingtypewriter.eot");
   /* IE9 Compat Modes */
   src: local("Traveling Typewriter"), local("Traveling-Typewriter-Regular"), url("./fonts/travelingtypewriter.woff2") format("woff2"), url("./fonts/travelingtypewriter.woff") format("woff"), url("./fonts/travelingtypewriter.ttf") format("truetype"), url("./fonts/travelingtypewriter.svg#TravelingTypewriter") format("svg");
-  /* Legacy iOS */ }
-
-/* ruthie-regular - latin-ext */
-@font-face {
-  font-family: 'Ruthie';
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/ruthie-v8-latin-ext-regular.eot");
-  /* IE9 Compat Modes */
-  src: local("Ruthie"), local("Ruthie-Regular"), url("./fonts/ruthie-v8-latin-ext-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/ruthie-v8-latin-ext-regular.woff2") format("woff2"), url("./fonts/ruthie-v8-latin-ext-regular.woff") format("woff"), url("./fonts/ruthie-v8-latin-ext-regular.svg#Ruthie") format("svg");
   /* Legacy iOS */ }
 
 /* fredericka-the-great-regular - latin */
@@ -179,58 +303,6 @@ h4 {
   line-height: 33px;
   letter-spacing: 2px; }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-hr {
-  height: 0;
-  border: none; }
-
 /* Basic and editor styles
 Theme Name: Cthulhupark
 _essentials.scss
@@ -293,19 +365,27 @@ hr {
   @media (orientation: portrait) {
     .main-header {
       height: auto; } }
-  @media (max-width: 540px) {
+  @media (max-width: 612px) {
     .main-header {
       overflow: visible; } }
   .main-header img {
     width: 100%;
     position: absolute;
-    bottom: 0; }
-    @media (orientation: portrait) {
+    top: -175px; }
+    @media (max-width: 1024px) {
       .main-header img {
-        width: 180%;
-        margin-left: -40%;
-        max-width: 9999px;
-        position: static; } }
+        top: -100px; } }
+    @media (max-width: 612px) {
+      .main-header img {
+        top: 0;
+        width: 120vw;
+        max-width: 99999px; } }
+    @media screen and (max-width: 442px) {
+      .main-header img {
+        bottom: 0; } }
+    @media screen and (max-width: 353px) {
+      .main-header img {
+        width: 150vw; } }
   .main-header .blog-info {
     position: absolute;
     top: 20px;
@@ -315,14 +395,14 @@ hr {
     .main-header .blog-info .main-title a {
       color: #f9e6a4;
       text-decoration: none; }
-    @media (max-width: 540px) {
+    @media (max-width: 612px) {
       .main-header .blog-info .main-title {
         font-size: 2.1rem;
         font-weight: bold; } }
     .main-header .blog-info .sub-title {
       color: #f9e6a4; }
   .main-header .main-header-wrapper {
-    height: 35vh;
+    height: 40vh;
     overflow: hidden; }
 
 .main-navigation {
@@ -347,14 +427,12 @@ hr {
         color: #8E563F;
         line-height: 42px;
         text-decoration: none;
-        font-family: 'Ruthie', cursive;
-        font-size: 1.8rem;
-        font-weight: bold;
+        font-size: 1.2rem;
         border: none; }
         .main-navigation ul li a:hover {
           color: #f9e6a4;
           background-color: #8E563F; }
-        @media (max-width: 840px) {
+        @media (max-width: 1024px) {
           .main-navigation ul li a {
             color: #f9e6a4;
             font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
@@ -365,7 +443,7 @@ hr {
         opacity: 0;
         transition: opacity 0.8s;
         background-color: #8E563F; }
-        @media (max-width: 840px) {
+        @media (max-width: 1024px) {
           .main-navigation ul li .sub-menu {
             background-color: rgba(53, 21, 9, 0.9); } }
         .main-navigation ul li .sub-menu li {
@@ -384,7 +462,7 @@ hr {
             font-size: 0.9rem;
             font-weight: normal;
             line-height: 17px; }
-            @media (max-width: 840px) {
+            @media (max-width: 1024px) {
               .main-navigation ul li .sub-menu li a {
                 color: #f9f0cc; } }
             .main-navigation ul li .sub-menu li a:hover {
@@ -399,7 +477,7 @@ hr {
         height: 42px;
         padding: 0 15px;
         margin-left: -3px; }
-  @media (max-width: 840px) {
+  @media (max-width: 1024px) {
     .main-navigation {
       position: static; }
       .main-navigation ul li {
@@ -449,16 +527,16 @@ Theme: Cthulhupark */
   width: 20%;
   padding: 20px 15px;
   min-width: 150px; }
-  @media (max-width: 840px) {
+  @media (max-width: 1024px) {
     .sidebar {
       width: 50%; } }
-  @media (max-width: 540px) {
+  @media (max-width: 612px) {
     .sidebar {
       width: 100%; } }
 
 .sidebar-left {
   border-right: 1px dotted #8E563F; }
-  @media (max-width: 840px) {
+  @media (max-width: 1024px) {
     .sidebar-left {
       order: 1; } }
 
@@ -480,13 +558,13 @@ Theme: Cthulhupark */
   .sidebar-top .widget {
     display: inline-block;
     list-style-type: none; }
-    @media (max-width: 840px) {
+    @media (max-width: 1024px) {
       .sidebar-top .widget {
         font-size: 1.1rem;
         margin: 15px 0; } }
     .sidebar-top .widget li {
       line-height: 150%; }
-    @media (max-width: 540px) {
+    @media (max-width: 612px) {
       .sidebar-top .widget {
         display: block; } }
     .sidebar-top .widget .widget-title {
@@ -504,7 +582,7 @@ Theme: Cthulhupark */
       background-color: #f9e6a4;
       font-size: .8rem;
       line-height: .8rem; }
-      @media (max-width: 840px) {
+      @media (max-width: 1024px) {
         .sidebar-top .widget input {
           font-size: 1rem; } }
       .sidebar-top .widget input:focus {
@@ -516,7 +594,7 @@ Theme: Cthulhupark */
         color: #f9e6a4;
         transition: all .8s;
         font-size: .85rem; }
-        @media (max-width: 840px) {
+        @media (max-width: 1024px) {
           .sidebar-top .widget input[type='submit'] {
             font-size: 1rem; } }
         .sidebar-top .widget input[type='submit']:hover {
@@ -528,7 +606,7 @@ Theme: Cthulhupark */
       display: inline; }
     .sidebar-top .widget .widget_cplogin_widget p {
       display: inline-block; }
-      @media (max-width: 540px) {
+      @media (max-width: 612px) {
         .sidebar-top .widget .widget_cplogin_widget p {
           display: block;
           margin-bottom: 6px;
@@ -539,13 +617,13 @@ Theme: Cthulhupark */
     padding: 0 3px; }
   .sidebar-top .widget_search {
     float: right; }
-    @media (max-width: 540px) {
+    @media (max-width: 612px) {
       .sidebar-top .widget_search {
         float: none;
         margin-top: 10px; } }
   .sidebar-top .logged-in .widget_cplogin_widget {
     padding-top: 15px; }
-  @media (max-width: 840px) {
+  @media (max-width: 1024px) {
     .sidebar-top {
       bottom: 0; } }
 
@@ -627,7 +705,7 @@ li.widget {
       line-height: 150%; }
     .sidebar-author .widget a {
       background: transparent; }
-    @media (max-width: 840px) {
+    @media (max-width: 1024px) {
       .sidebar-author .widget {
         width: 50px;
         height: auto; }
@@ -655,7 +733,7 @@ li.widget {
       right: 0; }
     .sidebar-author .widget:hover img {
       right: 0; }
-  @media (max-width: 840px) {
+  @media (max-width: 1024px) {
     .sidebar-author {
       order: -2;
       display: flex;
@@ -675,8 +753,9 @@ li.widget {
   background-image: url(images/mainBackground.png);
   background-repeat: repeat;
   background-color: #f9f0cc;
-  background-attachment: fixed; }
-  @media (max-width: 840px) {
+  background-attachment: fixed;
+  position: relative; }
+  @media (max-width: 1024px) {
     .site-main {
       flex-wrap: wrap; } }
 
@@ -685,7 +764,7 @@ li.widget {
 
 .main-entry {
   width: 60%; }
-  @media (max-width: 840px) {
+  @media (max-width: 1024px) {
     .main-entry {
       flex: 0 0 100%; } }
 
