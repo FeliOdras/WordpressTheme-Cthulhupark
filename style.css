@@ -81,16 +81,6 @@ hr {
   src: local("Traveling Typewriter"), local("Traveling-Typewriter-Regular"), url("./fonts/travelingtypewriter.woff2") format("woff2"), url("./fonts/travelingtypewriter.woff") format("woff"), url("./fonts/travelingtypewriter.ttf") format("truetype"), url("./fonts/travelingtypewriter.svg#TravelingTypewriter") format("svg");
   /* Legacy iOS */ }
 
-/* ruthie-regular - latin-ext */
-@font-face {
-  font-family: 'Ruthie';
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/ruthie-v8-latin-ext-regular.eot");
-  /* IE9 Compat Modes */
-  src: local("Ruthie"), local("Ruthie-Regular"), url("./fonts/ruthie-v8-latin-ext-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/ruthie-v8-latin-ext-regular.woff2") format("woff2"), url("./fonts/ruthie-v8-latin-ext-regular.woff") format("woff"), url("./fonts/ruthie-v8-latin-ext-regular.svg#Ruthie") format("svg");
-  /* Legacy iOS */ }
-
 /* fredericka-the-great-regular - latin */
 @font-face {
   font-family: 'Fredericka the Great';
@@ -355,9 +345,7 @@ hr {
         color: #8E563F;
         line-height: 42px;
         text-decoration: none;
-        font-family: 'Ruthie', cursive;
-        font-size: 1.8rem;
-        font-weight: bold;
+        font-size: 1.2rem;
         border: none; }
         .main-navigation ul li a:hover {
           color: #f9e6a4;
