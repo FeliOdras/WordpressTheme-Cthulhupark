@@ -52,9 +52,12 @@
 
         .main-title {
 
+            margin-bottom: 0;
+
             a {
                 color: $mainBackgroundColor;
                 text-decoration: none;
+                border: none;
             }
 
             @media #{$phone} {
@@ -65,6 +68,9 @@
 
         .sub-title {
             color: $mainBackgroundColor;
+            font-family: $MycroftFont;
+            margin-top: 0;
+            font-weight: 300;
         }
     }
 
@@ -117,6 +123,7 @@
             .sub-menu {
                 position: absolute;
                 left: -9999px;
+                top: 45px;
                 opacity: 0;
                 transition: opacity 0.8s;
                 background-color: $mainAccentColor;
@@ -128,6 +135,7 @@
                 li {
                     display: block;
                     width: 100%;
+                    margin-top: -3px;
 
                     a {
                         width: 100%;
@@ -141,7 +149,8 @@
                         font-family: 'Traveling Typewriter', monospace;
                         font-size: 0.9rem;
                         font-weight: normal;
-                        line-height: 17px;
+                        line-height: 19px;
+                        padding: 7px 15px;
 
                         @media #{$tablet} {
                             color: #f9f0cc;
