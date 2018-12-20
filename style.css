@@ -471,7 +471,8 @@ hr {
               text-shadow: none; }
       .main-navigation ul li:hover .sub-menu {
         left: 0;
-        opacity: 1; }
+        opacity: 1;
+        z-index: 999; }
       .main-navigation ul li a {
         display: inline-block;
         height: 42px;
