@@ -446,6 +446,7 @@ hr {
       .main-navigation ul li .sub-menu {
         position: absolute;
         left: -9999px;
+        top: 45px;
         opacity: 0;
         transition: opacity 0.8s;
         background-color: #8E563F; }
@@ -454,7 +455,8 @@ hr {
             background-color: rgba(53, 21, 9, 0.9); } }
         .main-navigation ul li .sub-menu li {
           display: block;
-          width: 100%; }
+          width: 100%;
+          margin-top: -3px; }
           .main-navigation ul li .sub-menu li a {
             width: 100%;
             min-height: 27px;
@@ -467,7 +469,8 @@ hr {
             font-family: 'Traveling Typewriter', monospace;
             font-size: 0.9rem;
             font-weight: normal;
-            line-height: 17px; }
+            line-height: 19px;
+            padding: 7px 15px; }
             @media (max-width: 1024px) {
               .main-navigation ul li .sub-menu li a {
                 color: #f9f0cc; } }
