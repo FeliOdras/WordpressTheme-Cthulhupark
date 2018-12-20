@@ -21,13 +21,25 @@
     img {
         width: 100%;
         position: absolute;
-        bottom: 0;
+        top: -175px;
 
-        @media #{$portrait} {
-            width: 180%;
-            margin-left: -40%;
-            max-width: 9999px;
-            position: static;
+        @media #{$tablet} {
+            top: -100px;
+        }
+
+        @media #{$phone} {
+
+            top: 0;
+            width: 120vw;
+            max-width: 99999px;
+        }
+
+        @media screen and (max-width:442px) {
+            bottom: 0;
+        }
+
+        @media screen and (max-width:353px) {
+            width: 150vw;
         }
     }
 
@@ -57,7 +69,7 @@
     }
 
     .main-header-wrapper {
-        height: 35vh;
+        height: 40vh;
         overflow: hidden;
     }
 }
