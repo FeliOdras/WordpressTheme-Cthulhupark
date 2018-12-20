@@ -280,7 +280,7 @@ h4 {
 
 .dairy,
 .dreamlands {
-  font-family: "Shadow Into Light", cursive;
+  font-family: "Shadows Into Light", cursive;
   font-size: 18px;
   line-height: 28px; }
 
@@ -392,15 +392,21 @@ hr {
     left: 15px;
     z-index: 90;
     text-shadow: 0 0 10px #000; }
-    .main-header .blog-info .main-title a {
-      color: #f9e6a4;
-      text-decoration: none; }
-    @media (max-width: 612px) {
-      .main-header .blog-info .main-title {
-        font-size: 2.1rem;
-        font-weight: bold; } }
+    .main-header .blog-info .main-title {
+      margin-bottom: 0; }
+      .main-header .blog-info .main-title a {
+        color: #f9e6a4;
+        text-decoration: none;
+        border: none; }
+      @media (max-width: 612px) {
+        .main-header .blog-info .main-title {
+          font-size: 2.1rem;
+          font-weight: bold; } }
     .main-header .blog-info .sub-title {
-      color: #f9e6a4; }
+      color: #f9e6a4;
+      font-family: "Mycroft", cursive;
+      margin-top: 0;
+      font-weight: 300; }
   .main-header .main-header-wrapper {
     height: 40vh;
     overflow: hidden; }
