@@ -120,7 +120,6 @@
                 opacity: 0;
                 transition: opacity 0.8s;
                 background-color: $mainAccentColor;
-                z-index: 999;
 
                 @media #{$tablet} {
                     background-color: rgba(53, 21, 9, 0.9);
@@ -161,6 +160,7 @@
                 .sub-menu {
                     left: 0;
                     opacity: 1;
+                    z-index: 999;
                 }
             }
 
