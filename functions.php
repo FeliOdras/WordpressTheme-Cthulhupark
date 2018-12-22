@@ -50,7 +50,7 @@ function wcs_exclude_category_search( $query ) {
 
 # Register sidebars
 // Top sidebar
-function sidebar_top() {
+/*function sidebar_top() {
     register_sidebar(
         array (
             'name' => __( 'Sidebar top', 'cthulhupark' ),
@@ -62,7 +62,7 @@ function sidebar_top() {
     );
 }
 add_action( 'widgets_init', 'sidebar_top' );
-
+*/
 // Left Sidebar
 function sidebar_left() {
     register_sidebar(
