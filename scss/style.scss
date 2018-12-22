@@ -17,10 +17,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
     transition: all .4s;
 }
 
+@import 'partials/reset';
 @import 'partials/fonts';
 @import 'partials/vars';
 @import 'partials/typo';
-@import 'partials/reset';
 @import 'partials/essential';
 @import 'partials/header';
 @import 'partials/sidebar';

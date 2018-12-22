@@ -49,20 +49,7 @@ function wcs_exclude_category_search( $query ) {
   add_action( 'pre_get_posts', 'wcs_exclude_category_search', 1 );
 
 # Register sidebars
-// Top sidebar
-/*function sidebar_top() {
-    register_sidebar(
-        array (
-            'name' => __( 'Sidebar top', 'cthulhupark' ),
-            'id' => 'sidebar-top',
-            'description' => __( 'Top sidebar', 'cthulhupark' ),            
-            'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3>',
-        )
-    );
-}
-add_action( 'widgets_init', 'sidebar_top' );
-*/
+
 // Left Sidebar
 function sidebar_left() {
     register_sidebar(

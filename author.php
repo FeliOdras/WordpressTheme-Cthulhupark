@@ -43,7 +43,7 @@ get_header();
                         <div class="post-excerpt">
                             <?php the_excerpt () ?>
                         </div> <!-- .post-excerpt -->
-                        <footer class="post-footer">
+                        <footer class="clearfix post-footer">
                             <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Weiterlesen</a>
                         </footer>
                     </div><!-- .archive-entry -->

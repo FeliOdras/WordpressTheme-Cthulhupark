@@ -9,6 +9,7 @@
     background-repeat: repeat;
     background-color: #f9f0cc;
     background-attachment: fixed;
+    position: relative;
 
     @media #{$tablet} {
         flex-wrap: wrap;
@@ -102,4 +103,12 @@
 
 .post-navigation {
     text-align: center;
+}
+
+.author {
+
+    .archive-entry {
+        padding: 15px;
+        margin: 15px 0;
+    }
 }
