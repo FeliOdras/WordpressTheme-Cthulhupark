@@ -240,12 +240,10 @@
     }
 
     #nav {
-        &:checked {
-            &~.menu-main-menu-container {
-                right: 0;
-                transition: all 1s;
-                background-color: rgba(53, 21, 9, 0.7);
-            }
+        &:checked ~.menu-main-menue-container {
+            right: 0;
+            transition: all 1s;
+            background-color: rgba(53, 21, 9, 0.7);        
         }
     }
 }
