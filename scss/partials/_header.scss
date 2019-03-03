@@ -88,6 +88,10 @@
     @include gradient(bottom, $navBGGradient);
     box-shadow: 0 0 10px #999;
 
+    .nav-open {
+        visibility: hidden;
+    }
+
 
     ul {
         max-width: 1280px;
@@ -242,6 +246,7 @@
         }
 
         .nav-open {
+            visibility: visible;
             position: absolute;
             right: 5px;
             top: 5px;

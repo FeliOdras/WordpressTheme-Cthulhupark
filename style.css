@@ -421,6 +421,8 @@ hr {
   background: -o-linear-gradient(bottom, #E5D59E, #f9e6a4);
   background: linear-gradient(bottom, #E5D59E, #f9e6a4);
   box-shadow: 0 0 10px #999; }
+  .main-navigation .nav-open {
+    visibility: hidden; }
   .main-navigation ul {
     max-width: 1280px;
     margin: auto; }
@@ -524,6 +526,7 @@ hr {
           right: 0;
           transition: all 1s; }
       .main-navigation .nav-open {
+        visibility: visible;
         position: absolute;
         right: 5px;
         top: 5px;
