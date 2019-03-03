@@ -424,9 +424,15 @@ hr {
   .main-navigation ul {
     max-width: 1280px;
     margin: auto; }
+    @media (max-width: 1024px) {
+      .main-navigation ul {
+        background-color: #351509; } }
     .main-navigation ul li {
       display: inline-block;
       position: relative; }
+      .main-navigation ul li.current-menu-item a {
+        color: #f9e6a4;
+        background-color: #8E563F; }
       .main-navigation ul li a {
         color: #8E563F;
         line-height: 42px;
@@ -448,13 +454,14 @@ hr {
         opacity: 0;
         transition: opacity 0.8s;
         background-color: #8E563F; }
-        @media (max-width: 1024px) {
-          .main-navigation ul li .sub-menu {
-            background-color: rgba(53, 21, 9, 0.9); } }
         .main-navigation ul li .sub-menu li {
           display: block;
           width: 100%;
           margin-top: -3px; }
+          .main-navigation ul li .sub-menu li.current-menu-item a {
+            background-color: #f9e6a4;
+            color: #8E563F;
+            text-shadow: none; }
           .main-navigation ul li .sub-menu li a {
             width: 100%;
             min-height: 27px;
@@ -463,7 +470,7 @@ hr {
             transition: all 0.8s;
             color: #f9e6a4;
             text-shadow: 0 0 10px #000;
-            background-color: #8E563F;
+            background-color: transparent;
             font-family: 'Traveling Typewriter', monospace;
             font-size: 0.9rem;
             font-weight: normal;
@@ -485,21 +492,27 @@ hr {
         height: 42px;
         padding: 0 15px;
         margin-left: -3px; }
+        @media (max-width: 1024px) {
+          .main-navigation ul li a {
+            display: block; } }
   @media (max-width: 1024px) {
     .main-navigation {
       position: static; }
-      .main-navigation ul li {
-        display: block; }
-        .main-navigation ul li .sub-menu {
-          position: static;
-          opacity: 1;
-          padding-left: 25px;
-          padding-bottom: 20px;
-          z-index: 50; }
-          .main-navigation ul li .sub-menu li a {
-            padding: 12px 0;
-            height: auto;
-            background: transparent; }
+      .main-navigation ul {
+        opacity: .95; }
+        .main-navigation ul li {
+          display: block; }
+          .main-navigation ul li .sub-menu {
+            position: static;
+            opacity: 1;
+            padding-left: 0px;
+            padding-bottom: 20px;
+            z-index: 50;
+            background-color: #351509; }
+            .main-navigation ul li .sub-menu li a {
+              padding: 12px 25px;
+              height: auto;
+              background: transparent; }
       .main-navigation .navigation-container {
         position: absolute;
         right: -100%;
@@ -509,8 +522,7 @@ hr {
         width: 100%; }
         .main-navigation .navigation-container.visible {
           right: 0;
-          transition: all 1s;
-          background-color: rgba(53, 21, 9, 0.7); }
+          transition: all 1s; }
       .main-navigation .nav-open {
         position: absolute;
         right: 5px;

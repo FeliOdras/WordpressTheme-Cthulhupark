@@ -88,13 +88,26 @@
     @include gradient(bottom, $navBGGradient);
     box-shadow: 0 0 10px #999;
 
+
     ul {
         max-width: 1280px;
         margin: auto;
 
+        @media #{$tablet} {
+            background-color:rgb(53, 21, 9);
+        }
+
         li {
             display: inline-block;
             position: relative;
+
+            &.current-menu-item {
+                a {
+                    color:$mainBackgroundColor;
+                    background-color:$mainAccentColor;
+                }
+            }
+
 
             a {
                 color: $mainAccentColor;
@@ -124,14 +137,18 @@
                 transition: opacity 0.8s;
                 background-color: $mainAccentColor;
 
-                @media #{$tablet} {
-                    background-color: rgba(53, 21, 9, 0.9);
-                }
-
                 li {
                     display: block;
                     width: 100%;
                     margin-top: -3px;
+
+                    &.current-menu-item {
+                        a {
+                            background-color: $mainBackgroundColor;
+                            color: $mainAccentColor;
+                            text-shadow: none;
+                        }
+                    }
 
                     a {
                         width: 100%;
@@ -141,7 +158,7 @@
                         transition: all 0.8s;
                         color: $mainBackgroundColor;
                         text-shadow: 0 0 10px $black;
-                        background-color: $mainAccentColor;
+                        background-color: transparent;
                         font-family: 'Traveling Typewriter', monospace;
                         font-size: 0.9rem;
                         font-weight: normal;
@@ -174,6 +191,10 @@
                 height: 42px;
                 padding: 0 15px;
                 margin-left: -3px;
+
+                @media #{$tablet} {
+                    display:block;
+                }
             }
         }
     }
@@ -182,6 +203,7 @@
         position: static;
 
         ul {
+            opacity:.95;
 
             li {
                 display: block;
@@ -189,13 +211,14 @@
                 .sub-menu {
                     position: static;
                     opacity: 1;
-                    padding-left: 25px;
+                    padding-left: 0px;
                     padding-bottom: 20px;
                     z-index: 50;
+                    background-color: rgb(53, 21, 9);
 
                     li {
                         a {
-                            padding: 12px 0;
+                            padding: 12px 25px;
                             height: auto;
                             background:transparent;
                         }
@@ -215,7 +238,6 @@
             &.visible {
                 right: 0;
                 transition: all 1s;
-                background-color: rgba(53, 21, 9, 0.7);   
             }
         }
 
