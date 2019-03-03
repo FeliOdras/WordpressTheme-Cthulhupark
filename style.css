@@ -525,7 +525,7 @@ hr {
           display: block;
           background-color: #f9e6a4;
           box-shadow: 0 0 5px #666; } }
-  .main-navigation #nav:checked ~ .menu-main-menu-container {
+  .main-navigation #nav:checked ~ .menu-main-menue-container {
     right: 0;
     transition: all 1s;
     background-color: rgba(53, 21, 9, 0.7); }
@@ -771,6 +771,12 @@ li.widget {
 
 .content-area p {
   margin-bottom: 15px; }
+
+.content-area img {
+  display: none; }
+
+.logged-in .content-area img {
+  display: block; }
 
 .main-entry {
   width: 60%; }

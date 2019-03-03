@@ -21,6 +21,14 @@
     p {
         margin-bottom: 15px;
     }
+
+    img {
+        display:none;
+    }
+}
+
+.logged-in .content-area img {
+    display:block;
 }
 
 .main-entry {
