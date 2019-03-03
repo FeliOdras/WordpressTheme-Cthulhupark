@@ -518,7 +518,8 @@ hr {
         height: 32px;
         cursor: pointer;
         z-index: 120;
-        border-radius: 50%; }
+        border: none;
+        background: transparent; }
         .main-navigation .nav-open i {
           width: 30px;
           height: 3px;
