@@ -772,6 +772,12 @@ li.widget {
 .content-area p {
   margin-bottom: 15px; }
 
+.content-area img {
+  display: none; }
+
+.logged-in .content-area img {
+  display: block; }
+
 .main-entry {
   width: 60%; }
   @media (max-width: 1024px) {
