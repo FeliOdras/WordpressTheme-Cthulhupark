@@ -498,7 +498,8 @@ hr {
           z-index: 50; }
           .main-navigation ul li .sub-menu li a {
             padding: 12px 0;
-            height: auto; }
+            height: auto;
+            background: transparent; }
       .main-navigation .navigation-container {
         position: absolute;
         right: -100%;
@@ -518,7 +519,8 @@ hr {
         height: 32px;
         cursor: pointer;
         z-index: 120;
-        border-radius: 50%; }
+        border: none;
+        background: transparent; }
         .main-navigation .nav-open i {
           width: 30px;
           height: 3px;

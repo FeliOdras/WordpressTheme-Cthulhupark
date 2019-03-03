@@ -197,6 +197,7 @@
                         a {
                             padding: 12px 0;
                             height: auto;
+                            background:transparent;
                         }
                     }
                 }
@@ -226,7 +227,8 @@
             height: 32px;
             cursor: pointer;
             z-index: 120;
-            border-radius: 50%;
+            border:none;
+            background:transparent;
 
             i {
                 width: 30px;
