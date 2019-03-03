@@ -421,8 +421,6 @@ hr {
   background: -o-linear-gradient(bottom, #E5D59E, #f9e6a4);
   background: linear-gradient(bottom, #E5D59E, #f9e6a4);
   box-shadow: 0 0 10px #999; }
-  .main-navigation input[type='checkbox'] {
-    display: none; }
   .main-navigation ul {
     max-width: 1280px;
     margin: auto; }
@@ -501,14 +499,17 @@ hr {
           .main-navigation ul li .sub-menu li a {
             padding: 12px 0;
             height: auto; }
-      .main-navigation .menu-hauptmenue-container,
-      .main-navigation .menu-main-menu-container {
+      .main-navigation .navigation-container {
         position: absolute;
         right: -100%;
         top: 0;
         transition: all 1s;
         z-index: 110;
         width: 100%; }
+        .main-navigation .navigation-container.visible {
+          right: 0;
+          transition: all 1s;
+          background-color: rgba(53, 21, 9, 0.7); }
       .main-navigation .nav-open {
         position: absolute;
         right: 5px;
@@ -525,10 +526,6 @@ hr {
           display: block;
           background-color: #f9e6a4;
           box-shadow: 0 0 5px #666; } }
-  .main-navigation #nav:checked ~ .menu-main-menue-container {
-    right: 0;
-    transition: all 1s;
-    background-color: rgba(53, 21, 9, 0.7); }
 
 /* Sidebars and Widgets - Top, Left, Right
 _sidebar.scss

@@ -88,10 +88,6 @@
     @include gradient(bottom, $navBGGradient);
     box-shadow: 0 0 10px #999;
 
-    input[type='checkbox'] {
-        display: none;
-    }
-
     ul {
         max-width: 1280px;
         margin: auto;
@@ -207,14 +203,19 @@
             }
         }
 
-        .menu-hauptmenue-container,
-        .menu-main-menu-container {
+        .navigation-container {
             position: absolute;
             right: -100%;
             top: 0;
             transition: all 1s;
             z-index: 110;
             width: 100%;
+
+            &.visible {
+                right: 0;
+                transition: all 1s;
+                background-color: rgba(53, 21, 9, 0.7);   
+            }
         }
 
         .nav-open {
@@ -236,14 +237,6 @@
                 box-shadow: 0 0 5px $dreamlandsAccentColor;
             }
 
-        }
-    }
-
-    #nav {
-        &:checked ~.menu-main-menue-container {
-            right: 0;
-            transition: all 1s;
-            background-color: rgba(53, 21, 9, 0.7);        
         }
     }
 }

@@ -27,8 +27,9 @@
                 <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
             </div>
             <nav id="main-navigation" class="main-navigation">
-            <input type="checkbox" id="nav" class="hidden"/>
-            <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
-                <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+                <button class="nav-open" onclick="responsiveMenu()"><i></i><i></i><i></i></button>
+                <div id="navigation-container" class="navigation-container">
+                    <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+                </div>
             </nav>
         </header>

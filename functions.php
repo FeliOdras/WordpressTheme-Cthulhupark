@@ -1,8 +1,10 @@
 <?php 
 function cthulhupark_theme_styles() {
     wp_enqueue_style( 'cthulhupark', get_template_directory_uri().'/style.css', array(), 1.0, 'screen' );
+    wp_enqueue_script( 'cthulhupark-main', get_template_directory_uri() . '/js/cthulhupark-main.js', array(), 1.0, true);
 }
 add_action( 'wp_enqueue_scripts', 'cthulhupark_theme_styles' );
+
 
 # Change Excerpt length
 function custom_excerpt_length( $length ) {
