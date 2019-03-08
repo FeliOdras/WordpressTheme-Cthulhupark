@@ -1,4 +1,5 @@
 <?php 
+# Enquueue Scrips and Styles
 function cthulhupark_theme_styles() {
     wp_enqueue_style( 'cthulhupark', get_template_directory_uri().'/style.css', array(), 1.0, 'screen' );
     wp_enqueue_script( 'cthulhupark-main', get_template_directory_uri() . '/js/cthulhupark-main.js', array(), 1.0, true);
@@ -308,6 +309,8 @@ class cplogin_widget extends WP_Widget {
     }
 } // Class cplogin_widget ends here
 
-#Make translation ready
-load_theme_textdomain( 'cthulhupark', '~/Documents/ari/projects/wordpress/hq.cthulhupark/wp-content/themes/cthulhupark' );
+include 'widgets/latestTBE.php';
+
+
+
 ?>
