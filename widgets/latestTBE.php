@@ -23,7 +23,7 @@ class cpLatestTBE_widget extends WP_Widget {
         if ( ! empty( $title ) )
         echo $args['before_title'] . $title . $args['after_title'];
         # Output Latest TBE
-        echo '<div class="latesteTBE"></div>';
+        echo '<div class="latestTBE"></div>';
     }  
     # End of Widget output Latest TBE       
     // Widget Backend 
