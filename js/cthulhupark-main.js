@@ -5,7 +5,7 @@ responsiveMenu = () => {
 
 class LatestDairies {
     constructor(domselector) {
-        this.apiUrl='https://hq.cthulhupark.de/wp-json/wp/v2/posts/?categories=2&&per_page=50&&orderby=modified';
+        this.apiUrl='https://hq.cthulhupark.de/wp-json/wp/v2/posts/?categories=2&&per_page=20&&orderby=modified';
         this.htmlContainer = document.querySelector(domselector);
         this.entriesOutput = ``;
         this.fetchData();
@@ -34,8 +34,7 @@ class LatestDairies {
 
     showLatest(){
         let entryList = this.addDiffDays();
-        let latestEntries = entryList.filter(entry => entry.diffDays < 21);
-        console.log(latestEntries)
+        let latestEntries = entryList.filter(entry => entry.diffDays < 11);
         return latestEntries;
     }
 
@@ -44,15 +43,22 @@ class LatestDairies {
         return entryList
         .map (entry => {
             return`
-                <a href="${entry.link}" title="${entry.title.rendered}">
-                    ${entry.title.rendered}</a><br>
+                <a href="${entry.link}" title="${entry.title.rendered}"><strong>
+                    ${entry.title.rendered}</strong></a><br>
                 <small>(vor ${entry.diffDays} ${entry.diffDays == 1 ? 'Tag' : 'Tagen'})</small><br>
             `
         }).join('')
     }
 
     render(){
-        let output = this.template();
+        let output = ``;
+        let template = this.template();
+        let entriesLatest = this.showLatest();
+        let countLatest = entriesLatest.length;
+        output += `<h3 class="widget-title">Neueste Beiträge (${countLatest})</h3>`;
+        output += `<div class="widget-container">`;
+        output += template;
+        output += `</div>`
         this.htmlContainer.innerHTML = output;
     }
 

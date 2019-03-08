@@ -103,7 +103,7 @@ add_theme_support( 'post-thumbnails' );
 
 include 'widgets/tbe.php';
 include 'widgets/frontendLogin.php';
-include 'widgets/latestTBE.php';
+// include 'widgets/latestTBE.php';
 
 
 

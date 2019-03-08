@@ -167,17 +167,19 @@ li.widget {
     li {
         line-height: 150%;
     }
+}
 
-    .widget-title {
-        text-align: center;
-        padding: 3px;
-        margin-bottom: 15px;
-        background-color: $mainAccentColor;
-        color: $mainBackgroundColor;
-        font-family: 'Fredericka the Great', serif;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
+
+
+.widget-title {
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 15px;
+    background-color: $mainAccentColor;
+    color: $mainBackgroundColor;
+    font-family: 'Fredericka the Great', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .widget_cptbe_widget {
