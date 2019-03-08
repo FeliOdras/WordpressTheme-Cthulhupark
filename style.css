@@ -353,6 +353,9 @@ strong {
 hr {
   border-bottom: 1px dotted #8E563F; }
 
+small {
+  font-size: 80%; }
+
 /*Header and Main Navigation
  _header.scss*/
 #page {
@@ -656,15 +659,16 @@ li.widget {
   list-style-type: none; }
   li.widget li {
     line-height: 150%; }
-  li.widget .widget-title {
-    text-align: center;
-    padding: 3px;
-    margin-bottom: 15px;
-    background-color: #8E563F;
-    color: #f9e6a4;
-    font-family: 'Fredericka the Great', serif;
-    font-size: 1.2rem;
-    font-weight: bold; }
+
+.widget-title {
+  text-align: center;
+  padding: 3px;
+  margin-bottom: 15px;
+  background-color: #8E563F;
+  color: #f9e6a4;
+  font-family: 'Fredericka the Great', serif;
+  font-size: 1.2rem;
+  font-weight: bold; }
 
 .widget_cptbe_widget .entries {
   border: 1px dotted #8E563F;
