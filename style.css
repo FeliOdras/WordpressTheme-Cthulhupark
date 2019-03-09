@@ -1171,8 +1171,10 @@ table.charBasics tr {
   font-size: inherit; }
 
 @media print {
-  header, aside, footer, .sidebar-author {
+  header, aside, footer, .sidebar-author, .categories {
     display: none; }
   .main-entry, .entry-content {
     width: 100%;
-    max-width: 100%; } }
+    max-width: 100%; }
+  .wp-block-columns {
+    flex-wrap: nowrap; } }
