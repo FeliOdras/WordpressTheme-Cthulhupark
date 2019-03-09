@@ -1169,3 +1169,34 @@ table.charBasics tr {
 .dreamlands .post-excerpt,
 .dairy .post-excerpt {
   font-size: inherit; }
+
+@media print {
+  header, aside, footer, .sidebar-author, .categorie, .edit-link, .tags {
+    display: none; }
+  * {
+    page-break-after: avoid; }
+  hr {
+    page-break-after: auto; }
+  .main-entry, .entry-content {
+    width: 100%;
+    max-width: 100%; }
+  .entry-content {
+    padding: 0;
+    margin: 0; }
+  .wp-block-columns {
+    flex-wrap: nowrap; }
+  .charImg {
+    width: 200px;
+    height: auto; }
+  .wp-block-table {
+    border: 1px solid #ccc; }
+    .wp-block-table.charTPMP, .wp-block-table.charRW {
+      width: 92%;
+      margin: 0 4%;
+      padding: 1%; }
+    .wp-block-table td {
+      text-align: center; }
+    .wp-block-table.charBasics td, .wp-block-table.charSkills td {
+      text-align: left; }
+    .wp-block-table.charSkills td, .wp-block-table.charKampf td, .wp-block-table.charWaffen td, .wp-block-table.charZauber td, .wp-block-table.charSprachen td {
+      border-bottom: 1px dotted #ccc; } }
