@@ -45,7 +45,7 @@ class LatestDairies {
             return`
                 <a href="${entry.link}" title="${entry.title.rendered}"><strong>
                     ${entry.title.rendered}</strong></a><br>
-                <small>(vor ${entry.diffDays} ${entry.diffDays == 1 ? 'Tag' : 'Tagen'})</small><br>
+                <small>(${entry.diffDays == 1 ? `heute` : entry.diffDays == 2 ? `vor ${entry.diffDays - 1 } Tag` : `vor ${entry.diffDays - 1 } Tagen`})</small><br>
             `
         }).join('')
     }
