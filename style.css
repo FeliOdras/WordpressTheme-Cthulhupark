@@ -1169,3 +1169,10 @@ table.charBasics tr {
 .dreamlands .post-excerpt,
 .dairy .post-excerpt {
   font-size: inherit; }
+
+@media print {
+  header, aside, footer, .sidebar-author {
+    display: none; }
+  .main-entry, .entry-content {
+    width: 100%;
+    max-width: 100%; } }

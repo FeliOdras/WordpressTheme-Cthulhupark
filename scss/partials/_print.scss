@@ -1,0 +1,10 @@
+@media print {
+    header, aside, footer, .sidebar-author, .categories {
+        display:none;
+    }
+
+    .main-entry, .entry-content {
+        width:100%;
+        max-width:100%;
+    }
+}
