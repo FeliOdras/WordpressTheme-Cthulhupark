@@ -8,7 +8,17 @@
         max-width:100%;
     }
 
+    .entry-content {
+        padding:0;
+        margin:0;
+    }
+
     .wp-block-columns {
         flex-wrap:nowrap;
+    }
+
+    .charImg {
+        width:200px;
+        height:auto;
     }
 }
