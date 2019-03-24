@@ -26,15 +26,16 @@ class LatestDairies {
             let modDate = entry.modified;
             let nowDate = new Date();
             let timeDiff = Math.abs(Date.parse(modDate) - nowDate.getTime());
-            let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
-            entry.diffDays = diffDays;      
+            let diffHours = Math.ceil(timeDiff / (1000 * 3600));
+            entry.diffHours = diffHours;   
         });
         return tbeEntries;
     }
 
     showLatest(){
         let entryList = this.addDiffDays();
-        let latestEntries = entryList.filter(entry => entry.diffDays < 11);
+        let latestEntries = entryList.filter(entry => entry.diffHours < 192);
+        console.log(latestEntries)
         return latestEntries;
     }
 
@@ -45,7 +46,7 @@ class LatestDairies {
             return`
                 <a href="${entry.link}" title="${entry.title.rendered}"><strong>
                     ${entry.title.rendered}</strong></a><br>
-                <small>Zuletzt geändert: ${entry.diffDays == 1 ? `heute` : entry.diffDays == 2 ? `vor ${entry.diffDays - 1 } Tag` : `vor ${entry.diffDays - 1 } Tagen`}</small><br>
+                <small>Zuletzt geändert: ${entry.diffHours <= 1 ? `gerade eben` : entry.diffHours  <= 24 ? `vor ${entry.diffHours} Stunden` : entry.diffHours  <= 48 ? `gestern` : `vor ${Math.floor(entry.diffHours / 24) } Tagen`}</small><br>
             `
         }).join('')
     }
