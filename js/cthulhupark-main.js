@@ -35,7 +35,6 @@ class LatestDairies {
     showLatest(){
         let entryList = this.addDiffDays();
         let latestEntries = entryList.filter(entry => entry.diffHours < 192);
-        console.log(latestEntries)
         return latestEntries;
     }
 
