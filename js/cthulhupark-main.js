@@ -55,7 +55,7 @@ class LatestDairies {
         let template = this.template();
         let entriesLatest = this.showLatest();
         let countLatest = entriesLatest.length;
-        output += `<h3 class="widget-title">Neueste Beiträge (${countLatest})</h3>`;
+        output += `<h3 class="widget-title">Letzte Aktualisierungen (${countLatest})</h3>`;
         output += `<div class="widget-container">`;
         output += template;
         output += `</div>`
