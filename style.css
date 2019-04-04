@@ -353,6 +353,9 @@ strong {
 hr {
   border-bottom: 1px dotted #8E563F; }
 
+small {
+  font-size: 80%; }
+
 /*Header and Main Navigation
  _header.scss*/
 #page {
@@ -421,14 +424,20 @@ hr {
   background: -o-linear-gradient(bottom, #E5D59E, #f9e6a4);
   background: linear-gradient(bottom, #E5D59E, #f9e6a4);
   box-shadow: 0 0 10px #999; }
-  .main-navigation input[type='checkbox'] {
-    display: none; }
+  .main-navigation .nav-open {
+    visibility: hidden; }
   .main-navigation ul {
     max-width: 1280px;
     margin: auto; }
+    @media (max-width: 1024px) {
+      .main-navigation ul {
+        background-color: #351509; } }
     .main-navigation ul li {
       display: inline-block;
       position: relative; }
+      .main-navigation ul li.current-menu-item a {
+        color: #f9e6a4;
+        background-color: #8E563F; }
       .main-navigation ul li a {
         color: #8E563F;
         line-height: 42px;
@@ -450,13 +459,14 @@ hr {
         opacity: 0;
         transition: opacity 0.8s;
         background-color: #8E563F; }
-        @media (max-width: 1024px) {
-          .main-navigation ul li .sub-menu {
-            background-color: rgba(53, 21, 9, 0.9); } }
         .main-navigation ul li .sub-menu li {
           display: block;
           width: 100%;
           margin-top: -3px; }
+          .main-navigation ul li .sub-menu li.current-menu-item a {
+            background-color: #f9e6a4;
+            color: #8E563F;
+            text-shadow: none; }
           .main-navigation ul li .sub-menu li a {
             width: 100%;
             min-height: 27px;
@@ -465,7 +475,7 @@ hr {
             transition: all 0.8s;
             color: #f9e6a4;
             text-shadow: 0 0 10px #000;
-            background-color: #8E563F;
+            background-color: transparent;
             font-family: 'Traveling Typewriter', monospace;
             font-size: 0.9rem;
             font-weight: normal;
@@ -487,29 +497,39 @@ hr {
         height: 42px;
         padding: 0 15px;
         margin-left: -3px; }
+        @media (max-width: 1024px) {
+          .main-navigation ul li a {
+            display: block; } }
   @media (max-width: 1024px) {
     .main-navigation {
       position: static; }
-      .main-navigation ul li {
-        display: block; }
-        .main-navigation ul li .sub-menu {
-          position: static;
-          opacity: 1;
-          padding-left: 25px;
-          padding-bottom: 20px;
-          z-index: 50; }
-          .main-navigation ul li .sub-menu li a {
-            padding: 12px 0;
-            height: auto; }
-      .main-navigation .menu-hauptmenue-container,
-      .main-navigation .menu-main-menu-container {
+      .main-navigation ul {
+        opacity: .95; }
+        .main-navigation ul li {
+          display: block; }
+          .main-navigation ul li .sub-menu {
+            position: static;
+            opacity: 1;
+            padding-left: 0px;
+            padding-bottom: 20px;
+            z-index: 50;
+            background-color: #351509; }
+            .main-navigation ul li .sub-menu li a {
+              padding: 12px 25px;
+              height: auto;
+              background: transparent; }
+      .main-navigation .navigation-container {
         position: absolute;
         right: -100%;
         top: 0;
         transition: all 1s;
         z-index: 110;
         width: 100%; }
+        .main-navigation .navigation-container.visible {
+          right: 0;
+          transition: all 1s; }
       .main-navigation .nav-open {
+        visibility: visible;
         position: absolute;
         right: 5px;
         top: 5px;
@@ -517,7 +537,8 @@ hr {
         height: 32px;
         cursor: pointer;
         z-index: 120;
-        border-radius: 50%; }
+        border: none;
+        background: transparent; }
         .main-navigation .nav-open i {
           width: 30px;
           height: 3px;
@@ -525,10 +546,6 @@ hr {
           display: block;
           background-color: #f9e6a4;
           box-shadow: 0 0 5px #666; } }
-  .main-navigation #nav:checked ~ .menu-main-menue-container {
-    right: 0;
-    transition: all 1s;
-    background-color: rgba(53, 21, 9, 0.7); }
 
 /* Sidebars and Widgets - Top, Left, Right
 _sidebar.scss
@@ -642,15 +659,16 @@ li.widget {
   list-style-type: none; }
   li.widget li {
     line-height: 150%; }
-  li.widget .widget-title {
-    text-align: center;
-    padding: 3px;
-    margin-bottom: 15px;
-    background-color: #8E563F;
-    color: #f9e6a4;
-    font-family: 'Fredericka the Great', serif;
-    font-size: 1.2rem;
-    font-weight: bold; }
+
+.widget-title {
+  text-align: center;
+  padding: 3px;
+  margin-bottom: 15px;
+  background-color: #8E563F;
+  color: #f9e6a4;
+  font-family: 'Fredericka the Great', serif;
+  font-size: 1.2rem;
+  font-weight: bold; }
 
 .widget_cptbe_widget .entries {
   border: 1px dotted #8E563F;
@@ -771,6 +789,12 @@ li.widget {
 
 .content-area p {
   margin-bottom: 15px; }
+
+.content-area img {
+  display: none; }
+
+.logged-in .content-area img {
+  display: block; }
 
 .main-entry {
   width: 60%; }
@@ -1145,3 +1169,34 @@ table.charBasics tr {
 .dreamlands .post-excerpt,
 .dairy .post-excerpt {
   font-size: inherit; }
+
+@media print {
+  header, aside, footer, .sidebar-author, .categorie, .edit-link, .tags {
+    display: none; }
+  * {
+    page-break-after: avoid; }
+  hr {
+    page-break-after: auto; }
+  .main-entry, .entry-content {
+    width: 100%;
+    max-width: 100%; }
+  .entry-content {
+    padding: 0;
+    margin: 0; }
+  .wp-block-columns {
+    flex-wrap: nowrap; }
+  .charImg {
+    width: 200px;
+    height: auto; }
+  .wp-block-table {
+    border: 1px solid #ccc; }
+    .wp-block-table.charTPMP, .wp-block-table.charRW {
+      width: 92%;
+      margin: 0 4%;
+      padding: 1%; }
+    .wp-block-table td {
+      text-align: center; }
+    .wp-block-table.charBasics td, .wp-block-table.charSkills td {
+      text-align: left; }
+    .wp-block-table.charSkills td, .wp-block-table.charKampf td, .wp-block-table.charWaffen td, .wp-block-table.charZauber td, .wp-block-table.charSprachen td {
+      border-bottom: 1px dotted #ccc; } }

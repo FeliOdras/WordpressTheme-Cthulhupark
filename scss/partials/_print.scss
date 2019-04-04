@@ -1,0 +1,58 @@
+@media print {
+    header, aside, footer, .sidebar-author, .categorie, .edit-link, .tags {
+        display:none;
+    }
+
+    * {
+        page-break-after: avoid;
+    }
+
+    hr {
+        page-break-after: auto;
+    }
+
+    .main-entry, .entry-content {
+        width:100%;
+        max-width:100%;
+    }
+
+    .entry-content {
+        padding:0;
+        margin:0;
+    }
+
+    .wp-block-columns {
+        flex-wrap:nowrap;
+    }
+
+    .charImg {
+        width:200px;
+        height:auto;
+    }
+
+    .wp-block-table {
+
+        border:1px solid #ccc;
+        &.charTPMP, &.charRW {
+            width:92%;
+            margin:0 4%;
+            padding:1%;
+
+        }
+
+        td {
+            text-align: center;
+        }
+
+        &.charBasics, &.charSkills {
+            td {
+                text-align:left;
+            }
+        }
+        &.charSkills, &.charKampf, &.charWaffen, &.charZauber, &.charSprachen {
+            td {
+                border-bottom:1px dotted #ccc;
+            }
+        }
+    }
+}

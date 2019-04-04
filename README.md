@@ -6,6 +6,13 @@ This theme is licensed unter [GPL 2.0](http://www.gnu.org/licenses/gpl-2.0.html)
 
 ![Cthulhupark Wordpress Theme](https://raw.githubusercontent.com/FeliOdras/WordpressTheme-Cthulhupark/master/cthulhupark-theme.png)
 
+## Technologies
+
+- HTML/CSS/SCSS
+- PHP
+- JavaScript
+- WordPress REST API
+
 ## ToDos and Future Plans
 
 See [Issues](https://github.com/FeliOdras/WordpressTheme-Cthulhupark/issues) for more. Feel free to submit your own ideas and suggestions.
