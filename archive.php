@@ -108,7 +108,12 @@ get_header();
                     endif; ?>
                     <!-- End the Loop -->
                     <nav class="post-navigation">
-                        <?php posts_nav_link('', '<span class="prev">Neuere Beiträge</span>', '<span class="next">Ältere Beiträge</span>'); ?>
+                    <?php if(in_category(array('abenteurertagebuch', 'traumwelten', 'mw-dream', 'lc-dream', 'rhw-dream', 'os-dream'))) {
+                            posts_nav_link('', '<span class="prev">Neuere Beiträge</span>', '<span class="next">Ältere Beiträge</span>');
+                        } else { 
+                            posts_nav_link('', '<span class="prev"><strong style="font-size:150%;">&laquo;</strong> Vorherige Beiträge</span>', '<span class="next">Weitere Beiträge <strong  style="font-size:150%;">&raquo;</strong></span>'); 
+                        }
+                    ?>
                     </nav>
                 </section>
                 <?php 

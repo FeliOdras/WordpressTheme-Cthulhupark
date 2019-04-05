@@ -231,6 +231,42 @@ hr {
   font-weight: normal;
   font-style: normal; }
 
+/* British Quest - signature Dr. Nidelven */
+@font-face {
+  font-family: 'BritishQuest';
+  src: url("./fonts/British-Quest.eot");
+  src: url("./fonts/British-Quest.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Glyph1';
+  src: url("./fonts/glyph1.eot");
+  src: url("./fonts/glyph1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Glyph2';
+  src: url("./fonts/glyph2.eot");
+  src: url("./fonts/glyph2.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Glyph3';
+  src: url("./fonts/glyph3.eot");
+  src: url("./fonts/glyph3.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Glyph4';
+  src: url("./fonts/glyph4.eot");
+  src: url("./fonts/glyph4.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 /*Fonts
    _fonts.scss*/
 /* Typography 
@@ -302,6 +338,9 @@ h4 {
   font-family: "Sanjuro", cursive;
   line-height: 33px;
   letter-spacing: 2px; }
+
+.nidelven {
+  font-family: BritishQuest, cursive; }
 
 /* Basic and editor styles
 Theme Name: Cthulhupark
@@ -425,7 +464,8 @@ small {
   background: linear-gradient(bottom, #E5D59E, #f9e6a4);
   box-shadow: 0 0 10px #999; }
   .main-navigation .nav-open {
-    visibility: hidden; }
+    visibility: hidden;
+    position: absolute; }
   .main-navigation ul {
     max-width: 1280px;
     margin: auto; }
@@ -561,14 +601,9 @@ Theme: Cthulhupark */
     .sidebar {
       width: 100%; } }
 
-.sidebar-left {
-  border-right: 1px dotted #8E563F; }
-  @media (max-width: 1024px) {
-    .sidebar-left {
-      order: 1; } }
-
-.sidebar-right {
-  border-left: 1px dotted #8E563F; }
+@media (max-width: 1024px) {
+  .sidebar-left {
+    order: 1; } }
 
 .sidebar-top {
   position: absolute;
@@ -928,8 +963,6 @@ li.widget {
 
 .archive-entry {
   display: flex;
-  border: 2px solid #ffffff;
-  padding: 5px;
   margin: 15px 0;
   color: #333; }
   .archive-entry:hover {
