@@ -1243,3 +1243,33 @@ table.charBasics tr {
       text-align: left; }
     .wp-block-table.charSkills td, .wp-block-table.charKampf td, .wp-block-table.charWaffen td, .wp-block-table.charZauber td, .wp-block-table.charSprachen td {
       border-bottom: 1px dotted #ccc; } }
+
+.edit-link a {
+  float: right;
+  padding: 3px 5px;
+  font-family: "Traveling Typewriter", Courier, monospace;
+  font-size: .95rem; }
+
+.author-description {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #666; }
+
+.main-entry img {
+  height: 0px; }
+  .main-entry img.public {
+    height: auto; }
+
+.logged-in .main-entry img {
+  height: auto; }
+
+.progress-bar {
+  width: 100%;
+  height: 30px;
+  background-color: red; }
+  .progress-bar .progress-achieved {
+    background-color: green;
+    height: 30px;
+    display: inline-block;
+    color: #fff;
+    line-height: 30px;
+    padding: 0 10px; }
