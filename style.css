@@ -233,7 +233,7 @@ hr {
 
 /* British Quest - signature Dr. Nidelven */
 @font-face {
-  font-family: 'BritishQuest';
+  font-family: 'british-quest';
   src: url("./fonts/British-Quest.eot");
   src: url("./fonts/British-Quest.woff") format("woff");
   font-weight: normal;
@@ -340,7 +340,7 @@ h4 {
   letter-spacing: 2px; }
 
 .nidelven {
-  font-family: BritishQuest, cursive; }
+  font-family: british-quest, cursive; }
 
 /* Basic and editor styles
 Theme Name: Cthulhupark
