@@ -240,6 +240,13 @@ hr {
   font-style: normal; }
 
 @font-face {
+  font-family: 'british-antiquar';
+  src: url("./fonts/British-Antiquar.eot");
+  src: url("./fonts/British-Antiquar.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Glyph1';
   src: url("./fonts/glyph1.eot");
   src: url("./fonts/glyph1.woff") format("woff");
@@ -341,6 +348,9 @@ h4 {
 
 .nidelven {
   font-family: british-quest, cursive; }
+
+.passow {
+  font-family: british-antiquar, cursive; }
 
 /* Basic and editor styles
 Theme Name: Cthulhupark
