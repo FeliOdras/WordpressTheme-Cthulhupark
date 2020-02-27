@@ -7,6 +7,13 @@ function cthulhupark_theme_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'cthulhupark_theme_styles' );
 
+# Activate ACF Filters
+// Enable the option show in rest
+add_filter( 'acf/rest_api/field_settings/show_in_rest', '__return_true' );
+
+// Enable the option edit in rest
+add_filter( 'acf/rest_api/field_settings/edit_in_rest', '__return_true' );
+
 
 # Change Excerpt length
 function custom_excerpt_length( $length ) {
