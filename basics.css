@@ -22,3 +22,7 @@ Theme Name: Cthulhupark
 img {
     max-width:100%;
 }
+
+.typewriter {
+	font-family:"Travelling Typewriter", Courier, "Courier New";
+}

@@ -14,7 +14,7 @@ get_header();
            <section class="main-entry"> 
             <?php 
                 $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
-            ?>
+            ?> 
              <header class="page-header">
                 <h1 class="entry-title"><?php echo $curauth->display_name; ?></h1>
                 <div class="author-description">
@@ -25,7 +25,7 @@ get_header();
             </header>
             <!-- The Loop -->
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <article class="post-main <?php if (in_category(traumwelten)) :?>dreamlands<?php elseif (in_category(abenteurertagebuch)) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
+            <article class="post-main <?php if (in_category("traumwelten")) :?>dreamlands<?php elseif (in_category("abenteurertagebuch")) :?>dairy<?php endif;?> <?php the_author_nickname() ?>">
                     <header class="post-header">
                         <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
                         <div class="post-meta"><?php the_time('j. F Y') ?></div>
