@@ -601,14 +601,6 @@ Theme: Cthulhupark */
   height: 0;
   overflow: hidden;
   transition: all .5s; }
-.sidebar-left .widget-title:after {
-  content: 'Anzeigen >>';
-  display: block;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 14px; }
-.sidebar-left .widget-title.trigger-active:after {
-  content: "<< Verstecken"; }
 @media screen and (max-width: tablet) {
   .sidebar-left {
     order: 1; } }
@@ -618,13 +610,13 @@ Theme: Cthulhupark */
 .sidebar-right .hidden {
   height: 0;
   overflow: hidden; }
-.sidebar-right .widget-title:after {
+.sidebar-right .widget_cptbe_widget .widget-title:after, .sidebar-right .latestTBE .widget-title:after {
   content: 'Anzeigen >>';
   display: block;
   font-size: 12px;
   font-weight: normal;
   line-height: 14px; }
-.sidebar-right .widget-title.trigger-active:after {
+.sidebar-right .widget_cptbe_widget .widget-title.trigger-active:after, .sidebar-right .latestTBE .widget-title.trigger-active:after {
   content: "<< Verstecken"; }
 
 .sidebar-top {

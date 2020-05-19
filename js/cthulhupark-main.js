@@ -75,12 +75,6 @@ class LatestDairies {
 }
 const latestTBE = new LatestDairies('.latestTBE')
 
-document.querySelectorAll('.sk-comment').classList.add('hidden');
-document.querySelector('.widget_sk .widget-title').onclick = event => {
-    document.querySelectorAll(".sk-comment").classList.toggle('hidden');
-    document.querySelector('.widget_sk .widget-title').classList.toggle("trigger-active")
-}
-
 //document.querySelector(".widget_cptbe_widget .widget-title").onclick = event => {
 //     document.querySelector(".widget_cptbe_widget ul").classList.toggle("hidden");
  //}

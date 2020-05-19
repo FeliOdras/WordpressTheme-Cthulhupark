@@ -24,22 +24,6 @@ Theme: Cthulhupark */
         transition:all .5s;
     }
 
-    .widget-title {
-        &:after {
-            content:'Anzeigen >>';
-            display:block;
-            font-size:12px;
-            font-weight:normal;
-            line-height:14px;
-        }
-
-        &.trigger-active {
-            &:after {
-                content: '<< Verstecken'
-            }
-        }
-    }
-
     @media screen and (max-width:#{tablet}) {
         order: 1;
     }
@@ -54,22 +38,23 @@ Theme: Cthulhupark */
             height:0;
             overflow:hidden;
         }
-
-        .widget-title {
-            &:after {
-                content:'Anzeigen >>';
-                display:block;
-                font-size:12px;
-                font-weight:normal;
-                line-height:14px;
-            }
-    
-            &.trigger-active {
+        .widget_cptbe_widget, .latestTBE {
+            .widget-title {
                 &:after {
-                    content: '<< Verstecken'
+                    content:'Anzeigen >>';
+                    display:block;
+                    font-size:12px;
+                    font-weight:normal;
+                    line-height:14px;
                 }
-            }
+    
+                &.trigger-active {
+                    &:after {
+                        content: '<< Verstecken'
+                    }
+                }
         }
+    }   
 }
 
 .sidebar-top {
