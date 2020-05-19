@@ -18,19 +18,23 @@ Theme: Cthulhupark */
 
 .sidebar-left {
 
+    .hidden {
+        height:0;
+        overflow:hidden;
+        transition:all .5s;
+    }
+
     @media screen and (max-width:#{tablet}) {
         order: 1;
     }
 }
 
 .sidebar-right {
-    .latestTBE {
         .hidden {
             height:0;
             overflow:hidden;
             transition:all .5s;
         }
-    }
 }
 
 .sidebar-top {

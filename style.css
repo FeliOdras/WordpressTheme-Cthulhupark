@@ -597,11 +597,15 @@ Theme: Cthulhupark */
     .sidebar {
       width: 100%; } }
 
+.sidebar-left .hidden {
+  height: 0;
+  overflow: hidden;
+  transition: all .5s; }
 @media screen and (max-width: tablet) {
   .sidebar-left {
     order: 1; } }
 
-.sidebar-right .latestTBE .hidden {
+.sidebar-right .hidden {
   height: 0;
   overflow: hidden;
   transition: all .5s; }
