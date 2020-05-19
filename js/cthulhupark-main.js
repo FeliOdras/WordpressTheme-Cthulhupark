@@ -50,16 +50,23 @@ class LatestDairies {
         }).join('')
     }
 
+    addEventListeners() {
+        document.querySelector("#latestTBETitle").onclick = event => {
+            document.querySelector("#latestTBEEntries").classList.toggle("hidden")
+        }
+    }
+
     render(){
         let output = ``;
         let template = this.template();
         let entriesLatest = this.showLatest();
         let countLatest = entriesLatest.length;
-        output += `<h3 class="widget-title">Letzte Aktualisierungen (${countLatest})</h3>`;
-        output += `<div class="widget-container">`;
+        output += `<h3 class="widget-title" id="latestTBETitle">Letzte Aktualisierungen (${countLatest})</h3>`;
+        output += `<div class="widget-container hidden" id="latestTBEEntries">`;
         output += template;
         output += `</div>`
         this.htmlContainer.innerHTML = output;
+        this.addEventListeners();
     }
 
 }
