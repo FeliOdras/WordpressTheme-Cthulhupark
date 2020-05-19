@@ -67,7 +67,7 @@ class LatestDairies {
         output += `</div>`
         this.htmlContainer.innerHTML = output;
         this.addEventListeners("#latestTBETitle","#latestTBEEntries");
-        this.addEventListeners(".widget_cptbe_widget .widget-title",".widget_cptbe_widget ul");
+        this.addEventListeners(".widget_cptbe_widget .widget-title",".widget_cptbe_widget ul.tbe-ul");
     }
 
 }
