@@ -27,7 +27,7 @@ class cptbe_widget extends WP_Widget {
         # Output TBE
         // The Query
         query_posts(array('category_name' => 'abenteurertagebuch', 'posts_per_page' => 23 ));
-        echo '<ul>';
+        echo '<ul class="hidden">';
         // The Loop
         while ( have_posts() ) : the_post() ?>
             <li class="entries">

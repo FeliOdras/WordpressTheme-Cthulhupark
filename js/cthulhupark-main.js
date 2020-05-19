@@ -50,9 +50,9 @@ class LatestDairies {
         }).join('')
     }
 
-    addEventListeners() {
-        document.querySelector("#latestTBETitle").onclick = event => {
-            document.querySelector("#latestTBEEntries").classList.toggle("hidden")
+    addEventListeners(trigger, target) {
+        document.querySelector(trigger).onclick = event => {
+            document.querySelector(target).classList.toggle("hidden")
         }
     }
 
@@ -66,8 +66,21 @@ class LatestDairies {
         output += template;
         output += `</div>`
         this.htmlContainer.innerHTML = output;
-        this.addEventListeners();
+        this.addEventListeners("#latestTBETitle","#latestTBEEntries");
+        this.addEventListeners(".widget_cptbe_widget .widget-title",".widget_cptbe_widget ul");
     }
 
 }
 const latestTBE = new LatestDairies('.latestTBE')
+
+//document.querySelector(".widget_cptbe_widget .widget-title").onclick = event => {
+//     document.querySelector(".widget_cptbe_widget ul").classList.toggle("hidden");
+ //}
+
+ //showHideWidget(trigger, target) {
+ //    document.querySelector(trigger).onclick = event => {
+ //        document.querySelector(target).classList.toggle('hidden')
+ //    }
+// }
+
+// showHideWidget('.widget_cptbe_widget .widget-title', '.widget_cptbe_widget ul')
