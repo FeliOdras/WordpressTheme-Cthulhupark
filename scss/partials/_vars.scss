@@ -44,10 +44,10 @@
 
   // Media queries
 
-  $portrait: screen and (orientation:portrait);
-  $xlscreen: screen and (min-width:1281px);
-  $tablet: screen and (max-width:1024px);
-  $phone: screen and (max-width:612px);
+  $portrait: portrait;
+  $xlscreen: 1281px;
+  $tablet: 1024px;
+  $phone: 612px;
 
   //Mixins
 

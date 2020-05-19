@@ -7,24 +7,30 @@ Theme: Cthulhupark */
     padding: 20px 15px;
     min-width: 150px;
 
-    @media #{$tablet} {
+    @media screen and (max-width:#{tablet}) {
         width: 50%;
     }
 
-    @media #{$phone} {
+    @media screen and (max-width:#{phone}) {
         width: 100%;
     }
 }
 
 .sidebar-left {
 
-    @media #{$tablet} {
+    @media screen and (max-width:#{tablet}) {
         order: 1;
     }
 }
 
 .sidebar-right {
-    
+    .latestTBE {
+        .hidden {
+            height:0;
+            overflow:hidden;
+            transition:all .5s;
+        }
+    }
 }
 
 .sidebar-top {
@@ -46,7 +52,7 @@ Theme: Cthulhupark */
         display: inline-block;
         list-style-type: none;
 
-        @media #{$tablet} {
+        @media screen and (max-width:#{tablet}) {
             font-size: 1.1rem;
             margin: 15px 0;
         }
@@ -55,7 +61,7 @@ Theme: Cthulhupark */
             line-height: 150%;
         }
 
-        @media #{$phone} {
+        @media screen and (max-width:#{phone}) {
             display: block;
         }
 
@@ -81,7 +87,7 @@ Theme: Cthulhupark */
             font-size: .8rem;
             line-height: .8rem;
 
-            @media #{$tablet} {
+            @media screen and (max-width:#{tablet}) {
                 font-size: 1rem;
             }
 
@@ -97,7 +103,7 @@ Theme: Cthulhupark */
                 transition: all .8s;
                 font-size: .85rem;
 
-                @media #{$tablet} {
+                @media screen and (max-width:#{tablet}) {
                     font-size: 1rem;
                 }
 
@@ -122,7 +128,7 @@ Theme: Cthulhupark */
             p {
                 display: inline-block;
 
-                @media #{$phone} {
+                @media screen and (max-width:#{phone}) {
                     display: block;
                     margin-bottom: 6px;
                     text-align: center;
@@ -142,7 +148,7 @@ Theme: Cthulhupark */
     .widget_search {
         float: right;
 
-        @media #{$phone} {
+        @media screen and (max-width:#{phone}) {
             float: none;
             margin-top: 10px;
         }
@@ -154,7 +160,7 @@ Theme: Cthulhupark */
         }
     }
 
-    @media #{$tablet} {
+    @media screen and (max-width:#{tablet}) {
         bottom: 0;
     }
 }
@@ -276,7 +282,7 @@ li.widget {
             background: transparent;
         }
 
-        @media #{$tablet} {
+        @media screen and (max-width:#{tablet}) {
             width: 50px;
             height: auto;
 
@@ -318,7 +324,7 @@ li.widget {
         }
     }
 
-    @media #{$tablet} {
+    @media screen and (max-width:#{tablet}) {
         order: -2;
         display: flex;
         flex-wrap: wrap;

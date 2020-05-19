@@ -10,11 +10,11 @@
 .main-header {
     position: relative;
 
-    @media #{$portrait} {
+    @media screen and (orientation:#{$portrait}) {
         height: auto;
     }
 
-    @media #{$phone} {
+    @media screen and (max-width:#{$phone}) {
         overflow: visible;
     }
 
@@ -23,11 +23,11 @@
         position: absolute;
         top: -175px;
 
-        @media #{$tablet} {
+        @media screen and  (max-width:#{tablet}) {
             top: -100px;
         }
 
-        @media #{$phone} {
+        @media screen and (max-width:#{$phone}) {
 
             top: 0;
             width: 120vw;
@@ -60,7 +60,7 @@
                 border: none;
             }
 
-            @media #{$phone} {
+            @media screen and (max-width:#{$phone}) {
                 font-size: 2.1rem;
                 font-weight: bold;
             }
@@ -98,7 +98,7 @@
         max-width: 1280px;
         margin: auto;
 
-        @media #{$tablet} {
+        @media screen and  (max-width:#{tablet}) {
             background-color:rgb(53, 21, 9);
         }
 
@@ -127,7 +127,7 @@
                     background-color: $mainAccentColor;
                 }
 
-                @media #{$tablet} {
+                @media screen and  (max-width:#{tablet}) {
                     color: $mainBackgroundColor;
                     font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
                     font-size: 1.1rem
@@ -170,7 +170,7 @@
                         line-height: 19px;
                         padding: 7px 15px;
 
-                        @media #{$tablet} {
+                        @media screen and  (max-width:#{tablet}) {
                             color: #f9f0cc;
                         }
 
@@ -197,14 +197,14 @@
                 padding: 0 15px;
                 margin-left: -3px;
 
-                @media #{$tablet} {
+                @media screen and (max-width:#{tablet}) {
                     display:block;
                 }
             }
         }
     }
 
-    @media #{$tablet} {
+    @media screen and (max-width:#{tablet}) {
         position: static;
 
         ul {

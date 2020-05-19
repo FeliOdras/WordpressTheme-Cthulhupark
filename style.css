@@ -162,7 +162,6 @@ hr {
   /* IE9 Compat Modes */
   src: local("Traveling Typewriter"), local("Traveling-Typewriter-Regular"), url("./fonts/travelingtypewriter.woff2") format("woff2"), url("./fonts/travelingtypewriter.woff") format("woff"), url("./fonts/travelingtypewriter.ttf") format("truetype"), url("./fonts/travelingtypewriter.svg#TravelingTypewriter") format("svg");
   /* Legacy iOS */ }
-
 /* fredericka-the-great-regular - latin */
 @font-face {
   font-family: 'Fredericka the Great';
@@ -172,7 +171,6 @@ hr {
   /* IE9 Compat Modes */
   src: local("./Fredericka the Great"), local("FrederickatheGreat"), url("./fonts/fredericka-the-great-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/fredericka-the-great-v6-latin-regular.woff2") format("woff2"), url("./fonts/fredericka-the-great-v6-latin-regular.woff") format("woff"), url("./fonts/fredericka-the-great-v6-latin-regular.ttf") format("truetype"), url("./fonts/fredericka-the-great-v6-latin-regular.svg#FrederickatheGreat") format("svg");
   /* Legacy iOS */ }
-
 /* shadows-into-light-regular - latin - general*/
 @font-face {
   font-family: 'Shadows Into Light';
@@ -182,7 +180,6 @@ hr {
   /* IE9 Compat Modes */
   src: local("Shadows Into Light"), local("ShadowsIntoLight"), url("./fonts/shadows-into-light-v7-latin-regular.woff2") format("woff2"), url("./fonts/shadows-into-light-v7-latin-regular.woff") format("woff"), url("./fonts/shadows-into-light-v7-latin-regular.ttf") format("truetype"), url("./fonts/shadows-into-light-v7-latin-regular.svg#ShadowsIntoLight") format("svg");
   /* Legacy iOS */ }
-
 /* bad-script-regular - latin - LC*/
 @font-face {
   font-family: 'LC';
@@ -192,7 +189,6 @@ hr {
   /* IE9 Compat Modes */
   src: local("Bad Script Regular"), local("BadScript-Regular"), url("./fonts/bad-script-v6-latin-regular.woff2") format("woff2"), url("./fonts/bad-script-v6-latin-regular.woff") format("woff"), url("./fonts/bad-script-v6-latin-regular.ttf") format("truetype"), url("./fonts/bad-script-v6-latin-regular.svg#BadScript") format("svg");
   /* Legacy iOS */ }
-
 /* Zai Calligraphy - latin - MW*/
 @font-face {
   font-family: 'Mycroft';
@@ -202,7 +198,6 @@ hr {
   /* IE9 Compat Modes */
   src: local("zai Calligraphy Script Handwritten"), local("zaiCalligraphyScriptHandwritten-regular"), url("./fonts/zaiCalligraphyScriptHandwritten.woff2") format("woff2"), url("./fonts/zaiCalligraphyScriptHandwritten.woff") format("woff"), url("./fonts/zaiCalligraphyScriptHandwritten.ttf") format("truetype"), url("./fonts/zaiCalligraphyScriptHandwritten.svg#BadScript") format("svg");
   /* Legacy iOS */ }
-
 /* bilbo-regular - latin - HWJ */
 @font-face {
   font-family: 'Henry';
@@ -212,7 +207,6 @@ hr {
   /* IE9 Compat Modes */
   src: local("Bilbo Regular"), local("Bilbo-Regular"), url("./fonts/bilbo-v7-latin-regular.woff2") format("woff2"), url("./fonts/bilbo-v7-latin-regular.woff") format("woff"), url("./fonts/bilbo-v7-latin-regular.ttf") format("truetype"), url("./fonts/bilbo-v7-latin-regular.svg#Bilbo") format("svg");
   /* Legacy iOS */ }
-
 /* just-me-again-down-here-regular - latin - RHW */
 @font-face {
   font-family: 'Ragnar';
@@ -222,7 +216,6 @@ hr {
   /* IE9 Compat Modes */
   src: local("Just Me Again Down Here"), local("JustMeAgainDownHere"), url("./fonts/just-me-again-down-here-v9-latin-regular.woff2") format("woff2"), url("./fonts/just-me-again-down-here-v9-latin-regular.woff") format("woff"), url("./fonts/just-me-again-down-here-v9-latin-regular.ttf") format("truetype"), url("./fonts/just-me-again-down-here-v9-latin-regular.svg#JustMeAgainDownHere") format("svg");
   /* Legacy iOS */ }
-
 /* Meddon regular - latin-ext_latin - 三十郎*/
 @font-face {
   font-family: 'Sanjuro';
@@ -230,7 +223,6 @@ hr {
   src: url("./fonts/paulmaul.eot?#iefix") format("embedded-opentype"), url("./fonts/paulmaul.woff2") format("woff2"), url("./fonts/paulmaul.woff") format("woff"), url("./fonts/paulmaul.ttf") format("truetype"), url("./fonts/paulmaul.svg#danielregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* British Quest - signature Dr. Nidelven */
 @font-face {
   font-family: 'british-quest';
@@ -238,44 +230,38 @@ hr {
   src: url("./fonts/British-Quest.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'british-antiquar';
   src: url("./fonts/British-Antiquar.eot");
   src: url("./fonts/British-Antiquar.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Glyph1';
   src: url("./fonts/glyph1.eot");
   src: url("./fonts/glyph1.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Glyph2';
   src: url("./fonts/glyph2.eot");
   src: url("./fonts/glyph2.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Glyph3';
   src: url("./fonts/glyph3.eot");
   src: url("./fonts/glyph3.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Glyph4';
   src: url("./fonts/glyph4.eot");
   src: url("./fonts/glyph4.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 /*Fonts
-   _fonts.scss*/
+ _fonts.scss*/
 /* Typography 
  _typo.scss */
 html {
@@ -358,7 +344,7 @@ _essentials.scss
 */
 body {
   background-color: antiquewhite; }
-  @media (min-width: 1281px) {
+  @media screen and (min-width: 1281px) {
     body {
       background-image: url(images/ctulhu-page-background.jpg);
       background-size: cover;
@@ -414,20 +400,20 @@ small {
 
 .main-header {
   position: relative; }
-  @media (orientation: portrait) {
+  @media screen and (orientation: portrait) {
     .main-header {
       height: auto; } }
-  @media (max-width: 612px) {
+  @media screen and (max-width: 612px) {
     .main-header {
       overflow: visible; } }
   .main-header img {
     width: 100%;
     position: absolute;
     top: -175px; }
-    @media (max-width: 1024px) {
+    @media screen and (max-width: tablet) {
       .main-header img {
         top: -100px; } }
-    @media (max-width: 612px) {
+    @media screen and (max-width: 612px) {
       .main-header img {
         top: 0;
         width: 120vw;
@@ -450,7 +436,7 @@ small {
         color: #f9e6a4;
         text-decoration: none;
         border: none; }
-      @media (max-width: 612px) {
+      @media screen and (max-width: 612px) {
         .main-header .blog-info .main-title {
           font-size: 2.1rem;
           font-weight: bold; } }
@@ -479,7 +465,7 @@ small {
   .main-navigation ul {
     max-width: 1280px;
     margin: auto; }
-    @media (max-width: 1024px) {
+    @media screen and (max-width: tablet) {
       .main-navigation ul {
         background-color: #351509; } }
     .main-navigation ul li {
@@ -497,7 +483,7 @@ small {
         .main-navigation ul li a:hover {
           color: #f9e6a4;
           background-color: #8E563F; }
-        @media (max-width: 1024px) {
+        @media screen and (max-width: tablet) {
           .main-navigation ul li a {
             color: #f9e6a4;
             font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
@@ -531,7 +517,7 @@ small {
             font-weight: normal;
             line-height: 19px;
             padding: 7px 15px; }
-            @media (max-width: 1024px) {
+            @media screen and (max-width: tablet) {
               .main-navigation ul li .sub-menu li a {
                 color: #f9f0cc; } }
             .main-navigation ul li .sub-menu li a:hover {
@@ -547,10 +533,10 @@ small {
         height: 42px;
         padding: 0 15px;
         margin-left: -3px; }
-        @media (max-width: 1024px) {
+        @media screen and (max-width: tablet) {
           .main-navigation ul li a {
             display: block; } }
-  @media (max-width: 1024px) {
+  @media screen and (max-width: tablet) {
     .main-navigation {
       position: static; }
       .main-navigation ul {
@@ -604,16 +590,21 @@ Theme: Cthulhupark */
   width: 20%;
   padding: 20px 15px;
   min-width: 150px; }
-  @media (max-width: 1024px) {
+  @media screen and (max-width: tablet) {
     .sidebar {
       width: 50%; } }
-  @media (max-width: 612px) {
+  @media screen and (max-width: phone) {
     .sidebar {
       width: 100%; } }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: tablet) {
   .sidebar-left {
     order: 1; } }
+
+.sidebar-right .latestTBE .hidden {
+  height: 0;
+  overflow: hidden;
+  transition: all .5s; }
 
 .sidebar-top {
   position: absolute;
@@ -630,13 +621,13 @@ Theme: Cthulhupark */
   .sidebar-top .widget {
     display: inline-block;
     list-style-type: none; }
-    @media (max-width: 1024px) {
+    @media screen and (max-width: tablet) {
       .sidebar-top .widget {
         font-size: 1.1rem;
         margin: 15px 0; } }
     .sidebar-top .widget li {
       line-height: 150%; }
-    @media (max-width: 612px) {
+    @media screen and (max-width: phone) {
       .sidebar-top .widget {
         display: block; } }
     .sidebar-top .widget .widget-title {
@@ -654,7 +645,7 @@ Theme: Cthulhupark */
       background-color: #f9e6a4;
       font-size: .8rem;
       line-height: .8rem; }
-      @media (max-width: 1024px) {
+      @media screen and (max-width: tablet) {
         .sidebar-top .widget input {
           font-size: 1rem; } }
       .sidebar-top .widget input:focus {
@@ -666,7 +657,7 @@ Theme: Cthulhupark */
         color: #f9e6a4;
         transition: all .8s;
         font-size: .85rem; }
-        @media (max-width: 1024px) {
+        @media screen and (max-width: tablet) {
           .sidebar-top .widget input[type='submit'] {
             font-size: 1rem; } }
         .sidebar-top .widget input[type='submit']:hover {
@@ -678,7 +669,7 @@ Theme: Cthulhupark */
       display: inline; }
     .sidebar-top .widget .widget_cplogin_widget p {
       display: inline-block; }
-      @media (max-width: 612px) {
+      @media screen and (max-width: phone) {
         .sidebar-top .widget .widget_cplogin_widget p {
           display: block;
           margin-bottom: 6px;
@@ -689,13 +680,13 @@ Theme: Cthulhupark */
     padding: 0 3px; }
   .sidebar-top .widget_search {
     float: right; }
-    @media (max-width: 612px) {
+    @media screen and (max-width: phone) {
       .sidebar-top .widget_search {
         float: none;
         margin-top: 10px; } }
   .sidebar-top .logged-in .widget_cplogin_widget {
     padding-top: 15px; }
-  @media (max-width: 1024px) {
+  @media screen and (max-width: tablet) {
     .sidebar-top {
       bottom: 0; } }
 
@@ -778,7 +769,7 @@ li.widget {
       line-height: 150%; }
     .sidebar-author .widget a {
       background: transparent; }
-    @media (max-width: 1024px) {
+    @media screen and (max-width: tablet) {
       .sidebar-author .widget {
         width: 50px;
         height: auto; }
@@ -806,7 +797,7 @@ li.widget {
       right: 0; }
     .sidebar-author .widget:hover img {
       right: 0; }
-  @media (max-width: 1024px) {
+  @media screen and (max-width: tablet) {
     .sidebar-author {
       order: -2;
       display: flex;
@@ -828,13 +819,12 @@ li.widget {
   background-color: #f9f0cc;
   background-attachment: fixed;
   position: relative; }
-  @media (max-width: 1024px) {
+  @media screen and (max-width: tablet) {
     .site-main {
       flex-wrap: wrap; } }
 
 .content-area p {
   margin-bottom: 15px; }
-
 .content-area img {
   display: none; }
 
@@ -843,7 +833,7 @@ li.widget {
 
 .main-entry {
   width: 60%; }
-  @media (max-width: 1024px) {
+  @media screen and (max-width: tablet) {
     .main-entry {
       flex: 0 0 100%; } }
 
@@ -881,7 +871,6 @@ li.widget {
     clear: both;
     display: table;
     content: ''; }
-
 .page-header .author-avatar {
   float: left;
   margin-right: 15px;
@@ -1007,18 +996,15 @@ li.widget {
   .search .page-header h1 {
     color: #8E563F;
     text-shadow: 0 0 1px #8E563F; }
-
 .archive .post-content,
 .search .post-content {
   flex-grow: 1; }
-
 .archive .post-footer,
 .search .post-footer {
   clear: both;
   padding: 0 5px;
   display: flex;
   align-items: flex-end; }
-
 .archive .post-main,
 .search .post-main {
   max-width: 600px;
@@ -1036,7 +1022,6 @@ li.widget {
   text-align: right;
   font-family: 'Traveling Typewriter', monospace;
   display: block; }
-
 .post-header .post-footer {
   display: inherit; }
 
@@ -1066,7 +1051,6 @@ table.charSkills tbody {
     font-size: 14px; }
     table.charSkills tbody tr td:first-of-type {
       flex: 1 1 100px; }
-
 table.charKampf, table.charWaffen, table.charSprachen, table.charZauber {
   margin: 10px 0;
   padding: 10px;
@@ -1076,7 +1060,6 @@ table.charKampf, table.charWaffen, table.charSprachen, table.charZauber {
   font-size: 14px; }
   table.charKampf td:first-of-type, table.charWaffen td:first-of-type, table.charSprachen td:first-of-type, table.charZauber td:first-of-type {
     text-align: left; }
-
 table.charBasics tr {
   display: flex;
   flex-wrap: wrap; }
@@ -1111,16 +1094,12 @@ table.charBasics tr {
 .dreamlands a {
   color: #ffffff;
   border-color: #ffffff; }
-
 .dreamlands h1 {
   font-family: inherit; }
-
 .dreamlands.entry-content {
   background-color: #2B2B2B; }
-
 .dreamlands.post-main {
   background-color: #2B2B2B; }
-
 .dreamlands .entry-title {
   color: #efefef; }
   .dreamlands .entry-title .trans {
@@ -1128,25 +1107,20 @@ table.charBasics tr {
     .dreamlands .entry-title .trans:after {
       content: '';
       display: block; }
-
 .dreamlands .archive-entry {
   color: #efefef; }
-
 .dreamlands .single-post-entry {
   color: #efefef; }
-
 .dreamlands .more-link {
   color: #ffffff;
   border-bottom-color: #ffffff; }
   .dreamlands .more-link:hover {
     color: #333;
     background-color: #eeeeee; }
-
 .dreamlands .post-title {
   background-color: #666; }
   .dreamlands .post-title a {
     color: #eeeeee; }
-
 .dreamlands .edit-link a {
   color: #333;
   background-color: #eeeeee; }
@@ -1157,7 +1131,6 @@ table.charBasics tr {
 .dreamlands .featured-image,
 .dairy .featured-image {
   display: none; }
-
 .dreamlands .post-title,
 .dairy .post-title {
   padding: 8px 10px; }
@@ -1167,7 +1140,6 @@ table.charBasics tr {
     border: none;
     font-size: 1.2rem;
     text-decoration: none; }
-
 .dreamlands.post-main,
 .dairy.post-main {
   box-shadow: 5px 5px 10px #666;
@@ -1175,7 +1147,6 @@ table.charBasics tr {
   .dreamlands.post-main:hover,
   .dairy.post-main:hover {
     transform: scale(1.02); }
-
 .dreamlands .archive-entry,
 .dairy .archive-entry {
   border: none;
@@ -1184,7 +1155,6 @@ table.charBasics tr {
   .dreamlands .archive-entry:hover,
   .dairy .archive-entry:hover {
     background-color: transparent; }
-
 .dreamlands .more-link,
 .dairy .more-link {
   padding: 3px 5px;
@@ -1192,23 +1162,18 @@ table.charBasics tr {
   float: right;
   transition: all 1s;
   font-size: inherit; }
-
 .dreamlands .featured-image,
 .dairy .featured-image {
   margin-bottom: 10px; }
-
 .dreamlands h2,
 .dairy h2 {
   margin-top: 0; }
-
 .dreamlands .edit-link,
 .dairy .edit-link {
   display: inline-block; }
-
 .dreamlands .post-footer,
 .dairy .post-footer {
   display: inherit; }
-
 .dreamlands .post-excerpt,
 .dairy .post-excerpt {
   font-size: inherit; }
@@ -1216,21 +1181,28 @@ table.charBasics tr {
 @media print {
   header, aside, footer, .sidebar-author, .categorie, .edit-link, .tags {
     display: none; }
+
   * {
     page-break-after: avoid; }
+
   hr {
     page-break-after: auto; }
+
   .main-entry, .entry-content {
     width: 100%;
     max-width: 100%; }
+
   .entry-content {
     padding: 0;
     margin: 0; }
+
   .wp-block-columns {
     flex-wrap: nowrap; }
+
   .charImg {
     width: 200px;
     height: auto; }
+
   .wp-block-table {
     border: 1px solid #ccc; }
     .wp-block-table.charTPMP, .wp-block-table.charRW {
@@ -1243,7 +1215,6 @@ table.charBasics tr {
       text-align: left; }
     .wp-block-table.charSkills td, .wp-block-table.charKampf td, .wp-block-table.charWaffen td, .wp-block-table.charZauber td, .wp-block-table.charSprachen td {
       border-bottom: 1px dotted #ccc; } }
-
 .edit-link a {
   float: right;
   padding: 3px 5px;
@@ -1273,3 +1244,5 @@ table.charBasics tr {
     color: #fff;
     line-height: 30px;
     padding: 0 10px; }
+
+/*# sourceMappingURL=style.css.map */

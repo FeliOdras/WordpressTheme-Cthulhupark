@@ -11,10 +11,10 @@
     background-attachment: fixed;
     position: relative;
 
-    @media #{$tablet} {
+    @media screen and (max-width:#{tablet}) {
         flex-wrap: wrap;
     }
-}
+} 
 
 .content-area {
 
@@ -34,7 +34,7 @@
 .main-entry {
     width: 60%;
 
-    @media #{$tablet} {
+    @media screen and (max-width:#{tablet}) {
         flex: 0 0 100%;
     }
 }
