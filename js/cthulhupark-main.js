@@ -75,7 +75,7 @@ class LatestDairies {
 }
 const latestTBE = new LatestDairies('.latestTBE')
 
-document.querySelector('widget_recent_entries ul').classList.add('hidden');
+document.querySelector('.widget_recent_entries ul').classList.add('hidden');
 
 //document.querySelector(".widget_cptbe_widget .widget-title").onclick = event => {
 //     document.querySelector(".widget_cptbe_widget ul").classList.toggle("hidden");
