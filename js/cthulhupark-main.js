@@ -52,7 +52,8 @@ class LatestDairies {
 
     addEventListeners(trigger, target) {
         document.querySelector(trigger).onclick = event => {
-            document.querySelector(target).classList.toggle("hidden")
+            document.querySelector(target).classList.toggle("hidden");
+            document.querySelector(trigger).classList.toggle("trigger-active")
         }
     }
 
@@ -68,10 +69,13 @@ class LatestDairies {
         this.htmlContainer.innerHTML = output;
         this.addEventListeners("#latestTBETitle","#latestTBEEntries");
         this.addEventListeners(".widget_cptbe_widget .widget-title",".widget_cptbe_widget ul.tbe-ul");
+        this.addEventListeners(".widget_sk .widget-title", ".widget_sk .sk-comment")
     }
 
 }
 const latestTBE = new LatestDairies('.latestTBE')
+
+document.querySelector('.widget_sk .sk-comment').classList.add('hidden')
 
 //document.querySelector(".widget_cptbe_widget .widget-title").onclick = event => {
 //     document.querySelector(".widget_cptbe_widget ul").classList.toggle("hidden");

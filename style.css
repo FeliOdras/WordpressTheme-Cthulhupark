@@ -610,6 +610,14 @@ Theme: Cthulhupark */
 .sidebar-right .hidden {
   height: 0;
   overflow: hidden; }
+.sidebar-right .widget-title:after {
+  content: 'Anzeigen >>';
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 14px; }
+.sidebar-right .widget-title.trigger-active:after {
+  content: "<< Verstecken"; }
 
 .sidebar-top {
   position: absolute;
