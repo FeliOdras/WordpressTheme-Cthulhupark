@@ -601,6 +601,14 @@ Theme: Cthulhupark */
   height: 0;
   overflow: hidden;
   transition: all .5s; }
+.sidebar-left .widget-title:after {
+  content: 'Anzeigen >>';
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 14px; }
+.sidebar-left .widget-title.trigger-active:after {
+  content: "<< Verstecken"; }
 @media screen and (max-width: tablet) {
   .sidebar-left {
     order: 1; } }
