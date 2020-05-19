@@ -605,10 +605,11 @@ Theme: Cthulhupark */
   .sidebar-left {
     order: 1; } }
 
+.sidebar-right .widget-container {
+  transition: all .5s; }
 .sidebar-right .hidden {
   height: 0;
-  overflow: hidden;
-  transition: all .5s; }
+  overflow: hidden; }
 
 .sidebar-top {
   position: absolute;
