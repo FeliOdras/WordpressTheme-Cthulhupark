@@ -40,6 +40,7 @@ class cptbe_widget extends WP_Widget {
                 </a>
             </li>
         <?php endwhile;
+        echo '</ul>';
         // Reset Query
         wp_reset_query();
     }  
