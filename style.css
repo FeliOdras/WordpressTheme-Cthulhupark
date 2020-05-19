@@ -610,13 +610,13 @@ Theme: Cthulhupark */
 .sidebar-right .hidden {
   height: 0;
   overflow: hidden; }
-.sidebar-right .widget_cptbe_widget .widget-title:after, .sidebar-right .latestTBE .widget-title:after {
+.sidebar-right .widget_cptbe_widget .widget-title:after, .sidebar-right .latestTBE .widget-title:after, .sidebar-right .widget_recent_entries .widget-title:after {
   content: 'Anzeigen >>';
   display: block;
   font-size: 12px;
   font-weight: normal;
   line-height: 14px; }
-.sidebar-right .widget_cptbe_widget .widget-title.trigger-active:after, .sidebar-right .latestTBE .widget-title.trigger-active:after {
+.sidebar-right .widget_cptbe_widget .widget-title.trigger-active:after, .sidebar-right .latestTBE .widget-title.trigger-active:after, .sidebar-right .widget_recent_entries .widget-title.trigger-active:after {
   content: "<< Verstecken"; }
 
 .sidebar-top {
