@@ -23,6 +23,10 @@
         position: relative;
         top: -175px;
 
+        @media screen and  (max-width:#{$tablet}) {
+            top: 0px;
+        }
+
         @media screen and (max-width:#{$phone}) {
 
             top: 0;
