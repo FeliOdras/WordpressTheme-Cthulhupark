@@ -399,7 +399,8 @@ small {
   overflow: hidden; }
 
 .main-header {
-  position: relative; }
+  position: relative;
+  max-height: 50vh; }
   @media screen and (orientation: portrait) {
     .main-header {
       height: auto; } }
