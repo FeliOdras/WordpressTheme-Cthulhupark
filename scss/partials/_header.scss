@@ -21,7 +21,6 @@
     img {
         width: 100%;
         position: relative;
-        top: -175px;
 
         @media screen and  (max-width:#{$tablet}) {
             top: 0px;

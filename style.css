@@ -408,8 +408,7 @@ small {
       overflow: visible; } }
   .main-header img {
     width: 100%;
-    position: relative;
-    top: -175px; }
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .main-header img {
         top: 0px; } }
