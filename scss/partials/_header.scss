@@ -9,7 +9,7 @@
 
 .main-header {
     position: relative;
-    max-height:50vh;
+    max-height:60vh;
 
     @media screen and (orientation:#{$portrait}) {
         height: auto;
