@@ -400,7 +400,7 @@ small {
 
 .main-header {
   position: relative;
-  max-height: 60vh; }
+  max-height: 90vh; }
   @media screen and (orientation: portrait) {
     .main-header {
       height: auto; } }
