@@ -20,10 +20,10 @@
 
     img {
         width: 100%;
-        position: absolute;
+        position: relative;
         top: -175px;
 
-        @media screen and  (max-width:#{tablet}) {
+        @media screen and  (max-width:#{$tablet}) {
             top: -100px;
         }
 
@@ -40,6 +40,7 @@
 
         @media screen and (max-width:353px) {
             width: 150vw;
+            max-width:150vw;
         }
     }
 
@@ -75,7 +76,7 @@
     }
 
     .main-header-wrapper {
-        height: 40vh;
+        height: auto;
         overflow: hidden;
     }
 }
@@ -98,7 +99,7 @@
         max-width: 1280px;
         margin: auto;
 
-        @media screen and  (max-width:#{tablet}) {
+        @media screen and  (max-width:#{$tablet}) {
             background-color:rgb(53, 21, 9);
         }
 
@@ -127,7 +128,7 @@
                     background-color: $mainAccentColor;
                 }
 
-                @media screen and  (max-width:#{tablet}) {
+                @media screen and  (max-width:#{$tablet}) {
                     color: $mainBackgroundColor;
                     font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
                     font-size: 1.1rem
@@ -170,7 +171,7 @@
                         line-height: 19px;
                         padding: 7px 15px;
 
-                        @media screen and  (max-width:#{tablet}) {
+                        @media screen and  (max-width:#{$tablet}) {
                             color: #f9f0cc;
                         }
 
@@ -197,14 +198,14 @@
                 padding: 0 15px;
                 margin-left: -3px;
 
-                @media screen and (max-width:#{tablet}) {
+                @media screen and (max-width:#{$tablet}) {
                     display:block;
                 }
             }
         }
     }
 
-    @media screen and (max-width:#{tablet}) {
+    @media screen and (max-width:#{$tablet}) {
         position: static;
 
         ul {

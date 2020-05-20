@@ -7,11 +7,13 @@ Theme: Cthulhupark */
     padding: 20px 15px;
     min-width: 150px;
 
-    @media screen and (max-width:#{tablet}) {
-        width: 50%;
+    @media screen and (max-width:#{$tablet}) {
+        width: 60%;
+        margin:auto;
+        max-width:600px;
     }
 
-    @media screen and (max-width:#{phone}) {
+    @media screen and (max-width:#{$phone}) {
         width: 100%;
     }
 }
@@ -24,7 +26,7 @@ Theme: Cthulhupark */
         transition:all .5s;
     }
 
-    @media screen and (max-width:#{tablet}) {
+    @media screen and (max-width:#{$tablet}) {
         order: 1;
     }
 }
@@ -76,7 +78,7 @@ Theme: Cthulhupark */
         display: inline-block;
         list-style-type: none;
 
-        @media screen and (max-width:#{tablet}) {
+        @media screen and (max-width:#{$tablet}) {
             font-size: 1.1rem;
             margin: 15px 0;
         }
@@ -111,7 +113,7 @@ Theme: Cthulhupark */
             font-size: .8rem;
             line-height: .8rem;
 
-            @media screen and (max-width:#{tablet}) {
+            @media screen and (max-width:#{$tablet}) {
                 font-size: 1rem;
             }
 
@@ -127,7 +129,7 @@ Theme: Cthulhupark */
                 transition: all .8s;
                 font-size: .85rem;
 
-                @media screen and (max-width:#{tablet}) {
+                @media screen and (max-width:#{$tablet}) {
                     font-size: 1rem;
                 }
 
@@ -184,7 +186,7 @@ Theme: Cthulhupark */
         }
     }
 
-    @media screen and (max-width:#{tablet}) {
+    @media screen and (max-width:#{$tablet}) {
         bottom: 0;
     }
 }
@@ -306,7 +308,7 @@ li.widget {
             background: transparent;
         }
 
-        @media screen and (max-width:#{tablet}) {
+        @media screen and (max-width:#{$tablet}) {
             width: 50px;
             height: auto;
 
@@ -348,7 +350,7 @@ li.widget {
         }
     }
 
-    @media screen and (max-width:#{tablet}) {
+    @media screen and (max-width:#{$tablet}) {
         order: -2;
         display: flex;
         flex-wrap: wrap;

@@ -11,8 +11,9 @@
     background-attachment: fixed;
     position: relative;
 
-    @media screen and (max-width:#{tablet}) {
+    @media screen and (max-width:#{$tablet}) {
         flex-wrap: wrap;
+        flex-direction: column;
     }
 } 
 
@@ -34,8 +35,9 @@
 .main-entry {
     width: 60%;
 
-    @media screen and (max-width:#{tablet}) {
+    @media screen and (max-width:#{$tablet}) {
         flex: 0 0 100%;
+        width:100%;
     }
 }
 

@@ -408,9 +408,9 @@ small {
       overflow: visible; } }
   .main-header img {
     width: 100%;
-    position: absolute;
+    position: relative;
     top: -175px; }
-    @media screen and (max-width: tablet) {
+    @media screen and (max-width: 1024px) {
       .main-header img {
         top: -100px; } }
     @media screen and (max-width: 612px) {
@@ -423,7 +423,8 @@ small {
         bottom: 0; } }
     @media screen and (max-width: 353px) {
       .main-header img {
-        width: 150vw; } }
+        width: 150vw;
+        max-width: 150vw; } }
   .main-header .blog-info {
     position: absolute;
     top: 20px;
@@ -446,7 +447,7 @@ small {
       margin-top: 0;
       font-weight: 300; }
   .main-header .main-header-wrapper {
-    height: 40vh;
+    height: auto;
     overflow: hidden; }
 
 .main-navigation {
@@ -465,7 +466,7 @@ small {
   .main-navigation ul {
     max-width: 1280px;
     margin: auto; }
-    @media screen and (max-width: tablet) {
+    @media screen and (max-width: 1024px) {
       .main-navigation ul {
         background-color: #351509; } }
     .main-navigation ul li {
@@ -483,7 +484,7 @@ small {
         .main-navigation ul li a:hover {
           color: #f9e6a4;
           background-color: #8E563F; }
-        @media screen and (max-width: tablet) {
+        @media screen and (max-width: 1024px) {
           .main-navigation ul li a {
             color: #f9e6a4;
             font-family: 'Traveling Typewriter', 'Courier New', Courier, monospace;
@@ -517,7 +518,7 @@ small {
             font-weight: normal;
             line-height: 19px;
             padding: 7px 15px; }
-            @media screen and (max-width: tablet) {
+            @media screen and (max-width: 1024px) {
               .main-navigation ul li .sub-menu li a {
                 color: #f9f0cc; } }
             .main-navigation ul li .sub-menu li a:hover {
@@ -533,10 +534,10 @@ small {
         height: 42px;
         padding: 0 15px;
         margin-left: -3px; }
-        @media screen and (max-width: tablet) {
+        @media screen and (max-width: 1024px) {
           .main-navigation ul li a {
             display: block; } }
-  @media screen and (max-width: tablet) {
+  @media screen and (max-width: 1024px) {
     .main-navigation {
       position: static; }
       .main-navigation ul {
@@ -590,10 +591,12 @@ Theme: Cthulhupark */
   width: 20%;
   padding: 20px 15px;
   min-width: 150px; }
-  @media screen and (max-width: tablet) {
+  @media screen and (max-width: 1024px) {
     .sidebar {
-      width: 50%; } }
-  @media screen and (max-width: phone) {
+      width: 60%;
+      margin: auto;
+      max-width: 600px; } }
+  @media screen and (max-width: 612px) {
     .sidebar {
       width: 100%; } }
 
@@ -601,7 +604,7 @@ Theme: Cthulhupark */
   height: 0;
   overflow: hidden;
   transition: all .5s; }
-@media screen and (max-width: tablet) {
+@media screen and (max-width: 1024px) {
   .sidebar-left {
     order: 1; } }
 
@@ -634,7 +637,7 @@ Theme: Cthulhupark */
   .sidebar-top .widget {
     display: inline-block;
     list-style-type: none; }
-    @media screen and (max-width: tablet) {
+    @media screen and (max-width: 1024px) {
       .sidebar-top .widget {
         font-size: 1.1rem;
         margin: 15px 0; } }
@@ -658,7 +661,7 @@ Theme: Cthulhupark */
       background-color: #f9e6a4;
       font-size: .8rem;
       line-height: .8rem; }
-      @media screen and (max-width: tablet) {
+      @media screen and (max-width: 1024px) {
         .sidebar-top .widget input {
           font-size: 1rem; } }
       .sidebar-top .widget input:focus {
@@ -670,7 +673,7 @@ Theme: Cthulhupark */
         color: #f9e6a4;
         transition: all .8s;
         font-size: .85rem; }
-        @media screen and (max-width: tablet) {
+        @media screen and (max-width: 1024px) {
           .sidebar-top .widget input[type='submit'] {
             font-size: 1rem; } }
         .sidebar-top .widget input[type='submit']:hover {
@@ -699,7 +702,7 @@ Theme: Cthulhupark */
         margin-top: 10px; } }
   .sidebar-top .logged-in .widget_cplogin_widget {
     padding-top: 15px; }
-  @media screen and (max-width: tablet) {
+  @media screen and (max-width: 1024px) {
     .sidebar-top {
       bottom: 0; } }
 
@@ -782,7 +785,7 @@ li.widget {
       line-height: 150%; }
     .sidebar-author .widget a {
       background: transparent; }
-    @media screen and (max-width: tablet) {
+    @media screen and (max-width: 1024px) {
       .sidebar-author .widget {
         width: 50px;
         height: auto; }
@@ -810,7 +813,7 @@ li.widget {
       right: 0; }
     .sidebar-author .widget:hover img {
       right: 0; }
-  @media screen and (max-width: tablet) {
+  @media screen and (max-width: 1024px) {
     .sidebar-author {
       order: -2;
       display: flex;
@@ -832,9 +835,10 @@ li.widget {
   background-color: #f9f0cc;
   background-attachment: fixed;
   position: relative; }
-  @media screen and (max-width: tablet) {
+  @media screen and (max-width: 1024px) {
     .site-main {
-      flex-wrap: wrap; } }
+      flex-wrap: wrap;
+      flex-direction: column; } }
 
 .content-area p {
   margin-bottom: 15px; }
@@ -846,9 +850,10 @@ li.widget {
 
 .main-entry {
   width: 60%; }
-  @media screen and (max-width: tablet) {
+  @media screen and (max-width: 1024px) {
     .main-entry {
-      flex: 0 0 100%; } }
+      flex: 0 0 100%;
+      width: 100%; } }
 
 .entry-title {
   margin-bottom: 23px;
