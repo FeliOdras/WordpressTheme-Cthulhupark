@@ -410,9 +410,6 @@ small {
     width: 100%;
     position: relative;
     top: -175px; }
-    @media screen and (max-width: 1024px) {
-      .main-header img {
-        top: -100px; } }
     @media screen and (max-width: 612px) {
       .main-header img {
         top: 0;
