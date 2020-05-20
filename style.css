@@ -400,13 +400,9 @@ small {
 
 .main-header {
   position: relative;
-  max-height: 90vh; }
-  @media screen and (orientation: portrait) {
-    .main-header {
-      height: auto; } }
-  @media screen and (max-width: 612px) {
-    .main-header {
-      overflow: visible; } }
+  height: 80vh;
+  background-size: cover;
+  background-position: 50%; }
   .main-header img {
     width: 100%;
     position: relative; }

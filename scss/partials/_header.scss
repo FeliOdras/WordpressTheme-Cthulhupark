@@ -9,15 +9,9 @@
 
 .main-header {
     position: relative;
-    max-height:90vh;
-
-    @media screen and (orientation:#{$portrait}) {
-        height: auto;
-    }
-
-    @media screen and (max-width:#{$phone}) {
-        overflow: visible;
-    }
+    height:80vh;
+    background-size:cover;
+    background-position:50%;
 
     img {
         width: 100%;
